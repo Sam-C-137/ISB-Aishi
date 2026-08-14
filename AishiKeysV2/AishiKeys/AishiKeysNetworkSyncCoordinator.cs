@@ -324,7 +324,7 @@ namespace AishiKeys
                 success = false;
                 failureReason = "door disappeared before authoritative execution";
             }
-            else if (request.Door.DoorState != (EDoorState)1)
+            else if (request.Door.DoorState != EDoorState.Locked)
             {
                 success = true;
             }
@@ -409,7 +409,7 @@ namespace AishiKeys
                 return false;
             }
 
-            if (door.DoorState != (EDoorState)1)
+            if (door.DoorState != EDoorState.Locked)
             {
                 failureReason = "door is no longer locked";
                 return false;
@@ -457,9 +457,9 @@ namespace AishiKeys
             bool requireAuthoritativeInventory =
                 !_network.IsHeadless && IsLocalProfile(player.Profile.Id);
 
-            // A remote human is represented by an observed player on a normal host and on
-            // a headless host. That replica can have a delayed or incomplete inventory even
-            // though the requesting client already passed the local action validation.
+            
+            
+            
             Item keyItem = player.Profile.Inventory != null
                 ? player.Profile.Inventory
                     .GetPlayerItems((EPlayerItems)63)
@@ -658,7 +658,7 @@ namespace AishiKeys
 
                 int localState = (int)door.DoorState;
                 bool needsCorrection =
-                    door.DoorState == (EDoorState)1 ||
+                    door.DoorState == EDoorState.Locked ||
                     (doorState >= 0 && localState != doorState);
 
                 if (!needsCorrection)
@@ -681,7 +681,7 @@ namespace AishiKeys
                     ", correctedState=" + correctedState +
                     ", authorityState=" + doorState + ".");
 
-                if (door.DoorState != (EDoorState)1 &&
+                if (door.DoorState != EDoorState.Locked &&
                     (doorState < 0 || (int)door.DoorState == doorState))
                 {
                     _pendingLocalKeycards.Remove(requestId);

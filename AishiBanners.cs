@@ -1,20 +1,20 @@
 using SPTarkov.DI.Annotations;
 using SPTarkov.Server.Core.DI;
-using SPTarkov.Server.Core.Helpers;
+using SPTarkov.Server.Core.Helpers.Server;
 using SPTarkov.Server.Core.Models.Eft.Common;
 using SPTarkov.Server.Core.Models.Spt.Mod;
+using SPTarkov.Server.Core.Models.Spt.Tables;
 using SPTarkov.Server.Core.Routers;
-using SPTarkov.Server.Core.Services;
 using System.Reflection;
 using Path = System.IO.Path;
 
 namespace Aishi;
 
-[Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 90100)]
+[Injectable(TypePriority = OnLoadOrder.PostLoad + 90100)]
 public class AddBanners(
     ModHelper modHelper,
     ImageRouter imageRouter,
-    DatabaseService databaseService)
+    LocationTable locationTable)
     : IOnLoad
 {
     private const bool ReplaceExistingBanners = false;
@@ -58,8 +58,9 @@ public class AddBanners(
         new MapCoverDefinition("suburbs", "icebreaker_cover", "icebreaker_cover.png"),
     };
 
-    public Task OnLoad()
+    public Task OnLoadAsync(CancellationToken cancellationToken)
     {
+        cancellationToken.ThrowIfCancellationRequested();
         var pathToMod = modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());
 
         var activeBanners = BannerDefinitions
@@ -106,8 +107,7 @@ public class AddBanners(
             return Task.CompletedTask;
         }
 
-        var locations = databaseService.GetLocations();
-        var locationDictionary = locations.GetDictionary();
+        var locationDictionary = locationTable.GetDictionary();
 
         foreach (var entry in locationDictionary)
         {

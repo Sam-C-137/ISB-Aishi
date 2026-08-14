@@ -1,19 +1,19 @@
 using Aishi_trader;
+using SPTarkov.Common.Models.Logging;
 using Microsoft.Extensions.Logging;
 using SPTarkov.DI.Annotations;
 using SPTarkov.Server.Core.DI;
 using SPTarkov.Server.Core.Extensions;
-using SPTarkov.Server.Core.Helpers;
+using SPTarkov.Server.Core.Helpers.Server;
 using SPTarkov.Server.Core.Models.Eft.Common;
 using SPTarkov.Server.Core.Models.Eft.Common.Tables;
 using SPTarkov.Server.Core.Models.Enums;
 using SPTarkov.Server.Core.Models.Enums.Hideout;
 using SPTarkov.Server.Core.Models.Spt.Config;
 using SPTarkov.Server.Core.Models.Spt.Mod;
+using SPTarkov.Server.Core.Models.Spt.Tables;
 using SPTarkov.Server.Core.Models.Utils;
 using SPTarkov.Server.Core.Routers;
-using SPTarkov.Server.Core.Servers;
-using SPTarkov.Server.Core.Services;
 using SPTarkov.Server.Core.Utils;
 using System.Collections;
 using System.Reflection;
@@ -23,34 +23,35 @@ using Path = System.IO.Path;
 
 namespace Aishi;
 
-public record ModMetadata : AbstractModMetadata
+public record ModMetadata : IModMetadata
 {
-    public override string ModGuid { get; init; } = "com.samc137.aishi";
-    public override string Name { get; init; } = "ISB Aishi";
-    public override string Author { get; init; } = "SamC137";
-    public override List<string>? Contributors { get; init; } = [""];
-    public override SemanticVersioning.Version Version { get; init; } = new("1.0.3");
-    public override SemanticVersioning.Range SptVersion { get; init; } = new("~4.0.13");
-    public override List<string>? Incompatibilities { get; init; } = [""];
-    public override Dictionary<string, SemanticVersioning.Range>? ModDependencies { get; init; } = new()
+    public string ModGuid { get; init; } = "com.samc137.aishi";
+    public string Name { get; init; } = "ISB Aishi";
+    public string Author { get; init; } = "SamC137";
+    public List<string>? Contributors { get; init; }
+    public SemanticVersioning.Version Version { get; init; } = new("2.0.0");
+    public SemanticVersioning.Range SptVersion { get; init; } = new("~4.1.0");
+    public List<string>? Incompatibilities { get; init; }
+    public Dictionary<string, SemanticVersioning.Range>? ModDependencies { get; init; } = new()
     {
-        { "com.wtt.commonlib", new SemanticVersioning.Range(">=2.0.23") },
-        { "com.wtt.contentbackport", new SemanticVersioning.Range(">=1.1.4") },
+        { "com.wtt.commonlib", new SemanticVersioning.Range(">=3.0.3") },
+        { "com.wtt.contentbackport", new SemanticVersioning.Range(">=2.0.0") },
     };
-    public override string? Url { get; init; } = "";
-    public override bool? IsBundleMod { get; init; } = true;
-    public override string? License { get; init; } = "MIT";
+    public string? Url { get; init; } = "";
+    public string License { get; init; } = "MIT";
+    public bool HasPrepatcher { get; init; } = false;
 }
 
-[Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 120)]
+[Injectable(TypePriority = OnLoadOrder.PostLoad + 120)]
 public class EditDatabaseValues(
     ISptLogger<EditDatabaseValues> logger,
-    DatabaseService databaseService,
+    LocationTable locationTable,
     IReadOnlyList<SptMod> modList)
     : IOnLoad
 {
-    public Task OnLoad()
+    public Task OnLoadAsync(CancellationToken cancellationToken)
     {
+        cancellationToken.ThrowIfCancellationRequested();
         EditLaboratory();
         EditLabyrinth();
 
@@ -61,8 +62,7 @@ public class EditDatabaseValues(
 
     private void EditLaboratory()
     {
-        var locations = databaseService.GetLocations();
-        var laboratory = locations.Laboratory;
+        var laboratory = locationTable.Laboratory;
 
         var updatedList = laboratory.Base.AccessKeys.ToList();
         var updatedListPvE = laboratory.Base.AccessKeysPvE.ToList();
@@ -98,8 +98,7 @@ public class EditDatabaseValues(
 
     private void EditLabyrinth()
     {
-        var locations = databaseService.GetLocations();
-        var labyrinth = locations.Labyrinth;
+        var labyrinth = locationTable.Labyrinth;
 
         var updatedList = labyrinth.Base.AccessKeys.ToList();
         var updatedListPvE = labyrinth.Base.AccessKeysPvE.ToList();
@@ -119,28 +118,33 @@ public class EditDatabaseValues(
         }
     }
 
-    [Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 720)]
+    [Injectable(TypePriority = OnLoadOrder.PostLoad + 720)]
     public class AddTraderWithAssortJson(
         ModHelper modHelper,
         ImageRouter imageRouter,
-        ConfigServer configServer,
+        TraderConfig traderConfig,
+        RagfairConfig ragfairConfig,
+        InsuranceConfig insuranceConfig,
+        QuestConfig questConfig,
         IReadOnlyList<SptMod> modList,
         TimeUtil timeUtil,
         AishiLogger AishiLogger,
         WTTServerCommonLib.WTTServerCommonLib wttCommon,
-        DatabaseService databaseService,
+        TradersTable tradersTable,
+        TemplateTable templateTable,
         ILogger<AddTraderWithAssortJson> logger)
         : IOnLoad
     {
         private const double InsuranceReturnChancePercent = 80d;
 
-        private readonly TraderConfig _traderConfig = configServer.GetConfig<TraderConfig>();
-        private readonly RagfairConfig _ragfairConfig = configServer.GetConfig<RagfairConfig>();
-        private readonly InsuranceConfig _insuranceConfig = configServer.GetConfig<InsuranceConfig>();
-        private readonly QuestConfig _questConfig = configServer.GetConfig<QuestConfig>();
+        private readonly TraderConfig _traderConfig = traderConfig;
+        private readonly RagfairConfig _ragfairConfig = ragfairConfig;
+        private readonly InsuranceConfig _insuranceConfig = insuranceConfig;
+        private readonly QuestConfig _questConfig = questConfig;
 
-        public async Task OnLoad()
+        public async Task OnLoadAsync(CancellationToken cancellationToken)
         {
+            cancellationToken.ThrowIfCancellationRequested();
             var pathToMod = modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());
 
             var traderImagePath = Path.Combine(pathToMod, "db/Aishi.png");
@@ -155,13 +159,10 @@ public class EditDatabaseValues(
             _ragfairConfig.Traders.TryAdd(traderBase.Id, true);
 
             AishiLogger.AddTraderWithEmptyAssortToDb(traderBase);
-            AishiRepeatables.Initialize(pathToMod, databaseService, logger);
+            AishiRepeatables.Initialize(pathToMod, templateTable, logger);
             AddAishiToRepeatableQuests(traderBase);
 
-            var (_, trader) = databaseService.GetTraders()
-                .FirstOrDefault(t => t.Key == traderBase.Id);
-
-            if (trader != null)
+            if (tradersTable.TryGetValue(traderBase.Id, out var trader))
             {
                 trader.Dialogue["insuranceStart"] = [
                 "6a31f76e04210c72c1b95804 0",
@@ -218,6 +219,7 @@ public class EditDatabaseValues(
             logger.LogInformation("\x1b[38;2;200;80;220m[ISB Aishi Loaded] \u201cDo you think the Black Division will negotiate? Join us, and let\u2019s show them our bargaining chip.\u201d\x1b[0m");
 
             await wttCommon.CustomQuestService.CreateCustomQuests(assembly);
+            await wttCommon.CustomLocaleService.CreateCustomLocales(assembly);
             await wttCommon.CustomQuestZoneService.CreateCustomQuestZones(assembly);
             await wttCommon.CustomItemServiceExtended.CreateCustomItems(assembly);
             await wttCommon.CustomLootspawnService.CreateCustomLootSpawns(assembly);
@@ -228,8 +230,6 @@ public class EditDatabaseValues(
             await wttCommon.CustomVoiceService.CreateCustomVoices(assembly);
             await wttCommon.CustomHeadService.CreateCustomHeads(assembly);
             await wttCommon.CustomClothingService.CreateCustomClothing(assembly);
-            //fix language override issues
-            await wttCommon.CustomLocaleService.CreateCustomLocales(assembly);
 
             if (modList.Any(mod => mod.ModMetadata.ModGuid == "com.Luna.LunnayalunaLotus"))
             {
@@ -352,9 +352,5 @@ public class EditDatabaseValues(
             }
         }
 
-        Task IOnLoad.OnLoad()
-        {
-            return OnLoad();
-        }
     }
 }

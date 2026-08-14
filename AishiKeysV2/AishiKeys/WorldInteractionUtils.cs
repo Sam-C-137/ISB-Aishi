@@ -139,17 +139,17 @@ namespace AishiKeys
             if (door.DoorState == targetState)
                 return true;
 
-            if (door.DoorState == (EDoorState)1 && targetState != (EDoorState)1)
+            if (door.DoorState == EDoorState.Locked && targetState != EDoorState.Locked)
             {
                 try
                 {
-                    door.Interact((EInteractionType)2);
+                    door.Interact(EInteractionType.Unlock);
                 }
                 catch
                 {
                 }
 
-                if (door.DoorState != (EDoorState)1 &&
+                if (door.DoorState != EDoorState.Locked &&
                     (authorityState < 0 || door.DoorState == targetState))
                 {
                     return true;
@@ -207,11 +207,11 @@ namespace AishiKeys
 
         private static EDoorState ResolveFallbackDoorState(int authorityState)
         {
-            // EDoorState is backed by System.Byte. Enum.IsDefined(Type, object) throws
-            // when it receives a boxed Int32, even when the numeric value is valid.
+            
+            
             if (authorityState >= byte.MinValue &&
                 authorityState <= byte.MaxValue &&
-                authorityState != 1)
+                authorityState != (int)EDoorState.Locked)
             {
                 return (EDoorState)(byte)authorityState;
             }
@@ -220,7 +220,7 @@ namespace AishiKeys
             foreach (string name in preferredNames)
             {
                 EDoorState parsed;
-                if (Enum.TryParse(name, true, out parsed) && (int)parsed != 1)
+                if (Enum.TryParse(name, true, out parsed) && (int)parsed != (int)EDoorState.Locked)
                     return parsed;
             }
 
@@ -228,7 +228,7 @@ namespace AishiKeys
             foreach (object value in values)
             {
                 EDoorState state = (EDoorState)value;
-                if ((int)state != 1)
+                if ((int)state != (int)EDoorState.Locked)
                     return state;
             }
 

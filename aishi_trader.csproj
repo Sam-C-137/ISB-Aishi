@@ -1,39 +1,22 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
-    <TargetFramework>net9.0-windows</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <RootNamespace>Aishi</RootNamespace>
     <AssemblyName>Aishi</AssemblyName>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <OutputType>Library</OutputType>
-    <Version>1.0.3</Version>
+    <Version>2.0.0</Version>
     <Platforms>AnyCPU</Platforms>
     <LangVersion>latest</LangVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Lib.Harmony" Version="2.4.2" />
-    <PackageReference Include="WTT-ClientCommonLib" Version="2.0.23" />
-    <PackageReference Include="WTT-ServerCommonLib" Version="2.0.23" />
+    <PackageReference Include="SPTarkov.Common" Version="4.1.2" />
+    <PackageReference Include="SPTarkov.DI" Version="4.1.2" />
+    <PackageReference Include="SPTarkov.Server.Core" Version="4.1.2" />
+    <PackageReference Include="WTT-ServerCommonLib" Version="3.0.3" />
   </ItemGroup>
-
-  <ItemGroup>
-
-    <Reference Include="SPTarkov.Common">
-      <HintPath>..\..\..\SPT\SPTarkov.Common.dll</HintPath>
-    </Reference>
-
-    <Reference Include="SPTarkov.DI">
-      <HintPath>..\..\..\SPT\SPTarkov.DI.dll</HintPath>
-    </Reference>
-
-    <Reference Include="SPTarkov.Server.Core">
-      <HintPath>..\..\..\SPT\SPTarkov.Server.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="WTT-ClientCommonLib">
-      <HintPath>..\..\plugins\WTT-ClientCommonLib\WTT-ClientCommonLib.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
-  </Project>
+</Project>

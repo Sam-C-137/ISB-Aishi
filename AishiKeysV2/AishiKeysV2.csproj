@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>AishiKeysV2</AssemblyName>
     <RootNamespace>AishiKeysV2</RootNamespace>
     <LangVersion>latest</LangVersion>
@@ -9,9 +9,9 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>true</EnableDefaultCompileItems>
     <Deterministic>true</Deterministic>
-    <Version>1.0.2</Version>
+    <Version>2.0.0</Version>
 
-    <SPTRoot Condition="'$(SPTRoot)' == ''">C:\SPTIV</SPTRoot>
+    <SPTRoot Condition="'$(SPTRoot)' == ''">C:\SPTV</SPTRoot>
     <ManagedPath>$(SPTRoot)\EscapeFromTarkov_Data\Managed</ManagedPath>
     <BepInExCore>$(SPTRoot)\BepInEx\core</BepInExCore>
     <BepInExPlugins>$(SPTRoot)\BepInEx\plugins</BepInExPlugins>
@@ -28,6 +28,10 @@
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>$(ManagedPath)\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="ItemComponent.Types">
+      <HintPath>$(ManagedPath)\ItemComponent.Types.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="BepInEx">
@@ -54,6 +58,5 @@
       <HintPath>$(ManagedPath)\UnityEngine.CoreModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
-    <Reference Include="System.Core" />
   </ItemGroup>
 </Project>

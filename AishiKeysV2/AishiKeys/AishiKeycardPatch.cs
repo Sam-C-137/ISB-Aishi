@@ -15,61 +15,112 @@ namespace AishiKeys
     {
         protected override MethodBase GetTargetMethod()
         {
-            return typeof(GetActionsClass).GetMethod("smethod_13", BindingFlags.Static | BindingFlags.Public);
+            return ActionPatchResolver.ResolveKeycardActionsMethod();
         }
 
         [PatchPostfix]
-        private static void Postfix(ref ActionsReturnClass __result, GamePlayerOwner owner, KeycardDoor door, bool isProxy)
+        private static void Postfix(object __result, object[] __args)
         {
-            if (door.DoorState != (EFT.Interactive.EDoorState)1)
+            try
+            {
+                Apply(__result, __args);
+            }
+            catch (Exception ex)
+            {
+                AishiKeysPro.AishiKeysMod.Logger?.LogError(
+                    "Aishi Keys keycard patch failed: " + ex);
+            }
+        }
+
+        private static void Apply(object result, object[] args)
+        {
+            GamePlayerOwner owner = args?
+                .OfType<GamePlayerOwner>()
+                .FirstOrDefault();
+            KeycardDoor door = args?
+                .OfType<KeycardDoor>()
+                .FirstOrDefault();
+
+            if (owner == null || door == null ||
+                door.DoorState != EDoorState.Locked)
+            {
                 return;
+            }
 
             GameWorld instance = Singleton<GameWorld>.Instance;
-            if (!((instance != null) ? instance.MainPlayer : null))
+            if (instance == null || instance.MainPlayer == null)
                 return;
 
-            if (string.IsNullOrEmpty((door != null) ? door.KeyId : null))
+            if (string.IsNullOrEmpty(door.KeyId) ||
+                WorldInteractionUtils.IsBotInteraction(owner) ||
+                owner.Player == null ||
+                owner.Player.Profile == null ||
+                owner.Player.Profile.Inventory == null)
+            {
                 return;
+            }
 
-            if (WorldInteractionUtils.IsBotInteraction(owner))
-                return;
+            List<Item> masterKeys = owner.Player.Profile.Inventory
+                .GetPlayerItems((EPlayerItems)63)
+                .Where(item =>
+                    item != null &&
+                    MasterKeyHelper.AllMasterKeyIds.Contains(item.TemplateId))
+                .ToList();
 
-            List<Item> masterKeys = (from item in owner.Player.Profile.Inventory.GetPlayerItems((EFT.InventoryLogic.EPlayerItems)63)
-                                     where MasterKeyHelper.AllMasterKeyIds.Contains(item.TemplateId)
-                                     select item).ToList<Item>();
             if (masterKeys.Count == 0)
                 return;
 
-            List<ValueTuple<Item, KeyComponent, string>> resolvedKeys = new List<ValueTuple<Item, KeyComponent, string>>();
+            List<ValueTuple<KeyComponent, string>> resolvedKeys =
+                new List<ValueTuple<KeyComponent, string>>();
+
             foreach (Item keyItem in masterKeys)
             {
-                KeyComponent keyComponent = MasterKeyItemResolver.FindKeyComponent(keyItem);
+                KeyComponent keyComponent =
+                    MasterKeyItemResolver.FindKeyComponent(keyItem);
                 if (keyComponent == null)
                     continue;
 
-                resolvedKeys.Add(new ValueTuple<Item, KeyComponent, string>(
-                    keyItem,
-                    keyComponent,
-                    GClass2348.Localized(keyItem.ShortName, null)));
+                resolvedKeys.Add(
+                    new ValueTuple<KeyComponent, string>(
+                        keyComponent,
+                        AishiLocalization.Localize(keyItem.ShortName)));
             }
 
             if (resolvedKeys.Count == 0)
                 return;
 
-            foreach (ActionsTypesClass action in __result.Actions)
+            foreach (object action in ActionResultAdapter.EnumerateActions(result))
             {
-                if (string.IsNullOrEmpty(action.Name))
+                string actionName = ActionResultAdapter.GetName(action);
+                if (string.IsNullOrEmpty(actionName))
                     continue;
 
-                foreach (ValueTuple<Item, KeyComponent, string> resolved in resolvedKeys)
+                foreach (ValueTuple<KeyComponent, string> resolved in resolvedKeys)
                 {
-                    KeyComponent keyComponent = resolved.Item2;
-                    string shortName = resolved.Item3;
-                    if (action.Name.Contains(shortName))
+                    KeyComponent keyComponent = resolved.Item1;
+                    string shortName = resolved.Item2;
+
+                    if (string.IsNullOrEmpty(shortName) ||
+                        actionName.IndexOf(
+                            shortName,
+                            StringComparison.OrdinalIgnoreCase) < 0)
                     {
-                        action.Action = new Action(new MasterKeyKeycardInteraction(door, owner, keyComponent).Unlock);
-                        break;
+                        continue;
                     }
+
+                    Action callback = new Action(
+                        new MasterKeyKeycardInteraction(
+                            door,
+                            owner,
+                            keyComponent).Unlock);
+
+                    if (!ActionResultAdapter.TrySetAction(action, callback))
+                    {
+                        AishiKeysPro.AishiKeysMod.Logger?.LogWarning(
+                            "Aishi Keys could not replace keycard action.");
+                    }
+
+                    break;
                 }
             }
         }

@@ -1,7 +1,7 @@
 using HarmonyLib;
 using Microsoft.Extensions.Logging;
 using SPTarkov.Server.Core.Controllers;
-using SPTarkov.Server.Core.Generators.RepeatableQuestGeneration;
+using SPTarkov.Server.Core.Generators.RepeatableQuests;
 using SPTarkov.Server.Core.Models.Common;
 using SPTarkov.Server.Core.Models.Eft.Common;
 using SPTarkov.Server.Core.Models.Eft.Common.Tables;
@@ -9,8 +9,8 @@ using SPTarkov.Server.Core.Models.Enums;
 using SPTarkov.Server.Core.Models.Spt.Config;
 using SPTarkov.Server.Core.Models.Eft.Profile;
 using SPTarkov.Server.Core.Models.Spt.Repeatable;
+using SPTarkov.Server.Core.Models.Spt.Tables;
 using SPTarkov.Server.Core.Models.Utils;
-using SPTarkov.Server.Core.Services;
 using SPTarkov.Server.Core.Utils.Collections;
 using System.Text.Json;
 using IOPath = System.IO.Path;
@@ -35,7 +35,7 @@ public static class AishiRepeatables
     private static readonly object Sync = new();
 
     private static ILogger? _logger;
-    private static DatabaseService? _databaseService;
+    private static TemplateTable? _templateTable;
     private static AishiRepeatablesConfig? _config;
     private static bool _initialized;
 
@@ -48,7 +48,7 @@ public static class AishiRepeatables
     [ThreadStatic]
     private static CompletionGenerationContext? _completionGeneration;
 
-    public static void Initialize(string pathToMod, DatabaseService databaseService, ILogger logger)
+    public static void Initialize(string pathToMod, TemplateTable templateTable, ILogger logger)
     {
         lock (Sync)
         {
@@ -58,7 +58,7 @@ public static class AishiRepeatables
             }
 
             _logger = logger;
-            _databaseService = databaseService;
+            _templateTable = templateTable;
 
             var configPath = IOPath.Combine(pathToMod, "db", "AishiRepeatables.json");
 
@@ -525,13 +525,13 @@ public static class AishiRepeatables
             return false;
         }
 
-        if (_databaseService is null)
+        if (_templateTable is null)
         {
             return true;
         }
 
         var mongoId = new MongoId(tpl);
-        if (_databaseService.GetItems().ContainsKey(mongoId))
+        if (_templateTable.Items.ContainsKey(mongoId))
         {
             return true;
         }

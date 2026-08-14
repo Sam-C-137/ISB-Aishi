@@ -61,9 +61,9 @@
 <details>
 <summary><strong>🛠️ Installation</strong></summary>
 
-1. Ensure that you have [SPT 4.0.3](https://github.com/sp-tarkov/build/releases#:~:text=Compare-,SPT%204.0.1%20(40087),-Requires%20EFT%200.16.9) or [higher](https://forge.sp-tarkov.com/installer) installed.
-2. Ensure you have [WTT - CommonLib](https://forge.sp-tarkov.com/mod/2310/wtt-commonlib) **2.0.23** or higher installed.
-3. Ensure you have [WTT - Content Backport](https://forge.sp-tarkov.com/mod/2512/wtt-content-backport) **1.1.0** or higher installed.
+1. Ensure that you have **SPT 4.1.2 (4.1.x)** installed.
+2. Ensure you have [WTT - CommonLib](https://forge.sp-tarkov.com/mod/2310/wtt-commonlib) **3.0.3** or higher installed.
+3. Ensure you have [WTT - Content Backport](https://forge.sp-tarkov.com/mod/2512/wtt-content-backport) **1.1.4** or higher installed.
 4. Download the latest version of [Aishi](https://forge.sp-tarkov.com/mod/2478/testing).
 5. Unzip the file and move its contents to your SPT installation, as shown below.
 

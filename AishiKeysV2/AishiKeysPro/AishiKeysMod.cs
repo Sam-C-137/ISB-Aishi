@@ -15,11 +15,12 @@ using UnityEngine;
 namespace AishiKeysPro
 {
     [BepInPlugin(PluginGuid, PluginName, PluginVersion)]
+    [BepInDependency(FikaPluginGuid, BepInDependency.DependencyFlags.SoftDependency)]
     public class AishiKeysMod : BaseUnityPlugin
     {
         public const string PluginGuid = "com.samc137.aishi";
         public const string PluginName = "AishiMasterKeyFunction";
-        public const string PluginVersion = "1.0.3";
+        public const string PluginVersion = "2.0.0";
         public const string FikaPluginGuid = "com.fika.core";
 
         private const string FikaBridgeAssemblyFileName = "AishiKeysV2.Fika.dll";
@@ -40,26 +41,53 @@ namespace AishiKeysPro
             Instance = this;
             Logger = base.Logger;
 
+            TryInitializeComponent(
+                "world interaction patch",
+                () => new AishiKeysPatch().Enable());
+            TryInitializeComponent(
+                "keycard interaction patch",
+                () => new AishiKeycardPatch().Enable());
+            TryInitializeComponent(
+                "HackerMod integration",
+                HackerModVariant.TryInject);
+
             try
             {
-                new AishiKeysPatch().Enable();
-                new AishiKeycardPatch().Enable();
-                HackerModVariant.TryInject();
-
                 _networkSync = new AishiKeysNetworkSyncCoordinator(
                     this,
                     _networkBridge,
                     Logger);
-
-                TryInitializeOptionalFikaBridge();
-
-                Logger.LogInfo(
-                    "Aishi Keys 1.0.3 initialized. Local mode is ready; " +
-                    "the optional Fika addon can attach independently.");
             }
             catch (Exception ex)
             {
-                Logger.LogError("Aishi Keys initialization failed: " + ex);
+                Logger.LogError(
+                    "Aishi Keys network coordinator initialization failed: " + ex);
+            }
+
+            TryInitializeOptionalFikaBridge();
+
+            Logger.LogInfo(
+                "Aishi Keys 2.0 initialized. GUID=" +
+                Info.Metadata.GUID +
+                ", version=" +
+                Info.Metadata.Version +
+                ".");
+        }
+
+        private static void TryInitializeComponent(string componentName, Action initializer)
+        {
+            if (initializer == null)
+                return;
+
+            try
+            {
+                initializer();
+                Logger?.LogInfo("Aishi Keys initialized " + componentName + ".");
+            }
+            catch (Exception ex)
+            {
+                Logger?.LogError(
+                    "Aishi Keys failed to initialize " + componentName + ": " + ex);
             }
         }
 
@@ -289,31 +317,31 @@ namespace AishiKeysPro
                 case EMessageType.NotiError:
                     ConsoleScreen.LogError("[Aishi Error] " + message);
                     Logger.LogError("[Aishi Error] " + message);
-                    NotificationManagerClass.DisplayMessageNotification(
+                    AishiNotificationBridge.Display(
                         "[Aishi Error] " + message,
-                        0,
-                        (EFT.Communications.ENotificationIconType)1,
-                        new Color?(Color.red));
+                        0f,
+                        1,
+                        Color.red);
                     return;
 
                 case EMessageType.NotiWarn:
                     ConsoleScreen.LogWarning("[Aishi Warning] " + message);
                     Logger.LogWarning("[Aishi Warning] " + message);
-                    NotificationManagerClass.DisplayMessageNotification(
+                    AishiNotificationBridge.Display(
                         "[Aishi Warning] " + message,
+                        0f,
                         0,
-                        0,
-                        new Color?(Color.yellow));
+                        Color.yellow);
                     return;
 
                 case EMessageType.NotiInfo:
                     ConsoleScreen.Log("[Aishi Info] " + message);
                     Logger.LogDebug("[Aishi Info] " + message);
-                    NotificationManagerClass.DisplayMessageNotification(
+                    AishiNotificationBridge.Display(
                         "[Aishi Info] " + message,
+                        0f,
                         0,
-                        (EFT.Communications.ENotificationIconType)0,
-                        new Color?(Color.yellow));
+                        Color.yellow);
                     return;
 
                 case EMessageType.Error:

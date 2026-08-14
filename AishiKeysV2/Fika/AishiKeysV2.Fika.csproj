@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>AishiKeysV2.Fika</AssemblyName>
     <RootNamespace>AishiKeys.Fika</RootNamespace>
     <LangVersion>latest</LangVersion>
@@ -9,17 +9,20 @@
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <Deterministic>true</Deterministic>
-    <Version>1.0.2</Version>
-    <AssemblyVersion>1.0.2</AssemblyVersion>
-    <FileVersion>1.0.2</FileVersion>
+    <Version>2.0.0</Version>
+    <AssemblyVersion>2.0.0</AssemblyVersion>
+    <FileVersion>2.0.0</FileVersion>
 
-    <SPTRoot Condition="'$(SPTRoot)' == ''">C:\SPTIV</SPTRoot>
+    <SPTRoot Condition="'$(SPTRoot)' == ''">C:\SPTV</SPTRoot>
     <ManagedPath>$(SPTRoot)\EscapeFromTarkov_Data\Managed</ManagedPath>
     <BepInExCore>$(SPTRoot)\BepInEx\core</BepInExCore>
     <BepInExPlugins>$(SPTRoot)\BepInEx\plugins</BepInExPlugins>
 
     <FikaCorePath Condition="'$(FikaCorePath)' == '' and Exists('$(BepInExPlugins)\Fika\Fika.Core.dll')">$(BepInExPlugins)\Fika\Fika.Core.dll</FikaCorePath>
     <FikaCorePath Condition="'$(FikaCorePath)' == '' and Exists('$(BepInExPlugins)\Fika.Core.dll')">$(BepInExPlugins)\Fika.Core.dll</FikaCorePath>
+    <FikaCorePath Condition="'$(FikaCorePath)' == '' and Exists('$(BepInExPlugins)\Fika\Core\Fika.Core.dll')">$(BepInExPlugins)\Fika\Core\Fika.Core.dll</FikaCorePath>
+    <FikaCorePath Condition="'$(FikaCorePath)' == '' and Exists('$(SPTRoot)\Fika.Core.dll')">$(SPTRoot)\Fika.Core.dll</FikaCorePath>
+    <FikaCorePath Condition="'$(FikaCorePath)' == '' and Exists('$(MSBuildThisFileDirectory)Ref\Fika.Core.dll')">$(MSBuildThisFileDirectory)Ref\Fika.Core.dll</FikaCorePath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -42,6 +45,10 @@
       <HintPath>$(ManagedPath)\Assembly-CSharp.dll</HintPath>
       <Private>false</Private>
     </Reference>
+    <Reference Include="ItemComponent.Types">
+      <HintPath>$(ManagedPath)\ItemComponent.Types.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
     <Reference Include="BepInEx">
       <HintPath>$(BepInExCore)\BepInEx.dll</HintPath>
       <Private>false</Private>
@@ -51,7 +58,8 @@
       <Private>false</Private>
     </Reference>
     <Reference Include="Fika.Core">
-      <HintPath>..\..\ISB_SOF_BUILD_9\Reference\Fika.Core.dll</HintPath>
+      <HintPath>$(FikaCorePath)</HintPath>
+      <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine">
       <HintPath>$(ManagedPath)\UnityEngine.dll</HintPath>
@@ -61,6 +69,21 @@
       <HintPath>$(ManagedPath)\UnityEngine.CoreModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
-    <Reference Include="System.Core" />
   </ItemGroup>
+  <Target Name="ResolveFikaCorePath" BeforeTargets="ResolveReferences" Condition="'$(FikaCorePath)' == ''">
+    <ItemGroup>
+      <FikaCoreCandidate Include="$(BepInExPlugins)\**\Fika.Core.dll" />
+    </ItemGroup>
+    <PropertyGroup Condition="'@(FikaCoreCandidate)' != ''">
+      <FikaCorePath>@(FikaCoreCandidate->'%(FullPath)')</FikaCorePath>
+    </PropertyGroup>
+    <ItemGroup Condition="'$(FikaCorePath)' != ''">
+      <Reference Update="Fika.Core">
+        <HintPath>$(FikaCorePath)</HintPath>
+      </Reference>
+    </ItemGroup>
+  </Target>
+  <Target Name="ValidateFikaCore" BeforeTargets="ResolveReferences" DependsOnTargets="ResolveFikaCorePath">
+    <Error Condition="'$(FikaCorePath)' == ''" Text="Fika.Core.dll was not found under $(BepInExPlugins). Set SPTRoot to your SPT folder or pass /p:FikaCorePath=FULL_PATH_TO_Fika.Core.dll." />
+  </Target>
 </Project>
