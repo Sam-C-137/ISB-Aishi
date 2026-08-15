@@ -86,12 +86,15 @@
     "616052ea3054fc0e2c24ce6e name 690766de550bc322a810ea1e": "ISB Elimination Contract",
     "616052ea3054fc0e2c24ce6e description 690766de550bc322a810ea1e 0": "Olá amigo, como Tarkov está te tratando? Tenho um pequeno contrato de eliminações por aqui. Garanto uma recompensa muito mais satisfatória que a maioria, caso você também atenda bem aos meus interesses. Boa sorte.",
     "616052ea3054fc0e2c24ce6e successMessageText 690766de550bc322a810ea1e 0": "Bom trabalho! Sabia que eu podia contar com você.",
+    "616052ea3054fc0e2c24ce6e changeQuestMessageText 690766de550bc322a810ea1e 0": "Não quer o contrato? Tudo bem, você que sai perdendo mesmo.",
 
     "61604635c725987e815b1a46 name 690766de550bc322a810ea1e": "Completion",
     "61604635c725987e815b1a46 description 690766de550bc322a810ea1e 0": "Tudo indo bem? Estamos procurando algumas coisas específicas por aqui, então te ofereço um contrato curto. Se encontrar isso durante suas incursões, me entregue e te recompensarei bem.",
     "61604635c725987e815b1a46 successMessageText 690766de550bc322a810ea1e 0": "Perfeito, era esse mesmo! Obrigada!",
+    "61604635c725987e815b1a46 changeQuestMessageText 690766de550bc322a810ea1e 0": "Não quer o contrato? Tudo bem, você que sai perdendo mesmo.",
 
     "616041eb031af660100c9967 name 690766de550bc322a810ea1e": "Exploration",
     "616041eb031af660100c9967 description 690766de550bc322a810ea1e 0": "Indo bem? Estamos fazendo algumas pequenas operações de reconhecimento. Nesse curto contrato, peço que passe em algumas localidades. Conclua a missão e será devidamente recompensado.",
-    "616041eb031af660100c9967 successMessageText 690766de550bc322a810ea1e 0": "Mandou bem! Você realmente nunca decepciona."
+    "616041eb031af660100c9967 successMessageText 690766de550bc322a810ea1e 0": "Mandou bem! Você realmente nunca decepciona.",
+    "616041eb031af660100c9967 changeQuestMessageText 690766de550bc322a810ea1e 0": "Não quer o contrato? Tudo bem, você que sai perdendo mesmo."
 }

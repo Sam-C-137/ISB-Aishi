@@ -22,7 +22,7 @@
     "690a2def6c4ba5b7f1e9457d acceptPlayerMessage": "Esse complexo da TerraGroup é uma área de muito interesse e eu já tenho acesso às câmeras que cobrem toda a Ground Zero com exceção de dois pontos cegos.\n\nTem um prédio ao lado do complexo com uma boa visão. Instale perto da janela onde instalaram uma metralhadora NSV Utyos. \n\nPara a segunda câmera...Já tomou café no Coffee Maniac? Dizem que é ótimo então talvez atrás dele perto dos entulhos que ficaram por lá.",
     "690a2ed4cc5028058736a67d": "Posicione uma Câmera WIFI nos andares superiores do Prédio Empire em Ground Zero",
     "690a2ed0f2f68266e0414be6": "Posicione uma Câmera WIFI no Coffee Maniac em Ground Zero",
-    "690a2f791a71493ed3475eac": "Garanta o sucesso da operação eliminando 5 Scavs em Ground Zero.",
+    "690a2f791a71493ed3475eac": "Garanta o sucesso da operação eliminando Scavs em Ground Zero.",
     "69b3a558cd57dd8b3e4a2152": "Sobreviva e extraia da localização atual",
     "690a2def6c4ba5b7f1e9457d successMessageText": "Obrigada pelo desempenho na missão. Continue assim e você terá um futuro promissor ao meu lado.",
     
@@ -634,6 +634,7 @@
     "6962f2798e50b93c4bccd95b successMessageText": "Desempenho aceitável. Podemos prosseguir",
     "6962f2798e50b93c4bccd95b acceptPlayerMessage": "Olá mercenário. Interceptamos comunicações de que alguns oficiais da UNTAR estão patrulhando a Shoreline. Eu sei que isso não é ideal mas não podemos permitir que interfiram na missão de nenhuma forma. Neutralize eles da forma menos letal possível e sem ser identificado.",
     "6962f228124615f0e3f0569a": "Neutralize 5 oficiais da UNTAR com Tiros na Perna",
+    "6962f2798e50b93c4bccd95b failMessageText": "Bom, então você é das pessoas que não gosta de violência? Justo.",
 
     "6963c6ff4dae57a2dec4ef82 name": "Não Interfiram - Contrainteligência",
     "6963c6ff4dae57a2dec4ef82 description": "Olá mercenário! Notei que está com um pouco de dificuldade para encontrar os oficiais da UNTAR. Não se preocupe que eles também estão na mira dos meus agentes. De qualquer forma podemos reforçar nossa operação de contrainteligência e isso já deve ser suficiente. Consiga alguns itens para mim e considerarei sua tarefa como completa.",
@@ -642,6 +643,7 @@
     "6963c440bcac2b7b4af0706f": "Alcance nível 2 de Lealdade com Aishi",
     "6963c4466bf921c04594b4de": "Entregue uma Pasta com Inteligência",
     "6963c510477a2d1b297e80c8": "Entregue 2 Unidades SSD",
+    "6963c6ff4dae57a2dec4ef82 failMessageText": "Agora a UNTAR não vai ficar na nossa cola, isso serve.",
 
     "69648a944599e194c4f71339 name": "Investigação Sanitária - Conclusão",
     "69648a944599e194c4f71339 description": "As coisas estão muito estranhas desse lado. Você leu aquela carta? Espero que não afinal eu não pedi para você ler. De qualquer forma a carta cita uma operação paralela da TerraGroup com novos contratados e isso é claro que despertou o meu interesse. Eu passei muito tempo investigando isso e não encontrei nada, absolutamente nada. Mas duvido que seja uma mentira. A única coisa que descobri é que houve um sequestro de um PMC perto do Porto na Shoreline, ele estava acampando em um caminhão verde quando desapareceu. Preciso que busque alguma pista sobre isso.",

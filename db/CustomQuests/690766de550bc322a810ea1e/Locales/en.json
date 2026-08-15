@@ -22,7 +22,7 @@
     "690a2def6c4ba5b7f1e9457d acceptPlayerMessage": "This TerraGroup complex is an area of great interest, and I already have access to the cameras that cover all of Ground Zero, except for two blind spots.\n\nThere is a building next to the complex with a good view. Install it near the window where an NSV Utyos machine gun was installed. \n\nFor the second camera... Have you ever had coffee at Coffee Maniac? They say it's great, so maybe behind it near the debris that was left there.",
     "690a2ed4cc5028058736a67d": "Install a WIFI Camera on the upper floors of the Empire Building in Ground Zero",
     "690a2ed0f2f68266e0414be6": "Install a WIFI Camera at Coffee Maniac in Ground Zero",
-    "690a2f791a71493ed3475eac": "Ensure the success of the operation by eliminating 5 Scavs in Ground Zero.",
+    "690a2f791a71493ed3475eac": "Ensure the success of the operation by eliminating Scavs in Ground Zero.",
     "69b3a558cd57dd8b3e4a2152": "Survive and extract from your current location",
     "690a2def6c4ba5b7f1e9457d successMessageText": "Thank you for your performance on the mission. Keep it up, and you will have a promising future by my side.",
 
@@ -634,6 +634,7 @@
     "6962f2798e50b93c4bccd95b successMessageText": "Acceptable performance. We may proceed.",
     "6962f2798e50b93c4bccd95b acceptPlayerMessage": "Hello, mercenary. We’ve intercepted communications that some UNTAR officers are patrolling Shoreline. I know this isn't ideal, but we cannot allow them to interfere with the mission in any way. Neutralize them as non-lethally as possible and without being identified.",
     "6962f228124615f0e3f0569a": "Neutralize 5 UNTAR officers with leg shots",
+    "6962f2798e50b93c4bccd95b failMessageText": "Well, so you're one of those people who doesn't like violence? Fair enough.",
 
     "6963c6ff4dae57a2dec4ef82 name": "Do Not Interfere - Counterintelligence",
     "6963c6ff4dae57a2dec4ef82 description": "Hello, mercenary! I noticed you're having some trouble finding the UNTAR officers. Don't worry, they are already in my agents' sights as well. Regardless, we can bolster our counterintelligence operation, and that should be enough. Get me some items, and I’ll consider your task complete.",
@@ -642,6 +643,7 @@
     "6963c440bcac2b7b4af0706f": "Reach loyalty level 2 with Aishi",
     "6963c4466bf921c04594b4de": "Hand over a Intelligence Folder",
     "6963c510477a2d1b297e80c8": "Hand over 2 SSD drives",
+    "6963c6ff4dae57a2dec4ef82 failMessageText": "Now UNTAR won't be on our tail anymore—that'll do",
 
     "69648a944599e194c4f71339 name": "Sanitary Investigation - Conclusion",
     "69648a944599e194c4f71339 description": "Things are getting very strange on this end. Did you read that letter? I hope not—after all, I didn't ask you to. Regardless, the letter mentions a parallel TerraGroup operation involving new contractors, which has obviously piqued my interest. I spent a long time investigating this and found nothing—absolutely nothing. But I doubt it's a lie. The only thing I discovered is that a PMC was kidnapped near the Port on Shoreline; he was camping in a green truck when he vanished. I need you to find any clues about this.",

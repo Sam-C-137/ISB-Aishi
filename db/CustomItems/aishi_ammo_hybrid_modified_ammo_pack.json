@@ -13,7 +13,7 @@
         "StackSlots": [
         {
           "_id": "699b54a97d3c1c9f69f616b6",
-          "_max_count": 50,
+          "_max_count": 20,
           "_name": "cartridges",
           "_parent": "699b5493b88594edb24c683a",
           "_props": {
@@ -82,10 +82,6 @@
     "staticLootContainers": [
       {
         "containerName": "LOOTCONTAINER_WEAPON_BOX_4X4",
-        "probability": 350
-      },
-      {
-        "containerName": "LOOTCONTAINER_SCAV_BODY",
         "probability": 350
       },
       {
