@@ -88,12 +88,15 @@
     "616052ea3054fc0e2c24ce6e name 690766de550bc322a810ea1e": "ISB Elimination Contract",
     "616052ea3054fc0e2c24ce6e description 690766de550bc322a810ea1e 0": "Hello friend, how is Tarkov treating you? I have a small elimination contract for you here. I guarantee a much more satisfying reward than most, provided you also serve my interests well. Good luck.",
     "616052ea3054fc0e2c24ce6e successMessageText 690766de550bc322a810ea1e 0": "Good job! I knew I could count on you.",
+    "616052ea3054fc0e2c24ce6e changeQuestMessageText 690766de550bc322a810ea1e 0": "You don't want the contract? Fine, it's your loss.",
 
     "61604635c725987e815b1a46 name 690766de550bc322a810ea1e": "Completion",
     "61604635c725987e815b1a46 description 690766de550bc322a810ea1e 0": "Is everything going well? We are looking for some specific things around here, so I'm offering you a short contract. If you find this during your raids, hand it over to me and I will reward you handsomely.",
     "61604635c725987e815b1a46 successMessageText 690766de550bc322a810ea1e 0": "Perfect, this is exactly it! Thank you!",
+    "61604635c725987e815b1a46 changeQuestMessageText 690766de550bc322a810ea1e 0": "You don't want the contract? Fine, it's your loss.",
 
     "616041eb031af660100c9967 name 690766de550bc322a810ea1e": "Exploration",
     "616041eb031af660100c9967 description 690766de550bc322a810ea1e 0": "Doing well? We are conducting some minor recon operations. For this short contract, I ask that you visit a few locations. Complete the mission and you will be properly rewarded.",
-    "616041eb031af660100c9967 successMessageText 690766de550bc322a810ea1e 0": "Well done! You really never disappoint."
+    "616041eb031af660100c9967 successMessageText 690766de550bc322a810ea1e 0": "Well done! You really never disappoint.",
+    "616041eb031af660100c9967 changeQuestMessageText 690766de550bc322a810ea1e 0": "You don't want the contract? Fine, it's your loss."
 }

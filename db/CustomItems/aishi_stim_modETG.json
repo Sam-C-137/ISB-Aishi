@@ -23,7 +23,7 @@
 
       "Prefab": {
 
-        "path": "assets/content/weapons/usable_items/item_syringe/item_stimulator_etg-change_loot.bundle",
+        "path": "equipment/isb_stim_etg_loot.bundle",
         "rcid": ""
       },
 

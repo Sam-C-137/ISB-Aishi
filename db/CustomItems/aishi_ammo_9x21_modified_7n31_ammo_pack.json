@@ -85,10 +85,6 @@
         "probability": 350
       },
       {
-        "containerName": "LOOTCONTAINER_SCAV_BODY",
-        "probability": 350
-      },
-      {
         "containerName": "LOOTCONTAINER_WEAPON_BOX_5X5",
         "probability": 350
       },

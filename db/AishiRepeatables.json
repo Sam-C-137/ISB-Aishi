@@ -4,7 +4,7 @@
   "showRepeatableQuestLogs": false,
   "guaranteedDailyQuests": {
     "min": 1,
-    "max": 2
+    "max": 1
   },
   "daily": {
     "enabled": true,
@@ -45,11 +45,11 @@
           }
         }
       ],
-      "bodyPartChance": 0,
+      "bodyPartChance": 50,
       "bodyParts": [
         {
           "key": "Head",
-          "relativeProbability": 20,
+          "relativeProbability": 40,
           "data": [
             "Head"
           ]
@@ -88,11 +88,11 @@
       "maxDist": 100,
       "minDist": 20,
       "maxKills": 40,
-      "minKills": 15,
+      "minKills": 20,
       "maxBossKills": 3,
       "minBossKills": 1,
-      "maxPmcKills": 30,
-      "minPmcKills": 15,
+      "maxPmcKills": 35,
+      "minPmcKills": 25,
       "weaponRequirementChance": 0,
       "weaponCategoryRequirementChance": 0,
       "weaponCategoryRequirements": [],
@@ -119,8 +119,8 @@
         "max": 14
       },
       "requestedBulletCount": {
-        "min": 60,
-        "max": 100
+        "min": 200,
+        "max": 400
       },
       "useWhitelist": false,
       "useBlacklist": false,
@@ -135,8 +135,8 @@
     },
     "exploration": {
       "locations": [],
-      "minExtracts": 5,
-      "maxExtracts": 8,
+      "minExtracts": 6,
+      "maxExtracts": 9,
       "minExtractsWithSpecificExit": 4,
       "maxExtractsWithSpecificExit": 8,
       "specificExits": {
@@ -151,27 +151,27 @@
       },
       "money": {
         "currency": "USD",
-        "min": 550,
+        "min": 750,
         "max": 1990
       },
       "standing": {
-        "min": 0.01,
-        "max": 0.03
+        "min": 0.03,
+        "max": 0.07
       },
       "itemRewards": {
         "min": 1,
-        "max": 4,
+        "max": 3,
         "allowDuplicates": false,
         "pool": [
           {
             "tpl": "6a7bbf80d68132981f99bd82",
-            "weight": 170,
+            "weight": 150,
             "minAmount": 1,
             "maxAmount": 1
           },
           {
             "tpl": "6a7cf0b5c2f90e0e4ece5684",
-            "weight": 100,
+            "weight": 90,
             "minAmount": 1,
             "maxAmount": 1
           },
@@ -351,33 +351,33 @@
       "targets": [
         {
           "key": "Savage",
-          "relativeProbability": 40,
+          "relativeProbability": 50,
           "data": {
-            "isBoss": true,
+            "isBoss": false,
             "isPmc": false
           }
         },
         {
           "key": "AnyPmc",
-          "relativeProbability": 60,
+          "relativeProbability": 50,
           "data": {
             "isBoss": false,
             "isPmc": true
           }
         }
       ],
-      "bodyPartChance": 0,
+      "bodyPartChance": 50,
       "bodyParts": [
         {
           "key": "Head",
-          "relativeProbability": 30,
+          "relativeProbability": 49,
           "data": [
             "Head"
           ]
         },
         {
           "key": "Chest",
-          "relativeProbability": 30,
+          "relativeProbability": 49,
           "data": [
             "Chest",
             "Stomach"
@@ -410,8 +410,8 @@
       "minDist": 30,
       "maxKills": 80,
       "minKills": 40,
-      "maxBossKills": 8,
-      "minBossKills": 4,
+      "maxBossKills": 15,
+      "minBossKills": 8,
       "maxPmcKills": 95,
       "minPmcKills": 50,
       "weaponRequirementChance": 0,
@@ -468,7 +468,7 @@
     "rewards": {
       "xp": {
         "min": 45000,
-        "max": 85000
+        "max": 65000
       },
       "money": {
         "currency": "USD",
@@ -476,7 +476,7 @@
         "max": 5000
       },
       "standing": {
-        "min": 0.05,
+        "min": 0.06,
         "max": 0.1
       },
       "itemRewards": {
