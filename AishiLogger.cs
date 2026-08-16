@@ -1,28 +1,22 @@
 using SPTarkov.Common.Models.Logging;
 using SPTarkov.DI.Annotations;
-using SPTarkov.Server.Core.DI;
 using SPTarkov.Server.Core.Models.Common;
 using SPTarkov.Server.Core.Models.Eft.Common.Tables;
 using SPTarkov.Server.Core.Models.Spt.Config;
 using SPTarkov.Server.Core.Models.Spt.Tables;
-using SPTarkov.Server.Core.Models.Utils;
 using SPTarkov.Server.Core.Utils.Cloners;
-
 
 namespace Aishi_trader;
 
-
-[Injectable(TypePriority = OnLoadOrder.PostLoad + 2)]
+[Injectable]
 public class AishiLogger(
     ISptLogger<AishiLogger> logger,
     ICloner cloner,
     TradersTable tradersTable,
     LocaleTable localeTable)
 {
-
     public void SetTraderUpdateTime(TraderConfig traderConfig, TraderBase baseJson, int refreshTimeSecondsMin, int refreshTimeSecondsMax)
     {
-        
         var traderRefreshRecord = new UpdateTime
         {
             TraderId = baseJson.Id,
@@ -32,10 +26,6 @@ public class AishiLogger(
         traderConfig.UpdateTime.Add(traderRefreshRecord);
     }
 
-    
-    
-    
-    
     public void AddTraderWithEmptyAssortToDb(TraderBase traderDetailsToAdd)
     {
         var emptyTraderItemAssortObject = new TraderAssort
@@ -49,9 +39,8 @@ public class AishiLogger(
         {
             Assort = emptyTraderItemAssortObject,
             Base = cloner.Clone(traderDetailsToAdd),
-            QuestAssort = new() 
+            QuestAssort = new()
             {
-                
                 { "Started", new() },
                 { "Success", new() },
                 { "Fail", new() }
@@ -59,14 +48,9 @@ public class AishiLogger(
             Dialogue = []
         };
 
-        if (!tradersTable.TryAdd(traderDetailsToAdd.Id, traderDataToAdd))
-        {
-            
-        }
+        tradersTable.TryAdd(traderDetailsToAdd.Id, traderDataToAdd);
     }
-    
-    
-    
+
     public void AddTraderToLocales(TraderBase baseJson, string firstName, string description)
     {
         var locales = localeTable.Global;
@@ -75,7 +59,7 @@ public class AishiLogger(
         var nickName = baseJson.Nickname;
         var location = baseJson.Location;
 
-        foreach (var (localeKey, localeKvP) in locales)
+        foreach (var localeKvP in locales.Values)
         {
             localeKvP.AddTransformer(lazyloadedLocaleData =>
             {
@@ -89,17 +73,11 @@ public class AishiLogger(
         }
     }
 
-    
-    
-    
-    
-    
     public void OverwriteTraderAssort(string traderId, TraderAssort newAssorts)
     {
         if (!tradersTable.TryGetValue(traderId, out var traderToEdit))
         {
             logger.Warning($"Unable to update assorts for trader: {traderId}, they couldn't be found on the server");
-
             return;
         }
 

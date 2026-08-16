@@ -20,7 +20,7 @@ namespace AishiKeysPro
     {
         public const string PluginGuid = "com.samc137.aishi";
         public const string PluginName = "AishiMasterKeyFunction";
-        public const string PluginVersion = "2.0.0";
+        public const string PluginVersion = "2.0.1";
         public const string FikaPluginGuid = "com.fika.core";
 
         private const string FikaBridgeAssemblyFileName = "AishiKeysV2.Fika.dll";
@@ -67,7 +67,7 @@ namespace AishiKeysPro
             TryInitializeOptionalFikaBridge();
 
             Logger.LogInfo(
-                "Aishi Keys 2.0 initialized. GUID=" +
+                "Aishi Keys 2.0.1 initialized. GUID=" +
                 Info.Metadata.GUID +
                 ", version=" +
                 Info.Metadata.Version +
