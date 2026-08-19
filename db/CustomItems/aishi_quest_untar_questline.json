@@ -406,12 +406,12 @@
       "en": {
         "name": "Jammer Modificado",
         "shortName": "RFID",
-        "description": "A card with TerraGroup markings containing encoded information that grants access to an unknown location. It has been damaged and is no longer operational."
+        "description": "A modified jammer capable of disrupting low- and very low-frequency communications, specifically the single-frequency signals commonly used in explosives."
       },
       "po": {
         "name": "Jammer Modificado",
         "shortName": "RFID",
-        "description": "Um cartão com marcações da TerraGroup que possui informações codificadas que levam acesso a um lugar desconhecido. Ele foi danificado e não está mais operacional."
+        "description": "Um bloqueador modificado capaz de interferir em comunicações de baixa e baixíssima frequência, especificamente nos sinais de frequência única comumente utilizados em explosivos."
       }
     
     },
