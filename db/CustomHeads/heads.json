@@ -4,7 +4,8 @@
     "addHeadToPlayer": false,
     "side": ["Bear", "Usec"],
     "locales": {
-      "en": "ISB Team Leader V1"
+      "en": "ISB Team Leader V1",
+      "ru": "Командир отряда ISB V1"
     }
   },
   "6a13933960c6277b195e7c0b": {
@@ -12,7 +13,8 @@
     "addHeadToPlayer": false,
     "side": ["Bear", "Usec"],
     "locales": {
-      "en": "ISB Team Leader V2"
+      "en": "ISB Team Leader V2",
+      "ru": "Командир отряда ISB V2"
     }
   },
   "6a2231722bf03a4a2beb9f6b": {
@@ -20,7 +22,8 @@
     "addHeadToPlayer": false,
     "side": ["Bear", "Usec"],
     "locales": {
-      "en": "Tagilla \"Swineherd\""
+      "en": "Tagilla \"Swineherd\"",
+      "ru": "Тагилла \"Свинопас\""
     }
   }
 }
