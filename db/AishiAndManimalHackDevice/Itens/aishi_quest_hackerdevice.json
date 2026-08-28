@@ -41,6 +41,11 @@
         "name": "Dispositivo de Quebra de Credenciais da ASI",
         "shortName": "ASI Disp.",
         "description": "Um dispositivo fabricado via engenharia reversa de um aparelho Hacker do Ref, ele tem a capacidade de invadir sistemas de credenciamento garantindo acesso as instalações do Laboratório da TerraGroup ou painéis de controle de acesso via cartões em qualquer localização."
+      },
+      "ru": {
+        "name": "Устройство взлома учётных данных ISB",
+        "shortName": "Взлом ISB",
+        "description": "Устройство, созданное методом обратной разработки хакерского устройства от Рефа; оно способно взламывать системы аутентификации, предоставляя доступ к объектам Лаборатории TerraGroup или карточным панелям управления доступом в любой локации."
       }
     
     },
