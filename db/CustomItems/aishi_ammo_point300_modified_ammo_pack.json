@@ -55,6 +55,11 @@
         "name": "Pacote de munições .300 Blackout Barnes VOR-TX (50 un)",
         "shortName": "VOR-TX",
         "description": "Um pacote de munição .300 Blackout Barnes VOR-TX, 50 cartuchos."
+      },
+      "ru": {
+        "name": "Пачка патронов .300 Blackout Barnes VOR-TX (50 шт.)",
+        "shortName": "VOR-TX",
+        "description": "Пачка патронов .300 Blackout Barnes VOR-TX, 50 патронов."
       }
     
     },

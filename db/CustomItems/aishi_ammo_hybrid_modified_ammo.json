@@ -51,6 +51,11 @@
         "name": "6.8x51mm SIG XM1184 AP",
         "shortName": "XM1184-AP",
         "description": "O cartucho .277 Fury 6,8×51 mm (.277 FURY) XM1184 AP é um cartucho de rifle de nível militar perfurante de blindagem destinado às futuras gerações de veículos de combate; o invólucro utilizado neste calibre é fabricado com uma combinação de bimetal composta por aço inoxidável fixado ao corpo do invólucro de latão, a fim de suportar a alta pressão na câmara de forma a garantir um funcionamento confiável em condições adversas. A munição em si é carregada com um núcleo penetrador endurecido e oferece excelentes propriedades balísticas com maior letalidade em comparação com outros cartuchos, como o 5,56x45 mm e o 7,62x51 mm."
+      },
+      "ru": {
+        "name": "6.8x51 мм SIG XM1184 AP",
+        "shortName": "XM1184-AP",
+        "description": "Патрон .277 Fury 6.8×51 мм (.277 FURY) XM1184 AP — бронебойный винтовочный патрон военного класса для будущих поколений боевых систем; гильза, используемая в этом калибре, изготовлена из биметалла, состоящего из нержавеющей стали, прикреплённой к латунному корпусу гильзы, чтобы выдерживать высокое давление в патроннике и обеспечивать надёжную работу в сложных условиях. Сам патрон снаряжён закалённым сердечником-пенетратором и обладает отличными баллистическими характеристиками с повышенной эффективностью по сравнению с другими патронами, такими как 5.56x45 мм и 7.62x51 мм."
       }
     
     },

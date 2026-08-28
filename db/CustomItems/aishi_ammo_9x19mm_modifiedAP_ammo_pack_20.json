@@ -55,6 +55,11 @@
         "name": "Pacote de munições 9x19mm RIP AP (20 un)",
         "shortName": "RIP AP",
         "description": "Uma caixa de papelão com cartuchos RIP AP de 9x19 mm, 20 unidades."
+      },
+      "ru": {
+        "name": "Пачка патронов 9x19 мм RIP AP (20 шт.)",
+        "shortName": "RIP AP",
+        "description": "Картонная коробка с патронами 9x19 мм RIP AP, 20 штук."
       }
     
     },

@@ -49,6 +49,11 @@
         "name": ".45 ACP RIP AP",
         "shortName": "RIP AP",
         "description": "Uma munição .45 ACP (11,43 x 23 mm) RIP (Radically Invasive Projectile, ou projétil radicalmente invasivo) é um cartucho com uma bala frangível de 10,5 gramas projetada para produzir múltiplos canais de ferimento para incapacitar agressores rapidamente. Diferente do design convencional de ponta oca, a munição “R.I.P.” possui 8 pétalas de cobre sem chumbo usinadas ou “trocares”, projetadas para se fragmentar rapidamente e se mover em várias direções, proporcionando assim um efeito de poder de parada superior ao seu calibre, além de ser capaz de causar efeitos adversos graves no alvo após o impacto. Esta versão foi modificada com a adição de um núcleo de tungstênio, aumentando a capacidade de penetração da munição."
+      },
+      "ru": {
+        "name": ".45 ACP RIP AP",
+        "shortName": "RIP AP",
+        "description": ".45 ACP (11.43x23 мм) RIP (Radically Invasive Projectile) — патрон с 10.5-граммовой разрывной пулей, предназначенной для создания множественных каналов ранения для быстрого обезвреживания нападающих. В отличие от традиционной конструкции экспансивных пуль, патрон \"R.I.P.\" имеет 8 обработанных бессвинцовых медных лепестков или \"троакаров\", предназначенных для быстрого фрагментирования и движения в нескольких направлениях, что обеспечивает превосходный останавливающий эффект для своего калибра, а также способность наносить серьёзные негативные последствия цели после попадания. Эта версия была модифицирована добавлением вольфрамового сердечника, что повысило пробивную способность боеприпаса."
       }
     
     },

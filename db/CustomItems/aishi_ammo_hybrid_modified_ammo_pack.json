@@ -55,6 +55,11 @@
         "name": "Pacote de munições 6.8x51mm SIG XM1184 AP (20 un)",
         "shortName": "XM1184-AP",
         "description": "Um pacote de munição 6.8x51mm SIG XM1184 AP, 20 cartuchos."
+      },
+      "ru": {
+        "name": "Пачка патронов 6.8x51 мм SIG XM1184 AP (20 шт.)",
+        "shortName": "XM1184-AP",
+        "description": "Коробка с патронами 6.8x51 мм SIG XM1184 AP, 20 штук."
       }
     
     },

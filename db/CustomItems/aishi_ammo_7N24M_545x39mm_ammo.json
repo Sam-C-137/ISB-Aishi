@@ -51,6 +51,11 @@
         "name": "5.45x39mm 7N24M",
         "shortName": "BS-M",
         "description": "O cartucho russo 5,45x39 mm BS 7N24M é uma versão modernizada da munição perfurante 7N24, equipada com um núcleo aprimorado de liga endurecida. Desenvolvido para fuzis da plataforma AK-74, oferece excelente desempenho contra proteções balísticas modernas e alvos fortemente blindados."
+      },
+      "ru": {
+        "name": "5.45x39 мм 7Н24М",
+        "shortName": "БС-М",
+        "description": "Патрон 5.45x39 мм БС 7Н24М для оружия серии АК-74 был создан как модификация 7Н24 с новым сердечником из упрочнённого металлического сплава. Новый боеприпас демонстрирует высокую эффективность при попадании по бронезащите и личному составу в современном боевом снаряжении."
       }
     
     },

@@ -53,6 +53,11 @@
         "name": "7.62x51mm M948 SLAP",
         "shortName": "M948",
         "description": "O cartucho 7.62x51mm NATO M948 SLAP (Saboted Light Armor Penetrator) foi principalmente desenvolvido pela Olin Winchester. Ela é equipada com um sabot polimérico leve contendo um penetrador subcalibrado de tungstênio. Como a M993, esse cartucho foi desenvolvido para neutralizar veículos com blindagem, proteções e vestes balísticas com blindagem de alto nível e estruturas reforçadas."
+      },
+      "ru": {
+        "name": "7.62x51 мм M948 SLAP",
+        "shortName": "M948",
+        "description": "Патрон 7.62x51 мм НАТО M948 SLAP (Saboted Light Armor Penetrator) был разработан компанией Olin Winchester. Он оснащён лёгким полимерным поддоном, содержащим вольфрамовый сердечник уменьшенного калибра. Как и M993, этот патрон был разработан для поражения бронированных транспортных средств, средств защиты с высоким классом брони и усиленных конструкций."
       }
     
     },

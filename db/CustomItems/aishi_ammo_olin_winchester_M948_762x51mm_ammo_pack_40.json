@@ -55,6 +55,11 @@
         "name": "Pacote de munições 7.62x51mm M948 SLAP (40 un)",
         "shortName": "M948",
         "description": "Um pacote de munição 7.62x51mm M948 SLAP, 40 cartuchos."
+      },
+      "ru": {
+        "name": "Пачка патронов 7.62x51 мм M948 SLAP (40 шт.)",
+        "shortName": "M948",
+        "description": "Пачка патронов 7.62x51 мм M948 SLAP, 40 патронов."
       }
     
     },

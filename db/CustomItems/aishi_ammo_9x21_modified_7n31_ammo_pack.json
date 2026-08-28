@@ -55,6 +55,11 @@
         "name": "Pacote de munições 9x21mm 7N31 AP (30 un)",
         "shortName": "7N31 AP",
         "description": "Um pacote de munição 9x21mm 7N31 AP, 30 cartuchos."
+      },
+      "ru": {
+        "name": "Пачка патронов 9x21 мм 7Н31 АР (30 шт.)",
+        "shortName": "7Н31 АР",
+        "description": "Пачка патронов 9x21 мм 7Н31 АР, 30 патронов."
       }
     
     },

@@ -51,6 +51,11 @@
         "name": "7.62x39mm 7N26 BS",
         "shortName": "7N26 BS",
         "description": "O cartucho russo 7,62x39 mm BS é uma munição perfurante que utiliza um núcleo de aço endurecido. Projetado para o modelo AK, tem sido utilizado por várias unidades das forças especiais da URSS devido ao seu excelente desempenho."
+      },
+      "ru": {
+        "name": "7.62x39 мм 7Н26 БС",
+        "shortName": "7Н26 БС",
+        "description": "Российский патрон 7.62x39 мм БС является бронебойным боеприпасом с сердечником из закалённой стали. Разработанный для автоматов Калашникова, он использовался различными подразделениями спецназа СССР благодаря своим отличным характеристикам."
       }
     
     },

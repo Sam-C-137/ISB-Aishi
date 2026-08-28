@@ -50,6 +50,11 @@
         "name": "9x21mm 7N31 AP",
         "shortName": "7N31 AP",
         "description": "A munição 7N31 de 9x19 mm é um cartucho russo de alto calibre projetado especificamente para uso por forças especiais e outras tropas, com o objetivo de melhorar a capacidade de penetração da munição. Com um penetrador de aço endurecido de alta densidade e uma carga potente, a 7N31 apresenta maior velocidade e funcionamento confiável, mesmo quando disparada de armas de cano curto. A capacidade dessa munição de penetrar coletes balísticos e coberturas leves com mais eficiência do que as balas comuns de 9x19 mm torna-a adequada para combates em ambiente urbano e contra inimigos protegidos."
+      },
+      "ru": {
+        "name": "9x21 мм 7Н31 АР",
+        "shortName": "7Н31 АР",
+        "description": "Патрон 7Н31 калибра 9x21 мм — российский боеприпас повышенного калибра, разработанный специально для использования спецподразделениями и другими войсками с целью улучшения пробивной способности. Оснащённый высокоплотным сердечником из закалённой стали и мощным зарядом, 7Н31 обеспечивает повышенную скорость и надёжную работу даже при стрельбе из короткоствольного оружия. Способность этого патрона пробивать бронежилеты и лёгкие укрытия более эффективно, чем обычные пули 9x19 мм, делает его пригодным для боестолкновений в городской среде и против защищённых целей."
       }
     
     },

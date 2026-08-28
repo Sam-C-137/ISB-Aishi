@@ -51,6 +51,11 @@
         "name": "4.6x30mm DM11",
         "shortName": "DM11",
         "description": "O cartucho alemão 4,6x30 mm DM11 é uma munição perfurante equipada com um penetrador de aço endurecido. Desenvolvido para a submetralhadora HK MP7, foi projetado para oferecer alta velocidade e desempenho eficaz contra proteções balísticas individuais, mantendo baixo recuo e boa precisão."
+      },
+      "ru": {
+        "name": "4.6x30 мм DM11",
+        "shortName": "DM11",
+        "description": "Патрон 4.6x30 мм DM11 является бронебойным боеприпасом с сердечником из закалённой стали. Он был разработан для использования в пистолете-пулемёте HK MP7 с целью обеспечения максимальной скорости и эффективности против бронезащиты."
       }
     
     },

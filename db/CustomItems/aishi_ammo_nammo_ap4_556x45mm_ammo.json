@@ -51,6 +51,11 @@
         "name": "5.56x45mm Nammo AP4",
         "shortName": "AP45",
         "description": "O Nammo AP4, cuja sigla significa AP45, é um cartucho perfurante avançado fabricado pela Nammo, servindo como substituto do M995. O Nammo AP4 possui um núcleo de carboneto de tungstênio, o que lhe confere um poder de penetração significativo tanto em distâncias de tiro de médio quanto de longo alcance, além de eficiência suficiente para perfurar qualquer tipo de blindagem."
+      },
+      "ru": {
+        "name": "5.56x45 мм Nammo AP4",
+        "shortName": "AP45",
+        "description": "Nammo AP4, что расшифровывается как AP45, — это усовершенствованный бронебойный патрон производства компании Nammo, являющийся заменой M995. Nammo AP4 оснащён сердечником из карбида вольфрама, что обеспечивает ему значительную пробивную способность как на средних, так и на дальних дистанциях стрельбы, и достаточную эффективность для поражения брони любого типа."
       }
     
     },

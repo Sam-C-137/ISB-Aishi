@@ -49,6 +49,11 @@
         "name": ".300 Blackout Barnes VOR-TX",
         "shortName": "VOR-TX",
         "description": "A munição .300 AAC Blackout Barnes VOR-TX se enquadra na categoria de munições de elite, podendo ser utilizada tanto para caça quanto para aplicações táticas. Ela foi desenvolvida pela Barnes e projetada com a bala TAC-TX de cobre monolítico, que garante uma expansão controlada e a retenção da massa máxima. Essa munição tem ótimo desempenho especialmente em canos curtos e armas com silenciador, pois mantém um desempenho consistente mesmo em baixas velocidades."
+      },
+      "ru": {
+        "name": ".300 Blackout Barnes VOR-TX",
+        "shortName": "VOR-TX",
+        "description": ".300 AAC Blackout Barnes VOR-TX относится к категории элитных боеприпасов, которые можно использовать как для охотничьих, так и для тактических целей. Он был разработан компанией Barnes с использованием монолитной медной пули TAC-TX, которая обеспечивает контролируемую экспансию и сохранение максимальной массы. Этот боеприпас отлично работает особенно с короткими стволами и оружием с глушителем, так как показывает стабильные результаты даже на низких скоростях."
       }
     
     },

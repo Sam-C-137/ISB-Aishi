@@ -55,6 +55,11 @@
         "name": "Pacote de munições 5.56x45mm Nammo AP4 (100 un)",
         "shortName": "AP45",
         "description": "Um pacote de munição 5.56x45mm Nammo AP4, 100 cartuchos."
+      },
+      "ru": {
+        "name": "Пачка патронов 5.56x45 мм Nammo AP4 (100 шт.)",
+        "shortName": "AP45",
+        "description": "Пачка патронов 5.56x45 мм Nammo AP4, 100 патронов."
       }
     
     },

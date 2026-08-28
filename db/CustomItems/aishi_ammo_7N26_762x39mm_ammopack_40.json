@@ -55,6 +55,11 @@
         "name": "Pacote de munições 7.62x39mm 7N26 BS (40 un)",
         "shortName": "7N26 BS",
         "description": "Um pacote de munição 7.62x39mm 7N26 BS, 40 cartuchos."
+      },
+      "ru": {
+        "name": "Пачка патронов 7.62x39 мм 7Н26 БС (40 шт.)",
+        "shortName": "7Н26 БС",
+        "description": "Пачка патронов 7.62x39 мм 7Н26 БС, 40 патронов."
       }
     
     },

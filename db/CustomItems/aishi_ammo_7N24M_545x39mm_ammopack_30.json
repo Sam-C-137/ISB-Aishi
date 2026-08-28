@@ -55,6 +55,11 @@
         "name": "Pacote de munições 5.45x39mm 7N24M (30 un)",
         "shortName": "BS-M",
         "description": "Um pacote de munição 5.45x39mm 7N24M, 30 cartuchos."
+      },
+      "ru": {
+        "name": "Пачка патронов 5.45x39 мм 7Н24М (30 шт.)",
+        "shortName": "БС-М",
+        "description": "Пачка патронов 5.45x39 мм 7Н24М, 30 патронов."
       }
     
     },

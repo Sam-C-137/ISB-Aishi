@@ -55,6 +55,11 @@
         "name": "Pacote de munições .45 ACP RIP AP (50 un)",
         "shortName": "RIP AP",
         "description": "Um pacote de munição .45 ACP RIP AP, 50 cartuchos."
+      },
+      "ru": {
+        "name": "Пачка патронов .45 ACP RIP AP (50 шт.)",
+        "shortName": "RIP AP",
+        "description": "Коробка с патронами .45 ACP RIP AP, 50 штук."
       }
     
     },
