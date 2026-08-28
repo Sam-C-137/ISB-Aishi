@@ -9,6 +9,10 @@
       "en": {
         "name": "USEC ISB Mission (Black)",
         "description": "USEC Mission Tactical jacket"
+      },
+      "ru": {
+        "name": "USEC ISB Mission (Чёрный)",
+        "description": "Тактическая куртка USEC Mission"
       }
     },
     "topBundlePath": "clothing/usec_mission/teste2.bundle",
@@ -32,6 +36,10 @@
       "en": {
         "name": "USEC ISB Mission (MARPAT)",
         "description": "USEC Mission Tactical jacket"
+      },
+      "ru": {
+        "name": "USEC ISB Mission (MARPAT)",
+        "description": "Тактическая куртка USEC Mission"
       }
     },
     "topBundlePath": "clothing/usec_mission/teste2_daytime.bundle",
@@ -55,6 +63,10 @@
       "en": {
         "name": "BEAR ISB Black Lynx",
         "description": "BEAR x ISB Black Lynx Tactical jacket"
+      },
+      "ru": {
+        "name": "BEAR ISB Чёрная Рысь",
+        "description": "Тактическая куртка BEAR x ISB Чёрная Рысь"
       }
     },
     "topBundlePath": "clothing/bear_lynx/blacklynx_bear_top.bundle",
@@ -78,6 +90,10 @@
       "en": {
         "name": "BEAR ISB Boreas (Black)",
         "description": "BEAR x ISB Boreas Tactical jacket"
+      },
+      "ru": {
+        "name": "BEAR ISB Борей (Чёрный)",
+        "description": "Тактическая куртка BEAR x ISB Борей"
       }
     },
     "topBundlePath": "clothing/bear_boreas/isb_bear_borey_top.bundle",
@@ -101,6 +117,10 @@
       "en": {
         "name": "USEC ISB Black Camouflage",
         "description": "ISB Black Camo Uniform"
+      },
+      "ru": {
+        "name": "USEC ISB Чёрный камуфляж",
+        "description": "Униформа чёрного камуфляжа ISB"
       }
     },
     "topBundlePath": "clothing/usec_woodland/isb_usec_woodland_top.bundle",
@@ -124,6 +144,10 @@
       "en": {
         "name": "USEC ISB Black Camouflage (Covert Movement)",
         "description": "ISB Black Camo Uniform"
+      },
+      "ru": {
+        "name": "USEC ISB Чёрный камуфляж (Скрытное передвижение)",
+        "description": "Униформа чёрного камуфляжа ISB"
       }
     },
     "topBundlePath": "clothing/usec_mission/tshirt_usec_combatshirt_isb.bundle",
@@ -147,6 +171,10 @@
       "en": {
         "name": "USEC ISB MARPAT Camouflage",
         "description": "ISB MARPAT Camo Uniform"
+      },
+      "ru": {
+        "name": "USEC ISB MARPAT камуфляж",
+        "description": "Униформа MARPAT камуфляжа ISB"
       }
     },
     "topBundlePath": "clothing/usec_woodland/isb_V1_usec_woodland_top_daytime.bundle",
@@ -170,6 +198,10 @@
       "en": {
         "name": "ISBxRUAF Military Coalition Operator",
         "description": "ISB x RUAF Ballistic Uniform"
+      },
+      "ru": {
+        "name": "Оператор военной коалиции ISB x ВСРФ",
+        "description": "Баллистическая униформа ISB x ВСРФ"
       }
     },
     "topBundlePath": "clothing/ruaf_ballistic/teste3_top.bundle",
@@ -193,6 +225,10 @@
       "en": {
         "name": "ISBxRUAF Military Coalition Operator (MARPAT)",
         "description": "ISB x RUAF Ballistic Uniform"
+      },
+      "ru": {
+        "name": "Оператор военной коалиции ISB x ВСРФ (MARPAT)",
+        "description": "Баллистическая униформа ISB x ВСРФ"
       }
     },
     "topBundlePath": "clothing/ruaf_ballistic/teste3_top_daytime.bundle",
@@ -216,6 +252,10 @@
       "en": {
         "name": "ISBxRUAF Military Coalition Officer",
         "description": "ISB x RUAF Officer Uniform"
+      },
+      "ru": {
+        "name": "Офицер военной коалиции ISB x ВСРФ",
+        "description": "Офицерская униформа ISB x ВСРФ"
       }
     },
     "topBundlePath": "clothing/ruaf_officer/isbxruaf_officer_top.bundle",
@@ -239,6 +279,10 @@
       "en": {
         "name": "ISBxRUAF Military Coalition Officer (MARPAT)",
         "description": "ISB x RUAF Officer Uniform"
+      },
+      "ru": {
+        "name": "Офицер военной коалиции ISB x ВСРФ (MARPAT)",
+        "description": "Офицерская униформа ISB x ВСРФ"
       }
     },
     "topBundlePath": "clothing/ruaf_officer/isbxruaf_officer_top_daytime.bundle",
@@ -262,6 +306,10 @@
       "en": {
         "name": "ISB USEC Deadly Frog",
         "description": "ISB Deadly Frog Tactical Jacket"
+      },
+      "ru": {
+        "name": "ISB USEC Смертельная Лягушка",
+        "description": "Тактическая куртка ISB Смертельная Лягушка"
       }
     },
     "topBundlePath": "clothing/frog/isb_top_usec_deadly_frog.bundle",
@@ -285,6 +333,10 @@
       "en": {
         "name": "ISB BEAR OPS MGS Black Camo",
         "description": "ISB BEAR Tactical Jacket"
+      },
+      "ru": {
+        "name": "ISB BEAR OPS MGS Чёрный камуфляж",
+        "description": "Тактическая куртка ISB BEAR"
       }
     },
     "topBundlePath": "clothing/bear_ops/isb_top_bear_ops_windshirt_black.bundle",
@@ -308,6 +360,10 @@
       "en": {
         "name": "ISB BEAR OPS MGS Desert Camo",
         "description": "ISB BEAR Tactical Jacket"
+      },
+      "ru": {
+        "name": "ISB BEAR OPS MGS Пустынный камуфляж",
+        "description": "Тактическая куртка ISB BEAR"
       }
     },
     "topBundlePath": "clothing/bear_ops/isb_top_bear_ops_windshirt_desert.bundle",
@@ -331,6 +387,10 @@
       "en": {
         "name": "Black Division Squad Leader",
         "description": "BD1 Tactical Clothes"
+      },
+      "ru": {
+        "name": "Командир отряда Black Division",
+        "description": "Тактическая одежда BD1"
       }
     },
     "topBundlePath": "assets/content/characters/character/prefabs/top_bd_team_leader_01.bundle",
@@ -354,6 +414,10 @@
       "en": {
         "name": "Black Division Specialist Operator",
         "description": "BD2 Tactical Clothes"
+      },
+      "ru": {
+        "name": "Специализированный оперативник Black Division",
+        "description": "Тактическая одежда BD2"
       }
     },
     "topBundlePath": "assets/content/characters/character/prefabs/top_bd_operator_02.bundle",
@@ -377,6 +441,10 @@
       "en": {
         "name": "Black Division Scout Operator",
         "description": "BD3 Tactical Clothes"
+      },
+      "ru": {
+        "name": "Оперативник-разведчик Black Division",
+        "description": "Тактическая одежда BD3"
       }
     },
     "topBundlePath": "assets/content/characters/character/prefabs/top_bd_operator_03.bundle",
@@ -400,6 +468,10 @@
       "en": {
         "name": "Black Division Heavy Operator",
         "description": "BD4 Tactical Clothes"
+      },
+      "ru": {
+        "name": "Тяжёлый оперативник Black Division",
+        "description": "Тактическая одежда BD4"
       }
     },
     "topBundlePath": "assets/content/characters/character/prefabs/top_bd_operator_04.bundle",
@@ -423,6 +495,10 @@
       "en": {
         "name": "Black Division Nocturnal",
         "description": "BD Nocturnal"
+      },
+      "ru": {
+        "name": "Black Division Ноктюрн",
+        "description": "Ночной комплект BD"
       }
     },
     "topBundlePath": "assets/content/characters/character/prefabs/tshirt_bp_bd_set_2.bundle",
@@ -446,6 +522,10 @@
       "en": {
         "name": "Black Division Scorpion",
         "description": "BD Scorpion"
+      },
+      "ru": {
+        "name": "Black Division Скорпион",
+        "description": "Комплект BD Скорпион"
       }
     },
     "topBundlePath": "assets/content/characters/character/prefabs/tshirt_bp_bd_set_1.bundle",
@@ -469,6 +549,10 @@
       "en": {
         "name": "USEC ISB Adaptive Combat",
         "description": "ISB Field jacket"
+      },
+      "ru": {
+        "name": "USEC ISB Адаптивный боевой",
+        "description": "Полевая куртка ISB"
       }
     },
     "topBundlePath": "clothing/adaptative/ISB_top_usec_acu.bundle",
@@ -492,6 +576,10 @@
       "en": {
         "name": "USEC ISB Legionnaire Black",
         "description": "ISB Combat jacket"
+      },
+      "ru": {
+        "name": "USEC ISB Легионер Чёрный",
+        "description": "Боевая куртка ISB"
       }
     },
     "topBundlePath": "clothing/legionnarie/top_usec_clawgear_black.bundle",
@@ -515,6 +603,10 @@
       "en": {
         "name": "USEC ISB Legionnaire Desert",
         "description": "ISB Combat Jacket"
+      },
+      "ru": {
+        "name": "USEC ISB Легионер Пустыня",
+        "description": "Боевая куртка ISB"
       }
     },
     "topBundlePath": "clothing/legionnarie/top_usec_clawgear_desert.bundle",
@@ -538,6 +630,10 @@
       "en": {
         "name": "USEC ISB BOSS Delta MC Black",
         "description": "ISB Combat Jacket"
+      },
+      "ru": {
+        "name": "USEC ISB BOSS Delta MC Чёрный",
+        "description": "Боевая куртка ISB"
       }
     },
     "topBundlePath": "clothing/deltamc/tshirt_usec_velocity_multicam_ISB.bundle",
@@ -561,6 +657,10 @@
       "en": {
         "name": "USEC ISB BOSS Delta MC MARPAT",
         "description": "ISB Combat Jacket"
+      },
+      "ru": {
+        "name": "USEC ISB BOSS Delta MC MARPAT",
+        "description": "Боевая куртка ISB"
       }
     },
     "topBundlePath": "clothing/deltamc/tshirt_usec_velocity_multicam_ISB_daytime.bundle",
@@ -584,6 +684,10 @@
       "en": {
         "name": "ISB STF White Tusk - Champion",
         "description": "ISB STF-A Tactical Clothing"
+      },
+      "ru": {
+        "name": "ISB STF Белый Бивень - Чемпион",
+        "description": "Тактическая одежда ISB STF-A"
       }
     },
     "topBundlePath": "clothing/angels_champion/top_angels_champion.bundle",
@@ -607,6 +711,10 @@
       "en": {
         "name": "ISB STF White Tusk - Artic Squadron",
         "description": "ISB STF-A Tactical Clothing"
+      },
+      "ru": {
+        "name": "ISB STF Белый Бивень - Арктический эскадрон",
+        "description": "Тактическая одежда ISB STF-A"
       }
     },
     "topBundlePath": "clothing/angels_gold/top_angels_crusader.bundle",
@@ -630,6 +738,10 @@
       "en": {
         "name": "ISB STF White Tusk - USEC Flexion",
         "description": "ISB STF-A Tactical Clothing"
+      },
+      "ru": {
+        "name": "ISB STF Белый Бивень - USEC Flexion",
+        "description": "Тактическая одежда ISB STF-A"
       }
     },
     "topBundlePath": "clothing/angens_flexion/top_angels_softshell.bundle",
@@ -653,6 +765,10 @@
       "en": {
         "name": "ISB STF White Tusk - Lonsdale",
         "description": "ISB STF-A Tactical Clothing"
+      },
+      "ru": {
+        "name": "ISB STF Белый Бивень - Lonsdale",
+        "description": "Тактическая одежда ISB STF-A"
       }
     },
     "topBundlePath": "clothing/commanders/top_arena_bear_longdale_ISB.bundle",
@@ -676,6 +792,10 @@
       "en": {
         "name": "ISB STF White Tusk - Alone in Icebreaker",
         "description": "ISB STF-A Tactical Clothing"
+      },
+      "ru": {
+        "name": "ISB STF Белый Бивень - Один на ледоколе",
+        "description": "Тактическая одежда ISB STF-A"
       }
     },
     "topBundlePath": "clothing/commanders/top_arena_usec_vintage_ISB.bundle",
@@ -699,6 +819,10 @@
       "en": {
         "name": "ISB STF Goons - USEC Black Predator",
         "description": "ISB STF-Goons Tactical Clothing"
+      },
+      "ru": {
+        "name": "ISB STF Псы - USEC Чёрный хищник",
+        "description": "Тактическая одежда ISB STF-Псы"
       }
     },
     "topBundlePath": "clothing/knight/top_boss_blackknight_black.bundle",
@@ -722,6 +846,10 @@
       "en": {
         "name": "ISB STF Goons - USEC Black Breacher",
         "description": "ISB STF-Goons Tactical Clothing"
+      },
+      "ru": {
+        "name": "ISB STF Псы - USEC Чёрный подрывник",
+        "description": "Тактическая одежда ISB STF-Псы"
       }
     },
     "topBundlePath": "clothing/bigpipe/top_boss_big_pipe_black.bundle",
@@ -745,6 +873,10 @@
       "en": {
         "name": "ISB STF Goons - USEC Black Sharpshooter",
         "description": "ISB STF-Goons Tactical Clothing"
+      },
+      "ru": {
+        "name": "ISB STF Псы - USEC Чёрный снайпер",
+        "description": "Тактическая одежда ISB STF-Псы"
       }
     },
     "topBundlePath": "clothing/birdeye/top_boss_birdeye_black_ISB.bundle",
@@ -768,6 +900,10 @@
       "en": {
         "name": "USEC STF Goons - Predator",
         "description": "USEC STF-Goons Tactical Clothing"
+      },
+      "ru": {
+        "name": "USEC STF Псы - Хищник",
+        "description": "Тактическая одежда USEC STF-Псы"
       }
     },
     "topBundlePath": "assets/content/characters/character/prefabs/top_boss_blackknight_quest.bundle",
@@ -791,6 +927,10 @@
       "en": {
         "name": "USEC STF Goons - Breacher",
         "description": "ISB STF-Goons Tactical Clothing"
+      },
+      "ru": {
+        "name": "USEC STF Псы - Подрывник",
+        "description": "Тактическая одежда ISB STF-Псы"
       }
     },
     "topBundlePath": "assets/content/characters/character/prefabs/top_boss_big_pipe.bundle",
@@ -814,6 +954,10 @@
       "en": {
         "name": "USEC STF Goons - Sharpshooter",
         "description": "USEC STF-Goons Tactical Clothing"
+      },
+      "ru": {
+        "name": "USEC STF Псы - Снайпер",
+        "description": "Тактическая одежда USEC STF-Псы"
       }
     },
     "topBundlePath": "assets/content/characters/character/prefabs/top_boss_birdeye.bundle",
@@ -837,6 +981,10 @@
       "en": {
         "name": "ISB Team Leader - Tactical Coat",
         "description": "ISB Tactical Coat"
+      },
+      "ru": {
+        "name": "Командир отряда ISB - Тактическое пальто",
+        "description": "Тактическое пальто ISB"
       }
     },
     "topBundlePath": "clothing/isb_teamleader_1/upper_boss_shturman_ISB.bundle",
@@ -860,6 +1008,10 @@
       "en": {
         "name": "ISB Team Leader - Tactical Coat Senior",
         "description": "ISB Tactical Coat II"
+      },
+      "ru": {
+        "name": "Командир отряда ISB - Старшее тактическое пальто",
+        "description": "Тактическое пальто ISB II"
       }
     },
     "topBundlePath": "clothing/isb_teamleader_1/upper_boss_shturman_ISB_V2.bundle",
@@ -883,6 +1035,10 @@
       "en": {
         "name": "ISB Team Leader - Predator Apex",
         "description": "ISB Tactical Jacket"
+      },
+      "ru": {
+        "name": "Командир отряда ISB - Хищник Апекс",
+        "description": "Тактическая куртка ISB"
       }
     },
     "topBundlePath": "clothing/isb_teamleader_1/top_boss_blackknight_isb_tl.bundle",
@@ -906,6 +1062,10 @@
       "en": {
         "name": "Small and Cute T-Shirt",
         "description": "Casual T-Shirt"
+      },
+      "ru": {
+        "name": "Маленькая и милая футболка",
+        "description": "Повседневная футболка"
       }
     },
     "topBundlePath": "clothing/wedge/top_cute.bundle",
@@ -929,6 +1089,10 @@
       "en": {
         "name": "ISB Team Leader - Corporate Espionage",
         "description": "Black Division Tactical Coat"
+      },
+      "ru": {
+        "name": "Командир отряда ISB - Корпоративный шпионаж",
+        "description": "Тактическое пальто Black Division"
       }
     },
     "topBundlePath": "clothing/wedge/backport_top_boss_wedge.bundle",
@@ -952,6 +1116,10 @@
       "en": {
         "name": "ISB Team Leader - Corporate Espionage (Golden)",
         "description": "Black Division Tactical Coat"
+      },
+      "ru": {
+        "name": "Командир отряда ISB - Корпоративный шпионаж (Золотой)",
+        "description": "Тактическое пальто Black Division"
       }
     },
     "topBundlePath": "clothing/wedge/backport_top_boss_wedge_variant.bundle",
@@ -975,6 +1143,10 @@
       "en": {
         "name": "ISB Team Leader - Corporate Espionage (Coal)",
         "description": "Black Division Tactical Coat"
+      },
+      "ru": {
+        "name": "Командир отряда ISB - Корпоративный шпионаж (Уголь)",
+        "description": "Тактическое пальто Black Division"
       }
     },
     "topBundlePath": "clothing/wedge/backport_top_boss_wedge_variant_V2.bundle",
@@ -998,6 +1170,10 @@
       "en": {
         "name": "ISB Team Leader - Corporate Espionage (Moonlight)",
         "description": "Black Division Tactical Coat"
+      },
+      "ru": {
+        "name": "Командир отряда ISB - Корпоративный шпионаж (Лунный свет)",
+        "description": "Тактическое пальто Black Division"
       }
     },
     "topBundlePath": "clothing/wedge/backport_top_boss_wedge_variant_V3.bundle",
@@ -1021,6 +1197,10 @@
       "en": {
         "name": "Cult Expert",
         "description": "Casual T-Shirt"
+      },
+      "ru": {
+        "name": "Эксперт по сектантам",
+        "description": "Повседневная футболка"
       }
     },
     "topBundlePath": "clothing/sectant/top_usec_sect_variant.bundle",
@@ -1044,6 +1224,10 @@
       "en": {
         "name": "Cultist Hunter (White)",
         "description": "Tactical T-Shirt"
+      },
+      "ru": {
+        "name": "Охотник на сектантов (Белый)",
+        "description": "Тактическая футболка"
       }
     },
     "topBundlePath": "clothing/sectant2/top_boss_glukhar_variant.bundle",
@@ -1067,6 +1251,10 @@
       "en": {
         "name": "Cultist Hunter (Black)",
         "description": "Tactical T-Shirt"
+      },
+      "ru": {
+        "name": "Охотник на сектантов (Чёрный)",
+        "description": "Тактическая футболка"
       }
     },
     "topBundlePath": "clothing/sectant2/top_boss_glukhar_variant_V2.bundle",
@@ -1090,6 +1278,10 @@
       "en": {
         "name": "Revenge Season",
         "description": "Shirtless look"
+      },
+      "ru": {
+        "name": "Сезон мести",
+        "description": "Образ без рубашки"
       }
     },
     "topBundlePath": "clothing/tagilla/top_boss_tagilla.skin_variant.bundle",
