@@ -109,6 +109,11 @@
         "name": "BNTI Gzhel-K body armor (Agência de Suporte a Inteligência da USEC)",
         "shortName": "Gzhel-K",
         "description": "O colete à prova de balas Gzhel foi concebido para unidades de assalto do Ministério do Interior e outras agências policiais. Versão preta personalizada para as Forças Especiais da ISB."
+      },
+      "ru": {
+        "name": "Бронежилет БНТИ \"Гжель-К\" (Бюро разведывательной поддержки USEC)",
+        "shortName": "Гжель-К",
+        "description": "Штурмовой бронежилет \"Гжель\" предназначен для штурмовых подразделений МВД и других силовых ведомств. Кастомная чёрная версия для спецназа ISB."
       }
     },
 

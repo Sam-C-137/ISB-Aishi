@@ -53,6 +53,11 @@
         "name": "Tagilla's welding mask \"Swineherd\"",
         "shortName": "Swineherd",
         "description": "An armored steel welding mask of Tagilla - the Bossman of Factory. Painted with the special \"Swineherd\" art."
+      },
+      "ru": {
+        "name": "Сварочная маска Тагиллы \"Свинопас\"",
+        "shortName": "Свинопас",
+        "description": "Бронированная стальная сварочная маска Тагиллы — босса Завода. Расписана специальным рисунком \"Свинопас\"."
       }
     },
 

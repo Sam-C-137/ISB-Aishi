@@ -85,6 +85,11 @@
         "name": "HighCom Trooper TFO body armor modificado das Forças Especiais da ISB",
         "shortName": "ISB Trooper",
         "description": "Um colete de blindagem de placas da HighCom, modificado pelas Forças Especiais da ISB."
+      },
+      "ru": {
+        "name": "Кастомный бронежилет HighCom Trooper TFO от спецназа ISB",
+        "shortName": "ISB Trooper",
+        "description": "Пластинчатый бронежилет от HighCom, модифицированный спецназом ISB."
       }
     },
 

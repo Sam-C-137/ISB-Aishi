@@ -110,6 +110,11 @@
         "name": "Colete Balístico 6B45 (Agência de Suporte a Inteligência da USEC)",
         "shortName": "6B45",
         "description": "O colete balístico 6B45, projetado para proteger o pessoal contra estilhaços e disparos de armas leves. Faz parte do sistema de equipamentos Ratnik e está em produção desde a década de 2010 como substituto do modelo 6B43. Variante com Camuflagem Preta para as Forças Especiais da ISB."
+      },
+      "ru": {
+        "name": "Бронежилет 6Б45 (Бюро разведывательной поддержки USEC)",
+        "shortName": "6Б45",
+        "description": "Бронежилет 6Б45 предназначен для защиты личного состава от осколков и пуль патронов стрелкового оружия. Входит в состав экипировки «Ратник», выпускается с 2010-х годов как замена модели 6Б43. Вариант с чёрным камуфляжем для спецназа ISB."
       }
     },
 

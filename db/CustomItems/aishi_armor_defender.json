@@ -104,6 +104,11 @@
         "name": "Colete FORT Defender-2 (Agência de Suporte a Inteligência da USEC)",
         "shortName": "Defender-2",
         "description": "O kit operacional FORT OK “Defender-2” é uma versão modificada do popular colete à prova de balas FORT “Defender”, projetado tanto para VIPs quanto para funcionários de unidades de combate operacionais. O kit aproveita ao máximo as possibilidades do princípio modular de construção de coletes à prova de balas com base em placas de aço."
+      },
+      "ru": {
+        "name": "Бронежилет ФОРТ \"Дефендер-2\" (Бюро разведывательной поддержки USEC)",
+        "shortName": "Дефендер-2",
+        "description": "Оперативный комплект ФОРТ ОК \"Дефендер-2\" - модификация популярного бронежилета ФОРТ \"Дефендер\", предназначенная как для VIP-персон, так и для сотрудников оперативных боевых подразделений. В комплекте использованы максимальные возможности модульного принципа построения брони на базе стальных плит."
       }
     },
 

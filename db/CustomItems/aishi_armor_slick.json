@@ -219,6 +219,11 @@
         "name": "Colete LBT-6094A Slick (Preto) Modificado das Forças Especiais da ISB",
         "shortName": "Slick da ISB",
         "description": "Um colete simples, mas eficaz, fabricado pela London Bridge Trading company e modificado pela ISB. O design mais minimalista destinado ao uso com rigs de peito. Versão preta."
+      },
+      "ru": {
+        "name": "Кастомный пластинчатый бронежилет LBT-6094A Slick (Чёрный) от спецназа ISB",
+        "shortName": "ISB Slick",
+        "description": "Простой, но эффективный пластинчатый бронежилет от компании London Bridge Trading, модифицированный ISB. Максимально минималистичный дизайн, предназначенный для использования с нагрудными разгрузочными системами. Чёрная версия."
       }
     },
 

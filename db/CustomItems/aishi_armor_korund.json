@@ -122,6 +122,11 @@
         "name": "Colete NPP KlASS Korund-VM (Agência de Suporte a Inteligência da USEC)",
         "shortName": "Korund-VM",
         "description": "Colete à prova de balas pesado NPP KlASS Korund-VM, adotado pelas unidades do Ministério do Interior da Rússia. Versão em camuflagem preta da ISB."
+      },
+      "ru": {
+        "name": "Бронежилет НПП КлАСС \"Корунд-ВМ\" (Бюро разведывательной поддержки USEC)",
+        "shortName": "Корунд-ВМ",
+        "description": "Бронежилет длительного ношения Корунд-ВМ, принятый на вооружение в ряды сотрудников МВД России. Версия с чёрным камуфляжем для спецназа ISB."
       }
     },
 

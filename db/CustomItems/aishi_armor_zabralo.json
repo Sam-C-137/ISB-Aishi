@@ -128,6 +128,11 @@
         "name": "Colete Balístico 6B43 (Agência de Suporte a Inteligência da USEC)",
         "shortName": "6B43 Zabralo-Sh",
         "description": "O colete à prova de balas 6B43 foi projetado para oferecer proteção contra balas de armas leves — incluindo BP e PP —, fragmentos de granadas, minas e armas brancas, bem como para reduzir o risco de efeitos pós-penetração em situações de combate."
+      },
+      "ru": {
+        "name": "Бронежилет 6Б43 \"Забрало-Ш\" (Бюро разведывательной поддержки USEC)",
+        "shortName": "6Б43",
+        "description": "Бронежилет 6Б43 предназначен для защиты от поражения пулями патронов стрелкового оружия, в том числе БП и ПП, осколками, мин, гранат, холодного оружия и снижения заброневых травм в ходе ведения боевых действий."
       }
     },
 

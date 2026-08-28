@@ -128,6 +128,11 @@
         "name": "Colete NFM THOR Integrated Carrier body armor (Agência de Suporte a Inteligência da USEC)",
         "shortName": "THOR IC",
         "description": "A armadura de proteção total THOR está equipada com elementos de blindagem macios e rígidos para proteger contra estilhaços e balas de pistolas e rifles. Fabricada pela NFM. Versão preta personalizada para as Forças Especiais da ISB."
+      },
+      "ru": {
+        "name": "Бронежилет NFM \"THOR Integrated Carrier\" (Бюро разведывательной поддержки USEC)",
+        "shortName": "THOR IC",
+        "description": "Штурмовой бронежилет \"THOR\" полной защиты, укомплектованный мягкими и твердыми бронеэлементами для защиты от осколков и пуль пистолетных и винтовочных калибров. Производство NFM. Кастомизированная чёрная версия для спецназа ISB."
       }
     },
 
