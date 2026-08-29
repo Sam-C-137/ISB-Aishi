@@ -66,6 +66,11 @@
         "name": "Proteção modificada adicional para o capacete Bastion",
         "shortName": "Bastion",
         "description": "Uma proteção balística modular opcional para o capacete Diamond Age Bastion. Um modelo pintado em prata clara com listras e acabamento fosco, com decalques modificados. Projetado para Vipper, da ISB SOF, líder do esquadrão Snake. "
+      },
+      "ru": {
+        "name": "Модифицированное дополнительное бронирование для шлема Diamond Age \"Bastion\"",
+        "shortName": "Bastion бр.",
+        "description": "Дополнительная модульная бронезащита для шлема Diamond Age Bastion. Модель окрашена в светло-серебристый цвет с полосами и матовой отделкой, с модифицированными декалями. Разработана для Виппера из спецназа ISB, лидера эскадрона Snake."
       }
     },
 

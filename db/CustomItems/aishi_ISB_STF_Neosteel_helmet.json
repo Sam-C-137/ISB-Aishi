@@ -151,6 +151,11 @@
         "name": "Capacete Age NeoSteel High Cut modificado (Edição ISB STF-A)",
         "shortName": "NeoSteel",
         "description": "O capacete Diamond Age NeoSteel apresenta um design exclusivo que combina aço de alta resistência com materiais compostos para oferecer proteção avançada contra ameaças balísticas e de impacto. Ele foi projetado para resistir a impactos de alta velocidade e pode oferecer proteção contra uma variedade de ameaças. Modelo pintado de um prata claro camuflado e opaco e com placas modificadas. Desenvolvido para o líder do esquadrão Snake, Vipper da ISB SOF."
+      },
+      "ru": {
+        "name": "Модифицированный шлем Diamond Age \"NeoSteel\" High Cut (ISB STF-A Edition)",
+        "shortName": "NeoSteel",
+        "description": "Шлем Diamond Age NeoSteel обладает уникальным дизайном, который сочетает в себе высокопрочную сталь с композитными материалами, обеспечивающим передовую защиту от баллистических и ударных угроз. Он разработан для выдерживания ударов высокой скорости и может обеспечить защиту от различных угроз. Модель окрашена в светло-серебристый камуфляж с модифицированной маркировкой. Разработана для Виппера, лидера эскадрона Snake из спецназа ISB."
       }
     },
 
@@ -260,6 +265,11 @@
             "name": "Modified hybrid composite materials",
             "shortName": "Modified hybrid composite materials",
             "description": "Modified hybrid composite materials"
+      },
+      "ru": {
+        "name": "Модифицированные гибридные композитные материалы",
+        "shortName": "Гибридные композиты",
+        "description": "Модифицированные гибридные композитные материалы"
       }
     },
 
@@ -327,6 +337,11 @@
             "name": "Modified hybrid composite materials",
             "shortName": "Modified hybrid composite materials",
             "description": "Modified hybrid composite materials"
+      },
+      "ru": {
+        "name": "Модифицированные гибридные композитные материалы",
+        "shortName": "Гибридные композиты",
+        "description": "Модифицированные гибридные композитные материалы"
       }
     },
 

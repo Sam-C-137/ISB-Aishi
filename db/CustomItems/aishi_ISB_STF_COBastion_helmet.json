@@ -114,6 +114,11 @@
         "name": "Capacete Ballistic Armor Co. Bastion modificado (Edição ISB STF-A)",
         "shortName": "BAC Bastion",
         "description": "O capacete tático Bastion NIJ nível IIIA, projetado para uso policial e civil. Equipado com trilhos de interface M-LOK para a montagem de equipamentos adicionais. Fabricado pela Ballistic Armor Co. A model painted in a light silver camouflage finish with modified decals. Um modelo pintado com um acabamento camuflado prateado claro e decalques modificados. Concebido para o Firefly, o líder do esquadrão Cipher, da ISB SOF."
+      },
+      "ru": {
+        "name": "Модифицированный шлем Ballistic Armor Co. \"Bastion\" (ISB STF-A Edition)",
+        "shortName": "BAC Bastion",
+        "description": "Тактический шлем Bastion класса NIJ IIIA, предназначенный для правоохранительных органов и гражданских. Оснащен рельсами с интерфейсом M-LOK для установки дополнительного оборудования. Производство Ballistic Armor Co. Модель окрашена в светло-серебристый камуфляж с модифицированными декалями. Разработана для Файрфлая, лидера эскадрона Cipher из спецназа ISB."
       }
     },
 
@@ -223,6 +228,11 @@
             "name": "Modified hybrid composite materials",
             "shortName": "Modified hybrid composite materials",
             "description": "Modified hybrid composite materials"
+      },
+      "ru": {
+        "name": "Модифицированные гибридные композитные материалы",
+        "shortName": "Гибридные композиты",
+        "description": "Модифицированные гибридные композитные материалы"
       }
     },
 
@@ -291,6 +301,11 @@
             "name": "Modified hybrid composite materials",
             "shortName": "Modified hybrid composite materials",
             "description": "Modified hybrid composite materials"
+      },
+      "ru": {
+        "name": "Модифицированные гибридные композитные материалы",
+        "shortName": "Гибридные композиты",
+        "description": "Модифицированные гибридные композитные материалы"
       }
     },
 

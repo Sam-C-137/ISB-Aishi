@@ -46,6 +46,11 @@
         "name": "Protetor mandibular balístico Diamond Age NeoSteel modificado (Edição ISB STF-A)",
         "shortName": "NeoSteel",
         "description": "Uma proteção balística adicional com um design especial para o capacete Diamond Age NeoSteel. Modelo pintado de um prata claro camuflado e opaco e com placas modificadas. Desenvolvido para o líder do esquadrão Snake, Vipper da ISB SOF."
+      },
+      "ru": {
+        "name": "Модифицированная мандибула для шлема Diamond Age \"NeoSteel\" (ISB STF-A Edition)",
+        "shortName": "NeoSteel",
+        "description": "Дополнительная баллистическая защита со специальным дизайном для шлема Diamond Age NeoSteel. Модель окрашена в светло-серебристый камуфляж с модифицированной маркировкой. Разработана для Виппера, лидера эскадрона Snake из спецназа ISB."
       }
     },
 

@@ -45,6 +45,11 @@
         "name": "Capacete do Campeão (Edição ISB STF-A)",
         "shortName": "Campeão",
         "description": "Um capacete cuja as histórias remetem a um dos melhores gladiadores da Arena derrotado em combate por um desafiante desconhecido. Seu capacete foi recuperado em combate, modificado com novos ornamentos e blindagem texturizada especial para o líder do esquadrão Apex, Loghan da ISB SOF."
+      },
+      "ru": {
+        "name": "Шлем Чемпиона (ISB STF-A Edition)",
+        "shortName": "Чемпион",
+        "description": "Шлем, история которого восходит к одному из величайших гладиаторов Арены, побеждённому в бою неизвестным претендентом. Шлем был восстановлен в бою и модифицирован новыми орнаментами и специальной текстурированной бронёй для Логана, лидера эскадрона Apex из спецназа ISB."
       }
     },
 
@@ -170,6 +175,11 @@
             "name": "Modified hybrid composite materials",
             "shortName": "Modified hybrid composite materials",
             "description": "Modified hybrid composite materials"
+      },
+      "ru": {
+        "name": "Модифицированные гибридные композитные материалы",
+        "shortName": "Гибридные композиты",
+        "description": "Модифицированные гибридные композитные материалы"
       }
     },
 
@@ -238,6 +248,11 @@
             "name": "Modified hybrid composite materials",
             "shortName": "Modified hybrid composite materials",
             "description": "Modified hybrid composite materials"
+      },
+      "ru": {
+        "name": "Модифицированные гибридные композитные материалы",
+        "shortName": "Гибридные композиты",
+        "description": "Модифицированные гибридные композитные материалы"
       }
     },
 
@@ -306,6 +321,11 @@
             "name": "Modified hybrid composite materials",
             "shortName": "Modified hybrid composite materials",
             "description": "Modified hybrid composite materials"
+      },
+      "ru": {
+        "name": "Модифицированные гибридные композитные материалы",
+        "shortName": "Гибридные композиты",
+        "description": "Модифицированные гибридные композитные материалы"
       }
     },
 
@@ -374,6 +394,11 @@
             "name": "Modified hybrid composite materials",
             "shortName": "Modified hybrid composite materials",
             "description": "Modified hybrid composite materials"
+      },
+      "ru": {
+        "name": "Модифицированные гибридные композитные материалы",
+        "shortName": "Гибридные композиты",
+        "description": "Модифицированные гибридные композитные материалы"
       }
     },
 
