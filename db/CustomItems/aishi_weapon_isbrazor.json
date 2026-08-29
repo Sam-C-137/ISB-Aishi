@@ -69,6 +69,11 @@
         "name": "Luneta Vortex Razor HD Gen.2 1-6x24 30mm (Black)",
         "shortName": "Razor HD Gen.2",
         "description": "Uma mira tática projetada para a rápida localização do alvo e máxima precisão. Fabricada pela Vortex Optics."
+      },
+      "ru": {
+        "name": "Оптический прицел 30мм Vortex \"Razor HD Gen.2 1-6x24\" (Чёрный)",
+        "shortName": "Razor HD Gen.2",
+        "description": "Тактический прицел, разработанный для быстрого обнаружения цели и максимальной точности. Производство Vortex Optics."
       }
     
     },

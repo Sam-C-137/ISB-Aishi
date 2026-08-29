@@ -426,6 +426,11 @@
           "name": "Rifle de assalto SIG MCX SPEAR 6.8x51 modificado",
           "shortName": "MOD-SPEAR 6.8x51mm",
           "description": "A MCX SPEAR é um fuzil de assalto multicalibre projetado e fabricado pela SIG Sauer com base no fuzil de assalto MCX. Utiliza principalmente a nova munição 6,8x51 mm (.277 FURY). Foi projetada especificamente para as Forças Armadas dos EUA com o objetivo de substituir a carabina M4."
+      },
+      "ru": {
+        "name": "Модифицированная штурмовая винтовка SIG MCX-SPEAR 6.8x51",
+        "shortName": "MOD-SPEAR 6.8x51мм",
+        "description": "MCX-SPEAR - мультикалиберная штурмовая винтовка, разработанная на базе винтовки MCX и выпускаемая компанией SIG Sauer. Базовый калибр - 6.8х51мм (.277 FURY). Разработан специально для вооруженных сил США в качестве замены карабину M4."
       }
     },
 
@@ -513,6 +518,11 @@
           "name": "Carregador de 30 munições AR-10 7.62x51 Lancer L7AWM-A55",
           "shortName": "L7AWM-A55",
           "description": "Um carregador L7AWM de 30 cartuchos, de dupla fileira, para munição 7,62x51 OTAN. Fabricado pela Lancer Systems."
+      },
+      "ru": {
+        "name": "Магазин Lancer \"L7AWM-A55\" на 30 патронов 7.62x51 для AR-10",
+        "shortName": "L7AWM-A55",
+        "description": "30-зарядный двухрядный полимерный магазин L7AWM 25, под патрон 7.62x51 NATO. Производство Lancer Systems."
       }
     },
 
@@ -729,6 +739,11 @@
           "name": "Guarda mão MCX SPEAR M-LOK 11 polegadas (Preto)",
           "shortName": "SPEAR 11\"",
           "description": "Um protetor de cano de 11 polegadas para o fuzil de assalto MCX-SPEAR, equipado com uma interface M-LOK para a instalação de dispositivos e acessórios adicionais. Fabricado pela SIG Sauer."
+      },
+      "ru": {
+        "name": "Цевье M-LOK длиной 11 дюймов для MCX-SPEAR (Чёрное)",
+        "shortName": "SPEAR 11\"",
+        "description": "Цевье длиной 11 дюймов для винтовок MCX SPEAR, снабженное интерфейсом M-LOK для крепления дополнительного оборудования. Производство SIG Sauer."
       }
     },
 
@@ -974,6 +989,11 @@
           "name": "Receptor superior MCX-SPEAR 6.8x51 modificado",
           "shortName": "SPEAR 6.8",
           "description": "Um receptor superior padrão para o fuzil de assalto MCX-SPEAR, com câmara para munição 6,8x51 mm (.277 FURY). Equipado com um suporte para a fixação de dispositivos adicionais. Fabricado pela SIG Sauer."
+      },
+      "ru": {
+        "name": "Модифицированный верхний ресивер для MCX-SPEAR 6.8x51",
+        "shortName": "SPEAR 6.8",
+        "description": "Стандартный верхний ресивер для штурмовой винтовки MCX-SPEAR, калибра 6.8x51 мм (.277 FURY). Оснащен креплением для установки дополнительных устройств. Производство SIG Sauer."
       }
     },
 
@@ -1041,6 +1061,11 @@
           "name": "Supressor de som especial MCX-SPEAR SLX68-MG-QD 6.8x51 (Preto)",
           "shortName": "SLX68-S",
           "description": "O silenciador SLX68-MG-QD foi projetado para uso com cartuchos do calibre 6,8x51 (.277 FURY). Só pode ser montado em supressores de chamas Clutch-Lok. Fabricado pela SIG Sauer."
+      },
+      "ru": {
+        "name": "Специальный глушитель SLX68-MG-QD 6.8x51 для MCX-SPEAR (Чёрный)",
+        "shortName": "SLX68-S",
+        "description": "Глушитель SLX68-MG-QD предназначен для использования с патроном калибра 6.8x51 (.277 FURY). Может быть установлен только на пламегасители Clutch-Lok. Производство SIG Sauer."
       }
     },
 

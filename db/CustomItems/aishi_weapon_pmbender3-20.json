@@ -68,6 +68,11 @@
         "name": "Luneta Schmidt & Bender PM II 3-20x50 34mm (Preto)",
         "shortName": "PM II 3-20",
         "description": "A mira telescópica Schmidt & Bender PM II 3-20x50 foi originalmente criada para forças militares de elite, com o objetivo de proporcionar uma aquisição de alvo de alta qualidade e precisão milimétrica. Versão preta."
+      },
+      "ru": {
+        "name": "Оптический прицел 34мм Schmidt & Bender PM II 3-20x50 (Чёрный)",
+        "shortName": "PM II 3-20",
+        "description": "Оптический прицел Schmidt & Bender \"PM II 3-12x50\" изначально создавался для элитных вооруженных сил для быстрого обнаружения цели и высокой точности. Чёрная версия."
       }
     
     },

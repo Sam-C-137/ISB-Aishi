@@ -68,6 +68,11 @@
         "name": "Luneta Schmidt & Bender PM II 1-8x24 30mm (Preto)",
         "shortName": "PM II 1-8",
         "description": "A mira telescópica Schmidt & Bender PM II 1-8x24 foi originalmente desenvolvida para forças militares de elite, com o objetivo de proporcionar uma aquisição de alvo de alta qualidade e precisão milimétrica. Versão preta"
+      },
+      "ru": {
+        "name": "Оптический прицел 30мм Schmidt & Bender PM II 1-8x24 (Чёрный)",
+        "shortName": "PM II 1-8",
+        "description": "Оптический прицел Schmidt & Bender \"PM II 1-8x24\" изначально создавался для элитных вооруженных сил для быстрого обнаружения цели и высокой точности. Прицел снабжен подсвеченной сеткой \"Tremor2\", на которой имеется множество отметок для расчета точных выстрелов с учетом расстояния и ветра. Чёрная версия."
       }
     
     },

@@ -69,6 +69,11 @@
         "name": "Luneta EOtech Vudu 1-6 (FDE)",
         "shortName": "Vudu 1-6x24",
         "description": "A mira telescópica EOTech Vudu 1-6x24, igualmente eficaz em plataformas AR e em rifles de ferrolho. Seu retículo com anel de velocidade no estilo EOTech foi projetado para uma rápida identificação do alvo em baixa ampliação, ao mesmo tempo em que oferece a resolução e a precisão necessárias para alvos a longas distâncias. Versão FDE"
+      },
+      "ru": {
+        "name": "Оптический прицел 30мм EOTech \"Vudu 1-6x24\" (FDE)",
+        "shortName": "Vudu 1-6x24",
+        "description": "Прицел EOTech Vudu 1-6x24, одинаково эффективный на платформах AR и винтовках с продольно-скользящим затвором. Его сетка в виде скоростного кольца в стиле EOTech разработана для быстрого поражения целей на малом увеличении, обеспечивая при этом разрешение и точность, необходимые для целей на больших дистанциях. Версия FDE."
       }
     
     },

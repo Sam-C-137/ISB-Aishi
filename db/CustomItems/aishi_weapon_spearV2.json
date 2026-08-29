@@ -427,6 +427,11 @@
           "name": "Rifle de assalto SIG MCX SPEAR 5.56x45 modificado",
           "shortName": "SPEAR 5.56",
           "description": "A MCX SPEAR é um fuzil de assalto multicalibre projetado e fabricado pela SIG Sauer com base no fuzil de assalto MCX. Utiliza principalmente a nova munição 6,8x51 mm (.277 FURY). Foi projetada especificamente para as Forças Armadas dos EUA com o objetivo de substituir a carabina M4."
+      },
+      "ru": {
+        "name": "Штурмовая винтовка SIG MCX-SPEAR 5.56x45",
+        "shortName": "SPEAR 5.56",
+        "description": "MCX-SPEAR - мультикалиберная штурмовая винтовка, разработанная на базе винтовки MCX и выпускаемая компанией SIG Sauer. Базовый калибр - 6.8х51мм (.277 FURY). Разработан специально для вооруженных сил США в качестве замены карабину M4."
       }
     },
 
@@ -548,6 +553,11 @@
           "name": "Carregador de 30 munições AR-10 modificado 5.56x45 Lancer L7AWM-A55",
           "shortName": "L7AWM-A55",
           "description": "Um carregador L7AWM-A55 de 30 cartuchos, de dupla fileira, para munição 5.56x45 OTAN. Fabricado pela Lancer Systems."
+      },
+      "ru": {
+        "name": "Модифицированный магазин Lancer \"L7AWM-A55\" на 30 патронов 5.56x45 для AR-10",
+        "shortName": "L7AWM-A55 V2",
+        "description": "30-зарядный двухрядный полимерный магазин L7AWM, под патрон 5.56x45 НАТО. Производство Lancer Systems."
       }
     },
 
@@ -650,6 +660,11 @@
           "name": "Carregador de 25 munições AR-10 modificado 5.56x45 Lancer L7AWM",
           "shortName": "L7AWM V2",
           "description": "Um carregador L7AWM 25 de 25 cartuchos, de dupla fileira, para munição 5,56x45 OTAN. Fabricado pela Lancer Systems."
+      },
+      "ru": {
+        "name": "Модифицированный магазин Lancer \"L7AWM V2\" на 25 патронов 5.56x45 для AR-10",
+        "shortName": "L7AWM V2",
+        "description": "25-зарядный двухрядный полимерный магазин L7AWM, под патрон 5.56x45 NATO. Производство Lancer Systems."
       }
     },
 
@@ -763,6 +778,11 @@
           "name": "Carregador de 50 munições X Products X-25 modificado 5.56x45 para AR-10",
           "shortName": "X-25 V2",
           "description": "Um carregador de tambor modificado de 50 cartuchos calibre 5,56x45 para armas da plataforma AR-10. Fabricado pela X Products."
+      },
+      "ru": {
+        "name": "Модифицированный барабанный магазин X Products \"X-25\" на 50 патронов 5.56x45 для AR-10",
+        "shortName": "X-25 V2",
+        "description": "Модифицированный 50-зарядный барабанный магазин X-25, под патрон 5.56x45 NATO. Производство X Products."
       }
     },
 

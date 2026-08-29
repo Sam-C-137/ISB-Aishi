@@ -429,6 +429,11 @@
           "name": "NL15 Tactical 5.56x45 Assault Carbine (Prototype)",
           "shortName": "NL15 Tactical",
           "description": "Uma carabina customizada baseada na plataforma AR-15, projetada para combinar ergonomia moderna, alta modularidade e a ampla disponibilidade do cartucho 5.56x45mm NATO. Fabricada pela Custom Guns, a NL15 Carbine utiliza um conjunto de ferrolho em configuração de ação direta por gases, oferecendo uma plataforma leve, versátil e confiável para combates de curta a média distância."
+      },
+      "ru": {
+        "name": "Штурмовой карабин NL15 Tactical 5.56x45 (Прототип)",
+        "shortName": "NL15 Tactical",
+        "description": "Кастомный карабин на базе платформы AR-15, разработанный для сочетания современной эргономики, высокой модульности и широкой доступности патрона 5.56x45mm НАТО. Производства Custom Guns, карабин NL15 оснащён затворной группой с прямым газоотводом, предлагая лёгкую, универсальную и надёжную платформу для боя на близких и средних дистанциях."
       }
     },
 

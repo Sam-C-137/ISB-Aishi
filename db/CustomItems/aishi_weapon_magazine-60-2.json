@@ -76,6 +76,11 @@
         "name": "Carregador de 60 munições Magpul PMAG D-60 5.56x45 (FDE)",
         "shortName": "PMAG D60",
         "description": "O carregador Magpul PMAG D-60 de polímero com capacidade para 60 cartuchos de calibre 5,56x45."
+      },
+      "ru": {
+        "name": "Магазин Magpul \"PMAG D-60 STANAG\" на 60 патронов 5.56x45 для AR-15 (FDE)",
+        "shortName": "PMAG D60",
+        "description": "60-ти зарядный полимерный магазин Magpul PMAG D-60, под патрон 5.56x45."
       }
     
     },

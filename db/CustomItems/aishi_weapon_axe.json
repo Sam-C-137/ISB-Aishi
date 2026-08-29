@@ -45,6 +45,11 @@
         "name": "\"Chained Labrys\"",
         "shortName": "Labrys",
         "description": "Um machado de duas mãos feito com uma tampa de bueiro... Com aquele peso, basta um único golpe para rachar um crânio, esteja a lâmina afiada ou não."
+      },
+      "ru": {
+        "name": "\"Chained Labrys\"",
+        "shortName": "Labrys",
+        "description": "Двуручный топор, сделанный из крышки люка... С таким весом одного удара достаточно, чтобы расколоть череп, заточено ли лезвие или нет."
       }
     },
 

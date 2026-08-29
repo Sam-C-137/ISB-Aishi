@@ -33,6 +33,11 @@
         "name": "Telêmetro tático Wilcox RAPTAR ES (Preto)",
         "shortName": "RAPTAR",
         "description": "A primeira geração do dispositivo tático denominado “RAPTAR” era equipada com um telêmetro. Possui lasers visíveis e infravermelhos, bem como um iluminador infravermelho."
+      },
+      "ru": {
+        "name": "Тактический блок-дальномер Wilcox \"RAPTAR ES\" (Чёрный)",
+        "shortName": "RAPTAR",
+        "description": "Ранняя генерация тактического блока \"RAPTAR\", совмещенного с дальномером. Имеет ЛЦУ видимого и ИК диапазона, а также инфракрасный осветитель."
       }
     
     },

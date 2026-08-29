@@ -38,6 +38,11 @@
         "name": "Supressor de ruído SilencerCo SAKER ASR 556 5.56x45 (FDE)",
         "shortName": "Saker ASR 556",
         "description": "O silenciador SilencerCo Saker ASR 556, projetado para uso com sistemas de armas do calibre 5,56x45. Pode ser instalado em dispositivos de boca compatíveis com ASR."
+      },
+      "ru": {
+        "name": "Глушитель SilencerCo \"Saker ASR 556\" 5.56x45 (FDE)",
+        "shortName": "Saker ASR 556",
+        "description": "Глушитель SilencerCo Saker ASR 556 предназначен для использования с патроном калибра 5.56x45. Может быть установлен только на совместимые дульные устройства с креплением ASR."
       }
     
     },

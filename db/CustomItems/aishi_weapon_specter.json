@@ -37,6 +37,11 @@
         "name": "Luneta 1x/4x ELCAN SpecterDR (TAN)",
         "shortName": "SpecterDR",
         "description": "A mira SpecterDR (Dual Role) 1x/4x, da série Specter projetada pela ELCAN, representou um avanço no desenvolvimento de miras ópticas ao se tornar a primeira mira com ampliação variável que possui, de fato, dois modos de operação, permitindo alternar da ampliação de 4x para 1x com um único toque. Também possui uma mira mecânica de reserva. Versão TAN."
+      },
+      "ru": {
+        "name": "Оптический прицел ELCAN \"SpecterDR 1x/4x\" (TAN)",
+        "shortName": "SpecterDR",
+        "description": "Оптический прицел Specter SpecterDR (Dual Role) 1x/4x производства компании ELCAN. Новое слово в проектировании оптических прицелов. Первый в мире оптический прицел с действительно двумя режимами работы. Переключается с 4-х кратного увеличения на 1-но кратное в одно движение. Также оснащён запасным открытым прицелом. Версия TAN."
       }
     
     },

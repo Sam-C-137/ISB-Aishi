@@ -377,6 +377,11 @@
           "name": "NL15 Tactical .300 Blackout Assault Rifle (Prototype)",
           "shortName": "NL15 Rifle",
           "description": "Um fuzil de assalto customizado baseado na plataforma AR-15, projetado para combinar ergonomia moderna, alta modularidade e o desempenho do cartucho .300 Blackout em combates de curta a média distância. Fabricado pela Custom Guns, o NL15 utiliza um conjunto de ferrolho e sistema de gases ajustado para oferecer funcionamento confiável tanto com munições subsônicas quanto supersônicas, especialmente em configurações com supressor."
+      },
+      "ru": {
+        "name": "Штурмовая винтовка NL15 Tactical .300 Blackout (Прототип)",
+        "shortName": "NL15",
+        "description": "Кастомная штурмовая винтовка на базе платформы AR-15, разработанная для сочетания современной эргономики, высокой модульности и эффективности патрона .300 Blackout в ближнем и среднем бою. Производства Custom Guns, NL15 оснащена затворной группой и газовой системой, настроенными для надёжной работы как с дозвуковыми, так и со сверхзвуковыми боеприпасами, особенно в конфигурациях с глушителем."
       }
     },
 
@@ -666,6 +671,11 @@
         "name": "Receptor superior NL545 (DI) Multi-calibre",
         "shortName": "NL545 DI",
         "description": "Um receptor superior para o fuzil de assalto NL545 de impacto direto fabricado pela Custom Guns. Equipado com um suporte para a fixação de dispositivos adicionais."
+      },
+      "ru": {
+        "name": "Верхняя ствольная коробка NL545 (DI) многокалиберная",
+        "shortName": "NL545 DI",
+        "description": "Верхняя ствольная коробка для штурмовой винтовки NL545 с прямым газоотводом производства Custom Guns. Оснащена креплением для установки дополнительных устройств."
       }
     },
 
@@ -774,6 +784,11 @@
           "name": "Carregador de 30 munições Arsenal CWP 5.56x45 para SLR-106 e compatíveis (Preta)",
           "shortName": "C-10 AK",
           "description": "Um carregador búlgaro de 30 cartuchos calibre 5,56x45 com padrão “Waffle” para os fuzis civis SLR-106 baseados no AK. Fabricado pela Circle 10 e distribuído pela Arsenal Inc. Versão preta"
+      },
+      "ru": {
+        "name": "Магазин Circle 10 на 30 патронов 5.56x45 для SLR-106/АК (Чёрный)",
+        "shortName": "C-10 AK",
+        "description": "Болгарский магазин на 30 патронов 5.56x45 с \"вафельным\" рисунком для гражданских винтовок на базе AK, серии SLR-106. Производство Circle 10, дистрибуция Arsenal Inc. Чёрная версия."
       }
     },
 
@@ -871,6 +886,11 @@
           "name": "Carregador de 30 munições Arsenal CWP 5.56x45 para SLR-106 e compatíveis (FDE)",
           "shortName": "C-10 AK",
           "description": "Um carregador búlgaro de 30 cartuchos calibre 5,56x45 com padrão “Waffle” para os fuzis civis SLR-106 baseados no AK. Fabricado pela Circle 10 e distribuído pela Arsenal Inc. Versão FDE"
+      },
+      "ru": {
+        "name": "Магазин Circle 10 на 30 патронов 5.56x45 для SLR-106/АК (FDE)",
+        "shortName": "C-10 AK",
+        "description": "Болгарский магазин на 30 патронов 5.56x45 с \"вафельным\" рисунком для гражданских винтовок на базе AK, серии SLR-106. Производство Circle 10, дистрибуция Arsenal Inc. Версия FDE."
       }
     },
 

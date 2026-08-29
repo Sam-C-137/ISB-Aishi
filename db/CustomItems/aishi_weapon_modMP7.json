@@ -222,6 +222,11 @@
           "name": "Submetralhadora HK MP7-SF 4.6x30 Modificada (Protótipo)",
           "shortName": "MP7-SF",
           "description": "A HK MP7-SF é uma Sub-Metralhadora construída no modo Semiautomático pela Heckler & Koch. Carregada em munições 4.6×30mm. Ela desempenha um ótimo papel como arma compacta e de alto controle e é utilizada com frequência pela UK's Ministry of Defence Police. Essa versão foi modificada gerando mais estabilidade, controle e um uso no modo automático."
+      },
+      "ru": {
+        "name": "Модифицированный пистолет-пулемёт HK MP7-SF 4.6x30 (Прототип)",
+        "shortName": "MP7-SF",
+        "description": "HK MP7-SF — пистолет-пулемёт производства Heckler & Koch, стреляющий в полуавтоматическом режиме. Использует боеприпасы 4.6×30мм. Является отличным компактным, высококонтролируемым оружием и часто используется полицией Министерства обороны Великобритании. Эта версия была модифицирована для обеспечения большей стабильности, лучшего контроля и возможности стрельбы в автоматическом режиме."
       }
     },
 

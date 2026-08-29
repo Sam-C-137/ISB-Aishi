@@ -37,6 +37,11 @@
         "name": "Ponto de mira holográfico ELCAN Specter HCO (Rosa)",
         "shortName": "HCO",
         "description": "Mira óptica de combate holográfica Specter. Fabricada pela ELCAN. Versão rosa"
+      },
+      "ru": {
+        "name": "Голографический прицел ELCAN \"Specter HCO\" (Розовый)",
+        "shortName": "HCO",
+        "description": "Голографический прицел Specter \"Holographic Combat Optic\". Производство ELCAN. Розовая версия."
       }
     
     },

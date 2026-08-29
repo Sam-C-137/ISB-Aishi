@@ -38,6 +38,11 @@
         "name": "Supressor para AR-15 Griffin Armament M4SD-K 5.56x45 (FDE)",
         "shortName": "M4SD-K",
         "description": "O silenciador M4SD-K, projetado para uso com sistemas de armas de calibre 5,56x45. Só pode ser instalado em supressores de flash com interface de montagem SDQD. Fabricado pela Griffin Armament."
+      },
+      "ru": {
+        "name": "Глушитель Griffin Armament \"M4SD-K\" 5.56x45 для AR-15 (FDE)",
+        "shortName": "M4SD-K",
+        "description": "Глушитель \"M4SD-K\" предназначен для использования с патроном калибра 5.56x45. Может быть установлен только на \"SDQD\" пламегасители. Производство Griffin Armament."
       }
     
     },

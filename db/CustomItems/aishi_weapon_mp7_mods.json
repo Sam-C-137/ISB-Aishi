@@ -33,6 +33,11 @@
         "name": "FAB Defense FX-KPOS ARS stock (FDE)",
         "shortName": "ARS",
         "description": "A telescoping buttstock designed for use with gas masks or helmet visors and mandibles. Manufactured by FAB Defense."
+      },
+      "ru": {
+        "name": "Приклад FAB Defense FX-KPOS ARS (FDE)",
+        "shortName": "ARS",
+        "description": "Телескопический приклад, разработанный для использования с противогазами или шлемами с визорами и забралами. Производство FAB Defense."
       }
     
     },
@@ -107,6 +112,11 @@
         "name": "HK MP7 FAB Defense ARS stock adapter (FDE)",
         "shortName": "ARS MP7",
         "description": "An adapter for HK MP7 submachine guns designed for installation of ARS type buttstocks. Manufactured by FAB Defense."
+      },
+      "ru": {
+        "name": "Адаптер приклада FAB Defense \"ARS\" для HK MP7 (FDE)",
+        "shortName": "ARS MP7",
+        "description": "Адаптер, предназначенный для крепления прикладов типа ARS на пистолеты-пулеметы серии MP7. Производство FAB Defense."
       }
     
     },

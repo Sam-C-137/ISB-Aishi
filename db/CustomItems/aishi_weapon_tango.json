@@ -69,6 +69,11 @@
         "name": "Luneta SIG TANGO6T 1-6x24 30mm (Black)",
         "shortName": "TANGO6T",
         "description": "A TANGO6T é uma mira óptica variável de baixo consumo de energia, robusta e bem construída. Este modelo oferece ampliação de 1x a 6x e um retículo no primeiro plano focal. Esta mira telescópica é ideal para distâncias curtas e médias, bem como para caça em áreas remotas. Fabricada pela SIG Sauer. Versão preta"
+      },
+      "ru": {
+        "name": "Оптический прицел 30мм SIG Sauer \"TANGO6T 1-6x24\" (Чёрный)",
+        "shortName": "TANGO6T",
+        "description": "TANGO6T - это надежный и крепко сбитый оптический прицел малой кратности. Данная модель имеет увеличение от 1 до 6 крат и сетку, расположенную в первой фокальной плоскости. Данный прицел идеально подходит для \"работы\" на коротких и средних дистанциях, а также для загонной охоты. Производство SIG Sauer. Чёрная версия."
       }
     
     },

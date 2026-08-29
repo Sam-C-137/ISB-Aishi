@@ -191,6 +191,11 @@
         "name": "Container Seguro \"Pelican\"",
         "shortName": "Pelican",
         "description": "Um container seguro montado a mão pelo operador \"suspensy\" como uma encomenda especial para a ISB. Desenvolvido com blindagem revestida e trava especial, se torna um container especial para os melhores operadores conhecidos."
+      },
+      "ru": {
+        "name": "Защищённый контейнер \"Пеликан\"",
+        "shortName": "Пеликан",
+        "description": "Защищённый контейнер, собранный вручную оператором \"suspensy\" по специальному заказу для ISB. Разработанный с усиленной обшивкой и уникальным запирающим механизмом, он является особым контейнером для самых элитных оперативников."
       }
     
     },

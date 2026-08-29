@@ -34,6 +34,11 @@
         "name": "M67 hand grenade (Delay Reduzido)",
         "shortName": "M67 DR",
         "description": "A granada de mão de fragmentação M67 é uma granada de mão americana, projetada para combate antipessoal e adotada em 1969 pelo Exército dos Estados Unidos."
+      },
+      "ru": {
+        "name": "Ручная граната M67 (Уменьшенная задержка)",
+        "shortName": "M67 УЗ",
+        "description": "M67 grenade (M67 Fragmentation Hand Grenade) — американская ручная осколочная граната, с 1969-го была принята на вооружение армией США. Предназначена для поражения живой силы в бою."
       }
     
     },

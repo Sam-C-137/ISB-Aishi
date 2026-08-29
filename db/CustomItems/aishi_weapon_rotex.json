@@ -38,6 +38,11 @@
         "name": "Supressor para HK MP7 B&T Rotex 2 4.6x30 (Tan)",
         "shortName": "Rotex 2",
         "description": "O Rotex 2 é um silenciador de 4,6 x 30 mm fabricado pela Brügger & Thomet. É instalado nas submetralhadoras HK MP7. Versão na cor bege."
+      },
+      "ru": {
+        "name": "Глушитель B&T \"Rotex 2\" 4.6x30 для HK MP7 (Tan)",
+        "shortName": "Rotex 2",
+        "description": "Глушитель Rotex 2 4.6x30мм производства Brügger & Thomet. Устанавливается на пистолеты-пулемёты HK MP7. Версия Tan."
       }
     
     },
