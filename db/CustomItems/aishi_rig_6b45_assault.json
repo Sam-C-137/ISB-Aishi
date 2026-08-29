@@ -378,6 +378,11 @@
         "name": "Colete Tático Blindado 6B45 Layout de Assalto (Agência de Suporte a Inteligência da USEC)",
         "shortName": "6B45.A",
         "description": "Um conjunto completo de porta-placas montado sobre o colete 6B45. Este layout oferece espaço máximo para o transporte de carregadores e granadas. Estilo camuflagem digital preto das Forças Especiais da ISB."
+      },
+      "ru": {
+        "name": "Чехол для бронеплит 6Б45, штурмовая компоновка (Бюро разведывательной поддержки USEC)",
+        "shortName": "6B45.Ш",
+        "description": "Собранный на основе 6Б45 разгрузочный жилет. Эта комплектация даёт владельцу небольшое, но универсальное пространство для хранения необходимого снаряжения. Вариант с чёрным камуфляжем для спецназа ISB."
       }
     },
 

@@ -130,6 +130,11 @@
         "name": "Colete Tático First Spear Siege-R Optimized M.A.S.S. (Edição ISB STF-A)",
         "shortName": "Siege-R EISB V2",
         "description": "Um porta-placas otimizado para cerco, equipado com o sistema de ombro M.A.S.S. Oferece proteção confiável em todas as direções, ao mesmo tempo em que proporciona amplo espaço de trabalho para a colocação de equipamentos. Versão especial para o líder do esquadrão Apex, Loghan da ISB SOF."
+      },
+      "ru": {
+        "name": "Улучшенный чехол для бронеплит First Spear \"Siege-R Optimized M.A.S.S.\" (ISB STF-A Edition)",
+        "shortName": "Siege-R ISBE V2",
+        "description": "Комплект, состоящий из обновлённой версии жилета Siege-R Optimized и системы M.A.S.S. Shoulder System. Обеспечивает надёжную круговую защиту и достаточный объём рабочего пространства для хранения снаряжения. Специальное издание для Логана, лидера эскадрона Apex из спецназа ISB."
       }
     },
 
@@ -212,6 +217,11 @@
             "name": "Modified aramid insert",
             "shortName": "Modified aramid insert",
             "description": "Modified aramid insert"
+      },
+      "ru": {
+        "name": "Модифицированная арамидная вставка",
+        "shortName": "Арамидная вставка",
+        "description": "Модифицированная арамидная вставка"
       }
     },
 
@@ -286,6 +296,11 @@
             "name": "Modified aramid insert",
             "shortName": "Modified aramid insert",
             "description": "Modified aramid insert"
+      },
+      "ru": {
+        "name": "Модифицированная арамидная вставка",
+        "shortName": "Арамидная вставка",
+        "description": "Модифицированная арамидная вставка"
       }
     },
 
@@ -360,6 +375,11 @@
             "name": "Modified aramid insert",
             "shortName": "Modified aramid insert",
             "description": "Modified aramid insert"
+      },
+      "ru": {
+        "name": "Модифицированная арамидная вставка",
+        "shortName": "Арамидная вставка",
+        "description": "Модифицированная арамидная вставка"
       }
     },
 
@@ -434,6 +454,11 @@
             "name": "Modified aramid insert",
             "shortName": "Modified aramid insert",
             "description": "Modified aramid insert"
+      },
+      "ru": {
+        "name": "Модифицированная арамидная вставка",
+        "shortName": "Арамидная вставка",
+        "description": "Модифицированная арамидная вставка"
       }
     },
 
@@ -508,6 +533,11 @@
             "name": "Modified aramid insert",
             "shortName": "Modified aramid insert",
             "description": "Modified aramid insert"
+      },
+      "ru": {
+        "name": "Модифицированная арамидная вставка",
+        "shortName": "Арамидная вставка",
+        "description": "Модифицированная арамидная вставка"
       }
     },
 
@@ -582,6 +612,11 @@
             "name": "Modified aramid insert",
             "shortName": "Modified aramid insert",
             "description": "Modified aramid insert"
+      },
+      "ru": {
+        "name": "Модифицированная арамидная вставка",
+        "shortName": "Арамидная вставка",
+        "description": "Модифицированная арамидная вставка"
       }
     },
 
@@ -656,6 +691,11 @@
             "name": "Modified aramid insert",
             "shortName": "Modified aramid insert",
             "description": "Modified aramid insert"
+      },
+      "ru": {
+        "name": "Модифицированная арамидная вставка",
+        "shortName": "Арамидная вставка",
+        "description": "Модифицированная арамидная вставка"
       }
     },
 
@@ -736,6 +776,11 @@
             "name": "Modified aramid insert",
             "shortName": "Modified aramid insert",
             "description": "Modified aramid insert"
+      },
+      "ru": {
+        "name": "Модифицированная арамидная вставка",
+        "shortName": "Арамидная вставка",
+        "description": "Модифицированная арамидная вставка"
       }
     },
 

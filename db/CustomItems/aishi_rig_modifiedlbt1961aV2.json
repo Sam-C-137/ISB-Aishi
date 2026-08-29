@@ -306,6 +306,11 @@
         "name": "Colete tático LBT-1961A Modificado (Edição ISB STF-A)",
         "shortName": "LBCR EISB",
         "description": "Um sistema tático de suporte de carga projetado para transportar carregadores, granadas e equipamentos especiais, utilizando coletes à prova de balas de baixo perfil. Fabricado pela London Bridge Trading. Desenvolvido para o líder do esquadrão Snake, Vipper da ISB SOF."
+      },
+      "ru": {
+        "name": "Модифицированный разгрузочный жилет LBT-1961A Load Bearing Chest Rig (ISB STF-A Edition)",
+        "shortName": "LBCR ISBE",
+        "description": "Разгрузочная система предназначенная для переноски магазинов и спецсредств, при одновременном использовании низкопрофильных бронежилетов. Производство London Bridge Trading. Разработана для Виппера, лидера эскадрона Snake из спецназа ISB."
       }
     },
 

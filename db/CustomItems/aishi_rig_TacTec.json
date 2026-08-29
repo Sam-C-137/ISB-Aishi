@@ -82,6 +82,11 @@
         "name": "Colete Tático 5.11 Tactical TacTec (Agência de Suporte a Inteligência da USEC)",
         "shortName": "TacTec",
         "description": "Um porta-placas com um conjunto de bolsas para uso com espingardas de assalto. Fabricado pela 5.11 Tactical. Versão Night Camo para as Forças Especiais da ISB."
+      },
+      "ru": {
+        "name": "Чехол для бронеплит 5.11 Tactical \"TacTec\" (Бюро разведывательной поддержки USEC)",
+        "shortName": "TacTec",
+        "description": "Разгрузочный жилет с набором подсумков для работы со штурмовыми винтовками. Производство 5.11 Tactical. Версия Night Camo для спецназа ISB."
       }
     },
 

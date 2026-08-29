@@ -80,6 +80,11 @@
         "name": "FORT Gladiator-S plate carrier (Lightweight, White Tusk Edition)",
         "shortName": "Gladiator-S",
         "description": "A specialized body armor developed for the FSB’s Special Purpose Center, featuring high functionality and modularity. The lightweight version is designed to provide maximum mobility while protecting vital organs."
+      },
+      "ru": {
+        "name": "Чехол для бронеплит ФОРТ Гладиатор-С (Облегчённый, White Tusk Edition)",
+        "shortName": "Гладиатор-С",
+        "description": "Специализированный бронежилет, разработанный для ЦСН ФСБ России, отличающийся высокой функциональностью и модульностью. Облегчённая версия предназначена для обеспечения максимальной мобильности при защите жизненно важных органов."
       }
     },
 

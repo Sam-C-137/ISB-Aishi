@@ -37,6 +37,11 @@
         "name": "Colete tático compacto Direct Action Thunderbolt (Agência de Suporte a Inteligência da USEC)",
         "shortName": "Thunderbolt",
         "description": "O colete tático fixo Thunderbolt, que inclui todas as bolsas utilitárias básicas de que você precisa. Fabricado pela Direct Action."
+      },
+      "ru": {
+        "name": "Разгрузочная нагрудная система Direct Action \"Thunderbolt\" (Бюро разведывательной поддержки USEC)",
+        "shortName": "Thunderbolt",
+        "description": "Фиксированная разгрузочная система от компании Direct Action, содержащая все базовые необходимые подсумки. Производство Direct Action."
       }
     },
 

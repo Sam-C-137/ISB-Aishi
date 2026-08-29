@@ -42,6 +42,11 @@
         "name": "Colete Tático Eagle Allied Industries MBSS (Agência de Suporte a Inteligência da USEC)",
         "shortName": "MBSS",
         "description": "O colete MBSS faz parte do Sistema de Sobrevivência Balística Marítima. O colete pode ser usado com insertos de flutuação para proporcionar flutuabilidade, uma vez que não está equipado com um sistema de liberação rápida. Fabricado pela Eagle Allied Industries."
+      },
+      "ru": {
+        "name": "Чехол для бронеплит Eagle Allied Industries \"MBSS\" (Бюро разведывательной поддержки USEC)",
+        "shortName": "MBSS",
+        "description": "Разгрузочный жилет MBSS является частью Maritime Ballistic Survivor System. Жилет может использоваться с флотационными вставками, обеспечивающими плавучесть, так как он не оборудован системой быстрого сброса. Производство Eagle Allied Industries."
       }
     },
 

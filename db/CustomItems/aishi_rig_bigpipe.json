@@ -42,6 +42,11 @@
         "name": "Colete Tático S&S Precision PlateFrame (Agência de Suporte a Inteligência da USEC)",
         "shortName": "PlateFrame",
         "description": "Um colete de proteção com um design minimalista, leve e em plástico semirrígido. Fabricado pela S&S Precision."
+      },
+      "ru": {
+        "name": "Чехол для бронеплит S&S Precision \"PlateFrame\" (Бюро разведывательной поддержки USEC)",
+        "shortName": "PlateFrame",
+        "description": "Чехол под пластины с минималистичным, легким, полужестким пластиковым дизайном. Производство S&S Precision."
       }
     },
 

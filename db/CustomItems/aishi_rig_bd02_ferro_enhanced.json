@@ -93,6 +93,11 @@
         "name": "Colete Tático Ferro Concepts FCPC V5 aprimorado (Agência de Suporte a Inteligência da USEC)",
         "shortName": "ISB FCPC V5",
         "description": "O colete tático porta placas FCPC de quinta geração dá continuidade ao foco da Ferro Concepts em equipamentos leves e adaptáveis. Nesta versão, os bolsos para placas e o contorno do porta-placas foram redesenhados para melhorar o conforto e a mobilidade. Versão Coyote Brown. Equipado com dois rádios para comunicação com o esquadrão designado e com o quartel-general. Versão Night Camo para as Forças Especiais ISB."
+      },
+      "ru": {
+        "name": "Улучшенный чехол для бронеплит Ferro Concepts \"FCPC V5\" (Бюро разведывательной поддержки USEC)",
+        "shortName": "ISB FCPC V5",
+        "description": "Пластинчатый бронежилет FCPC пятого поколения продолжает фокус Ferro Concepts на лёгком и адаптируемом снаряжении. В этой версии карманы для пластин и контур жилета были переработаны для улучшения комфорта и мобильности. Версия Coyote Brown. Оснащён двумя радиостанциями для связи как с назначенным отрядом, так и со штабом. Версия Night Camo для спецназа ISB."
       }
     },
 
@@ -177,6 +182,11 @@
             "name": "Modified aramid insert",
             "shortName": "Modified aramid insert",
             "description": "Modified aramid insert"
+      },
+      "ru": {
+        "name": "Модифицированная арамидная вставка",
+        "shortName": "Арамидная вставка",
+        "description": "Модифицированная арамидная вставка"
       }
     },
 
@@ -255,6 +265,11 @@
             "name": "Modified aramid insert",
             "shortName": "Modified aramid insert",
             "description": "Modified aramid insert"
+      },
+      "ru": {
+        "name": "Модифицированная арамидная вставка",
+        "shortName": "Арамидная вставка",
+        "description": "Модифицированная арамидная вставка"
       }
     },
 
@@ -333,6 +348,11 @@
             "name": "Modified aramid insert",
             "shortName": "Modified aramid insert",
             "description": "Modified aramid insert"
+      },
+      "ru": {
+        "name": "Модифицированная арамидная вставка",
+        "shortName": "Арамидная вставка",
+        "description": "Модифицированная арамидная вставка"
       }
     },
 
@@ -411,6 +431,11 @@
             "name": "Modified aramid insert",
             "shortName": "Modified aramid insert",
             "description": "Modified aramid insert"
+      },
+      "ru": {
+        "name": "Модифицированная арамидная вставка",
+        "shortName": "Арамидная вставка",
+        "description": "Модифицированная арамидная вставка"
       }
     },
 

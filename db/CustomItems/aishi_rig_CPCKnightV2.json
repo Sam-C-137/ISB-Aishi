@@ -104,6 +104,11 @@
         "name": "Colete Tático Crye Precision CPC (Edição Goons Modelo II)",
         "shortName": "CPC EG II",
         "description": "The CAGE PLATE CARRIER (CPC) offers unmatched comfort and load-bearing support in a low-profile plate carrier configuration. The system is compatible with a variety of different pouches. In this case, the configuration was designed by the Goons squad leader—Knight—to enable assault operations with greater mobility."
+      },
+      "ru": {
+        "name": "Чехол для бронеплит Crye Precision \"CPC\" (Goons Edition Версия II)",
+        "shortName": "CPC GE II",
+        "description": "CAGE PLATE CARRIER (CPC) предлагает непревзойденный комфорт и поддержку груза в низкопрофильной конфигурации плейткерриера. Система поддерживает спектр различных подсумков. В данном случае, конфигурация выполнена командиром группы Goons - Knight, для ведения штурмовых операций с повышенной мобильностью."
       }
     },
 

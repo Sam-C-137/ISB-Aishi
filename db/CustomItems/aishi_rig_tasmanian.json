@@ -43,6 +43,11 @@
         "name": "Colete Tático Tasmanian Tiger MKIII (Agência de Suporte a Inteligência da USEC)",
         "shortName": "TT MKIII",
         "description": "Um colete de proteção leve e de perfil baixo, projetado para acomodar placas SAPI. Fabricado pela Tasmanian Tiger. Versão em preto."
+      },
+      "ru": {
+        "name": "Чехол для бронеплит Tasmanian Tiger \"MKIII\" (Бюро разведывательной поддержки USEC)",
+        "shortName": "TT MKIII",
+        "description": "Легкий низкопрофильный бронежилет под плиты SAPI. Производство Tasmanian Tiger. Чёрная версия."
       }
     },
 

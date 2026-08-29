@@ -306,6 +306,11 @@
         "name": "Colete Tático Blindado 6B45 Layout Médico (Agência de Suporte a Inteligência da USEC)",
         "shortName": "6B45.M",
         "description": "Um conjunto completo de porta-placas montado sobre o colete 6B45. Esta configuração permite a organização conveniente de suprimentos médicos de combate essenciais e equipamentos de comunicação. Variante com Camuflagem Preta para as Forças Especiais da ISB."
+      },
+      "ru": {
+        "name": "Чехол для бронеплит 6B45, медицинская компоновка (Бюро разведывательной поддержки USEC)",
+        "shortName": "6B45.М",
+        "description": "Полноценная система пластинчатого бронежилета, построенная на основе жилета 6B45. Данная конфигурация обеспечивает удобное размещение необходимых боевых медицинских средств и коммуникационного оборудования. Вариант с чёрным камуфляжем для спецназа ISB."
       }
     },
 

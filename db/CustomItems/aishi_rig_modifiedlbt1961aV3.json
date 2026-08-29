@@ -306,6 +306,11 @@
         "name": "Colete tático LBT-1961A Modificado (Agência de Suporte a Inteligência da USEC Versão II)",
         "shortName": "LBCR EISB V2",
         "description": "Um sistema tático de suporte de carga projetado para transportar carregadores, granadas e equipamentos especiais, utilizando coletes à prova de balas de baixo perfil. Fabricado pela London Bridge Trading. Configuração especial pelas Forças Especiais da ISB."
+      },
+      "ru": {
+        "name": "Модифицированный разгрузочный жилет LBT-1961A Load Bearing Chest Rig V2 (Бюро разведывательной поддержки USEC Версия II)",
+        "shortName": "LBCR ISBE V2",
+        "description": "Разгрузочная система предназначенная для переноски магазинов и спецсредств, при одновременном использовании низкопрофильных бронежилетов. Производство London Bridge Trading. Специальная конфигурация от спецназа ISB."
       }
     },
 

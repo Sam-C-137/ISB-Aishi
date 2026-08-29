@@ -81,6 +81,11 @@
         "name": "Colete Tático Spiritus Systems LV-119 (Agência de Suporte a Inteligência da USEC - V2)",
         "shortName": "LV-119 V2",
         "description": "Um porta-placas modular altamente personalizável da Spiritus Systems, concebido para proporcionar o máximo conforto em combate. Versão preta. Esta configuração está equipada com cargas de brecha e várias bolsas GP para máxima flexibilidade do equipamento. Versão preta para as Forças Especiais ISB."
+      },
+      "ru": {
+        "name": "Чехол для бронеплит Spiritus Systems \"LV-119\" V2 (Бюро разведывательной поддержки USEC)",
+        "shortName": "LV-119 V2",
+        "description": "Высококастомизируемый модульный пластинчатый бронежилет от Spiritus Systems, созданный для максимального комфорта в бою. Чёрная версия. Данная конфигурация оснащена зарядами для взлома и несколькими универсальными подсумками для максимальной гибкости в размещении снаряжения. Чёрная версия для спецназа ISB."
       }
     },
 

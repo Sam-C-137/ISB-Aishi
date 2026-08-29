@@ -80,6 +80,11 @@
         "name": "Spiritus Systems LV-119 Plate Carrier (MultiCam Arid)",
         "shortName": "LV-119",
         "description": "A highly customizable modular plate carrier by Spiritus Systems, built for maximum comfort in combat. This MultiCam Arid version."
+      },
+      "ru": {
+        "name": "Чехол для бронеплит Spiritus Systems \"LV-119\" (MultiCam Arid)",
+        "shortName": "LV-119",
+        "description": "Модульная система LV-119 позволяет адаптировать обвес бойца под задачи операции. Версия в камуфляже MultiCam Arid."
       }
     },
 
