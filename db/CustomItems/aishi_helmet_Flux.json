@@ -78,6 +78,11 @@
         "name": "Capacete MTEK FLUX Balístico modificado (Preto)",
         "shortName": "ISB FLUX",
         "description": "Uma versão do capacete MTEK STRIKE com maior modularidade. Versão em preto."
+      },
+      "ru": {
+        "name": "Модифицированный шлем MTEK \"FLUX Ballistic\" (Чёрный)",
+        "shortName": "ISB FLUX",
+        "description": "Версия шлема MTEK \"STRIKE\" с расширенными возможностями установки модулей. Чёрная версия."
       }
     },
 
@@ -160,6 +165,11 @@
           "name": "Modified Hybrid composite materials",
           "shortName": "Modified Hybrid composite materials",
           "description": "Modified Hybrid composite materials"
+      },
+      "ru": {
+        "name": "Модифицированные гибридные композитные материалы",
+        "shortName": "Гибридные композиты",
+        "description": "Модифицированные гибридные композитные материалы"
       }
     },
 
@@ -226,6 +236,11 @@
           "name": "Modified Hybrid composite materials",
           "shortName": "Modified Hybrid composite materials",
           "description": "Modified Hybrid composite materials"
+      },
+      "ru": {
+        "name": "Модифицированные гибридные композитные материалы",
+        "shortName": "Гибридные композиты",
+        "description": "Модифицированные гибридные композитные материалы"
       }
     },
 

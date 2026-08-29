@@ -35,6 +35,11 @@
         "name": "Planos de ação da Agência de Suporte a Inteligência",
         "shortName": "Intel da ASI",
         "description": "Esses arquivos incluem a documentação relevante relativa ao ISB (Intelligence Support Bureau), uma organização auxiliar da USEC dedicada a atividades de inteligência e contra-espionagem. Este documento será útil para quem desejar saber mais sobre o trabalho dessa agência secreta ou de seus membros."
+      },
+      "ru": {
+        "name": "Планы разведки Бюро разведывательной поддержки",
+        "shortName": "Разведданные ISB",
+        "description": "Эти файлы содержат соответствующую документацию, касающуюся ISB (Бюро разведывательной поддержки) — вспомогательной организации USEC, занимающейся разведывательной и контрразведывательной деятельностью. Этот документ будет полезен для тех, кто хочет узнать больше о работе этого секретного агентства или его членов."
       }
     
     },

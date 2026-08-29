@@ -84,6 +84,11 @@
         "name": "Capacete MSA Gallet TC 800 High Cut modificado (Preto)",
         "shortName": "ISB TC800",
         "description": "O capacete balístico MSA TC 800, projetado para uso por equipes táticas das forças especiais da polícia, em operações de combate e reconhecimento. Ele pode ser adaptado com diversos componentes."
+      },
+      "ru": {
+        "name": "Модифицированный боевой шлем MSA \"Gallet TC 800 High Cut\" (Чёрный)",
+        "shortName": "ISB TC800",
+        "description": "Баллистический шлем MSA TC 800, предназначенный для применения тактическими командами полицейского спецназа, в боевых и разведывательных операциях. Может быть модифицирован различными компонентами."
       }
     },
 
@@ -166,6 +171,11 @@
           "name": "Modified Layers of aramid fiber",
           "shortName": "Modified Layers of aramid fiber",
           "description": "Modified Layers of aramid fiber"
+      },
+      "ru": {
+        "name": "Модифицированные слои арамидного волокна",
+        "shortName": "Арамидные слои",
+        "description": "Модифицированные слои арамидного волокна"
       }
     },
 
@@ -232,6 +242,11 @@
             "name": "Modified Layers of aramid fiber",
             "shortName": "Modified Layers of aramid fiber",
             "description": "Modified Layers of aramid fiber"
+      },
+      "ru": {
+        "name": "Модифицированные слои арамидного волокна",
+        "shortName": "Арамидные слои",
+        "description": "Модифицированные слои арамидного волокна"
       }
     },
 

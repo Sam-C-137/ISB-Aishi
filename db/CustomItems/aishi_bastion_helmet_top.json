@@ -52,6 +52,11 @@
             "name": "Modified hybrid composite materials",
             "shortName": "Modified hybrid composite materials",
             "description": "Modified hybrid composite materials"
+      },
+      "ru": {
+        "name": "Модифицированные гибридные композитные материалы",
+        "shortName": "Гибридные композиты",
+        "description": "Модифицированные гибридные композитные материалы"
       }
     },
 

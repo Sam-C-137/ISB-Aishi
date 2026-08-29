@@ -45,6 +45,11 @@
         "name": "Braçadeira (Black Division)",
         "shortName": "BD",
         "description": "Uma braçadeira para os membros das forças especiais da Black Division"
+      },
+      "ru": {
+        "name": "Нарукавная повязка (Black Division)",
+        "shortName": "BD",
+        "description": "Нарукавная повязка для членов спецподразделений Black Division"
       }
     },
 

@@ -59,6 +59,11 @@
             "name": "Placa balística experimental ESAPI nível V da ISB \"Evernight\"",
             "shortName": "ESAPI V da ISB",
             "description": "A Placa de Proteção Aprimorada contra Armas de Pequeno Calibre (ESAPI) é uma placa balística de cerâmica destinada aos bolsos dianteiro e traseiro do colete de proteção. Este modelo foi aperfeiçoado e adaptado pela ISB e testado inicialmente pelo operador “Evernight”, razão pela qual recebeu esse nome."
+      },
+      "ru": {
+        "name": "Экспериментальная бронеплита ISB ESAPI Уровень V \"Evernight\"",
+        "shortName": "ISB ESAPI V",
+        "description": "Усиленная броневставка для стрелкового оружия (ESAPI) — это керамическая баллистическая плита для переднего и заднего карманов пластинчатого бронежилета. Эта модель была доработана и адаптирована ISB и первоначально протестирована оперативником \"Evernight\", поэтому она получила такое название."
       }
     },
 

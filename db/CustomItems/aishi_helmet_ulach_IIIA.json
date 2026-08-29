@@ -84,6 +84,11 @@
         "name": "Capacete HighCom Striker ULACH IIIA modificado (Preto)",
         "shortName": "ISB ULACH",
         "description": "Um capacete de combate com proteção para as orelhas e a nuca, fabricado pela HighCom. Pintado com tinta spray na cor preta."
+      },
+      "ru": {
+        "name": "Модифицированный шлем HighCom \"Striker ULACH IIIA\" (Чёрный)",
+        "shortName": "ISB ULACH",
+        "description": "Боевой шлем от компании HighCom с защитой затылка и ушей. Окрашен в чёрный стиль."
       }
     },
 
@@ -166,6 +171,11 @@
           "name": "Modified Hybrid composite materials",
           "shortName": "Modified Hybrid composite materials",
           "description": "Modified Hybrid composite materials"
+      },
+      "ru": {
+        "name": "Модифицированные гибридные композитные материалы",
+        "shortName": "Гибридные композиты",
+        "description": "Модифицированные гибридные композитные материалы"
       }
     },
 
@@ -232,6 +242,11 @@
           "name": "Modified Hybrid composite materials",
           "shortName": "Modified Hybrid composite materials",
           "description": "Modified Hybrid composite materials"
+      },
+      "ru": {
+        "name": "Модифицированные гибридные композитные материалы",
+        "shortName": "Гибридные композиты",
+        "description": "Модифицированные гибридные композитные материалы"
       }
     },
 
@@ -298,6 +313,11 @@
           "name": "Modified Hybrid composite materials",
           "shortName": "Modified Hybrid composite materials",
           "description": "Modified Hybrid composite materials"
+      },
+      "ru": {
+        "name": "Модифицированные гибридные композитные материалы",
+        "shortName": "Гибридные композиты",
+        "description": "Модифицированные гибридные композитные материалы"
       }
     },
 
@@ -364,6 +384,11 @@
           "name": "Modified Hybrid composite materials",
           "shortName": "Modified Hybrid composite materials",
           "description": "Modified Hybrid composite materials"
+      },
+      "ru": {
+        "name": "Модифицированные гибридные композитные материалы",
+        "shortName": "Гибридные композиты",
+        "description": "Модифицированные гибридные композитные материалы"
       }
     },
 
@@ -430,6 +455,11 @@
           "name": "Modified Hybrid composite materials",
           "shortName": "Modified Hybrid composite materials",
           "description": "Modified Hybrid composite materials"
+      },
+      "ru": {
+        "name": "Модифицированные гибридные композитные материалы",
+        "shortName": "Гибридные композиты",
+        "description": "Модифицированные гибридные композитные материалы"
       }
     },
 
@@ -482,6 +512,11 @@
         "name": "Team Wendy EXFIL helmet cover (MultiCam Alpine)",
         "shortName": "EXFIL",
         "description": "A helmet cover for Team Wendy EXFIL series helmets. The MultiCam Alpine camouflage is intended for snow operations."
+      },
+      "ru": {
+        "name": "Чехол для шлема Team Wendy EXFIL (MultiCam Alpine)",
+        "shortName": "EXFIL",
+        "description": "Чехол для шлемов Team Wendy \"EXFIL Ballistic\" в камуфляже MultiCam Alpine предназначен для операций в снежных условиях."
       }
     },
 
@@ -541,6 +576,11 @@
         "name": "Team Wendy EXFIL helmet cover (MultiCam)",
         "shortName": "EXFIL",
         "description": "A helmet cover for Team Wendy EXFIL series helmets. The MultiCam camouflage is intended for daytime operations."
+      },
+      "ru": {
+        "name": "Чехол для шлема Team Wendy EXFIL (MultiCam)",
+        "shortName": "EXFIL",
+        "description": "Чехол для шлемов Team Wendy \"EXFIL Ballistic\" в камуфляже MultiCam предназначен для дневных операций."
       }
     },
 

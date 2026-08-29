@@ -35,6 +35,11 @@
         "name": "Planos de Inteligência da Divisão Negra",
         "shortName": "Intel da DN",
         "description": "Isso inclui documentação relacionada à Divisão Negra, um grupo clandestino que atua nas sombras em Tarkov. Os documentos fornecem informações sobre a Divisão Negra, seu funcionamento e seus objetivos, oferecendo uma visão útil sobre esse grupo enigmático."
+      },
+      "ru": {
+        "name": "Планы разведки Black Division",
+        "shortName": "Разведданные BD",
+        "description": "Включает документацию, относящуюся к Black Division — тайной группе, действующей в тени Таркова. Документы содержат информацию о Black Division, её структуре и целях, предоставляя полезное понимание этой загадочной группы."
       }
     
     },

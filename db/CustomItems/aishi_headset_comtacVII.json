@@ -119,6 +119,11 @@
         "name": "Peltor ComTac VII headset (Black)",
         "shortName": "ComTac VII",
         "description": "Uma versão aprimorada do fone de ouvido de comunicação ComTac VI, com modos avançados de escuta do ambiente, isolamento acústico aprimorado e o recurso NIB (Natural Interaction Behavior), que permite a comunicação direta com outros operadores que utilizem outro ComTac VII a curta distância, sem a necessidade de rádios. Fabricado pela 3M Peltor. Versão em preto."
+      },
+      "ru": {
+        "name": "Наушники Peltor ComTac VII (Чёрные)",
+        "shortName": "ComTac VII",
+        "description": "Улучшенная версия гарнитуры ComTac VI с расширенными режимами прослушивания окружающей среды, улучшенной шумоизоляцией и функцией NIB (Natural Interaction Behavior), которая обеспечивает прямую связь с другими операторами, использующими ComTac VII, на близком расстоянии без необходимости использования радиостанций. Производство 3M Peltor. Чёрная версия."
       }
     
     },

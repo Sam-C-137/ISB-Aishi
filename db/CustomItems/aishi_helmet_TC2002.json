@@ -78,6 +78,11 @@
         "name": "Capacete MSA ACH TC-2002 MICH Series modificado (Preto)",
         "shortName": "ISB TC-2002",
         "description": "O Capacete de Combate Avançado (ACH) da MSA oferece proteção avançada contra balas, fragmentos e impactos na cabeça, além de conforto para uso prolongado. O design discreto do capacete reduz o risco de interferência na aquisição de alvos e garante compatibilidade com visores noturnos e fones de ouvido."
+      },
+      "ru": {
+        "name": "Модифицированный шлем MSA \"ACH TC-2002 MICH Series\" (Чёрный)",
+        "shortName": "ISB TC-2002",
+        "description": "Усовершенствованный боевой шлем MSA (ACH) обеспечивает улучшенную защиту от баллистических, осколочных и ударных воздействий, а также комфорт при длительном использовании. Низкопрофильная конструкция шлема снижает риск перекрываний при захвате цели и обеспечивает совместимость с головными приборами и гарнитурами."
       }
     },
 
@@ -160,6 +165,11 @@
           "name": "Modified Hybrid composite materials",
           "shortName": "Modified Hybrid composite materials",
           "description": "Modified Hybrid composite materials"
+      },
+      "ru": {
+        "name": "Модифицированные гибридные композитные материалы",
+        "shortName": "Гибридные композиты",
+        "description": "Модифицированные гибридные композитные материалы"
       }
     },
 
@@ -226,6 +236,11 @@
           "name": "Modified Hybrid composite materials",
           "shortName": "Modified Hybrid composite materials",
           "description": "Modified Hybrid composite materials"
+      },
+      "ru": {
+        "name": "Модифицированные гибридные композитные материалы",
+        "shortName": "Гибридные композиты",
+        "description": "Модифицированные гибридные композитные материалы"
       }
     },
 

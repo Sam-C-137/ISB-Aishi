@@ -146,6 +146,11 @@
         "name": "Capacete Bastion da Diamond Age das Forças Especiais da ISB (Preto)",
         "shortName": "Bastion da ISB",
         "description": "De acordo com o fabricante - o capacete Bastion é o primeiro capacete de combate que pode suportar um impacto de um rifle, mesmo com uma bala com núcleo blindado a uma velocidade de boca. Este modelo foi modificado pela ISB para uso por suas forças especiais. Versão preta."
+      },
+      "ru": {
+        "name": "Кастомный шлем Diamond Age \"Bastion\" от спецназа ISB (Чёрный)",
+        "shortName": "ISB Bastion",
+        "description": "Как заявляет производитель - шлем Бастион, это первый боевой шлем, способный выдерживать попадание из винтовки, даже, пулей с сердечником, со скоростью на срезе ствола. Эта модель была модифицирована ISB для использования их спецназом. Чёрная версия."
       }
     },
 

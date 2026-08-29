@@ -82,6 +82,11 @@
         "name": "Capacete 6B47 Ratnik-BSh modificado (Preto)",
         "shortName": "ISB 6B47",
         "description": "O 6B47 é um capacete de aramida de origem russa. Como parte do programa Ratnik, é o novo capacete padrão para a maior parte das Forças Armadas russas. O 6B47 é semelhante aos capacetes da geração anterior, como o 6B7-1M e o 6B27. Oferece o mesmo nível de proteção, mas pesa um pouco menos, flutua na água e possui suportes para lanternas e dispositivos de visão noturna. O capacete pode ser equipado com uma variedade de capas para diferentes ambientes. Equipado com uma capa de camuflagem preta."
+      },
+      "ru": {
+        "name": "Модифицированный шлем 6Б47 \"Ратник-БШ\" (Чёрный)",
+        "shortName": "ISB 6Б47",
+        "description": "6Б47 — арамидный шлем российского производства. В рамках программы \"Ратник\" он является новым стандартным шлемом для большей части Вооружённых сил РФ. 6Б47 схож со шлемами предыдущего поколения, такими как 6Б7-1М и 6Б27. Он имеет равную защиту, но весит немного меньше, держится на воде и имеет крепления для фонарей и приборов ночного видения. Шлем может оснащаться различными чехлами для разных условий. Оснащён чехлом чёрного камуфляжа."
       }
     },
 

@@ -38,6 +38,11 @@
         "name": "Diário com informações de contato da ISB",
         "shortName": "Diário da ISB",
         "description": "Um Diário que contem uma variedade de informações sobre como é possível entrar em contato com Aishi qualquer um de seus associados."
+      },
+      "ru": {
+        "name": "Дневник с контактными данными Айши и её команды",
+        "shortName": "Дневник ISB",
+        "description": "Дневник, содержащий различную информацию о том, как связаться с Айши или любым из её соратников."
       }
     },
 
