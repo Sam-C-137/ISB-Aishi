@@ -75,6 +75,11 @@
         "name": "Mochila Pilgrim expandida (USEC Intelligence Support Bureau)",
         "shortName": "Pilgrim",
         "description": "Uma mochila grande, perfeita para o turista em uma excursão."
+      },
+      "ru": {
+        "name": "Расширенный рюкзак \"Пилигрим\" (Бюро разведывательной поддержки USEC)",
+        "shortName": "Пилигрим",
+        "description": "Большой рюкзак, который идеально подходит для туриста в рейде."
       }
     },
 

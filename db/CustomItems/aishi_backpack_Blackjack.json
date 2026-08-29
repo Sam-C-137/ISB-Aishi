@@ -37,6 +37,11 @@
         "name": "Mochila Mystery Ranch Blackjack 50 (Agência de Suporte a Inteligência da USEC)",
         "shortName": "Blackjack 50",
         "description": "Uma mochila feita para expedições longas e bem-sucedidas, fabricada pela Mystery Ranch. Versão Preta das Forças Especiais da ISB."
+      },
+      "ru": {
+        "name": "Рюкзак Mystery Ranch \"Blackjack 50\" (Бюро разведывательной поддержки USEC)",
+        "shortName": "Blackjack 50",
+        "description": "Рюкзак для дальних и успешных рейдов фирмы Mystery Ranch. Чёрная версия для спецназа ISB."
       }
     },
 

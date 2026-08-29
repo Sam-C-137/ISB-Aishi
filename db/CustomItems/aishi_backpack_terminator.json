@@ -75,6 +75,11 @@
         "name": "Mochila Eberlestock F4 Terminator expandida (Agência de Suporte a Inteligência da USEC)",
         "shortName": "F4",
         "description": "Uma mochila extremamente versátil de formato completo para uso militar. Fabricada pela Eberlestock."
+      },
+      "ru": {
+        "name": "Расширенный нагрузочный рюкзак Eberlestock \"F4 Terminator\" (Бюро разведывательной поддержки USEC)",
+        "shortName": "F4 Terminator",
+        "description": "Чрезвычайно универсальный полноформатный нагрузочный рюкзак для военного использования. Производство Eberlestock."
       }
     },
 

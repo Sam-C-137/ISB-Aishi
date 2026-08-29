@@ -75,6 +75,11 @@
         "name": "Bolsa Tática estendida (Agência de Suporte a Inteligência da USEC)",
         "shortName": "Bolsa",
         "description": "Uma bolsa tipo sling original, ideal para o dia a dia ou para atividades de lazer."
+      },
+      "ru": {
+        "name": "Расширенная тактическая однолямочная сумка (Бюро разведывательной поддержки USEC)",
+        "shortName": "Сумка",
+        "description": "Оригинальная сумка через плечо на повседневную носку или для более активного отдыха."
       }
     },
 

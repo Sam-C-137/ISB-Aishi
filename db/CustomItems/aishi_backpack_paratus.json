@@ -75,6 +75,11 @@
         "name": "Mochila 3V G Paratus 3-Day Operator's Tactical expandida (Agência de Suporte a Inteligência da USEC)",
         "shortName": "Paratus",
         "description": "Uma mochila modular de poliéster com revestimento de PVC destinada a operadores da PMC que irão percorrer o terreno acidentado da região de Norvinsk."
+      },
+      "ru": {
+        "name": "Расширенный рюкзак оператора 3V Gear \"Paratus 3-Day\" (Бюро разведывательной поддержки USEC)",
+        "shortName": "Paratus",
+        "description": "Модульный рюкзак из полиэстера с ПВХ-покрытием для оперативников ЧВК, которым предстоит передвигаться по пересечённой местности Норвинского региона."
       }
     },
 

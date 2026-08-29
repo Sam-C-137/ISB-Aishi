@@ -74,6 +74,11 @@
         "name": "Mochila para 3 Dias LBT-1476A (Agência de Suporte a Inteligência da USEC)",
         "shortName": "LBT-1476A",
         "description": "Uma mochila de tamanho médio para 3 dias, projetada tanto para uso militar quanto turístico. Fabricada pela London Bridge Trading. Versão em camuflagem preta"
+      },
+      "ru": {
+        "name": "Рюкзак LBT-1476A 3Day Pack (Бюро разведывательной поддержки USEC)",
+        "shortName": "LBT-1476A",
+        "description": "Трехдневный рюкзак средних размеров, предназначенный как для военного, так и для туристического использования. Производство London Bridge Trading. Версия с чёрным камуфляжем."
       }
     },
 
