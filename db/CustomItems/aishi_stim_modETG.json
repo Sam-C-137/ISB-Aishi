@@ -45,6 +45,11 @@
         "name": "Injetor estimulante para regeneração eTG-change de dupla ação aprimorado",
         "shortName": "eTG-c",
         "description": "Um poderoso estimulante dos processos de regeneração. É utilizado para a rápida recuperação de um soldado após uma lesão ou durante o transporte de pessoal gravemente ferido. Seu uso é permitido apenas a médicos e paramédicos. Apresenta efeitos colaterais graves."
+      },
+      "ru": {
+        "name": "Регенеративный стимулятор eTG-change Dual-Action улучшенный",
+        "shortName": "eTG-у",
+        "description": "Мощный стимулятор процессов регенерации. Применяется для быстрого восстановления бойца после ранения, либо во время транспортировки тяжело раненных. Разрешено использовать только военным врачам и фельдшерам. Имеет сильные побочные эффекты."
       }
     
     },

@@ -44,6 +44,11 @@
             "name": "Modified aramid insert",
             "shortName": "Modified aramid insert",
             "description": "Modified aramid insert"
+      },
+      "ru": {
+        "name": "Модифицированная арамидная вставка",
+        "shortName": "Арамидная вставка",
+        "description": "Модифицированная арамидная вставка"
       }
     },
 

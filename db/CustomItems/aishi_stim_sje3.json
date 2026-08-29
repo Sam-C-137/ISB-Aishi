@@ -52,6 +52,11 @@
         "name": "SJE3 TGLabs combat stimulant injector",
         "shortName": "SJE3",
         "description": "Um estimulante experimental da TerraGroup que causa um efeito de êxtase extremamente perigoso. Ele foi descontinuado devido a constantes fracassos nos experimentos. A ISB retomou o projeto o tornando mais seguro e adaptando."
+      },
+      "ru": {
+        "name": "Боевой стимулятор SJE3 TGLabs",
+        "shortName": "SJE3",
+        "description": "Экспериментальный стимулятор, разработанный TerraGroup, вызывающий крайне опасный эйфорический эффект. Был снят с производства из-за повторяющихся неудач в экспериментах. ISB возобновила проект, сделав его более безопасным и адаптировав."
       }
     },
 
