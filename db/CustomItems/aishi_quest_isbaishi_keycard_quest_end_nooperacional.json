@@ -40,6 +40,11 @@
         "name": "Cartão de Acesso de Alto Nível da TerraGroup não operacional",
         "shortName": "TG C",
         "description": "Um cartão de acesso pertencente a um executivo de alto escalão da TerraGroup. Já não está em funcionamento."
+      },
+      "ru": {
+        "name": "Нерабочая ключ-карта высокого уровня доступа TerraGroup",
+        "shortName": "КК TG",
+        "description": "Карта доступа, принадлежащая высокопоставленному руководителю TerraGroup. Больше не действует."
       }
     
     },

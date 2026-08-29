@@ -40,6 +40,11 @@
         "name": "Cartão de Acesso Limitado da TerraGroup Labs emitido para a Diretora Interina da ISB",
         "shortName": "CL Aishi",
         "description": "Um cartão de acesso de alto nível emitido pela USEC para a Diretora Interina da ISB para acesso especial nas instalações da TerraGroup."
+      },
+      "ru": {
+        "name": "Ограниченная ключ-карта доступа в Лабораторию TerraGroup, выданная заместителю директора ISB",
+        "shortName": "КК Айши L",
+        "description": "Карта доступа высокого уровня, выданная USEC исполняющей обязанности директора ISB для специального доступа к объектам TerraGroup."
       }
     
     },

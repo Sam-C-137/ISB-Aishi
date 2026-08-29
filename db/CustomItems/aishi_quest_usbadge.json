@@ -35,6 +35,11 @@
         "name": "Insígnia de Grupo Especial desconhecido do exercito dos Estados Únidos",
         "shortName": "Insígnia",
         "description": "Uma insígnia utilizada por um grupo de operações especiais do exercito dos Estados Unidos que realizou uma operação secreta em Tarkov "
+      },
+      "ru": {
+        "name": "Значок неизвестной группы спецназа армии США",
+        "shortName": "Значок США",
+        "description": "Инсигния, используемая группой специальных операций армии США, которая провела секретную операцию в Таркове."
       }
     
     },

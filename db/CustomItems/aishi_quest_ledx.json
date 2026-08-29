@@ -35,6 +35,11 @@
         "name": "Transiluminador de pele LEDX",
         "shortName": "LEDX",
         "description": "Um dispositivo médico projetado para determinar com precisão a posição das veias sob a pele."
+      },
+      "ru": {
+        "name": "LEDX Трансиллюминатор кожи",
+        "shortName": "LEDX",
+        "description": "Медицинское устройство, предназначенное для точного определения положения вен под кожей."
       }
     
     },

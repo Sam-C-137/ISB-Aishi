@@ -35,6 +35,11 @@
         "name": "Dispositivo improvisado para invadir sistemas",
         "shortName": "Hack Dev",
         "description": "Um dispositivo improvisado utilizado para hackear pequenos aparelhos eletrônicos, interceptar comunicações por rádio, controladores elétricos e redes sem fio."
+      },
+      "ru": {
+        "name": "Импровизированное устройство для взлома систем",
+        "shortName": "Взлом. устр.",
+        "description": "Самодельное устройство, используемое для взлома небольших электронных устройств, перехвата радиопередач, электрических контроллеров и беспроводных сетей."
       }
     
     },

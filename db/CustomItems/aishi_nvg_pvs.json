@@ -57,6 +57,11 @@
         "name": "Modified L3Harris PVS-31A night vision goggles (Green Phosphor)",
         "shortName": "PVS-31A",
         "description": "A very lightweight and ergonomic night vision device manufactured by L3Harris. Provides an optimal field of view and a clear image not only in low-light conditions but also in the presence of bright light sources. Equipped with Butler Creek flip-open lens protectors. Green Phosphor tubes version."
+      },
+      "ru": {
+        "name": "Модифицированные очки ночного видения L3Harris PVS-31A (Зелёный фосфор)",
+        "shortName": "PVS-31A",
+        "description": "Очень лёгкое и эргономичное устройство ночного видения производства L3Harris. Обеспечивает оптимальное поле зрения и чёткое изображение не только в условиях низкой освещённости, но и при наличии ярких источников света. Оснащено откидными защитными крышками объективов Butler Creek. Версия с трубками зелёного фосфора."
       }
     },
 
@@ -150,6 +155,11 @@
         "name": "Modified L3Harris PVS-31A night vision goggles (White)",
         "shortName": "PVS-31A",
         "description": "A very lightweight and ergonomic night vision device manufactured by L3Harris. Provides an optimal field of view and a clear image not only in low-light conditions but also in the presence of bright light sources. Equipped with Butler Creek flip-open lens protectors. White Phosphor tubes version."
+      },
+      "ru": {
+        "name": "Модифицированные очки ночного видения L3Harris PVS-31A (Белый фосфор)",
+        "shortName": "PVS-31A",
+        "description": "Очень лёгкое и эргономичное устройство ночного видения производства L3Harris. Обеспечивает оптимальное поле зрения и чёткое изображение не только в условиях низкой освещённости, но и при наличии ярких источников света. Оснащено откидными защитными крышками объективов Butler Creek. Версия с трубками белого фосфора."
       }
     },
 
@@ -243,6 +253,11 @@
         "name": "Modified L3Harris PVS-31A night vision goggles (FDE)",
         "shortName": "PVS-31A",
         "description": "A very lightweight and ergonomic night vision device manufactured by L3Harris. Provides an optimal field of view and a clear image not only in low-light conditions but also in the presence of bright light sources. Equipped with Butler Creek flip-open lens protectors. White Phosphor tubes version."
+      },
+      "ru": {
+        "name": "Модифицированные очки ночного видения L3Harris PVS-31A (FDE)",
+        "shortName": "PVS-31A",
+        "description": "Очень лёгкое и эргономичное устройство ночного видения производства L3Harris. Обеспечивает оптимальное поле зрения и чёткое изображение не только в условиях низкой освещённости, но и при наличии ярких источников света. Оснащено откидными защитными крышками объективов Butler Creek. Версия с трубками белого фосфора."
       }
     },
 

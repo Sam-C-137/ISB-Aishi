@@ -53,6 +53,11 @@
         "name": "Máscara de gás Unix 5000 modificada (Agência de Suporte a Inteligência da USEC)",
         "shortName": "U-5000",
         "description": "Uma mascara de gás de nível militar para proteção individual produzida pela JSC “Sorbent”. O projeto foi roubado pela ISB em uma operação de contrainteligência e adaptado para fornecer um visor blindado."
+      },
+      "ru": {
+        "name": "Модифицированный противогаз Unix 5000 (Бюро разведывательной поддержки USEC)",
+        "shortName": "U-5000",
+        "description": "Военный противогаз для индивидуальной защиты производства АО \"Сорбент\". Конструкция была похищена ISB в ходе контрразведывательной операции и адаптирована для обеспечения бронированного визора."
       }
     },
 

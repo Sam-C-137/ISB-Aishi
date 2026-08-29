@@ -35,6 +35,11 @@
         "name": "Um Cilindro com substância radioativa",
         "shortName": "Cilindro",
         "description": "Um cilindro que contem uma substância desconhecida porém com uma marcação de risco radioativo."
+      },
+      "ru": {
+        "name": "Цилиндр, содержащий радиоактивный материал",
+        "shortName": "Цилиндр",
+        "description": "Цилиндр, содержащий неизвестное вещество, но маркированный как радиоактивный."
       }
     
     },

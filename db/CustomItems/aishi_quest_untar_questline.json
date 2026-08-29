@@ -40,6 +40,11 @@
         "name": "TG Letter",
         "shortName": "Carta TG",
         "description": "Uma carta selada que deveria ser entregue a uma oficial da TerraGroup responsável pelos últimos grupos de evacuação no Terminal. \n\n[CONFIDENCIAL] DESTRUA APÓS LER \n\n[CONFIDENCIAL] DESTRUA APÓS LER \n\n[CONFIDENCIAL] DESTRUA APÓS LER \n\nDe: Almen James\nPara: Rostova Rais \n\nBoa tarde senhora Rais, o fato de eu estar escrevendo isso utilizando nossos protocolos analogicos já mostra a importância desse recado. \n\nA evacuação ainda não terminou, eu imploro, suplico para que a senhora reconsidere e atrase o começo da nova fase da operação de limpeza. \n\nTemos muitos cientistas e funcionarios esperando evacuação, se os novos contratados começarem a operação você sabe exatamente o que vai acontecer, muitas coisas importantes serão perdidas além de vidas. Por favor, atrase o começo da operação LIMPEZA. \n\nAtenciosamente, Almen James\nPesquisador Chefe da TerraGroup Labs"
+      },
+      "ru": {
+        "name": "Письмо TG",
+        "shortName": "Письмо TG",
+        "description": "Запечатанное письмо, которое должно было быть доставлено официальному лицу TerraGroup, ответственному за последние эвакуационные группы на Терминале. \n\n[КОНФИДЕНЦИАЛЬНО] УНИЧТОЖИТЬ ПОСЛЕ ПРОЧТЕНИЯ \n\n[КОНФИДЕНЦИАЛЬНО] УНИЧТОЖИТЬ ПОСЛЕ ПРОЧТЕНИЯ \n\n[КОНФИДЕНЦИАЛЬНО] УНИЧТОЖИТЬ ПОСЛЕ ПРОЧТЕНИЯ \n\nОт: Алмен Джеймс\nКому: Ростова Раис \n\nДобрый день, госпожа Раис. Тот факт, что я пишу это с использованием наших аналоговых протоколов, уже демонстрирует важность этого сообщения. \n\nЭвакуация ещё не завершена. Я умоляю вас, прошу пересмотреть решение и отложить начало нового этапа операции по зачистке. \n\nМногие учёные и сотрудники ожидают эвакуации. Если новые подрядчики начнут операцию, вы точно знаете, что произойдёт — будет потеряно много важного, а также жизни. Пожалуйста, отложите начало операции \"ЗАЧИСТКА\". \n\nС уважением, Алмен Джеймс\nГлавный исследователь, Лаборатория TerraGroup"
       }
     
     },
@@ -91,6 +96,11 @@
         "name": "Pendrive Militar com dados para um aplicativo aplicativo de rastreamento atualizado e aprimorado",
         "shortName": "Pendrive",
         "description": "Um pendrive criptografado com informações de um software de rastreamento de ponta já atualizado e com aprimoramentos de ponta."
+      },
+      "ru": {
+        "name": "Военный флеш-накопитель с данными для исправленного и улучшенного приложения отслеживания",
+        "shortName": "Флешка",
+        "description": "Зашифрованный флеш-накопитель, содержащий информацию от передового программного обеспечения для отслеживания, которое в настоящее время исправлено и улучшено."
       }
     
     },
@@ -177,6 +187,11 @@
         "name": "1GPhone Dourado com um aplicativo de rastreamento em hibernação.",
         "shortName": "1GPhone Mod",
         "description": "Um 1GPhone Dourado que passou por modificações para uma instalação de um aplicativo de rastreamento em profunda hibernação."
+      },
+      "ru": {
+        "name": "Золотой 1GPhone со спящим приложением отслеживания",
+        "shortName": "1GPhone Мод",
+        "description": "Золотой 1GPhone, который был модифицирован для размещения приложения отслеживания, находящегося в глубокой спячке."
       }
     
     },
@@ -262,6 +277,11 @@
         "name": "Container Seguro Beta com documentos desconhecidos",
         "shortName": "C.Beta Desconhecido",
         "description": "Um container seguro do modelo Beta avariado por uma queda. Ele aparenta conter papeis em seu interior."
+      },
+      "ru": {
+        "name": "Бета-контейнер с неизвестными документами",
+        "shortName": "Неизв. Бета-к.",
+        "description": "Бета-контейнер, повреждённый при падении. Похоже, внутри находятся бумаги."
       }
     
     },
@@ -312,6 +332,11 @@
         "name": "Dogtac da USEC com marcações únicas",
         "shortName": "Dogtag",
         "description": "Uma dogtag personalizada de um PMC da USEC com marcações relacionadas a salvação da humanidade e uma luta constante contra alguém."
+      },
+      "ru": {
+        "name": "Жетон USEC с уникальными отметками",
+        "shortName": "Жетон",
+        "description": "Кастомизированный жетон ЧВК USEC с отметками, связанными со спасением человечества и постоянной борьбой против кого-то."
       }
     
     },
@@ -362,6 +387,11 @@
         "name": "Um Keycard RFID customizado com certificados e credenciais desconhecidas.",
         "shortName": "RFID",
         "description": "Um cartão com marcações da TerraGroup que possui informações codificadas que levam acesso a um lugar desconhecido. Ele foi danificado e não está mais operacional."
+      },
+      "ru": {
+        "name": "Кастомная RFID-карта с неизвестными сертификатами и учётными данными",
+        "shortName": "RFID",
+        "description": "Карта с маркировкой TerraGroup, содержащая закодированную информацию, предоставляющую доступ к неизвестному месту. Она повреждена и больше не действует."
       }
     
     },
@@ -412,6 +442,11 @@
         "name": "Jammer Modificado",
         "shortName": "RFID",
         "description": "Um bloqueador modificado capaz de interferir em comunicações de baixa e baixíssima frequência, especificamente nos sinais de frequência única comumente utilizados em explosivos."
+      },
+      "ru": {
+        "name": "Модифицированный глушитель",
+        "shortName": "Глушитель",
+        "description": "Модифицированный глушитель, способный нарушать связь на низких и сверхнизких частотах, в частности одночастотные сигналы, обычно используемые во взрывных устройствах."
       }
     
     },
@@ -463,6 +498,11 @@
         "name": "Caixa de Armas T H I C C Marcada e Trancada",
         "shortName": "Caixa de Armas",
         "description": "Uma caixa de arma bem pesada deixada como parte de uma carga. Movimentar ela faz sentir que está lotada e provavelmente vale muito"
+      },
+      "ru": {
+        "name": "T H I C C кейс для оружия, маркированный и запертый",
+        "shortName": "Кейс с оружием",
+        "description": "Очень тяжёлый кейс для оружия, оставленный как часть груза. Когда поднимаешь его, чувствуется, что он набит до отказа и, вероятно, стоит целое состояние."
       }
     
     },
@@ -616,6 +656,11 @@
         "name": "Transcrição de uma conversa entre Aishi e uma pessoa desconhecida em um computador",
         "shortName": "Transcrição",
         "description": "Um documento contendo uma transcrição de uma conversa gravada de Aishi em seu computador pessoal. Não foi possível encontrar informações sobre o outro participante da conversa. Quem quer que tenha registrado isso, é um verdadeiro profissional."
+      },
+      "ru": {
+        "name": "Расшифровка компьютерного разговора между Айши и неизвестным лицом",
+        "shortName": "Расшифровка",
+        "description": "Документ, содержащий расшифровку записанного разговора Айши на её персональном компьютере. Информацию о другом участнике разговора найти не удалось. Тот, кто это записал, — настоящий профессионал."
       }
     
     },
@@ -667,7 +712,12 @@
         "name": "Transcrição de uma conversa entre Aishi e Knight",
         "shortName": "Transcrição",
         "description": "Um documento contendo uma transcrição gravada e transmitida por uma escuta tática. Algumas marcações na pasta original indicam que a escuta estava posicionada em algum lugar na Lighthouse."
-      } 
+      },
+      "ru": {
+        "name": "Расшифровка разговора между Айши и Knight",
+        "shortName": "Расшифровка",
+        "description": "Документ, содержащий расшифровку, записанную и переданную тактическим жучком. Некоторые пометки на оригинальной папке указывают на то, что жучок был установлен где-то на Маяке."
+      }
     
     },
 
@@ -718,6 +768,11 @@
         "name": "Folha de rosto do dossiê de Juna Aishi enquanto ela ainda estava a serviço da USEC",
         "shortName": "Aishi",
         "description": "Um documento oficial emitido durante a construção da \"Nova USEC\" após a KerniSEC e a Safe Sea se unirem em uma única empresa. Ele contém detalhes pessoais de Juna Aishi como parte do plano de recrutamento de oficiais de alto nível para o serviço da corporação."
+      },
+      "ru": {
+        "name": "Титульный лист личного дела Юны Айши за время её службы в USEC",
+        "shortName": "Айши",
+        "description": "Официальный документ, выпущенный во время формирования \"Новой USEC\" после объединения KerniSEC и Safe Sea в единую компанию. Содержит личные данные Юны Айши в рамках плана найма офицеров высокого уровня для службы в корпорации."
       }
     
     },
@@ -769,6 +824,11 @@
         "name": "Uma nota emitida pela TerraGroup para sua divisão de segurança sobre a USEC ISB",
         "shortName": "Nota",
         "description": "Um documento oficial da TerraGroup encaminhado aos oficiais da divisão de segurança e cientistas de alto nível, alertando sobre a necessidade de precaução com a USEC ISB, sua diretora e o pessoal envolvido no projeto. Ele cita uma \"Black Division\", nome não presente em nenhum dos registros oficiais."
+      },
+      "ru": {
+        "name": "Записка TerraGroup для отдела безопасности о USEC ISB",
+        "shortName": "Записка",
+        "description": "Официальный документ TerraGroup, направленный офицерам отдела безопасности и ведущим учёным с предупреждением о необходимости соблюдать осторожность в отношении USEC ISB, её директора и персонала, участвующего в проекте. Упоминается \"Black Division\" — название, отсутствующее в официальных записях."
       }
     
     },
@@ -820,7 +880,12 @@
         "name": "AA2",
         "shortName": "Transcrição",
         "description": "Um documento contendo uma transcrição gravada e transmitida por uma escuta de áudio tática. Algumas marcações na pasta original indicam que a escuta estava posicionada em algum lugar na Lighthouse."
-      } 
+      },
+      "ru": {
+        "name": "AA2",
+        "shortName": "Расшифровка",
+        "description": "Документ, содержащий расшифровку, записанную и переданную тактическим жучком. Некоторые пометки на оригинальной папке указывают на то, что жучок был установлен где-то на Маяке."
+      }
     
     },
 
@@ -871,7 +936,12 @@
         "name": "Caderno preto com informações sobre Aishi e a USEC ISB",
         "shortName": "Caderno",
         "description": "Um caderno com algumas folhas soltas de documentos relacionados a Aishi, além de algumas informações adicionais que a Lotus e seu pessoal compilaram durante as incursões em Ground Zero."
-    }
+    },
+      "ru": {
+        "name": "Чёрный блокнот с информацией об Айши и USEC ISB",
+        "shortName": "Блокнот",
+        "description": "Блокнот, содержащий несколько отдельных листов с документами, связанными с Айши, а также дополнительную информацию, которую Лотус и её люди собрали во время рейдов в Эпицентре."
+      }
     
     },
 
@@ -1075,6 +1145,11 @@
         "name": "Ficha da investigação dirigida pelo Operador BEAR sobre a UNTAR",
         "shortName": "Ficheiro",
         "description": "Um ficheiro com vários documentos da investigação dirigida pelo Operador BEAR a respeito da TerraGroup. Os documentos são menos conclusivos que os de seu parceiro da FSB, mas relatam um vínculo contratual da TerraGroup com uma empresa de segurança altamente especializada e mencionam vários e-mails interceptados referindo-se a uma \"Operação de Limpeza\" programada para acontecer no dia da última evacuação."  
+      },
+      "ru": {
+        "name": "Дело расследования UNTAR оперативником BEAR",
+        "shortName": "Папка",
+        "description": "Папка с документами расследования, проведённого оперативником BEAR в отношении TerraGroup. Документы менее убедительны, чем у его напарника из ФСБ, но сообщают о договорной связи между TerraGroup и высокоспециализированной охранной фирмой, а также упоминают несколько перехваченных писем, в которых говорится об \"Операции по зачистке\", запланированной на день финальной эвакуации."
       }
     
     },
@@ -1126,6 +1201,11 @@
         "name": "Ficha da investigação dirigida pelo agente especial da FSB sobre a UNTAR",
         "shortName": "Fichário",
         "description": "Um fichário com vários documentos e fotos sobre um oficial da UNTAR conhecido apenas pelo seu título, \"O Supervisor\". O agente da FSB conduziu uma investigação detalhada sobre diversas aprovações do oficial da UNTAR para veículos transportando pessoal e equipamentos de ponta. Transportes não listados nos registros oficiais."
+      },
+      "ru": {
+        "name": "Дело расследования UNTAR специальным агентом ФСБ",
+        "shortName": "Папка",
+        "description": "Папка с документами и фотографиями, касающимися офицера UNTAR, известного только по должности — \"Инспектор\". Агент ФСБ провёл детальное расследование нескольких разрешений, выданных офицером UNTAR на транспорт для перевозки персонала и высококлассного оборудования. Транспорт, не указанный в официальных записях."
       }
     
     },

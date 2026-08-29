@@ -37,6 +37,11 @@
         "name": "Pendrive criptografado com informações desconhecidas",
         "shortName": "Pendrive",
         "description": "Um pendrive criptografado com algumas informações desconhecidas e impossíveis de serem acessadas sem um método específico."
+      },
+      "ru": {
+        "name": "Зашифрованный флеш-накопитель с неизвестной информацией",
+        "shortName": "Флешка",
+        "description": "Зашифрованный флеш-накопитель, содержащий неизвестную информацию, доступ к которой невозможен без специального метода."
       }
     
     },
@@ -155,6 +160,11 @@
         "name": "Rádio Militar Avançado SSTV KW12",
         "shortName": "Rádio KW12",
         "description": "Um rádio militar avançado de alto alcance fabricado pela AEG-Telefunken. Ele foi utilizado durante operações no mundo inteiro da OTAN devido a alta confiabilidade e difícil capacidade de interrupções ou interceptações."
+      },
+      "ru": {
+        "name": "Продвинутая военная радиостанция SSTV KW12",
+        "shortName": "Радио KW12",
+        "description": "Продвинутая военная радиостанция дальнего действия производства AEG-Telefunken. Использовалась во время операций НАТО по всему миру благодаря высокой надёжности и устойчивости к помехам и перехвату."
       }
     
     },
@@ -205,6 +215,11 @@
         "name": "Pasta de Fotos com imagens estranhas",
         "shortName": "Pasta",
         "description": "Uma pasta com fotos estranhas de equipamentos ocidentais, dogtags de PMCs e alguns injetores da TerraGroup."
+      },
+      "ru": {
+        "name": "Папка с фотографиями со странными снимками",
+        "shortName": "Папка",
+        "description": "Папка со странными фотографиями западного оборудования, жетонов ЧВК и инъекторов TerraGroup."
       }
     
     },
@@ -255,6 +270,11 @@
         "name": "Notebook Criptografado e Blindado",
         "shortName": "Notebook",
         "description": "Um notebook com uma carcaça reforçada e criptografia em fechadura."
+      },
+      "ru": {
+        "name": "Зашифрованный бронированный ноутбук",
+        "shortName": "Ноутбук",
+        "description": "Ноутбук с усиленным корпусом и замком с шифрованием."
       }
     
     },
@@ -305,6 +325,11 @@
         "name": "Documentos secretos",
         "shortName": "Docs",
         "description": "Uma pilha de documentos que e cartas relacionadas a compra de explosivos de diversos tamanhos e modelos em específico C4. As informações dos compradores parecem confidenciais e foram intencionalmente censuradas."
+      },
+      "ru": {
+        "name": "Секретные документы",
+        "shortName": "Док.",
+        "description": "Стопка документов и писем, связанных с покупкой взрывчатых веществ различных размеров и моделей, в частности C4. Информация о покупателях выглядит конфиденциальной и была намеренно заретуширована."
       }
     
     },
@@ -355,6 +380,11 @@
         "name": "Prancheta com documentos alfandegários",
         "shortName": "Transferência",
         "description": "Uma prancheta com documentos alfandegários permitindo a passagem de veículos com carga classificada e alguns registros de explosivos. Os veículos eram de propriedade da TerraGroup e possuíam itinerário informando serem descarregados posteriormente na Shoreline. A passagem foi assinada e aprovada por dois oficiais da UNTAR."
+      },
+      "ru": {
+        "name": "Планшет с таможенными документами",
+        "shortName": "Перевод",
+        "description": "Планшет с таможенными документами, разрешающими проезд транспортных средств с секретным грузом, а также журналами учёта взрывчатых веществ. Транспорт принадлежал TerraGroup и имел маршрут, согласно которому он должен был быть разгружен на Берегу. Разрешение было подписано и утверждено двумя офицерами UNTAR."
       }
     
     },
@@ -405,6 +435,11 @@
         "name": "Carta de um dos homens do Ref",
         "shortName": "Carta",
         "description": "Uma carta de um dos associados de Ref informando o resultado do plano de emboscada de um cargueiro da TerraGroup que estava passando pelo bloqueio da UNTAR na Woods. A operação foi um fracasso uma vez que foram interceptados por um grupo especializado antes mesmo da operação começar. Apenas o remetente da carta sobreviveu ao ataque."
+      },
+      "ru": {
+        "name": "Письмо от одного из людей Рефа",
+        "shortName": "Письмо",
+        "description": "Письмо от одного из сообщников Рефа с подробностями о результате плана засады на грузовое судно TerraGroup, проходящее через блокпост UNTAR в Лесу. Операция провалилась, так как они были перехвачены специализированной группой до её начала. Выжил только отправитель письма."
       }
     
     },
@@ -455,6 +490,11 @@
         "name": "Relatório de Carga e Transporte da TerraGroup e UNTAR",
         "shortName": "Carga",
         "description": "Um conjunto de documentos e fotos relacionadas a um longo transporte de carga da TerraGroup com a UNTAR. Os documentos registram diversos explosivos C4 em nome da TerraGroup, além de armamento ocidental como HKs, M4A1s, cerca de 5000 unidades de 5.56x45mm M995 e 3000 unidades de 5.56x45mm SSA AP e alguns dispositivos de visão noturna."
+      },
+      "ru": {
+        "name": "Отчёт о грузе и транспорте TerraGroup и UNTAR",
+        "shortName": "Груз",
+        "description": "Набор документов и фотографий, касающихся длительной транспортировки груза TerraGroup с UNTAR. В документах зафиксированы несколько единиц взрывчатки C4 от имени TerraGroup, а также западное вооружение, такое как HK, M4A1, около 5000 патронов 5.56x45mm M995, 3000 патронов 5.56x45mm SSA AP и несколько приборов ночного видения."
       }
     
     },
@@ -505,6 +545,11 @@
         "name": "Disco Rígido com marcações",
         "shortName": "Drive",
         "description": "Um disco rígido especial e lacrado com uma fechadura digital. O conteúdo dele deve ser altamente importante, o que torna suspeito ter sido deixado para trás."
+      },
+      "ru": {
+        "name": "Маркированный жёсткий диск",
+        "shortName": "Диск",
+        "description": "Специальный жёсткий диск, запечатанный цифровым замком. Его содержимое должно быть крайне важным, что делает подозрительным тот факт, что он был оставлен."
       }
     
     },
@@ -555,6 +600,11 @@
         "name": "Disco Rígido com marcações",
         "shortName": "Drive",
         "description": "Um disco rígido especial e lacrado com uma fechadura digital. O conteúdo dele deve ser altamente importante, o que torna suspeito ter sido deixado para trás."
+      },
+      "ru": {
+        "name": "Маркированный жёсткий диск",
+        "shortName": "Диск",
+        "description": "Специальный жёсткий диск, запечатанный цифровым замком. Его содержимое должно быть крайне важным, что делает подозрительным тот факт, что он был оставлен."
       }
     
     },
@@ -614,6 +664,11 @@
         "name": "Jammer interceptador de sinal de baixa frequência modificado.",
         "shortName": "Jammer",
         "description": "Um disruptor de sinal modificado pela ISB para cortar comunicações de baixa frequência de explosivos."
+      },
+      "ru": {
+        "name": "Модифицированный низкочастотный глушитель сигнала.",
+        "shortName": "Глушитель",
+        "description": "Глушитель сигнала, модифицированный ISB для нарушения низкочастотной связи взрывных устройств."
       }
     
     },
@@ -672,6 +727,11 @@
         "name": "Flash Drive com Informações criptografadas",
         "shortName": "Flash",
         "description": "Um disco rígido especial e lacrado com uma fechadura digital. O conteúdo dele deve ser altamente importante, o que torna suspeito ter sido deixado para trás."
+      },
+      "ru": {
+        "name": "Флеш-накопитель с зашифрованной информацией",
+        "shortName": "Флеш",
+        "description": "Специальный жёсткий диск, запечатанный цифровым замком. Его содержимое должно быть крайне важным, что делает подозрительным тот факт, что он был оставлен."
       }
     
     },
@@ -722,6 +782,11 @@
         "name": "Flash Drive com Informações da TerraGroup",
         "shortName": "Flash",
         "description": "Um Pendrive que contem informações operacionais secretas da TerraGroup. Dados altamente criptografados que foram possíveis de serem lidos graças ao trabalho de Mechanic."
+      },
+      "ru": {
+        "name": "Флеш-накопитель с зашифрованными данными",
+        "shortName": "Флеш",
+        "description": "Специальный жёсткий диск, запечатанный цифровым замком. Его содержимое должно быть крайне важным, что делает подозрительным тот факт, что он был оставлен."
       }
     
     },
@@ -781,6 +846,11 @@
         "name": "Relatório de Transporte da TerraGroup",
         "shortName": "Documentos",
         "description": "Todo o relatório descriptografado cita uma grande operação de transporte da TerraGroup de equipamentos militares e veiculos para entrada na cidade através de pontos de bloqueio confiáveis da UNTAR. O Documento também cita alguns oficiais da UNTAR confiáveis que podem ajudar a facilitar a entrada do equipamento em Tarkov, além de deixar claro que o uso é restrito de uma força especial."
+      },
+      "ru": {
+        "name": "Отчёт о транспорте TerraGroup",
+        "shortName": "Док.",
+        "description": "В расшифрованном отчёте упоминается крупная транспортная операция TerraGroup по ввозу военного оборудования и транспортных средств в город через доверенные блокпосты UNTAR. В документе также упоминаются несколько доверенных офицеров UNTAR, которые могут помочь в провозе оборудования в Тарков, и указывается, что его использование ограничено подразделением спецназа."
       }
     
     },
@@ -834,6 +904,11 @@
         "name": "Pasta de Transporte da TerraGroup",
         "shortName": "Folder",
         "description": "Uma pasta da TerraGroup com algumas marcações e escritos como \"Para: Força Pacificadora 4\". Alguns documentos parecem ausentes mas mostra a colaboração da UNTAR com alguns transportes da TerraGroup."
+      },
+      "ru": {
+        "name": "Папка транспорта TerraGroup",
+        "shortName": "Папка",
+        "description": "Папка TerraGroup с некоторыми пометками и записями, такими как \"Кому: Миротворческие силы 4\". Некоторые документы отсутствуют, но показано сотрудничество UNTAR с некоторыми транспортными операциями TerraGroup."
       }
     
     },

@@ -35,6 +35,11 @@
         "name": "Rádio Militar Avançado SSTV KW12",
         "shortName": "Rádio KW12",
         "description": "Um rádio militar avançado de alto alcance fabricado pela AEG-Telefunken. Ele foi utilizado durante operações no mundo inteiro da OTAN devido a alta confiabilidade e difícil capacidade de interrupções ou interceptações."
+      },
+      "ru": {
+        "name": "Продвинутая военная радиостанция SSTV KW12",
+        "shortName": "Радио KW12",
+        "description": "Продвинутая военная радиостанция дальнего действия производства AEG-Telefunken. Использовалась во время операций НАТО по всему миру благодаря высокой надёжности и устойчивости к помехам и перехвату."
       }
     
     },

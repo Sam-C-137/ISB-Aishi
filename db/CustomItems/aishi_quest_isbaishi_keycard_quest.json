@@ -40,6 +40,11 @@
         "name": "Cartão de acesso especial da ASI",
         "shortName": "Cartão ASI",
         "description": "Um cartão emitido pela USEC a um agente da ASI durante a operação TerraGroup em Tarkov. Ele concede um alto nível de acesso."
+      },
+      "ru": {
+        "name": "Ключ-карта специального доступа ISB",
+        "shortName": "КК ISB",
+        "description": "Карта, выданная USEC агенту ISB во время операции TerraGroup в Таркове. Предоставляет высокий уровень доступа."
       }
     
     },

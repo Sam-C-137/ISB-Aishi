@@ -35,6 +35,11 @@
         "name": "Pendrive Militar",
         "shortName": "Pendrive",
         "description": "Um pendrive criptografado com informações militares importantes."
+      },
+      "ru": {
+        "name": "Военный флеш-накопитель",
+        "shortName": "Флешка",
+        "description": "Зашифрованный флеш-накопитель, содержащий важную военную информацию."
       }
     
     },

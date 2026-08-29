@@ -35,6 +35,11 @@
         "name": "Planos originais para o SV-98",
         "shortName": "BP do SV98",
         "description": "Um arquétipo para um SV-98 barato que estará disponível para Scavs e PMCs"
+      },
+      "ru": {
+        "name": "Оригинальные чертежи СВ-98",
+        "shortName": "Чертежи СВ98",
+        "description": "Архетип для дешёвой СВ-98, которая будет доступна Диким и ЧВК"
       }
     
     },

@@ -53,6 +53,11 @@
         "name": "Máscara blindada leve Death Shadow modificada (Agência de Suporte a Inteligência da USEC)",
         "shortName": "Death Shadow",
         "description": "A máscara ‘Death Shadow’ da ASI para proteção facial, reforçada com fibras de carbono"
+      },
+      "ru": {
+        "name": "Модифицированная лёгкая бронированная маска Death Shadow (Бюро разведывательной поддержки USEC)",
+        "shortName": "Death Shadow",
+        "description": "Маска ISB \"Death Shadow\" для защиты лица, усиленная углеродными волокнами."
       }
     },
 

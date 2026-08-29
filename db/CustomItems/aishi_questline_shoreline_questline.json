@@ -37,6 +37,11 @@
         "name": "Pendrive Militar com dados para um aplicativo aplicativo de rastreamento desatualizado",
         "shortName": "Pendrive",
         "description": "Um pendrive criptografado com informações de um software de rastreamento de ponta porém desatualizado e que requer modificações."
+      },
+      "ru": {
+        "name": "Военный флеш-накопитель с данными для устаревшего приложения отслеживания",
+        "shortName": "Флешка",
+        "description": "Зашифрованный флеш-накопитель, содержащий информацию от передового программного обеспечения для отслеживания, которое в настоящее время устарело и требует доработки."
       }
     
     },
@@ -155,6 +160,11 @@
         "name": "Carta selada da TerraGroup contendo detalhes operacionais",
         "shortName": "Carta TG",
         "description": "Uma carta selada que deveria ser entregue a uma oficial da TerraGroup responsável pelos últimos grupos de evacuação no Terminal. \n\n[CONFIDENCIAL] DESTRUA APÓS LER \n\n[CONFIDENCIAL] DESTRUA APÓS LER \n\n[CONFIDENCIAL] DESTRUA APÓS LER \n\nDe: Almen James\nPara: Rostova Rais \n\nBoa tarde senhora Rais, o fato de eu estar escrevendo isso utilizando nossos protocolos analogicos já mostra a importância desse recado. \n\nA evacuação ainda não terminou, eu imploro, suplico para que a senhora reconsidere e atrase o começo da nova fase da operação de limpeza. \n\nTemos muitos cientistas e funcionarios esperando evacuação, se os novos contratados começarem a operação você sabe exatamente o que vai acontecer, muitas coisas importantes serão perdidas além de vidas. Por favor, atrase o começo da operação LIMPEZA. \n\nAtenciosamente, Almen James\nPesquisador Chefe da TerraGroup Labs"
+      },
+      "ru": {
+        "name": "Запечатанное письмо TerraGroup с оперативными данными",
+        "shortName": "Письмо TG",
+        "description": "Запечатанное письмо, которое должно было быть доставлено официальному лицу TerraGroup, ответственному за последние эвакуационные группы на Терминале. \n\n[КОНФИДЕНЦИАЛЬНО] УНИЧТОЖИТЬ ПОСЛЕ ПРОЧТЕНИЯ \n\n[КОНФИДЕНЦИАЛЬНО] УНИЧТОЖИТЬ ПОСЛЕ ПРОЧТЕНИЯ \n\n[КОНФИДЕНЦИАЛЬНО] УНИЧТОЖИТЬ ПОСЛЕ ПРОЧТЕНИЯ \n\nОт: Алмен Джеймс\nКому: Ростова Раис \n\nДобрый день, госпожа Раис. Тот факт, что я пишу это с использованием наших аналоговых протоколов, уже демонстрирует важность этого сообщения. \n\nЭвакуация ещё не завершена. Я умоляю вас, прошу пересмотреть решение и отложить начало нового этапа операции по зачистке. \n\nМногие учёные и сотрудники ожидают эвакуации. Если новые подрядчики начнут операцию, вы точно знаете, что произойдёт — будет потеряно много важного, а также жизни. Пожалуйста, отложите начало операции \"ЗАЧИСТКА\". \n\nС уважением, Алмен Джеймс\nГлавный исследователь, Лаборатория TerraGroup"
       }
     
     },
@@ -204,6 +214,11 @@
         "name": "Pendrive Militar com dados para um aplicativo aplicativo de rastreamento atualizado e aprimorado",
         "shortName": "Pendrive",
         "description": "Um pendrive criptografado com informações de um software de rastreamento de ponta já atualizado e com aprimoramentos de ponta."
+      },
+      "ru": {
+        "name": "Военный флеш-накопитель с данными для исправленного и улучшенного приложения отслеживания",
+        "shortName": "Флешка",
+        "description": "Зашифрованный флеш-накопитель, содержащий информацию от передового программного обеспечения для отслеживания, которое в настоящее время исправлено и улучшено."
       }
     
     },
@@ -288,6 +303,11 @@
         "name": "1GPhone Dourado com um aplicativo de rastreamento em hibernação.",
         "shortName": "1GPhone Mod",
         "description": "Um 1GPhone Dourado que passou por modificações para uma instalação de um aplicativo de rastreamento em profunda hibernação."
+      },
+      "ru": {
+        "name": "Золотой 1GPhone со спящим приложением отслеживания",
+        "shortName": "1GPhone Мод",
+        "description": "Золотой 1GPhone, который был модифицирован для размещения приложения отслеживания, находящегося в глубокой спячке."
       }
     
     },
@@ -371,6 +391,11 @@
         "name": "Container Seguro de modelo não registrado com documentos desconhecidos",
         "shortName": "C.Desconhecido",
         "description": "Um container seguro de um modelo não registrado avariado por uma queda. Ele aparenta conter papeis em seu interior."
+      },
+      "ru": {
+        "name": "Незарегистрированный контейнер с неизвестными документами",
+        "shortName": "Неизв. конт.",
+        "description": "Контейнер незарегистрированной модели, повреждённый при падении. Похоже, внутри находятся бумаги."
       }
     
     },
@@ -415,6 +440,11 @@
         "name": "Dogtac da USEC com marcações únicas",
         "shortName": "Dogtag",
         "description": "Uma dogtag personalizada de um PMC da USEC com marcações relacionadas a salvação da humanidade e uma luta constante contra alguém."
+      },
+      "ru": {
+        "name": "Жетон USEC с уникальными отметками",
+        "shortName": "Жетон",
+        "description": "Кастомизированный жетон ЧВК USEC с отметками, связанными со спасением человечества и постоянной борьбой против кого-то."
       }
     
     },
@@ -466,6 +496,11 @@
         "name": "Um Keycard RFID customizado com certificados e credenciais desconhecidas.",
         "shortName": "RFID",
         "description": "Um cartão com marcações da TerraGroup que possui informações codificadas que levam acesso a um lugar desconhecido. Ele foi danificado e não está mais operacional."
+      },
+      "ru": {
+        "name": "Кастомная RFID-карта с неизвестными сертификатами и учётными данными",
+        "shortName": "RFID",
+        "description": "Карта с маркировкой TerraGroup, содержащая закодированную информацию, предоставляющую доступ к неизвестному месту. Она повреждена и больше не действует."
       }
     
     },

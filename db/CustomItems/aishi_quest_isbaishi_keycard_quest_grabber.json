@@ -40,6 +40,11 @@
         "name": "Copiador modificado para Cartões RFID",
         "shortName": "Copiador",
         "description": "Um cartão RFID que aparenta ser comum mas possui dados de sistema capaz de copiar credenciais de qualquer outro cartão que utilize a mesma tecnologia RFID."
+      },
+      "ru": {
+        "name": "Модифицированное устройство клонирования RFID-карт",
+        "shortName": "Клонер",
+        "description": "RFID-карта, которая выглядит как обычная, но содержит системные данные, способные копировать учётные данные любой другой карты, использующей ту же RFID-технологию."
       }
     
     },

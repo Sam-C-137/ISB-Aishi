@@ -39,6 +39,11 @@
         "name": "Cartão de acesso da Black Division",
         "shortName": "C. BlackDiv",
         "description": "Um cartão de acesso de alto nível de um agente da divisão de operações especiais interna da TerraGroup, Black Division."
+      },
+      "ru": {
+        "name": "Ключ-карта Black Division",
+        "shortName": "BD Карта",
+        "description": "Карта доступа высокого уровня, принадлежащая агенту внутреннего подразделения специальных операций TerraGroup — Black Division."
       }
     
     },

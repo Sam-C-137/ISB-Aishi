@@ -37,6 +37,11 @@
         "name": "Dogtag Peão da ASI",
         "shortName": "ASI",
         "description": "Uma Dogtag utilizada pelos operadores de baixo nível da ISB. Diferente de uma dogtag de identificação ela parece ser utilizada mais como um troféu. Recondicionada de operadores de uma outra designação."
+      },
+      "ru": {
+        "name": "Жетон ISB Пешка",
+        "shortName": "ISB",
+        "description": "Жетон, используемый оперативниками ISB низкого ранга. В отличие от идентификационного жетона, используется скорее как трофей. Переделан из жетонов оперативников другого подразделения."
       }
     
     },
@@ -93,6 +98,11 @@
         "name": "Dogtag Torre da ASI",
         "shortName": "ASI",
         "description": "Uma Dogtag utilizada pelos operadores especializados da ISB. Diferente de uma dogtag de identificação ela parece ser utilizada mais como um troféu. Recondicionada de operadores de uma outra designação."
+      },
+      "ru": {
+        "name": "Жетон ISB Ладья",
+        "shortName": "ISB",
+        "description": "Жетон, используемый специализированными оперативниками ISB. В отличие от идентификационного жетона, используется скорее как трофей. Переделан из жетонов оперативников другого подразделения."
       }
     
     },
@@ -149,6 +159,11 @@
         "name": "Dogtag Cavalo da ASI",
         "shortName": "ASI",
         "description": "Uma Dogtag utilizada pelos operadores especializados da ISB. Diferente de uma dogtag de identificação ela parece ser utilizada mais como um troféu. Recondicionada de operadores de uma outra designação."
+      },
+      "ru": {
+        "name": "Жетон ISB Конь",
+        "shortName": "ISB",
+        "description": "Жетон, используемый специализированными оперативниками ISB. В отличие от идентификационного жетона, используется скорее как трофей. Переделан из жетонов оперативников другого подразделения."
       }
     
     },
@@ -205,6 +220,11 @@
         "name": "Dogtag Bispo da ASI",
         "shortName": "ASI",
         "description": "Uma Dogtag utilizada pelos operadores especializados da ISB. Diferente de uma dogtag de identificação ela parece ser utilizada mais como um troféu. Recondicionada de operadores de uma outra designação."
+      },
+      "ru": {
+        "name": "Жетон ISB Слон",
+        "shortName": "ISB",
+        "description": "Жетон, используемый специализированными оперативниками ISB. В отличие от идентификационного жетона, используется скорее как трофей. Переделан из жетонов оперативников другого подразделения."
       }
     
     },
@@ -261,6 +281,11 @@
         "name": "Dogtag Rei da ASI",
         "shortName": "ASI",
         "description": "Uma Dogtag utilizada pelos operadores de mais alto nível da ISB. Diferente de uma dogtag de identificação ela parece ser utilizada mais como um troféu. Recondicionada de operadores de uma outra designação."
+      },
+      "ru": {
+        "name": "Жетон ISB Король",
+        "shortName": "ISB",
+        "description": "Жетон, используемый высокопоставленными оперативниками ISB. В отличие от идентификационного жетона, используется скорее как трофей. Переделан из жетонов оперативников другого подразделения."
       }
     
     },
@@ -317,6 +342,11 @@
         "name": "Dogtag Rainha da ASI",
         "shortName": "ASI",
         "description": "Uma Dogtag utilizada pelos líderes de mais alto nível da ISB. Diferente de uma dogtag de identificação ela parece ser utilizada mais como um troféu. Recondicionada de operadores de uma outra designação."
+      },
+      "ru": {
+        "name": "Жетон ISB Королева",
+        "shortName": "ISB",
+        "description": "Жетон, используемый лидерами ISB. В отличие от идентификационного жетона, используется скорее как трофей. Переделан из жетонов оперативников другого подразделения."
       }
     
     },
@@ -373,6 +403,11 @@
         "name": "Arquivos pessoais de PMC",
         "shortName": "PMC",
         "description": "Há rumores de que a TerraGroup mantém um arquivo pessoal sobre quase todos os operadores de PMC. A julgar por esses documentos, os rumores são verdadeiros."
+      },
+      "ru": {
+        "name": "Личные дела ЧВК",
+        "shortName": "ЧВК",
+        "description": "Ходят слухи, что TerraGroup ведёт личные дела почти на каждого оперативника ЧВК. Судя по этим документам, слухи верны."
       }
     
     },
@@ -430,6 +465,11 @@
         "name": "Documentos financeiros",
         "shortName": "Finanças",
         "description": "Relatórios financeiros do TerraGroup e de suas empresas afiliadas. Certamente há muitas inconsistências e evidências ocultas neles, mas você está realmente disposto a gastar horas da sua vida lendo documentos financeiros enfadonhos?"
+      },
+      "ru": {
+        "name": "Финансовые документы",
+        "shortName": "Финансы",
+        "description": "Финансовые отчёты TerraGroup и её дочерних компаний. В них наверняка скрыто множество несоответствий и улик, но готовы ли вы провести часы своей жизни за чтением скучных финансовых бумаг?"
       }
     
     },
@@ -487,6 +527,11 @@
         "name": "Documentação do projeto",
         "shortName": "Projeto",
         "description": "Documentação da Tarkov Infraline. A empresa é oficialmente especializada em construção de estradas, mas essas plantas claramente não têm nada a ver com infraestrutura de transporte."
+      },
+      "ru": {
+        "name": "Проектная документация",
+        "shortName": "Проект",
+        "description": "Документация Tarkov Infraline. Компания официально специализировалась на дорожном строительстве, но эти чертежи явно не имеют отношения к транспортной инфраструктуре."
       }
     
     },
@@ -544,6 +589,11 @@
         "name": "Plantas e documentação técnica",
         "shortName": "Plantas",
         "description": "Plantas e documentação técnica pertencentes ao TerraGroup. Por conveniência, todos os dados também foram copiados para um disco."
+      },
+      "ru": {
+        "name": "Чертежи и техническая документация",
+        "shortName": "Чертежи",
+        "description": "Чертежи и техническая документация, принадлежащие TerraGroup. Для удобства все данные также продублированы на диске."
       }
     
     },
@@ -601,6 +651,11 @@
         "name": "Documentos sobre Testes",
         "shortName": "Testes",
         "description": "Documentos que detalham os testes de vários compostos experimentais realizados em laboratórios controlados pelo TerraGroup. É surpreendente que eles tenham conseguido permanecer em Tarkov."
+      },
+      "ru": {
+        "name": "Документация по испытаниям",
+        "shortName": "Тесты",
+        "description": "Документы с подробным описанием испытаний различных экспериментальных соединений в лабораториях TerraGroup. Удивительно, что они вообще сохранились в Таркове."
       }
     
     },
@@ -658,6 +713,11 @@
         "name": "Documentação de Usuários",
         "shortName": "Usuários",
         "description": "Documentação entregue a todos os novos funcionários da TerraGroup no momento da assinatura do contrato. Ela contém tanto informações úteis quanto as regras obrigatórias e enfadonhas do escritório, como, por exemplo, como contribuir para o presente de aniversário de um colega de trabalho."
+      },
+      "ru": {
+        "name": "Пользовательская документация",
+        "shortName": "Пользователь",
+        "description": "Документация, выдаваемая каждому новому сотруднику TerraGroup при подписании контракта. Содержит как полезную информацию, так и обязательные офисные правила, от которых сводит скулы."
       }
     
     },
@@ -715,6 +775,11 @@
         "name": "Documentos médicos",
         "shortName": "Registros",
         "description": "Registros médicos que contêm resultados de pesquisas. Muitos deles são eticamente questionáveis, mas notavelmente bem-sucedidos em todos os outros aspectos. A verdade está nos olhos de quem vê."
+      },
+      "ru": {
+        "name": "Медицинские документы",
+        "shortName": "Медицина",
+        "description": "Медицинские записи, содержащие результаты исследований. Многие из них этически сомнительны, но замечательно успешны во всех остальных отношениях. Истина в глазах смотрящего."
       }
     
     },
@@ -772,6 +837,11 @@
         "name": "Documentação técnica",
         "shortName": "Documentação",
         "description": "Manuais de operação dos equipamentos da TerraGroup. Indispensáveis para quem não quer perder alguns dedos ou danificar máquinas que valem milhões de dólares. Ou para quem quer obter um bom lucro."
+      },
+      "ru": {
+        "name": "Техническая документация",
+        "shortName": "Техническая",
+        "description": "Руководства по эксплуатации оборудования TerraGroup. Незаменимы для тех, кто не хочет потерять пальцы или сломать оборудование стоимостью в миллионы долларов. Или для тех, кто хочет хорошо заработать."
       }
     
     },
@@ -829,6 +899,11 @@
         "name": "Documentos confidenciais",
         "shortName": "Confidencial",
         "description": "Informações confidenciais que, de alguma forma, sobreviveram contra todas as expectativas. Provavelmente, o que há de mais valioso que restou em Tarkov."
+      },
+      "ru": {
+        "name": "Секретные документы",
+        "shortName": "Секретно",
+        "description": "Секретная информация, которая каким-то образом сохранилась вопреки всему. Возможно, самое ценное, что осталось в Таркове."
       }
     
     },
@@ -886,6 +961,11 @@
         "name": "Tablet Tático TDL da ISB",
         "shortName": "Tablet",
         "description": "Um tablet de alta performance com uma grande tela. Fabricado para ter resistência e um sistema operacional otimizado para operações militares. "
+      },
+      "ru": {
+        "name": "Военный тактический планшет ISB TDL",
+        "shortName": "Планшет",
+        "description": "Высокопроизводительный планшет с большим экраном. Создан для долговечности и имеет операционную систему, оптимизированную для военных операций."
       }
     
     },
@@ -943,6 +1023,11 @@
         "name": "Dispositivo improvisado para invadir sistemas da ASI",
         "shortName": "Hack Dev",
         "description": "Um dispositivo improvisado utilizado para hackear pequenos aparelhos eletrônicos, interceptar comunicações por rádio, controladores elétricos e redes sem fio."
+      },
+      "ru": {
+        "name": "Импровизированное устройство ISB для взлома систем",
+        "shortName": "Взлом. устр.",
+        "description": "Самодельное устройство, используемое для взлома небольших электронных устройств, перехвата радиопередач, электрических контроллеров и беспроводных сетей."
       }
     
     },
@@ -1000,6 +1085,11 @@
         "name": "Insígnia Dourada de Grupo Especial desconhecido do exercito dos Estados Únidos",
         "shortName": "Insígnia",
         "description": "Uma insígnia utilizada por um grupo de operações especiais do exercito dos Estados Unidos que realizou uma operação secreta em Tarkov "
+      },
+      "ru": {
+        "name": "Золотой значок неизвестной группы спецназа армии США",
+        "shortName": "Значок",
+        "description": "Инсигния, используемая группой специальных операций армии США, которая провела секретную операцию в Таркове."
       }
     
     },
@@ -1057,6 +1147,11 @@
         "name": "Recipiente Quimico Selado",
         "shortName": "Recipiente",
         "description": "Um recipiente com quimicos experimentais. Selado, ele parece ser instável e definitivamente não é bom mexer com isso."
+      },
+      "ru": {
+        "name": "Герметичный химический контейнер",
+        "shortName": "Контейнер",
+        "description": "Контейнер с экспериментальными химикатами. Запечатан, выглядит нестабильным, и точно не стоит с ним связываться."
       }
     
     },
@@ -1114,6 +1209,11 @@
         "name": "Caixa de Itens Valiosos",
         "shortName": "Container",
         "description": "Uma caixa reforçada que contem itens valiosos e documentos."
+      },
+      "ru": {
+        "name": "Контейнер с ценностями",
+        "shortName": "Контейнер",
+        "description": "Усиленная коробка, содержащая ценные предметы и документы."
       }
     
     },

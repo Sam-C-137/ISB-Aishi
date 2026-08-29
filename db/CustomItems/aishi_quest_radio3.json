@@ -37,7 +37,12 @@
         "name": "Estabilizador de Radiofrequência",
         "shortName": "Estabilizador",
         "description": "Um estabilizador analógico de radiofrequência utilizado comumente para se conectar a sistemas de comunicação de frequências altamente criptografadas."
-     }
+     },
+      "ru": {
+        "name": "Стабилизатор радиочастоты",
+        "shortName": "Стабилизатор",
+        "description": "Аналоговый стабилизатор радиочастоты, обычно используемый для подключения к системам связи с высокошифрованными частотами."
+      }
     },
     "fleaPriceRoubles": 450000,
 

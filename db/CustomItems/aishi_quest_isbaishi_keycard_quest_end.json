@@ -40,6 +40,11 @@
         "name": "Cartão de Acesso de Alto Nível da TerraGroup",
         "shortName": "TG C",
         "description": "Um cartão de acesso pertencente a um executivo de alto escalão da TerraGroup."
+      },
+      "ru": {
+        "name": "Ключ-карта высокого уровня доступа TerraGroup",
+        "shortName": "КК TG",
+        "description": "Карта доступа, принадлежащая высокопоставленному руководителю TerraGroup."
       }
     
     },

@@ -57,6 +57,11 @@
         "name": "Modified L3Harris GPNVG-18 night vision goggles",
         "shortName": "GPNVG-18 V2",
         "description": "O GPNVG-18 (Ground Panoramic Night Vision Goggles) modificado é um sistema de visão noturna panorâmica que, diferente da configuração padrão, utiliza tubos intensificadores de imagem com fósforo branco, proporcionando melhor contraste, percepção de profundidade e menor fadiga visual durante uso prolongado; o dispositivo mantém seu design característico com quatro tubos independentes — dois direcionados para frente e dois angulados para as laterais — permitindo um campo de visão ampliado de 97 graus, enquanto sua carcaça foi refinada com um revestimento preto fosco não refletivo para maior discrição em ambientes urbanos e operações noturnas."
+      },
+      "ru": {
+        "name": "Модифицированные очки ночного видения L3Harris GPNVG-18 (Чёрные)",
+        "shortName": "GPNVG-18 V2",
+        "description": "Модифицированный GPNVG-18 (Ground Panoramic Night Vision Goggles) — это панорамная система ночного видения, которая, в отличие от стандартной конфигурации, использует электронно-оптические преобразователи с белым фосфором, обеспечивая лучшую контрастность, восприятие глубины и снижение утомляемости глаз при длительном использовании; устройство сохраняет свой характерный дизайн с четырьмя независимыми трубками — две направлены вперёд и две под углом в стороны — что обеспечивает расширенное поле зрения в 97 градусов, а его корпус был доработан с матовым чёрным неотражающим покрытием для большей скрытности в городских условиях и ночных операциях."
       }
     },
 

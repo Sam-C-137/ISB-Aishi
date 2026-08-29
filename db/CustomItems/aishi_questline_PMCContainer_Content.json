@@ -31,6 +31,11 @@
         "name": "Container Seguro de modelo não registrado com documentos desconhecidos destravado",
         "shortName": "C.Desconhecido",
         "description": "Um container seguro de um modelo não registrado avariado por uma queda. Ele aparenta conter papeis em seu interior."
+      },
+      "ru": {
+        "name": "Незарегистрированный разблокированный контейнер с неизвестными документами",
+        "shortName": "Неизв. конт.",
+        "description": "Контейнер незарегистрированной модели, повреждённый при падении. Похоже, внутри находятся бумаги."
       }
     
     },
@@ -98,6 +103,11 @@
         "name": "Transcrição da conversa com a Sra. A.",
         "shortName": "Sra. A",
         "description": "Uma transcrição da conversa da Sra. A. com uma pessoa não identificada"
+      },
+      "ru": {
+        "name": "Расшифровка разговора с госпожой А.",
+        "shortName": "Г-жа А",
+        "description": "Распечатка разговора госпожи А. с неизвестным лицом."
       }
     
     },
@@ -148,6 +158,11 @@
         "name": "Relatório de teste do catalisador de combustível",
         "shortName": "Catalisador",
         "description": "Um relatório da TerraGroup sobre testes de catalisador de combustível realizados na Usina Química #16." 
+      },
+      "ru": {
+        "name": "Отчёт об испытаниях топливного катализатора",
+        "shortName": "Катализатор",
+        "description": "Отчёт TerraGroup об испытаниях топливного катализатора, проведённых на Химическом заводе №16."
       }
     
     },
@@ -198,6 +213,11 @@
         "name": "Documento mencionando o Carcereiro",
         "shortName": "Carcereiro",
         "description": "Um documento manchado com tinta sem selos ou logotipos."
+      },
+      "ru": {
+        "name": "Документ с упоминанием Надзирателя",
+        "shortName": "Надзиратель",
+        "description": "Документ, испачканный краской, без печатей или логотипов."
       }
     
     },
@@ -248,6 +268,11 @@
         "name": "Especificação do Item 1156",
         "shortName": "Specs 1156",
         "description": "A especificação completa para o Item #1156, destinada ao transporte de Tarkov para Norvinsk."
+      },
+      "ru": {
+        "name": "Спецификация предмета 1156",
+        "shortName": "Спец. 1156",
+        "description": "Полная спецификация предмета #1156, предназначенного для транспортировки из Таркова в Норвинск."
       }
     
     },
@@ -298,6 +323,11 @@
         "name": "Especificação do sistema ARRS",
         "shortName": "ARRS",
         "description": "A especificação completa para o sistema ARRS. A maior parte dela está criptografada."
+      },
+      "ru": {
+        "name": "Спецификация системы ARRS",
+        "shortName": "ARRS",
+        "description": "Полная спецификация системы ARRS. Большая часть зашифрована."
       }
     
     },
@@ -348,6 +378,11 @@
         "name": "Fita de áudio com provas incriminadoras",
         "shortName": "Evidência",
         "description": "Uma fita de áudio preparada por Kozlov para Anastasia. De acordo com as cartas de Kozlov, ela contém provas irrefutáveis sobre os vínculos da administração da cidade com o submundo criminal local."
+      },
+      "ru": {
+        "name": "Аудиокассета с компрометирующими доказательствами",
+        "shortName": "Улики",
+        "description": "Аудиокассета, подготовленная Козловым для Анастасии. Согласно письмам Козлова, она содержит неопровержимые доказательства связей городской администрации с местным криминальным миром."
       }
     
     },
@@ -398,6 +433,11 @@
         "name": "Relatório de implantação da rede de agentes",
         "shortName": "Rede de agentes",
         "description": "O relatório da The Unheard afirma que seus agentes já invadiram estruturas governamentais em vários países e detêm influência além da Rússia."
+      },
+      "ru": {
+        "name": "Отчёт о развёртывании агентурной сети",
+        "shortName": "Агентурная сеть",
+        "description": "В отчёте \"Неизвестных\" утверждается, что их агенты уже внедрились в правительственные структуры нескольких стран и имеют влияние за пределами России."
       }
     
     },
@@ -448,6 +488,11 @@
         "name": "Relatório de pesquisa da instalação Labyrinth",
         "shortName": "Pesquisa Labyrinth",
         "description": "O relatório de Voronenko detalha os experimentos que a TerraGroup conduziu em humanos na Instalação Labyrinth."
+      },
+      "ru": {
+        "name": "Отчёт об исследованиях в Лабиринте",
+        "shortName": "Лабиринт",
+        "description": "В отчёте Вороненко подробно описаны эксперименты, которые TerraGroup проводила над людьми в Лабиринте."
       }
     
     },

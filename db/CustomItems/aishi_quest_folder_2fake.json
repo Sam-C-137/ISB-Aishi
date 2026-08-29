@@ -35,6 +35,11 @@
         "name": "Planos falsos para o SV-98",
         "shortName": "BP Falsa",
         "description": "Um arquétipo falso para um SV-98 barato que estará disponível para Scavs e PMCs"
+      },
+      "ru": {
+        "name": "Фальшивые чертежи СВ-98",
+        "shortName": "Фальшивые чертежи",
+        "description": "Фальшивый архетип для дешёвой СВ-98, которая будет доступна Диким и ЧВК"
       }
     
     },

@@ -41,6 +41,11 @@
         "name": "Chave Mestra emitida para \"Juna Aishi\", Diretora Interina da ASI",
         "shortName": "CM Aishi",
         "description": "O cartão pessoal de Aishi. Ele foi emitido pela USEC utilizando os protocolos de mais alto nível de segurança. Ele é usado para acessar áreas restritas da TerraGroup e equipado com uma chave especial."
+      },
+      "ru": {
+        "name": "Мастер-ключ, выданный заместителю директора ISB — \"Юне Айши\"",
+        "shortName": "МК Айши",
+        "description": "Личная ключ-карта Айши в ISB. Была выдана USEC с использованием протоколов безопасности высшего уровня. Используется для доступа в закрытые зоны TerraGroup и оснащена специальным ключом."
       }
     
     },

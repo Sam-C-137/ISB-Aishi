@@ -332,6 +332,11 @@
         "name": "Rifle de Assalto Colt M4A1 5.56x45 assault rifle Modificado pela ISB (FDE)",
         "shortName": "M4A1 da ISB",
         "description": "Uma variante modificada da carabina Colt M4A1, adaptada pela ISB SOF para uso em operações especiais de alta intensidade. Esta versão substitui diversos componentes padrão por peças otimizadas, incluindo um sistema de gases reajustado, conjunto de ferrolho aprimorado e componentes internos reforçados, resultando em uma cadência de tiro superior sem comprometer a confiabilidade da plataforma."
+      },
+      "ru": {
+        "name": "Модифицированная штурмовая винтовка ISB Colt M4A1 5.56x45 (FDE)",
+        "shortName": "ISB M4A1",
+        "description": "Модифицированный вариант карабина Colt M4A1, адаптированный спецназом ISB для использования в высокоинтенсивных специальных операциях. Эта версия заменяет несколько стандартных компонентов оптимизированными деталями, включая переработанную газовую систему, улучшенный узел затвора и усиленные внутренние компоненты, что обеспечивает более высокую скорострельность без потери надёжности платформы."
       }
     
     },
@@ -618,6 +623,11 @@
         "name": "Receptor superior de M4A1 5.56x45 modificado para sistemas AR (FDE)",
         "shortName": "M4A1",
         "description": "Um receptor superior para o fuzil de assalto M4A1 fabricado pela Colt. Equipado com um suporte para a fixação de dispositivos adicionais. Uma versão modificada projetada para oferecer maior estabilidade, melhor controle do recuo e equilíbrio ergonômico quando combinada com outras modificações. Versão FDE"
+      },
+      "ru": {
+        "name": "Модифицированная верхняя ствольная коробка M4A1 5.56x45 (FDE)",
+        "shortName": "M4A1",
+        "description": "Верхняя ствольная коробка для штурмовой винтовки M4A1 производства Colt. Оснащена креплением для установки дополнительных устройств. Модифицированная версия, разработанная для обеспечения большей стабильности, улучшенного контроля отдачи и эргономического баланса с дополнительными модами. Версия FDE."
       }
     },
 
@@ -745,6 +755,11 @@
         "name": "Tubo da coronha AR-15 RTM ATP modificado (FDE)",
         "shortName": "ATP",
         "description": "O tubo de tampão de ATP modificado, com 6 posições e diâmetro conforme especificações militares, é compatível com qualquer carabina baseada no AR-15. Fabricado pela RTM."
+      },
+      "ru": {
+        "name": "Модифицированная трубка буфера AR-15 RTM ATP (FDE)",
+        "shortName": "ATP",
+        "description": "Модифицированная трубка буфера ATP, 6-позиционная, диаметра Mil-Spec, подходит для любого карабина на базе AR-15. Производство RTM."
       }
     
     },
@@ -986,6 +1001,11 @@
         "name": "Tubo da coronha AR-15 RTM ATP modificado (FDE)",
         "shortName": "ATP",
         "description": "O tubo de tampão de ATP modificado, com 6 posições e diâmetro conforme especificações militares, é compatível com qualquer carabina baseada no AR-15. Fabricado pela RTM."
+      },
+      "ru": {
+        "name": "Модифицированное цевьё Geissele SMR MK16 13.5 дюймов M-LOK для AR-15 (FDE)",
+        "shortName": "SMR MK16 13.5\"",
+        "description": "Модифицированное цевьё Geissele SMR 13.5 дюймов M-LOK для AR-15, оснащённое интерфейсом M-LOK для установки дополнительных устройств и аксессуаров. Версия цвета Desert Dirt."
       }
     
     },

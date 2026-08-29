@@ -300,6 +300,11 @@
         "name": "Rifle de Assalto Colt M4A1 5.56x45 assault rifle Modificado pela ISB",
         "shortName": "M4A1 da ISB",
         "description": "Uma variante modificada da carabina Colt M4A1, adaptada pela ISB SOF para uso em operações especiais de alta intensidade. Esta versão substitui diversos componentes padrão por peças otimizadas, incluindo um sistema de gases reajustado, conjunto de ferrolho aprimorado e componentes internos reforçados, resultando em uma cadência de tiro superior sem comprometer a confiabilidade da plataforma."
+      },
+      "ru": {
+        "name": "Модифицированная штурмовая винтовка ISB Colt M4A1 5.56x45",
+        "shortName": "ISB M4A1",
+        "description": "Модифицированный вариант карабина Colt M4A1, адаптированный спецназом ISB для использования в высокоинтенсивных специальных операциях. Эта версия заменяет несколько стандартных компонентов оптимизированными деталями, включая переработанную газовую систему, улучшенный узел затвора и усиленные внутренние компоненты, что обеспечивает более высокую скорострельность без потери надёжности платформы."
       }
     
     },

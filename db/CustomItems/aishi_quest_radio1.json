@@ -35,6 +35,11 @@
         "name": "Rádio Civíl Baofeng UV-5R",
         "shortName": "UV-5R",
         "description": "Um rádio de padrão civil fabricado pela Fujian Baofeng Electronics Co., Ltd. Simples, leve e compacto ele entrega uma boa comunicação para agentes de segurança privada ou agentes de comunicação civil."
+      },
+      "ru": {
+        "name": "Гражданская рация Baofeng UV-5R",
+        "shortName": "UV-5R",
+        "description": "Рация гражданского стандарта, произведённая Fujian Baofeng Electronics Co., Ltd. Простая, лёгкая и компактная, она обеспечивает надёжную связь для агентов частной охраны или гражданских специалистов по связи."
       }
     
     },

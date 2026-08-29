@@ -43,6 +43,11 @@
         "name": "Máscara de gás MSA G1 SCBA",
         "shortName": "MSA G1 SCBA",
         "description": "Uma mascara de gás de nível militar para proteção individual produzida pela MSA”."
+      },
+      "ru": {
+        "name": "Противогаз MSA G1 SCBA",
+        "shortName": "MSA G1 SCBA",
+        "description": "Военный противогаз для индивидуальной защиты производства MSA."
       }
     },
 

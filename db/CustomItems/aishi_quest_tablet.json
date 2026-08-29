@@ -35,6 +35,11 @@
         "name": "Tablet Tático TDL",
         "shortName": "Tablet",
         "description": "Um tablet de alta performance com uma grande tela. Fabricado para ter resistência e um sistema operacional otimizado para operações militares. "
+      },
+      "ru": {
+        "name": "Военный тактический планшет TDL",
+        "shortName": "Планшет",
+        "description": "Высокопроизводительный планшет с большим экраном. Создан для долговечности и имеет операционную систему, оптимизированную для военных операций."
       }
     
     },

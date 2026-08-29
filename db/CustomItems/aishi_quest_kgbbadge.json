@@ -35,6 +35,11 @@
         "name": "Insígnia do Comitê de Segurança do Estado Russo",
         "shortName": "KGB",
         "description": "Uma insígnia em ótimo estado de um agente do Comitê de Segurança do Estado Russo conhecido como KGB"
+      },
+      "ru": {
+        "name": "Значок Комитета государственной безопасности СССР",
+        "shortName": "КГБ",
+        "description": "Значок в отличном состоянии, принадлежащий агенту Комитета государственной безопасности СССР, известному как КГБ."
       }
     
     },

@@ -35,6 +35,11 @@
         "name": "Bateria de Chumbo S4 004",
         "shortName": "Bateria S4 004",
         "description": "Uma bateria de chumbo-ácido de 12V do modelo S4 004 fabricada para fornecer energia auxiliar para sistemas de energia reserva em caso de falhas do abastecimento original."
+      },
+      "ru": {
+        "name": "Свинцово-кислотная батарея S4 004",
+        "shortName": "Батарея S4 004",
+        "description": "12-вольтовая свинцово-кислотная батарея модели S4 004, предназначенная для обеспечения вспомогательного питания резервных систем электропитания в случае сбоев основного источника."
       }
     
     },

@@ -33,6 +33,11 @@
         "name": "Caixa de Equipamento da Agência de Suporte a Inteligência da USEC",
         "shortName": "Caixa da ISB",
         "description": "Uma pesada de caixa de equipamentos da ISB da USEC. Ela pode conter diversas peças de equipamento da facção, munições, armas e itens especiais utilizados frequentemente pelos operadores em combate."
+      },
+      "ru": {
+        "name": "Ящик со снаряжением Бюро разведывательной поддержки USEC",
+        "shortName": "Ящик ISB",
+        "description": "Тяжёлый ящик со снаряжением ISB от USEC. Может содержать различные элементы снаряжения фракции, боеприпасы, оружие и специальные предметы, часто используемые оперативниками ISB в бою."
       }
     
     },
@@ -145,6 +150,11 @@
         "name": "Caixa de Equipamento da Black Division",
         "shortName": "Caixa da Black Division",
         "description": "Uma caixa pesada de equipamentos da Black Division. Ela contem diversas peças de equipamento da facção, munições, armas e itens especiais utilizados frequentemente pelos operadores em combate."
+      },
+      "ru": {
+        "name": "Ящик со снаряжением Black Division",
+        "shortName": "Ящик Black Division",
+        "description": "Тяжёлый ящик со снаряжением Black Division. Содержит различные элементы снаряжения фракции, боеприпасы, оружие и специальные предметы, часто используемые оперативниками Black Division в бою."
       }
     
     },
@@ -218,6 +228,11 @@
         "name": "Pasta da ASI com Documentos da TerraGroup",
         "shortName": "Pasta",
         "description": "Uma pasta de documentos confidenciais da TerraGroup. Material altamente confidencial contendo detalhes operacionais de toda a corporação."
+      },
+      "ru": {
+        "name": "Кейс ISB с документами TerraGroup",
+        "shortName": "Кейс",
+        "description": "Кейс, содержащий конфиденциальные документы TerraGroup. Материал высокой степени секретности, содержащий оперативные детали всей корпорации."
       }
     
     },
@@ -289,6 +304,11 @@
         "name": "Locked Pasta com Documentos da ASI reforçada",
         "shortName": "Pasta",
         "description": "Uma pasta reforçada com documentos e itens da ASI. Essa possui uma fechadura eletrónica e deve conter informações sensíveis."
+      },
+      "ru": {
+        "name": "Запертый усиленный кейс с документами ISB",
+        "shortName": "Кейс",
+        "description": "Усиленный кейс, содержащий документы и предметы ISB. Оснащён электронным замком и, предположительно, содержит конфиденциальную информацию."
       }
     
     },
@@ -341,6 +361,11 @@
         "name": "Pasta com Documentos da ASI reforçada",
         "shortName": "Pasta",
         "description": "Uma pasta reforçada com documentos e itens da ASI. Essa possui uma fechadura eletrónica e deve conter informações sensíveis."
+      },
+      "ru": {
+        "name": "Усиленный кейс с документами ISB",
+        "shortName": "Кейс",
+        "description": "Усиленный кейс, содержащий документы и предметы ISB. Оснащён электронным замком и, предположительно, содержит конфиденциальную информацию."
       }
     
     },

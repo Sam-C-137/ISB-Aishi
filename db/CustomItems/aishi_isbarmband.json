@@ -44,6 +44,11 @@
         "name": "Braçadeira (ISB)",
         "shortName": "ISB",
         "description": "Uma braçadeira para os membros das forças especiais da ISB"
+      },
+      "ru": {
+        "name": "Нарукавная повязка (ISB)",
+        "shortName": "ISB",
+        "description": "Нарукавная повязка для членов спецподразделений ISB"
       }
     },
 

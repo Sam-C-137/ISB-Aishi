@@ -35,6 +35,11 @@
         "name": "Documento da TerraGroup com informações comprometedoras",
         "shortName": "Documentos",
         "description": "Uma pilha de documentos a respeito de alguns experimentos feitos pela TerraGroup na Factory."
+      },
+      "ru": {
+        "name": "Документ TerraGroup с компрометирующей информацией",
+        "shortName": "Документы TG",
+        "description": "Стопка документов, касающихся некоторых экспериментов, проведённых TerraGroup на Заводе."
       }
     
     },

@@ -43,6 +43,11 @@
         "name": "Máscara de gás Unix 5000",
         "shortName": "U-5000",
         "description": "Uma mascara de gás de nível militar para proteção individual produzida pela JSC “Sorbent”."
+      },
+      "ru": {
+        "name": "Противогаз Unix 5000",
+        "shortName": "U-5000",
+        "description": "Военный противогаз для индивидуальной защиты производства АО \"Сорбент\"."
       }
     },
 

@@ -35,6 +35,11 @@
         "name": "Transmissor de Rádio Frequência",
         "shortName": "Transmissor",
         "description": "Um transmissor de rádio frequência de alto alcance produzido para a US Army. Poderoso equipamento de nível militar que pode ser utilizado como uma estação móvel e portátil para suportar grandes operações."
+      },
+      "ru": {
+        "name": "РЧ-передатчик",
+        "shortName": "РЧ-передатчик",
+        "description": "Дальнобойный радиопередатчик, произведённый для армии США. Мощное оборудование военного класса, которое может использоваться как мобильная и портативная станция для поддержки крупных операций."
       }
     
     },

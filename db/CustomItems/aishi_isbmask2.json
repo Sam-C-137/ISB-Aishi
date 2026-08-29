@@ -53,6 +53,11 @@
         "name": "Máscara de gás MSA G1 SCBA modificada (Agência de Suporte a Inteligência da USEC)",
         "shortName": "MSA G1 SCBA",
         "description": "Uma mascara de gás de nível militar para proteção individual produzida pela MSA”. O projeto foi roubado pela ISB em uma operação de contrainteligência e adaptado para fornecer um visor blindado."
+      },
+      "ru": {
+        "name": "Модифицированный противогаз MSA G1 SCBA (Бюро разведывательной поддержки USEC)",
+        "shortName": "MSA G1 SCBA",
+        "description": "Военный противогаз для индивидуальной защиты производства MSA. Конструкция была похищена ISB в ходе контрразведывательной операции и адаптирована для обеспечения бронированного визора."
       }
     },
 
