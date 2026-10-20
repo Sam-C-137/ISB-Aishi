@@ -31,6 +31,8 @@ namespace AishiKeys
         private readonly AishiKeysMod _plugin;
         private IAishiKeysNetworkBridge _network;
         private readonly ManualLogSource _log;
+        private GameWorld _world;
+        private int _generation;
         private readonly HashSet<string> _processedRequests = new HashSet<string>(StringComparer.Ordinal);
         private readonly Dictionary<string, DoorKeyOverride> _doorOverrides = new Dictionary<string, DoorKeyOverride>(StringComparer.Ordinal);
         private readonly Dictionary<string, PendingLocalKeycard> _pendingLocalKeycards = new Dictionary<string, PendingLocalKeycard>(StringComparer.Ordinal);
@@ -71,15 +73,13 @@ namespace AishiKeys
 
         internal void SetNetworkBridge(IAishiKeysNetworkBridge network)
         {
-            RestoreAllDoorOverrides();
-            _processedRequests.Clear();
-            _pendingLocalKeycards.Clear();
+            ResetRaid();
             _network = network ?? NoNetworkBridge.Instance;
         }
 
         internal bool TryHandleLocalUnlock(WorldInteractiveObject door, GamePlayerOwner owner, string keyTemplateId, KeyComponent localKeyComponent, bool keycard)
         {
-            if (_network == null || !_network.Active || !_network.Ready)
+            if (!EnsureWorld() || _network == null || !_network.Active || !_network.Ready)
                 return false;
             if (door == null || owner == null || owner.Player == null)
                 return false;
@@ -124,24 +124,42 @@ namespace AishiKeys
 
         internal void Update()
         {
-            if (_network == null || !_network.Active)
+            if (!EnsureWorld() || _network == null || !_network.Active)
                 return;
             _network.DrainReceivedPayloads(HandlePayload);
             AishiAnomalyCurrencyNetwork.Update();
-            AishiAnomalyDuck.Update();
             AishiAnomalyPressNetwork.Update();
         }
 
         internal void Dispose()
         {
+            ResetRaid();
+        }
+
+        private void ResetRaid()
+        {
+            _generation++;
             RestoreAllDoorOverrides();
             _processedRequests.Clear();
             _pendingLocalKeycards.Clear();
         }
 
+        private bool EnsureWorld()
+        {
+            var world = Singleton<GameWorld>.Instantiated ? Singleton<GameWorld>.Instance : null;
+            if (!ReferenceEquals(_world, world))
+            {
+                ResetRaid();
+                _world = world;
+            }
+            return _world != null && !(_world is HideoutGameWorld);
+        }
+
+        private bool IsCurrentRaid(int generation) => generation == _generation && _world != null && ReferenceEquals(_world, Singleton<GameWorld>.Instantiated ? Singleton<GameWorld>.Instance : null);
+
         private void HandlePayload(string payload)
         {
-            if (string.IsNullOrEmpty(payload))
+            if (!EnsureWorld() || string.IsNullOrEmpty(payload))
                 return;
             if (AishiAnomalyCurrencyNetwork.Handle(payload))
                 return;
@@ -220,12 +238,15 @@ namespace AishiKeys
 
         private IEnumerator ExecuteAuthoritativeRequest(string requestId, string doorId, string profileId, ValidatedRequest request)
         {
+            int generation = _generation;
             bool localPrepared = ApplyTemporaryKeyOverride(requestId, doorId, request.KeyTemplateId, request.Door);
             bool prepareSent = _network.Broadcast(BuildPrepare(requestId, doorId, profileId, request.KeyTemplateId, request.Keycard));
             _log.LogInfo("Aishi Keys Fika: authority prepared synchronized master-key interaction. " + "door='" + doorId + "', keycard=" + request.Keycard + ", localPrepared=" + localPrepared + ", prepareBroadcast=" + prepareSent + ".");
             if (request.Keycard)
                 StartPreparedLocalKeycard(requestId, doorId, profileId);
-            yield return new WaitForSeconds(PrepareReplicationDelay);
+            yield return new WaitForSecondsRealtime(PrepareReplicationDelay);
+            if (!IsCurrentRaid(generation))
+                yield break;
             bool success;
             string failureReason = string.Empty;
             if (request.Door == null)
@@ -254,7 +275,9 @@ namespace AishiKeys
             BroadcastResult(requestId, doorId, profileId, request.KeyTemplateId, request.Keycard, success, state, failureReason);
             if (success)
             {
-                yield return new WaitForSeconds(ResultStateDelay);
+                yield return new WaitForSecondsRealtime(ResultStateDelay);
+                if (!IsCurrentRaid(generation))
+                    yield break;
                 if (request.Door != null && _network.Ready && _network.IsServer)
                 {
                     int followUpState = (int)request.Door.DoorState;
@@ -262,7 +285,9 @@ namespace AishiKeys
                 }
             }
 
-            yield return new WaitForSeconds(OverrideHoldAfterResult);
+            yield return new WaitForSecondsRealtime(OverrideHoldAfterResult);
+            if (!IsCurrentRaid(generation))
+                yield break;
             if (_network.Ready && _network.IsServer)
                 _network.Broadcast(BuildRestore(requestId, doorId));
             RestoreTemporaryKeyOverride(requestId, doorId);
@@ -433,13 +458,19 @@ namespace AishiKeys
 
         private IEnumerator AutoRestoreTemporaryKeyOverride(string requestId, string doorId)
         {
-            yield return new WaitForSeconds(OverrideSafetyTimeout);
+            int generation = _generation;
+            yield return new WaitForSecondsRealtime(OverrideSafetyTimeout);
+            if (!IsCurrentRaid(generation))
+                yield break;
             RestoreTemporaryKeyOverride(requestId, doorId);
         }
 
         private IEnumerator ApplyAuthoritativeResult(string requestId, string doorId, string profileId, string keyTemplateId, bool keycard, int doorState)
         {
-            yield return new WaitForSeconds(ResultStateDelay);
+            int generation = _generation;
+            yield return new WaitForSecondsRealtime(ResultStateDelay);
+            if (!IsCurrentRaid(generation))
+                yield break;
             for (int attempt = 1; attempt <= 3; attempt++)
             {
                 WorldInteractiveObject door = WorldInteractionUtils.FindInteractiveByStableId(doorId);
@@ -450,7 +481,7 @@ namespace AishiKeys
                 }
 
                 int localState = (int)door.DoorState;
-                bool needsCorrection = door.DoorState == EDoorState.Locked || (doorState >= 0 && localState != doorState);
+                bool needsCorrection = door.DoorState == EDoorState.Locked;
                 if (!needsCorrection)
                 {
                     _pendingLocalKeycards.Remove(requestId);
@@ -466,7 +497,9 @@ namespace AishiKeys
                     yield break;
                 }
 
-                yield return new WaitForSeconds(ResultRetryDelay);
+                yield return new WaitForSecondsRealtime(ResultRetryDelay);
+                if (!IsCurrentRaid(generation))
+                    yield break;
             }
 
             _pendingLocalKeycards.Remove(requestId);
@@ -489,7 +522,10 @@ namespace AishiKeys
 
         private IEnumerator ExecutePreparedLocalKeycard(PendingLocalKeycard pending)
         {
-            yield return new WaitForSeconds(LocalKeycardStartDelay);
+            int generation = _generation;
+            yield return new WaitForSecondsRealtime(LocalKeycardStartDelay);
+            if (!IsCurrentRaid(generation))
+                yield break;
             bool success = false;
             if (pending != null && pending.Door != null && pending.Player != null && pending.KeyComponent != null)
             {

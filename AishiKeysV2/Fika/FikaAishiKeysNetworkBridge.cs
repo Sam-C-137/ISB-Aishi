@@ -8,12 +8,12 @@ using Fika.Core.Networking;
 using Fika.Core.Networking.LiteNetLib;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace AishiKeys.Fika
 {
     internal sealed class FikaAishiKeysNetworkBridge : IAishiKeysNetworkBridge
     {
-        private const int MaximumQueuedPayloads = 256;
         private const int MaximumPayloadLength = 65535;
         private readonly ManualLogSource _log;
         private readonly object _queueLock = new object ();
@@ -125,7 +125,8 @@ namespace AishiKeys.Fika
         {
             if (handler == null)
                 return;
-            for (int processed = 0; processed < 32 && TryDequeuePayload(out string payload); processed++)
+            long started = Stopwatch.GetTimestamp();
+            for (int processed = 0; processed < 64 && (processed == 0 || Stopwatch.GetTimestamp() - started < Stopwatch.Frequency / 500) && TryDequeuePayload(out string payload); processed++)
             {
                 try
                 {
@@ -166,11 +167,10 @@ namespace AishiKeys.Fika
         {
             if (!Active || fikaEvent == null)
                 return;
-            if (_networkManager == null || ReferenceEquals(_networkManager, fikaEvent.Manager))
-            {
-                _networkManager = null;
-                _registeredNetworkManager = null;
-            }
+            if (_networkManager != null && !ReferenceEquals(_networkManager, fikaEvent.Manager))
+                return;
+            _networkManager = null;
+            _registeredNetworkManager = null;
 
             lock (_queueLock)
                 _receivedPayloads.Clear();
@@ -235,8 +235,6 @@ namespace AishiKeys.Fika
 
             lock (_queueLock)
             {
-                while (_receivedPayloads.Count >= MaximumQueuedPayloads)
-                    _receivedPayloads.Dequeue();
                 _receivedPayloads.Enqueue(packet.Payload);
             }
         }

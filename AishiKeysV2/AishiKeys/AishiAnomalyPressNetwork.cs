@@ -50,7 +50,7 @@ namespace AishiKeys
             if (!AishiAnomalyS2.HasAssignedKey(door))
                 return true;
             var network = Network;
-            if (network?.Active != true)
+            if (!AishiNetworkSession.IsNetworkedRaid(network))
                 return false;
             if (!CurrentWorld() || !network.Ready || player == null || !player.IsYourPlayer || network.IsHeadless)
                 return true;

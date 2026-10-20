@@ -70,7 +70,7 @@ namespace AishiKeys
         {
             granted = 0;
             var network = Network;
-            if (network?.Active != true)
+            if (!AishiNetworkSession.IsNetworkedRaid(network))
                 return false;
             if (!network.Ready || !Allowed(source, currency, amount))
                 return true;
