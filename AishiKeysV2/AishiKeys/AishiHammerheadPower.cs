@@ -83,7 +83,7 @@ namespace AishiKeys
         {
             if (Time.unscaledTime < _nextNotification) return;
             _nextNotification = Time.unscaledTime + 2f;
-            NotificationManagerClass.DisplayWarningNotification("Helmet is out of power. Recharge it with a GreenBat lithium battery or a Modified GreenBat lithium battery.");
+            NotificationManagerClass.DisplayWarningNotification("aishi_helmet_out_of_power".Localized());
         }
 
         internal static Item Battery(Item helmet) => (helmet as CompoundItem)?.Slots.FirstOrDefault(slot => slot.ID == SlotName)?.ContainedItem;

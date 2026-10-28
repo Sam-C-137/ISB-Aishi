@@ -501,7 +501,7 @@
       "LeftHandItem": false,
       "LootExperience": 60,
       "MergesWithChildren": false,
-      "Name": "Blue Force Gear PLATEminus V2 Plate Carrier (MultiCam)",
+      "Name": "Blue Force Gear PLATEminus V2 Plate Carrier (Black Division)",
       "NotShownInSlot": false,
       "Prefab": {
         "path": "equipment/item_equipment_plateminus_bd_multicam_aishi.bundle",
@@ -545,17 +545,17 @@
     },
     "locales": {
       "en": {
-        "name": "Blue Force Gear PLATEminus V2 Plate Carrier (MultiCam)",
+        "name": "Blue Force Gear PLATEminus V2 Plate Carrier (Black Division)",
         "shortName": "PLATEminus V2",
         "description": "The second-generation plate carrier from Blue Force Gear is designed to accommodate SAPI/ESAPI-format plates. Made from a water-resistant material with reduced infrared signature. Quick-release buckles allow the carrier to be removed instantly in critical situations. Its reinforced construction provides reliable protection in any combat conditions. Comes with a traditional plate carrier setup. (Black Division)"
       },
       "pt": {
-        "name": "Blue Force Gear PLATEminus V2 Plate Carrier (MultiCam)",
+        "name": "Blue Force Gear PLATEminus V2 Plate Carrier (Black Division)",
         "shortName": "PLATEminus V2",
         "description": "The second-generation plate carrier from Blue Force Gear is designed to accommodate SAPI/ESAPI-format plates. Made from a water-resistant material with reduced infrared signature. Quick-release buckles allow the carrier to be removed instantly in critical situations. Its reinforced construction provides reliable protection in any combat conditions. Comes with a traditional plate carrier setup. (Black Division)"
       },
       "po": {
-        "name": "Blue Force Gear PLATEminus V2 Plate Carrier (MultiCam)",
+        "name": "Blue Force Gear PLATEminus V2 Plate Carrier (Black Division)",
         "shortName": "PLATEminus V2",
         "description": "The second-generation plate carrier from Blue Force Gear is designed to accommodate SAPI/ESAPI-format plates. Made from a water-resistant material with reduced infrared signature. Quick-release buckles allow the carrier to be removed instantly in critical situations. Its reinforced construction provides reliable protection in any combat conditions. Comes with a traditional plate carrier setup. (Black Division)"
       }
@@ -573,7 +573,7 @@
         "_id": "44b646f420b423a825fd5451",
         "_type": "Preset",
         "_changeWeaponName": false,
-        "_name": "Blue Force Gear PLATEminus V2 Plate Carrier (MultiCam)",
+        "_name": "Blue Force Gear PLATEminus V2 Plate Carrier (Black Division)",
         "_parent": "1a1bcc2f0e3ca473851af145",
         "_items": [
           {

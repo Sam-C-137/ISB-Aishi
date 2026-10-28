@@ -18,6 +18,12 @@ namespace AishiKeys
 
         internal static readonly Dictionary<string, Entry> Entries = new Dictionary<string, Entry>
         {
+            { "21b55df915be597b99acd51a", new Entry("Chaos Insurgency", "", 0) },
+            { "f813f6bc65bf5c5ea612b8d0", new Entry("Chaos Insurgency", "", 1) },
+            { "b7a3b7cf159c5177b150252e", new Entry("Chaos Insurgency", "", 2) },
+            { "4cc7a49002665c968df6318d", new Entry("Chaos Insurgency", "", 3) },
+            { "ce113c13c44f5c79a0f0a931", new Entry("Chaos Insurgency", "", 4) },
+            { "91ce6b673c555078a491ecce", new Entry("Chaos Insurgency", "", 5) },
             {
                 "69b625e0f5004560bb2d14f0",
                 new Entry("Black Division Squad Leader", "", 0)

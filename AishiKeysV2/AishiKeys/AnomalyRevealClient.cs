@@ -198,7 +198,7 @@ namespace AishiKeys
                 if (reply.revealed != null)
                     Revealed.UnionWith(reply.revealed);
                 item.RaiseRefreshEvent(false, true);
-                NotificationManagerClass.DisplayWarningNotification("Anomalous properties revealed.");
+                NotificationManagerClass.DisplayWarningNotification("aishi_anomaly_revealed".Localized());
             }
             catch (Exception error)
             {

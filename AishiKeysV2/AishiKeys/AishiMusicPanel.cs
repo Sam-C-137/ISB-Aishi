@@ -135,10 +135,10 @@ namespace AishiKeys
             panel.gameObject.AddComponent<RectMask2D>();
             Fill(panel, new Color(.035f, .045f, .047f, .99f));
             Fill(Rect("Accent", panel, 0, 0, 900, 2), Gold).raycastTarget = false;
-            Text(panel, "AISHI  /  PERSONAL AUDIO", 24, 15, 780, 32, 23, Gold);
+            Text(panel, AishiMusicText.Get("title", "AISHI  /  PERSONAL AUDIO"), 24, 15, 780, 32, 23, Gold);
             Control(panel, "X", 844, 14, 36, 32, () => _player.ClosePlayer());
             _connection = Text(panel, "", 24, 50, 830, 22, 13, Muted);
-            _title = Text(panel, "NO TRACK SELECTED", 24, 84, 852, 40, 25, new Color(.84f, .85f, .82f));
+            _title = Text(panel, AishiMusicText.Get("noTrack", "NO TRACK SELECTED"), 24, 84, 852, 40, 25, new Color(.84f, .85f, .82f));
             _status = Text(panel, "", 24, 124, 852, 25, 14, Muted);
             var seek = Rect("TrackPosition", panel, 24, 149, 852, 24);
             Fill(seek, Color.clear);
@@ -163,12 +163,12 @@ namespace AishiKeys
             _seek.handleRect = seekHandle;
             _seek.onValueChanged.AddListener(position => _player.Seek(position));
             _clock = Text(panel, "0:00 / 0:00", 24, 172, 190, 22, 13, Muted);
-            _previous = Control(panel, "PREVIOUS", 24, 207, 180, 40, () => _player.Previous());
-            _play = Control(panel, "PLAY", 216, 207, 260, 40, () => _player.Toggle());
+            _previous = Control(panel, AishiMusicText.Get("previous", "PREVIOUS"), 24, 207, 180, 40, () => _player.Previous());
+            _play = Control(panel, AishiMusicText.Get("play", "PLAY"), 216, 207, 260, 40, () => _player.Toggle());
             _playLabel = _play.Label;
-            _next = Control(panel, "NEXT", 488, 207, 180, 40, () => _player.Next());
-            _shuffleLabel = Control(panel, "SHUFFLE: OFF", 680, 207, 196, 40, () => _player.Shuffle = !_player.Shuffle).Label;
-            Text(panel, "VOLUME", 24, 263, 85, 26, 14, Muted);
+            _next = Control(panel, AishiMusicText.Get("next", "NEXT"), 488, 207, 180, 40, () => _player.Next());
+            _shuffleLabel = Control(panel, AishiMusicText.Get("shuffleOff", "SHUFFLE: OFF"), 680, 207, 196, 40, () => _player.Shuffle = !_player.Shuffle).Label;
+            Text(panel, AishiMusicText.Get("volume", "VOLUME"), 24, 263, 85, 26, 14, Muted);
             _volumeLabel = Text(panel, "", 818, 263, 58, 26, 14, Gold);
             var slider = Rect("Volume", panel, 110, 265, 694, 24);
             _volume = slider.gameObject.AddComponent<Slider>();
@@ -188,9 +188,9 @@ namespace AishiKeys
             _volume.targetGraphic = handleImage;
             _volume.SetValueWithoutNotify(_player.Volume);
             _volume.onValueChanged.AddListener(v => _player.Volume = v);
-            Text(panel, "PLAYLISTS", 24, 303, 212, 25, 14, Gold);
-            _libraryLabel = Text(panel, "TRACKS", 252, 303, 492, 25, 14, Gold);
-            Control(panel, "REFRESH", 760, 299, 116, 30, () => _player.Reload());
+            Text(panel, AishiMusicText.Get("playlists", "PLAYLISTS"), 24, 303, 212, 25, 14, Gold);
+            _libraryLabel = Text(panel, AishiMusicText.Get("tracks", "TRACKS"), 252, 303, 492, 25, 14, Gold);
+            Control(panel, AishiMusicText.Get("refresh", "REFRESH"), 760, 299, 116, 30, () => _player.Reload());
             _playlistContent = Scroll(panel, "Playlists", 24, 341, 212, 210);
             _content = Scroll(panel, "Tracks", 252, 341, 624, 210);
             var inputRect = Rect("NewPlaylist", panel, 24, 565, 640, 36);
@@ -198,19 +198,19 @@ namespace AishiKeys
             var viewport = Rect("TextViewport", inputRect, 10, 0, 620, 36);
             viewport.gameObject.AddComponent<RectMask2D>();
             var value = Text(viewport, "", 0, 0, 620, 36, 16, Gold);
-            var placeholder = Text(viewport, "New playlist folder...", 0, 0, 620, 36, 16, Muted);
+            var placeholder = Text(viewport, AishiMusicText.Get("newPlaylist", "New playlist folder..."), 0, 0, 620, 36, 16, Muted);
             _newPlaylist = inputRect.gameObject.AddComponent<TMP_InputField>();
             _newPlaylist.textViewport = viewport;
             _newPlaylist.textComponent = value;
             _newPlaylist.placeholder = placeholder;
             _newPlaylist.characterLimit = 64;
             _newPlaylist.lineType = TMP_InputField.LineType.SingleLine;
-            Control(panel, "CREATE PLAYLIST", 676, 565, 200, 36, () =>
+            Control(panel, AishiMusicText.Get("createPlaylist", "CREATE PLAYLIST"), 676, 565, 200, 36, () =>
             {
                 if (_player.CreatePlaylist(_newPlaylist.text))
                     _newPlaylist.text = "";
             });
-            Text(panel, "LOCAL PLAYBACK  /  WAV · OGG · MP3  /  FOLDERS INSIDE MUSIC", 24, 614, 852, 20, 12, Muted);
+            Text(panel, AishiMusicText.Get("formats", "LOCAL PLAYBACK  /  WAV · OGG · MP3  /  FOLDERS INSIDE MUSIC"), 24, 614, 852, 20, 12, Muted);
             Text(panel, _player.Shortcuts, 24, 643, 852, 20, 12, Gold);
             RefreshTracks();
         }
@@ -242,7 +242,7 @@ namespace AishiKeys
 
             _playlistContent.sizeDelta = new Vector2(212, Math.Max(210, playlists.Length * 36));
             string[] tracks = _player.Tracks;
-            _libraryLabel.text = _player.PlaylistName + "  /  " + tracks.Length + " TRACKS";
+            _libraryLabel.text = _player.PlaylistName + "  /  " + tracks.Length + " " + AishiMusicText.Get("tracks", "TRACKS");
             for (int i = 0; i < tracks.Length; i++)
             {
                 int index = i;
@@ -253,8 +253,8 @@ namespace AishiKeys
 
             if (tracks.Length == 0)
             {
-                Text(_content, "This playlist is empty", 18, 24, 588, 30, 18, Gold);
-                Text(_content, "Add files to its folder inside Music, then REFRESH.", 18, 57, 588, 30, 14, Muted);
+                Text(_content, AishiMusicText.Get("empty", "This playlist is empty"), 18, 24, 588, 30, 18, Gold);
+                Text(_content, AishiMusicText.Get("addFiles", "Add files to its folder inside Music, then REFRESH."), 18, 57, 588, 30, 14, Muted);
             }
 
             _content.sizeDelta = new Vector2(624, Math.Max(210, tracks.Length * 38));
@@ -286,12 +286,12 @@ namespace AishiKeys
             _status.text = _player.Status;
             int selected = _player.Selected;
             string[] tracks = _player.Tracks;
-            _title.text = selected >= 0 && selected < tracks.Length ? Path.GetFileNameWithoutExtension(tracks[selected]) : "NO TRACK SELECTED";
+            _title.text = selected >= 0 && selected < tracks.Length ? Path.GetFileNameWithoutExtension(tracks[selected]) : AishiMusicText.Get("noTrack", "NO TRACK SELECTED");
             _play.interactable = _player.CanPlay;
             _previous.interactable = _player.CanPlay;
             _next.interactable = _player.CanPlay;
-            _playLabel.text = _player.Paused ? "PLAY" : "PAUSE";
-            _shuffleLabel.text = _player.Shuffle ? "SHUFFLE: ON" : "SHUFFLE: OFF";
+            _playLabel.text = _player.Paused ? AishiMusicText.Get("play", "PLAY") : AishiMusicText.Get("pause", "PAUSE");
+            _shuffleLabel.text = _player.Shuffle ? AishiMusicText.Get("shuffleOn", "SHUFFLE: ON") : AishiMusicText.Get("shuffleOff", "SHUFFLE: OFF");
             _seek.interactable = _player.CanSeek;
             if (!_seek.Dragging || !_player.CanSeek || _selected != selected)
                 _seek.SetValueWithoutNotify(_player.Duration > 0 ? Mathf.Clamp01(_player.Position / _player.Duration) : 0);

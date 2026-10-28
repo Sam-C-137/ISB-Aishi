@@ -34,7 +34,7 @@ namespace AishiKeys
         private string[] _playlistPaths = new string[0];
         private int _playlistIndex;
         private readonly AishiMusicOrder _order = new AishiMusicOrder();
-        private string _status = "Equip an Aishi music headset to listen.";
+        private string _status = AishiMusicText.Get("equip", "Equip an Aishi music headset to listen.");
         private string[] _tracks = new string[0];
         private int _index = -1, _generation;
         private bool _eligible, _paused = true, _window, _loading, _started;
@@ -101,7 +101,7 @@ namespace AishiKeys
             var sample = __instance.GetComponentInChildren<TMPro.TMP_Text>(true);
             if (sample != null)
                 text.font = sample.font;
-            text.text = "MUSIC PLAYER";
+            text.text = AishiMusicText.Get("player", "MUSIC PLAYER");
             text.fontSize = 16;
             text.alignment = TMPro.TextAlignmentOptions.Center;
             text.raycastTarget = false;
@@ -141,7 +141,7 @@ namespace AishiKeys
         internal bool CanPlay => _eligible && !_loading && _tracks.Length != 0;
         internal bool Paused => _paused;
         internal string Status => _status;
-        internal string Connection => _eligible ? "HEADSET CONNECTED" : "HEADSET NOT EQUIPPED";
+        internal string Connection => _eligible ? AishiMusicText.Get("connected", "HEADSET CONNECTED") : AishiMusicText.Get("disconnected", "HEADSET NOT EQUIPPED");
         internal float Volume { get => _volume.Value; set => _volume.Value = Mathf.Clamp01(value); }
         internal float Position => _source?.clip != null ? _source.time : 0;
         internal float Duration => _source?.clip != null ? _source.clip.length : 0;
@@ -155,7 +155,7 @@ namespace AishiKeys
             _headsetTone?.ResetFilter();
         }
 
-        internal string Shortcuts => "PAUSE / RESUME  " + _pauseKey.Value + "     PLAYER  " + _windowKey.Value;
+        internal string Shortcuts => string.Format(AishiMusicText.Get("shortcuts", "PAUSE / RESUME  {0}     PLAYER  {1}"), _pauseKey.Value, _windowKey.Value);
 
         internal void ClosePlayer() => SetWindow(false);
         internal void Previous()
@@ -180,9 +180,9 @@ namespace AishiKeys
             }
         }
 
-        internal string[] Playlists => _playlistPaths.Select((p, i) => i == 0 ? "Music (root)" : Path.GetFileName(p)).ToArray();
+        internal string[] Playlists => _playlistPaths.Select((p, i) => i == 0 ? AishiMusicText.Get("root", "Music (root)") : Path.GetFileName(p)).ToArray();
         internal int SelectedPlaylist => _playlistIndex;
-        internal string PlaylistName => _playlistIndex == 0 ? "Music (root)" : Path.GetFileName(_directory);
+        internal string PlaylistName => _playlistIndex == 0 ? AishiMusicText.Get("root", "Music (root)") : Path.GetFileName(_directory);
 
         private void RefreshPlaylists()
         {
@@ -201,7 +201,7 @@ namespace AishiKeys
             }
             catch (Exception ex)
             {
-                _status = "Cannot read playlists: " + ex.Message;
+                _status = AishiMusicText.Get("readPlaylists", "Cannot read playlists: ") + ex.Message;
             }
         }
 
@@ -210,13 +210,13 @@ namespace AishiKeys
             if (index < 0 || index >= _playlistPaths.Length || index == _playlistIndex)
                 return;
             if (_started && !_paused)
-                Notify("Music paused");
+                Notify(AishiMusicText.Get("notifyPaused", "Music paused"));
             StopPlayback();
             _directory = _playlistPaths[index];
             _playlistIndex = index;
             _index = -1;
             RefreshTracks();
-            _status = _tracks.Length == 0 ? "Empty playlist. Add music to Music/" + PlaylistName : "Playlist selected. Choose a track or press Play.";
+            _status = _tracks.Length == 0 ? AishiMusicText.Get("emptyPath", "Empty playlist. Add music to Music/") + PlaylistName : AishiMusicText.Get("selectedPlaylist", "Playlist selected. Choose a track or press Play.");
             _panel?.RefreshTracks();
         }
 
@@ -231,7 +231,7 @@ namespace AishiKeys
             }
             catch (Exception ex)
             {
-                _status = "Cannot create playlist: " + ex.Message;
+                _status = AishiMusicText.Get("createError", "Cannot create playlist: ") + ex.Message;
                 return false;
             }
         }
@@ -292,11 +292,11 @@ namespace AishiKeys
             if (_eligible && !eligible)
             {
                 StopPlayback();
-                _status = "Music stopped: equip an Aishi music headset.";
+                _status = AishiMusicText.Get("unequipped", "Music stopped: equip an Aishi music headset.");
             }
 
             if (!_eligible && eligible)
-                _status = "Headset connected. Press Play to listen.";
+                _status = AishiMusicText.Get("ready", "Headset connected. Press Play to listen.");
             _eligible = eligible;
             _source.volume = _volume.Value;
             if (!Typing())
@@ -317,7 +317,7 @@ namespace AishiKeys
                 else
                 {
                     _paused = true;
-                    _status = "Track finished.";
+                    _status = AishiMusicText.Get("finished", "Track finished.");
                 }
             }
         }
@@ -333,7 +333,7 @@ namespace AishiKeys
                     StopPlayback();
                 _order.Reset(_tracks.Length, _index);
                 if (_tracks.Length == 0)
-                    _status = "Add WAV, OGG or MP3 files to this playlist folder, then Refresh.";
+                    _status = AishiMusicText.Get("addFormats", "Add WAV, OGG or MP3 files to this playlist folder, then Refresh.");
             }
             catch (Exception ex)
             {
@@ -341,7 +341,7 @@ namespace AishiKeys
                 _tracks = new string[0];
                 _index = -1;
                 _order.Reset(0);
-                _status = "Cannot read Music folder: " + ex.Message;
+                _status = AishiMusicText.Get("readMusic", "Cannot read Music folder: ") + ex.Message;
             }
         }
 
@@ -374,15 +374,15 @@ namespace AishiKeys
                 }
                 _started = true;
                 _paused = false;
-                _status = "Playing";
-                Notify("Music resumed");
+                _status = AishiMusicText.Get("playing", "Playing");
+                Notify(AishiMusicText.Get("notifyResumed", "Music resumed"));
             }
             else
             {
                 _source.Pause();
                 _paused = true;
-                _status = "Paused";
-                Notify("Music paused");
+                _status = AishiMusicText.Get("paused", "Paused");
+                Notify(AishiMusicText.Get("notifyPaused", "Music paused"));
             }
         }
 
@@ -402,7 +402,7 @@ namespace AishiKeys
             _index = index;
             if (!_eligible)
             {
-                _status = "Selected. Equip an Aishi music headset, then press Play.";
+                _status = AishiMusicText.Get("selected", "Selected. Equip an Aishi music headset, then press Play.");
                 return;
             }
 
@@ -413,13 +413,13 @@ namespace AishiKeys
         {
             if (!File.Exists(file) || new FileInfo(file).Length > 100 * 1024 * 1024)
             {
-                _status = "Missing file or file larger than 100 MB.";
+                _status = AishiMusicText.Get("missing", "Missing file or file larger than 100 MB.");
                 yield break;
             }
 
             AudioType type = Path.GetExtension(file).Equals(".ogg", StringComparison.OrdinalIgnoreCase) ? AudioType.OGGVORBIS : Path.GetExtension(file).Equals(".wav", StringComparison.OrdinalIgnoreCase) ? AudioType.WAV : AudioType.MPEG;
             _loading = true;
-            _status = "Loading " + Path.GetFileNameWithoutExtension(file);
+            _status = AishiMusicText.Get("loading", "Loading ") + Path.GetFileNameWithoutExtension(file);
             using (var request = UnityWebRequestMultimedia.GetAudioClip(new Uri(file).AbsoluteUri, type))
             {
                 _request = request;
@@ -427,7 +427,7 @@ namespace AishiKeys
                 if (generation == _generation && _eligible)
                 {
                     if (request.result != UnityWebRequest.Result.Success)
-                        _status = "Cannot play this file: " + request.error;
+                        _status = AishiMusicText.Get("playError", "Cannot play this file: ") + request.error;
                     else
                     {
                         var clip = DownloadHandlerAudioClip.GetContent(request);
@@ -438,8 +438,8 @@ namespace AishiKeys
                             _source.Play();
                             _paused = false;
                             _started = true;
-                            _status = "Playing";
-                            Notify("Now playing: " + TrackLabel(file));
+                            _status = AishiMusicText.Get("playing", "Playing");
+                            Notify(AishiMusicText.Get("notifyPlaying", "Now playing: ") + TrackLabel(file));
                         }
                     }
                 }
@@ -479,7 +479,7 @@ namespace AishiKeys
             _loading = false;
             _paused = true;
             _started = false;
-            _status = "Stopped";
+            _status = AishiMusicText.Get("stopped", "Stopped");
         }
 
         private void Notify(string message)
@@ -508,8 +508,8 @@ namespace AishiKeys
             {
                 _source.Pause();
                 _paused = true;
-                _status = "Paused";
-                Notify("Music paused");
+                _status = AishiMusicText.Get("paused", "Paused");
+                Notify(AishiMusicText.Get("notifyPaused", "Music paused"));
             }
         }
 

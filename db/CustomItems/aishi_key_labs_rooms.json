@@ -1,0 +1,52 @@
+{
+  "c1ba6df54f1dcfdd088398a7": {
+    "itemTplToClone": "5ad5ccd186f774446d5706e9",
+    "parentId": "5c99f98d86f7745c314214b3",
+    "handbookParentId": "5c518ed586f774119a772aee",
+    "overrideProperties": {
+      "MaximumNumberOfUsage": 1
+    },
+    "locales": {
+      "en": {
+        "name": "TerraGroup Labs USEC Intelligence Support Bureau Armory Room Key",
+        "shortName": "ISB",
+        "description": "A mechanical key that grants access to USEC ISB's arsenal of equipment inside the TerraGroup Laboratory."
+      },
+      "po": {
+        "name": "Chave do arsenal do Intelligence Support Bureau da USEC no TerraGroup Labs",
+        "shortName": "ISB",
+        "description": "Uma chave mecânica que concede acesso ao arsenal de equipamentos da ISB da USEC dentro do Laboratório TerraGroup."
+      }
+    },
+    "fleaPriceRoubles": 100000,
+    "handbookPriceRoubles": 100000,
+    "addtoBots": false,
+    "addtoItemBlacklist": true,
+    "addtoSecureFilters": true
+  },
+  "d8d9671481acbcdb6cdc9b2b": {
+    "itemTplToClone": "5448ba0b4bdc2d02308b456c",
+    "parentId": "5c99f98d86f7745c314214b3",
+    "handbookParentId": "5c518ed586f774119a772aee",
+    "overrideProperties": {
+      "MaximumNumberOfUsage": 20
+    },
+    "locales": {
+      "en": {
+        "name": "TerraGroup Labs Service Room Key",
+        "shortName": "Service",
+        "description": "A mechanical key to the service room marked for flammable materials in the east parking corridor."
+      },
+      "po": {
+        "name": "Chave da sala de serviço do TerraGroup Labs",
+        "shortName": "Serviço",
+        "description": "Uma chave mecânica da sala de serviço identificada com materiais inflamáveis no corredor leste do estacionamento."
+      }
+    },
+    "fleaPriceRoubles": 100000,
+    "handbookPriceRoubles": 100000,
+    "addtoBots": false,
+    "addtoItemBlacklist": true,
+    "addtoSecureFilters": true
+  }
+}

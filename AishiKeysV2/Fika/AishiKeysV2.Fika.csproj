@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblySearchPaths>{HintPathFromItem};$(AssemblySearchPaths)</AssemblySearchPaths>
     <AssemblyName>AishiKeysV2.Fika</AssemblyName>
     <RootNamespace>AishiKeys.Fika</RootNamespace>
     <LangVersion>latest</LangVersion>
@@ -9,9 +10,9 @@
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <Deterministic>true</Deterministic>
-    <Version>2.0.4</Version>
-    <AssemblyVersion>2.0.4</AssemblyVersion>
-    <FileVersion>2.0.4</FileVersion>
+    <Version>2.0.5</Version>
+    <AssemblyVersion>2.0.5</AssemblyVersion>
+    <FileVersion>2.0.5</FileVersion>
 
     <SPTRoot Condition="'$(SPTRoot)' == ''">C:\SPTV</SPTRoot>
     <ManagedPath>$(SPTRoot)\EscapeFromTarkov_Data\Managed</ManagedPath>

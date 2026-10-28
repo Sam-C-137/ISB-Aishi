@@ -79,7 +79,7 @@ namespace AishiKeys
             catch (Exception error)
             {
                 AishiKeysPro.AishiKeysMod.Logger.LogError("Tape color: " + error);
-                NotificationManagerClass.DisplayWarningNotification("Could not change tape. Reopen the magazine menu.");
+                NotificationManagerClass.DisplayWarningNotification("aishi_tape_change_failed".Localized());
             }
             finally
             {

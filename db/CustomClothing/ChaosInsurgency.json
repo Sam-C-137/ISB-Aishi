@@ -1,0 +1,160 @@
+[
+  {
+    "type": "top",
+    "suiteId": "21b55df915be597b99acd51a",
+    "outfitId": "ca27af72550151899b205b3f",
+    "topId": "cd929fdc7cfe5a68bfca677f",
+    "handsId": "c2e0dc5b1b1559868841e24f",
+    "locales": {
+      "en": {
+        "name": "Chaos Insurgency Red Right Hand (Multicam Black)",
+        "description": "Chaos Insurgency Red Right Hand Combat Shirt"
+      },
+      "po": {
+        "name": "Chaos Insurgency Red Right Hand (Multicam Black)",
+        "description": "Chaos Insurgency Red Right Hand combat shirt"
+      }
+    },
+    "topBundlePath": "chaos_20261026/chaos_rrh/9934b2bddc-isb_black_division_red_right_hand_top_multicam_black.bundle",
+    "handsBundlePath": "chaos_20261026/chaos_rrh/2962e43f65-isb_black_division_red_right_hand_hands_multicam_black.bundle",
+    "traderId": "690766de550bc322a810ea1e",
+    "loyaltyLevel": 4,
+    "profileLevel": 50,
+    "standing": 1.0,
+    "currencyId": "MONEY_DOLLARS",
+    "price": 15000,
+    "questRequirements": [],
+    "achievementRequirements": []
+  },
+  {
+    "type": "bottom",
+    "suiteId": "f813f6bc65bf5c5ea612b8d0",
+    "outfitId": "fb1a90825d4954c287509317",
+    "bottomId": "a72cd67b489d5a1abf3d3508",
+    "locales": {
+      "en": {
+        "name": "Chaos Insurgency Red Right Hand (Multicam Black)",
+        "description": "Chaos Insurgency Red Right Hand Tactical Trousers"
+      },
+      "po": {
+        "name": "Chaos Insurgency Red Right Hand (Multicam Black)",
+        "description": "Chaos Insurgency Red Right Hand tactical trousers"
+      }
+    },
+    "bottomBundlePath": "clothing/black_division_multicam_black/isb_black_division_red_right_hand_pants_multicam_black.bundle",
+    "traderId": "690766de550bc322a810ea1e",
+    "loyaltyLevel": 4,
+    "profileLevel": 50,
+    "standing": 1.0,
+    "currencyId": "MONEY_DOLLARS",
+    "price": 30000,
+    "questRequirements": [],
+    "achievementRequirements": []
+  },
+  {
+    "type": "top",
+    "suiteId": "b7a3b7cf159c5177b150252e",
+    "outfitId": "f3575963eac05c62bdd893d9",
+    "topId": "d58c8c04ddf25f3992c99c6f",
+    "handsId": "345c9018d4635f2eabac984d",
+    "locales": {
+      "en": {
+        "name": "Chaos Insurgency Heavy Operative (Multicam Black)",
+        "description": "Chaos Insurgency Heavy Operative Combat Shirt"
+      },
+      "po": {
+        "name": "Chaos Insurgency Heavy Operative (Multicam Black)",
+        "description": "Chaos Insurgency Heavy Operative Combat Shirt"
+      }
+    },
+    "topBundlePath": "chaos_20261026/chaos_heavy/7bb29b4689-top_bd_operator_04_multicam_black.bundle",
+    "handsBundlePath": "chaos_20261026/chaos_heavy/0a6bb298bb-top_operator_bd4_hands_multicam_black.bundle",
+    "traderId": "690766de550bc322a810ea1e",
+    "loyaltyLevel": 3,
+    "profileLevel": 30,
+    "standing": 0.4,
+    "currencyId": "MONEY_DOLLARS",
+    "price": 1250,
+    "questRequirements": [],
+    "achievementRequirements": []
+  },
+  {
+    "type": "bottom",
+    "suiteId": "4cc7a49002665c968df6318d",
+    "outfitId": "0524ccb13b465030a59fc561",
+    "bottomId": "cc0e1db3af0c5eaa8e5f7599",
+    "locales": {
+      "en": {
+        "name": "Chaos Insurgency Heavy Operative (Multicam Black)",
+        "description": "Chaos Insurgency Heavy Operative Tactical Trousers"
+      },
+      "po": {
+        "name": "Chaos Insurgency Heavy Operative (Multicam Black)",
+        "description": "Chaos Insurgency Heavy Operative Tactical Trousers"
+      }
+    },
+    "bottomBundlePath": "clothing/black_division_multicam_black/pants_bd_operator_04_multicam_black.bundle",
+    "traderId": "690766de550bc322a810ea1e",
+    "loyaltyLevel": 3,
+    "profileLevel": 30,
+    "standing": 0.4,
+    "currencyId": "MONEY_DOLLARS",
+    "price": 2500,
+    "questRequirements": [],
+    "achievementRequirements": [
+      "694176555b56f8b3181945b1"
+    ]
+  },
+  {
+    "type": "top",
+    "suiteId": "ce113c13c44f5c79a0f0a931",
+    "outfitId": "a4bc0cf89fd35dfebfe73d09",
+    "topId": "49271cc48ee454c592f576fb",
+    "handsId": "2190ebcdfd975d559626cc65",
+    "locales": {
+      "en": {
+        "name": "USEC ISB Black Camouflage (Chaos Insurgency)",
+        "description": "ISB Black Camo Uniform"
+      },
+      "po": {
+        "name": "USEC ISB Black Camouflage (Chaos Insurgency)",
+        "description": "ISB Black Camo Uniform"
+      }
+    },
+    "topBundlePath": "chaos_20261026/chaos_isb/4afd1e25b6-top_isb_camouflage_black_no_patches.bundle",
+    "traderId": "690766de550bc322a810ea1e",
+    "loyaltyLevel": 4,
+    "profileLevel": 40,
+    "standing": 0.4,
+    "currencyId": "MONEY_DOLLARS",
+    "price": 2000,
+    "questRequirements": [],
+    "achievementRequirements": [],
+    "handsBundlePath": "chaos_20261026/chaos_isb/4c8031f42b-hands_usec_mission_black.bundle"
+  },
+  {
+    "type": "bottom",
+    "suiteId": "91ce6b673c555078a491ecce",
+    "outfitId": "4123bc5cdcca5005b46178f5",
+    "bottomId": "3db56d1fe86d5081a69f154f",
+    "locales": {
+      "en": {
+        "name": "USEC ISB Black Camouflage (Chaos Insurgency)",
+        "description": "ISB Black Camouflage Pants"
+      },
+      "po": {
+        "name": "USEC ISB Black Camouflage (Chaos Insurgency)",
+        "description": "ISB Black Camouflage Pants"
+      }
+    },
+    "bottomBundlePath": "clothing/usec_woodland/isb_usec_woodland_pants.bundle",
+    "traderId": "690766de550bc322a810ea1e",
+    "loyaltyLevel": 4,
+    "profileLevel": 40,
+    "standing": 0.4,
+    "currencyId": "MONEY_DOLLARS",
+    "price": 2000,
+    "questRequirements": [],
+    "achievementRequirements": []
+  }
+]

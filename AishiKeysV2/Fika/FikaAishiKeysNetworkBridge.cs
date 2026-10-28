@@ -22,6 +22,7 @@ namespace AishiKeys.Fika
         private IFikaNetworkManager _registeredNetworkManager;
         private bool _initialized;
         private bool _isServer;
+        private long _nextFailureLog;
         internal FikaAishiKeysNetworkBridge(ManualLogSource log)
         {
             _log = log;
@@ -116,7 +117,7 @@ namespace AishiKeys.Fika
             }
             catch (Exception ex)
             {
-                _log.LogWarning("Aishi Keys Fika: failed to send packet to authority: " + ex.Message);
+                ReportFailure("send packet to authority", ex);
                 return false;
             }
         }
@@ -134,7 +135,7 @@ namespace AishiKeys.Fika
                 }
                 catch (Exception ex)
                 {
-                    _log.LogWarning("Aishi Keys Fika: payload handler failed: " + ex.Message);
+                    ReportFailure("process packet", ex);
                 }
             }
         }
@@ -186,17 +187,25 @@ namespace AishiKeys.Fika
 
         private void EnsureNetworkManager()
         {
-            if (!Active || _networkManager != null)
+            if (!Active)
                 return;
             try
             {
                 if (!Singleton<IFikaNetworkManager>.Instantiated)
+                {
+                    if (_networkManager != null)
+                    {
+                        _networkManager = null;
+                        _registeredNetworkManager = null;
+                        lock (_queueLock) _receivedPayloads.Clear();
+                    }
                     return;
+                }
                 AttachNetworkManager(Singleton<IFikaNetworkManager>.Instance, "Singleton<IFikaNetworkManager> fallback");
             }
             catch (Exception ex)
             {
-                _log.LogDebug("Aishi Keys Fika: network manager is not ready yet: " + ex.Message);
+                ReportFailure("resolve network manager", ex);
             }
         }
 
@@ -212,6 +221,7 @@ namespace AishiKeys.Fika
 
             try
             {
+                lock (_queueLock) _receivedPayloads.Clear();
                 networkManager.RegisterPacket<AishiKeysPacket>(OnPacketReceived);
                 _networkManager = networkManager;
                 _registeredNetworkManager = networkManager;
@@ -222,7 +232,7 @@ namespace AishiKeys.Fika
             {
                 _networkManager = null;
                 _registeredNetworkManager = null;
-                _log.LogError("Aishi Keys Fika: packet registration failed: " + ex);
+                ReportFailure("register packet", ex);
             }
         }
 
@@ -235,7 +245,8 @@ namespace AishiKeys.Fika
 
             lock (_queueLock)
             {
-                _receivedPayloads.Enqueue(packet.Payload);
+                if (_receivedPayloads.Count < 512)
+                    _receivedPayloads.Enqueue(packet.Payload);
             }
         }
 
@@ -252,6 +263,14 @@ namespace AishiKeys.Fika
                 payload = _receivedPayloads.Dequeue();
                 return true;
             }
+        }
+
+        private void ReportFailure(string action, Exception error)
+        {
+            long now = Stopwatch.GetTimestamp();
+            if (now < _nextFailureLog) return;
+            _nextFailureLog = now + Stopwatch.Frequency * 30L;
+            _log.LogWarning("Aishi Keys Fika: failed to " + action + ": " + error.GetType().Name);
         }
 
         private void RefreshRole()

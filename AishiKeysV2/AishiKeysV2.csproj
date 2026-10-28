@@ -3,13 +3,13 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>AishiKeysV2</AssemblyName>
     <RootNamespace>AishiKeysV2</RootNamespace>
-    <LangVersion>latest</LangVersion><DefineConstants>$(DefineConstants);SPT41</DefineConstants>
+    <LangVersion>latest</LangVersion><DefineConstants>$(DefineConstants);SPT41;ISB_LABS_CLIENT</DefineConstants>
     <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>true</EnableDefaultCompileItems>
     <Deterministic>true</Deterministic>
-    <Version>2.0.4</Version>
+    <Version>2.0.5</Version>
 
     <SPTRoot Condition="'$(SPTRoot)' == ''">C:\SPTV</SPTRoot>
     <ManagedPath>$(SPTRoot)\EscapeFromTarkov_Data\Managed</ManagedPath>
@@ -75,5 +75,7 @@
 <ItemGroup><EmbeddedResource Include="Resources\ArmorClassVII.png" LogicalName="Aishi.ArmorClassVII.png" /><Reference Include="UnityEngine.ImageConversionModule"><HintPath>$(ManagedPath)\UnityEngine.ImageConversionModule.dll</HintPath><Private>false</Private></Reference><Reference Include="UnityEngine.TextCoreFontEngineModule"><HintPath>$(ManagedPath)\UnityEngine.TextCoreFontEngineModule.dll</HintPath><Private>false</Private></Reference></ItemGroup>
 <ItemGroup><None Update="MagazineVariants.json" CopyToOutputDirectory="PreserveNewest" /></ItemGroup>
 <ItemGroup><Reference Include="spt-common"><HintPath>$(BepInExPlugins)/spt/spt-common.dll</HintPath><Private>false</Private></Reference></ItemGroup><ItemGroup><Reference Include="UnityEngine.PhysicsModule"><HintPath>$(ManagedPath)\UnityEngine.PhysicsModule.dll</HintPath><Private>false</Private></Reference></ItemGroup>
-<ItemGroup><None Update="Music\**\*" CopyToOutputDirectory="PreserveNewest" /></ItemGroup></Project>
+<ItemGroup><None Update="Music\**\*" CopyToOutputDirectory="PreserveNewest" /></ItemGroup><ItemGroup><Compile Include="..\Shared\LabsNewRooms.cs" Link="LabsNewRooms.cs" /></ItemGroup>
+<ItemGroup><EmbeddedResource Include="MiniLabsAssets\keypad-*.png"><LogicalName>Aishi.Labs.keypad.%(Filename)%(Extension)</LogicalName></EmbeddedResource></ItemGroup>
+<ItemGroup><Reference Include="UnityEngine.AnimationModule"><HintPath>$(ManagedPath)\UnityEngine.AnimationModule.dll</HintPath><Private>false</Private></Reference></ItemGroup><ItemGroup><Reference Include="UnityEngine.AssetBundleModule"><HintPath>$(ManagedPath)\UnityEngine.AssetBundleModule.dll</HintPath><Private>false</Private></Reference></ItemGroup><ItemGroup><Reference Include="UnityEngine.TextRenderingModule"><HintPath>$(ManagedPath)\UnityEngine.TextRenderingModule.dll</HintPath><Private>false</Private></Reference></ItemGroup><ItemGroup><Reference Include="UnityEngine.ParticleSystemModule"><HintPath>$(ManagedPath)\UnityEngine.ParticleSystemModule.dll</HintPath><Private>false</Private></Reference></ItemGroup><ItemGroup><None Update="MiniLabsAssets\**\*" CopyToOutputDirectory="PreserveNewest" /></ItemGroup><ItemGroup><Compile Include="..\AishiRequestLogging.cs" Link="AishiRequestLogging.cs" /></ItemGroup><ItemGroup><Reference Include="DissonanceVoip"><HintPath>$(ManagedPath)\DissonanceVoip.dll</HintPath><Private>false</Private></Reference></ItemGroup></Project>
 

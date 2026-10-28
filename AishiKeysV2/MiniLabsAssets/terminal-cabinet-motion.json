@@ -1,0 +1,17 @@
+{
+  "template": "68a5b9af76a25d8e6e0e2e56",
+  "hinge": [
+    -0.20875005073054664,
+    0.8750001558544511,
+    0.18253208533195525
+  ],
+  "axis": 1,
+  "openAngle": -10.0,
+  "closedAngle": 0.0,
+  "movingParts": [
+    "Model_0",
+    "Model_1"
+  ],
+  "openInteraction": 23,
+  "closeInteraction": 25
+}
