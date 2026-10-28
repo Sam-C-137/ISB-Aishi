@@ -21,7 +21,7 @@ public record ModMetadata : IModMetadata
     public string Name { get; init; } = "ISB Aishi";
     public string Author { get; init; } = "SamC137";
     public List<string>? Contributors { get; init; }
-    public SemanticVersioning.Version Version { get; init; } = new("2.0.4");
+    public SemanticVersioning.Version Version { get; init; } = new("2.0.5");
     public SemanticVersioning.Range SptVersion { get; init; } = new("~4.1.6");
     public List<string>? Incompatibilities { get; init; }
     public Dictionary<string, SemanticVersioning.Range>? ModDependencies { get; init; } = new()

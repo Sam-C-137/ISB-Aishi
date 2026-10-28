@@ -13239,6 +13239,232 @@
         "assets/commonassets/physics/physicsmaterials.bundle",
         "equipment/item_equipment_armor_bd4_firstspear_scp_nightops.bundle"
       ]
+    },
+    {
+      "key": "chaos_20261026/modified_gp7/f0bdade76c-item_equipment_facecover_gasmask_gp7.bundle",
+      "dependencyKeys": [
+        "assets/commonassets/physics/physicsmaterials.bundle",
+        "cubemaps",
+        "shaders"
+      ]
+    },
+    {
+      "key": "chaos_20261026/modified_gp5/00878c4af3-item_equipment_facecover_gasmask_gp5.bundle",
+      "dependencyKeys": [
+        "assets/commonassets/physics/physicsmaterials.bundle",
+        "cubemaps",
+        "shaders"
+      ]
+    },
+    {
+      "key": "chaos_20261026/modified_respirator/8e4e7722aa-item_equipment_facecover_gasmask_3m.bundle",
+      "dependencyKeys": [
+        "assets/commonassets/physics/physicsmaterials.bundle",
+        "cubemaps",
+        "shaders"
+      ]
+    },
+    {
+      "key": "chaos_20261026/modified_glock17_fde/29b96db2cb-weapon_glock_glock_17_gen3_9x19_container.bundle",
+      "dependencyKeys": [
+        "assets/commonassets/physics/physicsmaterials.bundle",
+        "assets/content/audio/banks/glock17.bundle",
+        "assets/content/audio/blendoptions/assets.bundle",
+        "assets/content/audio/weapons/ak74.bundle",
+        "assets/content/audio/weapons/generic",
+        "assets/content/audio/weapons/glock17.bundle",
+        "assets/content/audio/weapons/grach.bundle",
+        "assets/content/audio/weapons/kedr.bundle",
+        "assets/content/audio/weapons/mpx.bundle",
+        "assets/content/audio/weapons/pm.bundle",
+        "assets/content/weapons/additional_hands/client_assets.bundle",
+        "assets/content/weapons/animations/simple_animations.bundle",
+        "assets/content/weapons/animations/spirit_animations.bundle",
+        "assets/content/weapons/glock17/client_assets.bundle",
+        "assets/content/weapons/glock17/textures/client_assets.bundle",
+        "assets/content/weapons/glock18c/client_assets.bundle",
+        "assets/content/weapons/weapon_root_anim_fix.bundle",
+        "assets/content/weapons/wip/kibas tuning prefabs/muzzlejets_templates/default_assets.bundle",
+        "assets/systems/effects/heathaze/defaultheathaze.bundle",
+        "assets/systems/effects/muzzleflash/muzzleflash.bundle",
+        "assets/systems/effects/smoke.bundle",
+        "cubemaps",
+        "shaders"
+      ]
+    },
+    {
+      "key": "chaos_20261026/modified_glock17_fde_slide/f97b5bdd00-reciever_glock_glock_17_std.bundle",
+      "dependencyKeys": [
+        "assets/commonassets/physics/physicsmaterials.bundle",
+        "cubemaps",
+        "shaders"
+      ]
+    },
+    {
+      "key": "chaos_20261026/chaos_rrh/fcc81a1862-isb_black_division_red_right_hand_hands_desert.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "clothing/angels_gold/hands_angels_crusader.skin.bundle",
+        "equipment/chaos_insurgency/embroidered_patch.bundle"
+      ]
+    },
+    {
+      "key": "chaos_20261026/chaos_rrh/d3bf6f50ec-isb_black_division_red_right_hand_top_desert.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "equipment/chaos_insurgency/embroidered_patch.bundle"
+      ]
+    },
+    {
+      "key": "chaos_20261026/chaos_rrh/2962e43f65-isb_black_division_red_right_hand_hands_multicam_black.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "clothing/angels_gold/hands_angels_crusader.skin.bundle",
+        "chaos_20261026/chaos_rrh/fcc81a1862-isb_black_division_red_right_hand_hands_desert.bundle",
+        "equipment/chaos_insurgency/embroidered_patch.bundle"
+      ]
+    },
+    {
+      "key": "chaos_20261026/chaos_rrh/9934b2bddc-isb_black_division_red_right_hand_top_multicam_black.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "chaos_20261026/chaos_rrh/d3bf6f50ec-isb_black_division_red_right_hand_top_desert.bundle",
+        "equipment/chaos_insurgency/embroidered_patch.bundle"
+      ]
+    },
+    {
+      "key": "chaos_20261026/chaos_heavy/9f9b4e9952-top_operator_bd4_hands_desert.bundle",
+      "dependencyKeys": [
+        "shaders",
+        "equipment/chaos_insurgency/embroidered_patch.bundle"
+      ]
+    },
+    {
+      "key": "chaos_20261026/chaos_heavy/267d6fea50-top_usec_hawaii_01_multicam_black.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "assets/content/characters/character/usec/top_usec_hawaii_01/top_usec_hawaii_01_d.bundle",
+        "assets/content/characters/character/usec/top_usec_hawaii_01/top_usec_hawaii_01_n.bundle",
+        "assets/content/characters/character/usec/top_usec_hawaii_01/top_usec_hawaii_01_g.bundle",
+        "assets/content/characters/character/usec/top_usec_hawaii_01/top_usec_hawaii_01.bundle",
+        "clothing/black_division_desert/shared/top_usec_hawaii_01_desert.bundle"
+      ]
+    },
+    {
+      "key": "chaos_20261026/chaos_heavy/c4c8b6ee70-top_usec_hawaii_01_multicam_black.skin.bundle",
+      "dependencyKeys": [
+        "assets/content/characters/character/usec/top_usec_hawaii_01/top_usec_hawaii_01.skin.bundle",
+        "assets/content/characters/character/tacticalvest/cr_commando_mesh",
+        "equipment/chaos_insurgency/embroidered_patch.bundle"
+      ]
+    },
+    {
+      "key": "chaos_20261026/chaos_heavy/7bb29b4689-top_bd_operator_04_multicam_black.bundle",
+      "dependencyKeys": [
+        "chaos_20261026/chaos_heavy/c4c8b6ee70-top_usec_hawaii_01_multicam_black.skin.bundle",
+        "chaos_20261026/chaos_heavy/267d6fea50-top_usec_hawaii_01_multicam_black.bundle",
+        "equipment/chaos_insurgency/embroidered_patch.bundle"
+      ]
+    },
+    {
+      "key": "chaos_20261026/chaos_heavy/0a6bb298bb-top_operator_bd4_hands_multicam_black.bundle",
+      "dependencyKeys": [
+        "shaders",
+        "chaos_20261026/chaos_heavy/9f9b4e9952-top_operator_bd4_hands_desert.bundle",
+        "equipment/chaos_insurgency/embroidered_patch.bundle"
+      ]
+    },
+    {
+      "key": "chaos_20261026/chaos_isb/dbc8a008c6-tshirt_usec_combatshirt.bundle",
+      "dependencyKeys": [
+        "cubemaps",
+        "shaders",
+        "equipment/chaos_insurgency/embroidered_patch.bundle"
+      ]
+    },
+    {
+      "key": "chaos_20261026/chaos_isb/3222138b0a-hands_angels_crusader.skin.bundle",
+      "dependencyKeys": [
+        "assets/commonassets/physics/physicsmaterials.bundle",
+        "assets/content/hands/bear/bear_watch.bundle",
+        "assets/content/hands/usec/materials/watch_usec_textures",
+        "assets/content/hands/usec/usec_watch_garmintactix.bundle",
+        "assets/content/hands/bear/bear_hands_watch_texture.bundles",
+        "cubemaps",
+        "shaders",
+        "equipment/chaos_insurgency/embroidered_patch.bundle"
+      ]
+    },
+    {
+      "key": "chaos_20261026/chaos_isb/4afd1e25b6-top_isb_camouflage_black_no_patches.bundle",
+      "dependencyKeys": [
+        "chaos_20261026/chaos_isb/dbc8a008c6-tshirt_usec_combatshirt.bundle",
+        "equipment/chaos_insurgency/embroidered_patch.bundle"
+      ]
+    },
+    {
+      "key": "chaos_20261026/chaos_isb/4c8031f42b-hands_usec_mission_black.bundle",
+      "dependencyKeys": [
+        "assets/content/hands/bear/bear_watch.bundle",
+        "assets/content/hands/usec/materials/watch_usec_textures",
+        "assets/content/hands/usec/usec_watch_garmintactix.bundle",
+        "assets/content/hands/bear/bear_hands_watch_texture.bundles",
+        "cubemaps",
+        "shaders",
+        "chaos_20261026/chaos_isb/3222138b0a-hands_angels_crusader.skin.bundle",
+        "equipment/chaos_insurgency/embroidered_patch.bundle"
+      ]
+    },
+    {
+      "key": "chaos_20261026/chaos_be5f08f5165055df89511f06/4f93dbbb30-item_equipment_plateminus_bd_multicam_aishi.bundle",
+      "dependencyKeys": [
+        "assets/commonassets/physics/physicsmaterials.bundle",
+        "cubemaps",
+        "shaders",
+        "equipment/item_equipment_armor_plateminus_milspec_aishi.bundle",
+        "equipment/chaos_insurgency/embroidered_patch.bundle"
+      ]
+    },
+    {
+      "key": "chaos_20261026/chaos_1753fe76be5c50808fd90d1d/e9be5c5b20-item_equipment_plateminus_bd_wolf_aishi.bundle",
+      "dependencyKeys": [
+        "assets/commonassets/physics/physicsmaterials.bundle",
+        "cubemaps",
+        "shaders",
+        "equipment/item_equipment_armor_plateminus_advanced_aishi.bundle",
+        "equipment/chaos_insurgency/embroidered_patch.bundle"
+      ]
+    },
+    {
+      "key": "chaos_20261026/chaos_e8c9b4c9ed10529190d67709/e5696ac76d-item_equipment_plateminus_champion_bd_aishi.bundle",
+      "dependencyKeys": [
+        "assets/commonassets/physics/physicsmaterials.bundle",
+        "cubemaps",
+        "shaders",
+        "equipment/chaos_insurgency/embroidered_patch.bundle"
+      ]
+    },
+    {
+      "key": "chaos_20261026/chaos_024925dff8b05f2aa3cdbc6d/ad0d9826a1-item_equipment_plateminus_extreme_bd_aishi.bundle",
+      "dependencyKeys": [
+        "assets/commonassets/physics/physicsmaterials.bundle",
+        "cubemaps",
+        "shaders",
+        "equipment/item_equipment_armor_plateminus_extreme_aishi.bundle",
+        "equipment/chaos_insurgency/embroidered_patch.bundle"
+      ]
+    },
+    {
+      "key": "equipment/chaos_insurgency/embroidered_patch.bundle",
+      "dependencyKeys": [
+        "shaders",
+        "cubemaps"
+      ]
     }
   ]
 }

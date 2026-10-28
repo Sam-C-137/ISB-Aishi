@@ -3,7 +3,7 @@
     "localeDiagnostics": false
   },
   "reputationCalibration": {
-    "enabled": true,
+    "enabled": false,
     "migrationVersion": 3,
     "logs": false
   },

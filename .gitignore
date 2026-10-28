@@ -1,14 +1,9 @@
+# Visual Studio / build artifacts
 .vs/
+**/.vs/
+bin/
 **/bin/
+obj/
 **/obj/
-*.pdb
 *.user
 *.suo
-*.deps.json
-*.isb-web.bak
-bundles/
-**/*.bundle
-**/*.wav
-**/*.mp4
-**/*.ogg
-**/*.mp3

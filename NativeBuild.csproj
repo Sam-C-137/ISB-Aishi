@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<PropertyGroup><TargetFramework>net10.0</TargetFramework><AssemblyName>Aishi</AssemblyName><RootNamespace>Aishi</RootNamespace><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><OutputType>Library</OutputType><Version>2.0.5</Version><DefineConstants>$(DefineConstants);AISHI_SPT41</DefineConstants><LangVersion>latest</LangVersion></PropertyGroup>
+<ItemGroup><FrameworkReference Include="Microsoft.AspNetCore.App" />
+<Reference Include="SPTarkov.Common"><HintPath>C:\SPTV\SPT_Runtime\SPTarkov.Common.dll</HintPath></Reference>
+<Reference Include="SPTarkov.DI"><HintPath>C:\SPTV\SPT_Runtime\SPTarkov.DI.dll</HintPath></Reference>
+<Reference Include="SPTarkov.Server.Core"><HintPath>C:\SPTV\SPT_Runtime\SPTarkov.Server.Core.dll</HintPath></Reference>
+<Reference Include="SPTarkov.Reflection"><HintPath>C:\SPTV\SPT_Runtime\SPTarkov.Reflection.dll</HintPath></Reference>
+<Reference Include="SemanticVersioning"><HintPath>C:\SPTV\SPT_Runtime\SemanticVersioning.dll</HintPath></Reference>
+<Reference Include="0Harmony"><HintPath>C:\SPTV\SPT_Runtime\0Harmony.dll</HintPath></Reference>
+
+<Reference Include="WTT-ServerCommonLib"><HintPath>C:\SPTV\SPT_Runtime/user/mods/WTT-ServerCommonLib/WTT-ServerCommonLib.dll</HintPath></Reference></ItemGroup><ItemGroup><Compile Remove="AishiKeysV2\**;bin\**;obj\**" /></ItemGroup><ItemGroup><EmbeddedResource Include="ISBBotTypes.json" LogicalName="Aishi.ISBBotTypes.json" /></ItemGroup></Project>
