@@ -7,7 +7,9 @@
       "Prefab": {
         "path": "equipment/item_equipment_armor_6b34_black.bundle",
         "rcid": ""
-      }
+      },
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "addWeaponPreset": true,
     "weaponPresets": [
@@ -112,8 +114,6 @@
     },
     "fleaPriceRoubles": 275900,
     "handbookPriceRoubles": 12852,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addtoInventorySlots": [
       "BodyArmor"

@@ -605,7 +605,8 @@
       },
       "Width": 2,
       "Weight": 1.0,
-      "Grids": []
+      "Grids": [],
+      "CanRequireOnRagfair": false
     },
     "locales": {
       "en": {
@@ -824,7 +825,8 @@
       },
       "Width": 1,
       "Weight": 1.0,
-      "Grids": []
+      "Grids": [],
+      "CanRequireOnRagfair": false
     },
     "locales": {
       "en": {

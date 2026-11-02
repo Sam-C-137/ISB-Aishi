@@ -8,7 +8,9 @@
       "Prefab": {
         "path": "equipment/item_equipment_rig_boss_blackknight_ISBV2.bundle",
         "rcid": ""
-      }
+      },
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "addWeaponPreset": true,
     "weaponPresets": [
@@ -95,8 +97,6 @@
     "addtoStaticLootContainers": false,
     "IsAlwaysAvailableForInsurance": false,
     "InsuranceDisabled": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "StaticLootContainers": [
       {
@@ -120,10 +120,10 @@
         "Plate_Granit_SAPI_back"
       ],
       "armorClass": "6",
-      "Durability": 75,
-      "MaxDurability": 75,
       "BluntThroughput": 0.1,
-      "RarityPvE": "Superrare"
+      "RarityPvE": "Superrare",
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "Prefab": {
       "path": "assets/content/items/equipment/armor_plates/soft_armor_front.bundle",
@@ -176,10 +176,10 @@
         "Plate_Granit_SAPI_back"
       ],
       "armorClass": "4",
-      "Durability": 75,
-      "MaxDurability": 75,
       "BluntThroughput": 0.1,
-      "RarityPvE": "Superrare"
+      "RarityPvE": "Superrare",
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "Prefab": {
       "path": "assets/content/items/equipment/armor_plates/soft_armor_right.bundle",
@@ -232,10 +232,10 @@
         "Plate_Granit_SAPI_back"
       ],
       "armorClass": "6",
-      "Durability": 75,
-      "MaxDurability": 75,
       "BluntThroughput": 0.1,
-      "RarityPvE": "Superrare"
+      "RarityPvE": "Superrare",
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "Prefab": {
       "path": "assets/content/items/equipment/armor_plates/soft_armor_back.bundle",
@@ -288,10 +288,10 @@
         "Plate_Granit_SAPI_back"
       ],
       "armorClass": "4",
-      "Durability": 75,
-      "MaxDurability": 75,
       "BluntThroughput": 0.1,
-      "RarityPvE": "Superrare"
+      "RarityPvE": "Superrare",
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "Prefab": {
       "path": "assets/content/items/equipment/armor_plates/soft_armor_left.bundle",

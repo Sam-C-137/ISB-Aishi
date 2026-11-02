@@ -7,7 +7,9 @@
       "Prefab": {
         "path": "equipment/item_equipment_rig_bd4_firstspear_blackV3.bundle",
         "rcid": ""
-      }
+      },
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "addWeaponPreset": true,
     "weaponPresets": [
@@ -118,8 +120,6 @@
       "TacticalRig"
     ],
     "addtoStaticLootContainers": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "StaticLootContainers": [
       {

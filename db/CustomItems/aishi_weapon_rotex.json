@@ -94,8 +94,6 @@
     "handbookPriceRoubles": 13142,
     "addtoBots": true,
     "addtoModSlots": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": false,
     "modSlot": [
       "mod_magazine"

@@ -40,8 +40,6 @@
     "addtoStatuetteSlots": false,
     "addCaliberToAllCloneLocations": false,
     "FleaBlacklist": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addtoStaticAmmo": false,
     "staticAmmoProbability": 0,

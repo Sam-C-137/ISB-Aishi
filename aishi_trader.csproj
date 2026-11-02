@@ -1,5 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
-<PropertyGroup><TargetFramework>net10.0</TargetFramework><AssemblyName>Aishi</AssemblyName><RootNamespace>Aishi</RootNamespace><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><OutputType>Library</OutputType><Version>2.0.5</Version><DefineConstants>$(DefineConstants);AISHI_SPT41;ISB_LABS_SERVER</DefineConstants><LangVersion>latest</LangVersion></PropertyGroup>
+<PropertyGroup><TargetFramework>net10.0</TargetFramework><AssemblyName>Aishi</AssemblyName><RootNamespace>Aishi</RootNamespace><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><OutputType>Library</OutputType><Version>2.0.6</Version><DefineConstants>$(DefineConstants);AISHI_SPT41;ISB_LABS_SERVER</DefineConstants><LangVersion>latest</LangVersion></PropertyGroup>
 <ItemGroup><FrameworkReference Include="Microsoft.AspNetCore.App" />
 <Reference Include="SPTarkov.Common"><HintPath>C:\SPTV\SPT_Runtime\SPTarkov.Common.dll</HintPath></Reference>
 <Reference Include="SPTarkov.DI"><HintPath>C:\SPTV\SPT_Runtime\SPTarkov.DI.dll</HintPath></Reference>

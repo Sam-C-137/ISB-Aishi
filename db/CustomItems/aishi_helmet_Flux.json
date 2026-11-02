@@ -68,8 +68,6 @@
       "HeadWear"
     ],
     "addtoBots": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "IsAlwaysAvailableForInsurance": false,
     "InsuranceDisabled": true,
     "addtoItemBlacklist": true,

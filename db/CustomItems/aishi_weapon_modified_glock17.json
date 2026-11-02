@@ -1,0 +1,200 @@
+{
+  "ffa5ee004c4d5f45b2572e76": {
+    "itemTplToClone": "5a6f5e048dc32e00094b97da",
+    "parentId": "55818a304bdc2db5418b457d",
+    "handbookParentId": "5b5f764186f77447ec5d7714",
+    "handbookPriceRoubles": 3109,
+    "fleaPriceRoubles": 3109,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "aishiweapons/glock17_modified_fde/reciever_glock_glock_17_std.bundle",
+        "rcid": ""
+      }
+    },
+    "locales": {
+      "en": {
+        "name": "Glock 17 pistol slide (FDE)",
+        "shortName": "G17",
+        "description": "A standard-issue slide for Glock 17 9x19 pistols."
+      },
+      "po": {
+        "name": "Ferrolho Glock 17 (FDE)",
+        "shortName": "G17",
+        "description": "Ferrolho padrão para pistolas Glock 9x19."
+      }
+    },
+    "addtoBots": false,
+    "addtoModSlots": true,
+    "modSlot": [
+      "mod_reciever"
+    ]
+  },
+  "447e27d346ba557fbca8ed64": {
+    "itemTplToClone": "5a7ae0c351dfba0017554310",
+    "parentId": "5447b5cf4bdc2d65278b4567",
+    "handbookParentId": "5b5f792486f77447ed5636b3",
+    "handbookPriceRoubles": 6608,
+    "fleaPriceRoubles": 6608,
+    "overrideProperties": {
+      "BackgroundColor": "yellow",
+      "weapFireType": [
+        "single",
+        "fullauto"
+      ],
+      "bFirerate": 1200,
+      "Prefab": {
+        "path": "aishiweapons/glock17_modified_black/weapon_glock_glock_17_gen3_9x19_container.bundle",
+        "rcid": ""
+      }
+    },
+    "locales": {
+      "en": {
+        "name": "Modified Glock 17 9x19 pistol",
+        "shortName": "Modified Glock 17",
+        "description": "Modified Glock 17 is an Austrian pistol designed by Glock company for the Austrian army purposes. Thanks to both its impressive combat characteristics and reliablity it gained wide recognition and popularity as a police, shooting sports and civilian self-defense weapon."
+      },
+      "po": {
+        "name": "Modified Pistola GLOCK 17 9x19",
+        "shortName": "Modified GLOCK17",
+        "description": "Modified A pistola austríaca Glock 17 é uma arma desenvolvida pela companhia \"Glock\" para propósitos militares. Graças as suas incríveis características de combate e alta confiabilidade, ganhou amplo reconhecimento e popularidade como armamento policial, em esportes de tiro competitivo e sendo usada também como arma de defesa pessoal."
+      }
+    },
+    "addtoBots": false,
+    "addWeaponPreset": true,
+    "weaponPresets": [
+      {
+        "_changeWeaponName": false,
+        "_encyclopedia": "447e27d346ba557fbca8ed64",
+        "_id": "5dfd33ec673553abadc021fb",
+        "_items": [
+          {
+            "_id": "673777c646f55ebfbb505c7f",
+            "_tpl": "447e27d346ba557fbca8ed64",
+            "upd": {
+              "FireMode": {
+                "FireMode": "fullauto"
+              }
+            }
+          },
+          {
+            "_id": "59c04c135d80545ab51e1c28",
+            "_tpl": "5a6b5f868dc32e000a311389",
+            "parentId": "673777c646f55ebfbb505c7f",
+            "slotId": "mod_barrel"
+          },
+          {
+            "_id": "9389052472ed5d9d8d51ed9d",
+            "_tpl": "5a6f5e048dc32e00094b97da",
+            "parentId": "673777c646f55ebfbb505c7f",
+            "slotId": "mod_reciever"
+          },
+          {
+            "_id": "321af0bc36bf5669a3d0d489",
+            "_tpl": "5a6f5d528dc32e00094b97d9",
+            "parentId": "9389052472ed5d9d8d51ed9d",
+            "slotId": "mod_sight_rear"
+          },
+          {
+            "_id": "221c3f513ee95070b4d059a2",
+            "_tpl": "5a6f58f68dc32e000a311390",
+            "parentId": "9389052472ed5d9d8d51ed9d",
+            "slotId": "mod_sight_front"
+          },
+          {
+            "_id": "3b67a3636d5e5d07a78a4002",
+            "_tpl": "5a718b548dc32e000d46d262",
+            "parentId": "673777c646f55ebfbb505c7f",
+            "slotId": "mod_magazine"
+          }
+        ],
+        "_name": "Modified Glock 17 9x19 pistol",
+        "_parent": "673777c646f55ebfbb505c7f",
+        "_type": "Preset"
+      }
+    ]
+  },
+  "c4c0c495808a57d29d8e0496": {
+    "itemTplToClone": "5a7ae0c351dfba0017554310",
+    "parentId": "5447b5cf4bdc2d65278b4567",
+    "handbookParentId": "5b5f792486f77447ed5636b3",
+    "handbookPriceRoubles": 6608,
+    "fleaPriceRoubles": 6608,
+    "overrideProperties": {
+      "BackgroundColor": "yellow",
+      "weapFireType": [
+        "single",
+        "fullauto"
+      ],
+      "bFirerate": 1200,
+      "Prefab": {
+        "path": "aishiweapons/glock17_modified_fde/weapon_glock_glock_17_gen3_9x19_container.bundle",
+        "rcid": ""
+      }
+    },
+    "locales": {
+      "en": {
+        "name": "Modified Glock 17 9x19 pistol (FDE)",
+        "shortName": "Modified Glock 17",
+        "description": "Modified Glock 17 is an Austrian pistol designed by Glock company for the Austrian army purposes. Thanks to both its impressive combat characteristics and reliablity it gained wide recognition and popularity as a police, shooting sports and civilian self-defense weapon."
+      },
+      "po": {
+        "name": "Modified Pistola GLOCK 17 9x19 (FDE)",
+        "shortName": "Modified GLOCK17",
+        "description": "Modified A pistola austríaca Glock 17 é uma arma desenvolvida pela companhia \"Glock\" para propósitos militares. Graças as suas incríveis características de combate e alta confiabilidade, ganhou amplo reconhecimento e popularidade como armamento policial, em esportes de tiro competitivo e sendo usada também como arma de defesa pessoal."
+      }
+    },
+    "addtoBots": false,
+    "addWeaponPreset": true,
+    "weaponPresets": [
+      {
+        "_changeWeaponName": false,
+        "_encyclopedia": "c4c0c495808a57d29d8e0496",
+        "_id": "89239ba55af556e393be6e1e",
+        "_items": [
+          {
+            "_id": "04b45d90e47c540f9e69cbfa",
+            "_tpl": "c4c0c495808a57d29d8e0496",
+            "upd": {
+              "FireMode": {
+                "FireMode": "fullauto"
+              }
+            }
+          },
+          {
+            "_id": "25cdf07e801d5edd954c75e1",
+            "_tpl": "5a6b5f868dc32e000a311389",
+            "parentId": "04b45d90e47c540f9e69cbfa",
+            "slotId": "mod_barrel"
+          },
+          {
+            "_id": "673e3d7dce3a51658ecce6dd",
+            "_tpl": "ffa5ee004c4d5f45b2572e76",
+            "parentId": "04b45d90e47c540f9e69cbfa",
+            "slotId": "mod_reciever"
+          },
+          {
+            "_id": "9e0f9c39cd145dddb70e6f75",
+            "_tpl": "5a6f5d528dc32e00094b97d9",
+            "parentId": "673e3d7dce3a51658ecce6dd",
+            "slotId": "mod_sight_rear"
+          },
+          {
+            "_id": "f7f2c4db6f0756aea911d5c9",
+            "_tpl": "5a6f58f68dc32e000a311390",
+            "parentId": "673e3d7dce3a51658ecce6dd",
+            "slotId": "mod_sight_front"
+          },
+          {
+            "_id": "e92e35df38045806a45198f7",
+            "_tpl": "5a718b548dc32e000d46d262",
+            "parentId": "04b45d90e47c540f9e69cbfa",
+            "slotId": "mod_magazine"
+          }
+        ],
+        "_name": "Modified Glock 17 9x19 pistol (FDE)",
+        "_parent": "04b45d90e47c540f9e69cbfa",
+        "_type": "Preset"
+      }
+    ]
+  }
+}

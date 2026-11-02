@@ -36,6 +36,8 @@
   "terminal_cover Name": "Terminal",
   "ghostbusters_banner Name": "\"Ghost Busters\"",
   "ghostbusters_banner Description": "Da Lendária Black Division se revelam os \"Ghost Busters\", uma unidade de elite especializada em conter ameaças químicas, biológicas ou até mesmo anomalas. Eles se colocam a frente de qualquer grande ameaça e são conhecidos pela grande letalidade e precisão e ultimamente por terem sido adaptados de uma forma a qual vieram ser chamados de \"Unidade Anti-ISB\", seja lá o que isso quer dizer.",
+  "scourge_squad_banner Name": "Scourge Squad",
+  "scourge_squad_banner Description": "Relatos indicam que uma equipe especial foi enviada por Ref ao Laboratório para coletar alguns estimulantes. Liderado por um mercenário conhecido apenas pelo codinome “Scourge”, ele era um funcionário da TerraGroup especializado em produtos químicos e de pesquisa altamente instáveis. Muito bem equipada e fortemente armada, a equipe de Scourge não deixa vivo ninguém que cruza seu caminho.",
   "terminal_cover Description": "The southern port Terminal has been under Russian Armed Forces control since the beginning of the Tarkov conflict. After the city was sealed off, the terminal was fortified and became the primary evacuation point, sought by both civilian refugees and PMC units. According to unconfirmed reports, TerraGroup personnel were also evacuated through this port.",
   "6a31f76e04210c72c1b95804 0": "Parece que as coisas não saíram muito bem para você em {location}. O meu pessoal vai procurar suas coisas durante as missões de reconhecimento.",
   "6a31f76e04210c72c1b95804 1": "Espero que pelo menos tenha caído atirando. Não se preocupe, meu pessoal vai até {location} buscar suas coisas.",
@@ -166,6 +168,7 @@
   "690766de550bc322a810ea1e Location": "ISB temporary command post near Lighthouse",
   "690766de550bc322a810ea1e Description": "A decisive woman, director and supreme commander of USEC-ISB (USEC Intelligence Support Bureau). During the Contract Wars conflict, ISB carried out dozens of covert operations in Tarkov and had a crucial impact on the local situation.",
   "ISB/Labs/ChooseVariant": "Escolher versão da Labs",
+  "ISB/Labs/UnlockRequirement": "Conclua toda a linha de missões de Containment Breach e obtenha Ms. VICTORIA para liberar as versões da Labs.",
   "Aishi/RevealProperties": "Reveal Properties",
   "4225b3906d0b58c58adb91d5": "Terminus",
   "e3ed60320f6053119913facd": "Terminus",
@@ -216,7 +219,5 @@
   "aishi_helmet_out_of_power": "O capacete está sem energia. Recarregue-o com uma bateria de lítio GreenBat ou uma bateria de lítio GreenBat modificada.",
   "aishi_labs_card_destroyed": "O protocolo de segurança desta sala destruiu o chip do cartão utilizado.",
   "aishi_tape_change_failed": "Não foi possível trocar a fita. Abra novamente o menu do carregador.",
-  "aishi_anomaly_revealed": "Propriedades anômalas reveladas.",
-  "scourge_squad_banner Name": "Scourge Squad",
-  "scourge_squad_banner Description": "Relatos indicam que uma equipe especial foi enviada por Ref ao Laboratório para coletar alguns estimulantes. Liderado por um mercenário conhecido apenas pelo codinome “Scourge”, ele era um funcionário da TerraGroup especializado em produtos químicos e de pesquisa altamente instáveis. Muito bem equipada e fortemente armada, a equipe de Scourge não deixa vivo ninguém que cruza seu caminho."
+  "aishi_anomaly_revealed": "Propriedades anômalas reveladas."
 }

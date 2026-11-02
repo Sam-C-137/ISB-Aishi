@@ -58,7 +58,7 @@ public sealed class AishiGearMigration(SaveServer saves, JsonUtil json) : IOnLoa
         foreach (var pair in saves.GetProfiles().ToArray())
         {
             var serialized = json.Serialize(pair.Value);
-            if (!serialized.Contains(DuplicateHpcRecovery.Obsolete, StringComparison.Ordinal) && !serialized.Contains(DuplicateHpcRecovery.ObsoleteTube, StringComparison.Ordinal) && !serialized.Contains(AishiHammerheadSlotMigration.Template, StringComparison.Ordinal))
+            if (!serialized.Contains(DuplicateHpcRecovery.Obsolete, StringComparison.Ordinal) && !serialized.Contains(DuplicateHpcRecovery.ObsoleteTube, StringComparison.Ordinal) && !serialized.Contains(AishiHammerheadSlotMigration.Template, StringComparison.Ordinal) && !serialized.Contains(AishiQuestConditionIds.Previous, StringComparison.Ordinal))
                 continue;
             var node = JsonNode.Parse(serialized)!;
             if (Repair(node) == 0)
@@ -71,7 +71,7 @@ public sealed class AishiGearMigration(SaveServer saves, JsonUtil json) : IOnLoa
         return Task.CompletedTask;
     }
 
-    private static int Repair(JsonNode node) => DuplicateHpcRecovery.Repair(node) + AishiHammerheadSlotMigration.Repair(node);
+    private static int Repair(JsonNode node) => DuplicateHpcRecovery.Repair(node) + AishiHammerheadSlotMigration.Repair(node) + AishiQuestConditionIds.Repair(node);
 
     private static void BeforeProfileValidation(JsonObject __0) => Repair(__0);
 }

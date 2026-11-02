@@ -8,7 +8,9 @@
       "Prefab": {
         "path": "equipment/item_equipment_rig_bd2_ferro_black.bundle",
         "rcid": ""
-      }
+      },
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "addWeaponPreset": true,
     "weaponPresets": [
@@ -81,10 +83,8 @@
       "TacticalRig"
     ],
     "addtoStaticLootContainers": false,
-    "CanSellOnRagfair": false,
     "IsAlwaysAvailableForInsurance": false,
     "InsuranceDisabled": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "StaticLootContainers": [
       {

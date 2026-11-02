@@ -121,7 +121,8 @@
       "Grids": [],
       "Name": "Custom ISB SOF Diamond Age Bastion helmet (Desert)",
       "ShortName": "ISB Bastion",
-      "Description": "According to the manufacturer - the Bastion helmet is the first combat helmet that can withstand a hit from a rifle, even with a bullet with an armored core at a muzzle speed. This model has been modified by ISB for use by their special forces. Desert version."
+      "Description": "According to the manufacturer - the Bastion helmet is the first combat helmet that can withstand a hit from a rifle, even with a bullet with an armored core at a muzzle speed. This model has been modified by ISB for use by their special forces. Desert version.",
+      "CanRequireOnRagfair": false
     },
     "addWeaponPreset": true,
     "weaponPresets": [

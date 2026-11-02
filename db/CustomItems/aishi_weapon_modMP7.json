@@ -184,12 +184,12 @@
       "en": {
         "name": "Modified HK MP7-SF 4.6x30 submachine gun (Prototype)",
         "shortName": "MP7-SF",
-        "description": "The HK MP7-SF is a submachine gun manufactured by Heckler & Koch that fires in semi-automatic mode. It is chambered for 4.6×30mm ammunition. It serves as an excellent compact, highly controllable weapon and is frequently used by the UK’s Ministry of Defense Police. This version has been modified to provide greater stability, better control, and the ability to fire in automatic mode. "
+        "description": "The HK MP7-SF is a submachine gun manufactured by Heckler & Koch that fires in semi-automatic mode. It is chambered for 4.6×30mm ammunition. It serves as an excellent compact, highly controllable weapon and is frequently used by the UK’s Ministry of Defense Police. This version has been modified to provide greater stability, better control, and the ability to fire in automatic mode. The stock assembly has been tampered with, making it impossible to unfold."
       },
       "po": {
         "name": "Submetralhadora HK MP7-SF 4.6x30 Modificada (Protótipo)",
         "shortName": "MP7-SF",
-        "description": "A HK MP7-SF é uma Sub-Metralhadora construída no modo Semiautomático pela Heckler & Koch. Carregada em munições 4.6×30mm. Ela desempenha um ótimo papel como arma compacta e de alto controle e é utilizada com frequência pela UK's Ministry of Defence Police. Essa versão foi modificada gerando mais estabilidade, controle e um uso no modo automático."
+        "description": "A HK MP7-SF é uma Sub-Metralhadora construída no modo Semiautomático pela Heckler & Koch. Carregada em munições 4.6×30mm. Ela desempenha um ótimo papel como arma compacta e de alto controle e é utilizada com frequência pela UK's Ministry of Defence Police. Essa versão foi modificada gerando mais estabilidade, controle e um uso no modo automático. O mecanismo da coronha foi adulterado, impossibilitando sua abertura."
       }
     },
     "fleaPriceRoubles": 289202,

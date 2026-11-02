@@ -43,8 +43,6 @@
       }
     },
     "fleaPriceRoubles": 10000,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "handbookPriceRoubles": 10000
   },
@@ -80,8 +78,6 @@
     "DiscardingBlock": true,
     "IsUndiscardable": true,
     "IsUnremovable": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "fleaPriceRoubles": 10000,
     "handbookPriceRoubles": 10000
@@ -118,8 +114,6 @@
     "DiscardingBlock": true,
     "IsUndiscardable": true,
     "IsUnremovable": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "fleaPriceRoubles": 10000,
     "handbookPriceRoubles": 10000
@@ -156,8 +150,6 @@
     "DiscardingBlock": true,
     "IsUndiscardable": true,
     "IsUnremovable": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "fleaPriceRoubles": 10000,
     "handbookPriceRoubles": 10000
@@ -194,8 +186,6 @@
     "DiscardingBlock": true,
     "IsUndiscardable": true,
     "IsUnremovable": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "fleaPriceRoubles": 10000,
     "handbookPriceRoubles": 10000
@@ -232,8 +222,6 @@
     "DiscardingBlock": true,
     "IsUndiscardable": true,
     "IsUnremovable": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "fleaPriceRoubles": 10000,
     "handbookPriceRoubles": 10000
@@ -270,8 +258,6 @@
     "DiscardingBlock": true,
     "IsUndiscardable": true,
     "IsUnremovable": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "fleaPriceRoubles": 10000,
     "handbookPriceRoubles": 10000
@@ -308,8 +294,6 @@
     "DiscardingBlock": true,
     "IsUndiscardable": true,
     "IsUnremovable": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "fleaPriceRoubles": 10000,
     "handbookPriceRoubles": 10000
@@ -346,8 +330,6 @@
     "DiscardingBlock": true,
     "IsUndiscardable": true,
     "IsUnremovable": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "fleaPriceRoubles": 10000,
     "handbookPriceRoubles": 10000

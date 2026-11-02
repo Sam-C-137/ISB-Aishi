@@ -320,10 +320,8 @@
         ]
       }
     ],
-    "CanSellOnRagfair": false,
     "IsAlwaysAvailableForInsurance": false,
     "InsuranceDisabled": true,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addtoStaticLootContainers": false,
     "StaticLootContainers": [
@@ -549,7 +547,8 @@
       },
       "Weight": 1.0,
       "Grids": [],
-      "CanSellOnRagfair": false
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "locales": {
       "en": {
@@ -568,7 +567,6 @@
     "addtoBots": true,
     "IsAlwaysAvailableForInsurance": false,
     "InsuranceDisabled": true,
-    "CanSellOnRagfair": false,
     "ExaminedByDefault": true,
     "PushToFleaBlacklist": true,
     "addtoModSlots": true,
@@ -673,8 +671,6 @@
     "addtoModSlots": true,
     "IsAlwaysAvailableForInsurance": false,
     "InsuranceDisabled": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": false,
     "modSlot": [
       "mod_stock"
@@ -886,10 +882,8 @@
     "handbookPriceRoubles": 24755,
     "addtoBots": true,
     "addtoModSlots": true,
-    "CanSellOnRagfair": false,
     "IsAlwaysAvailableForInsurance": false,
     "InsuranceDisabled": true,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": false,
     "modSlot": [
       "mod_handguard"

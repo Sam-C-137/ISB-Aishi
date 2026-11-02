@@ -1,0 +1,40 @@
+{
+  "2210de8d7b3e5d02b70e851a": {
+    "itemTplToClone": "60363c0c92ec1c31037959f5",
+    "parentId": "5a341c4686f77469e155819e",
+    "handbookParentId": "5b47574386f77428ca22b32f",
+    "handbookPriceRoubles": 8386,
+    "fleaPriceRoubles": 8386,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "equipment/modified_gp7/item_equipment_facecover_gasmask_gp7.bundle",
+        "rcid": ""
+      },
+      "armorClass": "2",
+      "Durability": 40,
+      "MaxDurability": 40,
+      "ArmorType": "Light",
+      "armorColliders": [
+        "Eyes",
+        "Jaw",
+        "HeadCommon"
+      ],
+      "armorPlateColliders": [],
+      "RepairCost": 15,
+      "BackgroundColor": "yellow"
+    },
+    "locales": {
+      "en": {
+        "name": "Modified GP-7 gas mask",
+        "shortName": "Modified GP-7",
+        "description": "Modified The GP-7 civilian gas mask is a filtering means of individual protection of respiratory organs, eyes, and face skin."
+      },
+      "po": {
+        "name": "Modified Máscara de gás GP-7",
+        "shortName": "Modified GP-7",
+        "description": "Modified Máscara de gás civil GP-7 é uma proteção individual dos órgãos respiratório, olhos e face."
+      }
+    },
+    "addtoBots": false
+  }
+}

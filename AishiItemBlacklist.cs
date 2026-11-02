@@ -337,7 +337,7 @@ public sealed class AishiItemBlacklist
             roles.Add(element.GetString()!);
     }
 
-    public bool Allows(string? role) => !enabled || role != null && (isbRoles.Contains(role) || AllowBlackDivision && blackDivisionRoles.Contains(role));
+    public bool Allows(string? role) => !enabled || role != null && (isbRoles.Contains(role) || role.Equals("chaosInsurgency", StringComparison.OrdinalIgnoreCase) || role == "13901" || AllowBlackDivision && blackDivisionRoles.Contains(role));
     public bool Contains(string id) => enabled && blocked.Contains(id);
     private string? Replacement(string id)
     {

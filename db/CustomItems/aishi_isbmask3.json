@@ -46,10 +46,8 @@
       "FaceCover"
     ],
     "addtoBots": false,
-    "CanSellOnRagfair": false,
     "IsAlwaysAvailableForInsurance": false,
     "InsuranceDisabled": true,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addtoStaticLootContainers": false,
     "StaticLootContainers": [

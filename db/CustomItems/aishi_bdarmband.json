@@ -30,8 +30,6 @@
     "fleaPriceRoubles": 119478,
     "handbookPriceRoubles": 50000,
     "addtoHideoutPosterSlots": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addtoInventorySlots": [
       "ArmBand"

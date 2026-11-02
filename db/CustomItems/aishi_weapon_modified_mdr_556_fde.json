@@ -80,8 +80,6 @@
         "_type": "Preset"
       }
     ],
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true
   }
 }

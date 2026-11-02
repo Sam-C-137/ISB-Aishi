@@ -7,7 +7,9 @@
       "Prefab": {
         "path": "equipment/item_equipment_rig_blackrock_black.bundle",
         "rcid": ""
-      }
+      },
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "locales": {
       "en": {
@@ -27,8 +29,6 @@
       "TacticalRig"
     ],
     "addtoStaticLootContainers": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "StaticLootContainers": [
       {

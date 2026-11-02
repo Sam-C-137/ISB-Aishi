@@ -68,8 +68,6 @@
       "HeadWear"
     ],
     "addtoBots": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "IsAlwaysAvailableForInsurance": false,
     "InsuranceDisabled": true,
     "addtoItemBlacklist": true,
@@ -210,12 +208,10 @@
     "handbookPriceRoubles": 69842,
     "addtoInventorySlots": [],
     "addtoBots": false,
-    "CanSellOnRagfair": false,
     "addtoModSlots": true,
     "modSlot": [
       "mod_equipment_002"
     ],
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addtoStaticLootContainers": false,
     "StaticLootContainers": [

@@ -7,7 +7,9 @@
       "Prefab": {
         "path": "equipment/item_equipment_rig_mbss_black.bundle",
         "rcid": ""
-      }
+      },
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "addWeaponPreset": false,
     "weaponPresets": [],
@@ -30,8 +32,6 @@
       "TacticalRig"
     ],
     "addtoStaticLootContainers": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "StaticLootContainers": [
       {

@@ -96,8 +96,6 @@
     "addtoStaticLootContainers": false,
     "IsAlwaysAvailableForInsurance": false,
     "InsuranceDisabled": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "StaticLootContainers": [
       {

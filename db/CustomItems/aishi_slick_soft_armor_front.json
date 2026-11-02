@@ -18,7 +18,8 @@
       "Durability": 75,
       "MaxDurability": 75,
       "BluntThroughput": 0.1,
-      "RarityPvE": "Superrare"
+      "RarityPvE": "Superrare",
+      "CanRequireOnRagfair": false
     },
     "Prefab": {
       "path": "assets/content/items/equipment/armor_plates/soft_armor_front.bundle",

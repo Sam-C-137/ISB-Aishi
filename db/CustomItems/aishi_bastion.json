@@ -85,7 +85,8 @@
         "rcid": ""
       },
       "Weight": 1.0,
-      "Grids": []
+      "Grids": [],
+      "CanRequireOnRagfair": false
     },
     "addWeaponPreset": true,
     "weaponPresets": [

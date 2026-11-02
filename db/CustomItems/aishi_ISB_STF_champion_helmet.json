@@ -8,7 +8,9 @@
       "Prefab": {
         "path": "equipment/item_equipment_helmet_champion_bp2V2.bundle",
         "rcid": ""
-      }
+      },
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "locales": {
       "en": {
@@ -28,10 +30,8 @@
       "HeadWear"
     ],
     "addtoBots": false,
-    "CanSellOnRagfair": false,
     "IsAlwaysAvailableForInsurance": false,
     "InsuranceDisabled": true,
-    "CanRequireOnRagfair": false,
     "addWeaponPreset": true,
     "weaponPresets": [
       {
@@ -100,8 +100,6 @@
       "ItemSound": "gear_armor",
       "armorPlateColliders": [],
       "armorClass": "5",
-      "Durability": 50,
-      "MaxDurability": 50,
       "BluntThroughput": 0.1,
       "RarityPvE": "Superrare",
       "Prefab": {
@@ -159,8 +157,6 @@
       "ItemSound": "gear_armor",
       "armorPlateColliders": [],
       "armorClass": "5",
-      "Durability": 50,
-      "MaxDurability": 50,
       "BluntThroughput": 0.1,
       "RarityPvE": "Superrare",
       "Prefab": {
@@ -218,8 +214,6 @@
       "ItemSound": "gear_armor",
       "armorPlateColliders": [],
       "armorClass": "5",
-      "Durability": 50,
-      "MaxDurability": 50,
       "BluntThroughput": 0.1,
       "RarityPvE": "Superrare",
       "Prefab": {
@@ -277,8 +271,6 @@
       "ItemSound": "gear_armor",
       "armorPlateColliders": [],
       "armorClass": "5",
-      "Durability": 50,
-      "MaxDurability": 50,
       "BluntThroughput": 0.1,
       "RarityPvE": "Superrare",
       "Prefab": {

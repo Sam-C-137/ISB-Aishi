@@ -309,7 +309,6 @@
     "fleaPriceRoubles": 149800,
     "handbookPriceRoubles": 906700,
     "addtoBots": false,
-    "CanSellOnRagfair": false,
     "IsAlwaysAvailableForInsurance": false,
     "InsuranceDisabled": true,
     "masteries": true,
@@ -323,7 +322,6 @@
         ]
       }
     ],
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addtoStaticLootContainers": false,
     "StaticLootContainers": [
@@ -549,7 +547,8 @@
       },
       "Weight": 1.0,
       "Grids": [],
-      "CanSellOnRagfair": false
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "locales": {
       "en": {
@@ -566,7 +565,6 @@
     "fleaPriceRoubles": 89202,
     "handbookPriceRoubles": 8592,
     "addtoBots": true,
-    "CanSellOnRagfair": false,
     "IsAlwaysAvailableForInsurance": false,
     "InsuranceDisabled": true,
     "ExaminedByDefault": true,

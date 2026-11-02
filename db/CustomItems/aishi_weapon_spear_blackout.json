@@ -1358,7 +1358,8 @@
       "Grids": [],
       "Name": "Modified MCX-SPEAR 6.8x51 upper receiver (Black)",
       "ShortName": "SPEAR 6.8",
-      "Description": "A standard-issue upper receiver for the MCX-SPEAR assault rifle, chambered in 6.8x51mm (.277 FURY). Equipped with a mount for attaching additional devices. Manufactured by SIG Sauer. Black Version."
+      "Description": "A standard-issue upper receiver for the MCX-SPEAR assault rifle, chambered in 6.8x51mm (.277 FURY). Equipped with a mount for attaching additional devices. Manufactured by SIG Sauer. Black Version.",
+      "CanRequireOnRagfair": false
     },
     "locales": {
       "en": {

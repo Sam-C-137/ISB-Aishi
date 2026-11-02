@@ -39,8 +39,6 @@
     "addtoBots": false,
     "addtoSpecialSlots": false,
     "addtoModSlots": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "modSlot": [
       ""

@@ -29,8 +29,6 @@
     "fleaPriceRoubles": 450000,
     "handbookPriceRoubles": 250000,
     "addtoItemBlacklist": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoBots": false,
     "addtoSecureFilters": true
   }

@@ -41,8 +41,6 @@
     "fleaPriceRoubles": 1175600,
     "handbookPriceRoubles": 575600,
     "addtoBots": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addtoStaticLootContainers": false,
     "StaticLootContainers": [

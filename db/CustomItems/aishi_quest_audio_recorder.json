@@ -35,8 +35,6 @@
     "addtoStaticAmmo": false,
     "staticAmmoProbability": 0,
     "addtoBots": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addtoSpecialSlots": false,
     "addtoModSlots": false,

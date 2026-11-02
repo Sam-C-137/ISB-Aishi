@@ -624,7 +624,8 @@
       "Height": 1,
       "Weight": 1.0,
       "Grids": [],
-      "CanSellOnRagfair": false
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "locales": {
       "en": {
@@ -641,7 +642,6 @@
     "fleaPriceRoubles": 89202,
     "handbookPriceRoubles": 8592,
     "addtoBots": true,
-    "CanSellOnRagfair": false,
     "ExaminedByDefault": true,
     "PushToFleaBlacklist": true,
     "addtoModSlots": true,

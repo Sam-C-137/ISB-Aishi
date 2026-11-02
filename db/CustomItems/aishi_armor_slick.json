@@ -8,7 +8,9 @@
       "Prefab": {
         "path": "equipment/item_equipment_armor_isbslick.bundle",
         "rcid": ""
-      }
+      },
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "addWeaponPreset": true,
     "weaponPresets": [
@@ -77,8 +79,6 @@
     "IsAlwaysAvailableForInsurance": false,
     "addtoStaticAmmo": false,
     "staticAmmoProbability": 0,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addtoBots": false,
     "addtoSpecialSlots": false,

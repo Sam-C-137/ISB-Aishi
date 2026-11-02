@@ -8,7 +8,9 @@
       "Prefab": {
         "path": "equipment/item_equipment_rig_bd4_firstspear_blackV2.bundle",
         "rcid": ""
-      }
+      },
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "addWeaponPreset": true,
     "weaponPresets": [
@@ -119,8 +121,6 @@
       "TacticalRig"
     ],
     "addtoStaticLootContainers": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "StaticLootContainers": [
       {
@@ -148,10 +148,10 @@
         "Plate_Granit_SAPI_back"
       ],
       "armorClass": "6",
-      "Durability": 75,
-      "MaxDurability": 75,
       "BluntThroughput": 0.1,
-      "RarityPvE": "Superrare"
+      "RarityPvE": "Superrare",
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "Prefab": {
       "path": "assets/content/items/equipment/armor_plates/soft_armor_front.bundle",
@@ -208,10 +208,10 @@
         "Plate_Granit_SAPI_back"
       ],
       "armorClass": "6",
-      "Durability": 75,
-      "MaxDurability": 75,
       "BluntThroughput": 0.1,
-      "RarityPvE": "Superrare"
+      "RarityPvE": "Superrare",
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "Prefab": {
       "path": "assets/content/items/equipment/armor_plates/soft_armor_back.bundle",
@@ -268,10 +268,10 @@
         "Plate_Granit_SAPI_back"
       ],
       "armorClass": "5",
-      "Durability": 75,
-      "MaxDurability": 75,
       "BluntThroughput": 0.1,
-      "RarityPvE": "Superrare"
+      "RarityPvE": "Superrare",
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "Prefab": {
       "path": "assets/content/items/equipment/armor_plates/soft_armor_left.bundle",
@@ -328,10 +328,10 @@
         "Plate_Granit_SAPI_back"
       ],
       "armorClass": "5",
-      "Durability": 75,
-      "MaxDurability": 75,
       "BluntThroughput": 0.1,
-      "RarityPvE": "Superrare"
+      "RarityPvE": "Superrare",
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "Prefab": {
       "path": "assets/content/items/equipment/armor_plates/soft_armor_right.bundle",
@@ -388,10 +388,10 @@
         "Plate_Granit_SAPI_back"
       ],
       "armorClass": "4",
-      "Durability": 75,
-      "MaxDurability": 75,
       "BluntThroughput": 0.1,
-      "RarityPvE": "Superrare"
+      "RarityPvE": "Superrare",
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "Prefab": {
       "path": "assets/content/items/equipment/armor_plates/collar.bundle",
@@ -448,10 +448,10 @@
         "Plate_Granit_SAPI_back"
       ],
       "armorClass": "4",
-      "Durability": 75,
-      "MaxDurability": 75,
       "BluntThroughput": 0.1,
-      "RarityPvE": "Superrare"
+      "RarityPvE": "Superrare",
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "Prefab": {
       "path": "assets/content/items/equipment/armor_plates/shoulder_l.bundle",
@@ -508,8 +508,6 @@
         "Plate_Granit_SAPI_back"
       ],
       "armorClass": "4",
-      "Durability": 75,
-      "MaxDurability": 75,
       "BluntThroughput": 0.1,
       "RarityPvE": "Superrare",
       "CanSellOnRagfair": false,
@@ -538,8 +536,6 @@
     "fleaPriceRoubles": 21400,
     "handbookPriceRoubles": 21400,
     "InsuranceDisabled": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addtoInventorySlots": [],
     "addtoStaticLootContainers": false,
@@ -573,8 +569,6 @@
         "Plate_Granit_SAPI_back"
       ],
       "armorClass": "4",
-      "Durability": 75,
-      "MaxDurability": 75,
       "BluntThroughput": 0.1,
       "RarityPvE": "Superrare",
       "CanSellOnRagfair": false,
@@ -604,8 +598,6 @@
     "handbookPriceRoubles": 21400,
     "InsuranceDisabled": true,
     "addtoInventorySlots": [],
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addtoStaticLootContainers": false,
     "StaticLootContainers": [

@@ -32,9 +32,7 @@
       }
     },
     "fleaPriceRoubles": 500000,
-    "CanSellOnRagfair": false,
     "addtoSpecialSlots": true,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "handbookPriceRoubles": 500000,
     "addtoSecureFilters": true
@@ -72,8 +70,6 @@
     "fleaPriceRoubles": 100000,
     "handbookPriceRoubles": 100000,
     "addtoItemBlacklist": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoBots": false,
     "addtoSecureFilters": true
   },
@@ -108,8 +104,6 @@
     "fleaPriceRoubles": 840,
     "handbookPriceRoubles": 404,
     "addtoItemBlacklist": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoBots": false,
     "addtoSecureFilters": true
   },
@@ -144,8 +138,6 @@
     "fleaPriceRoubles": 2440,
     "handbookPriceRoubles": 1204,
     "addtoItemBlacklist": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoBots": false,
     "addtoSecureFilters": true
   },
@@ -180,8 +172,6 @@
     "fleaPriceRoubles": 4840,
     "handbookPriceRoubles": 2804,
     "addtoItemBlacklist": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoBots": false,
     "addtoSecureFilters": true
   },
@@ -216,8 +206,6 @@
     "fleaPriceRoubles": 7240,
     "handbookPriceRoubles": 5204,
     "addtoItemBlacklist": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoBots": false,
     "addtoSecureFilters": true
   },
@@ -252,8 +240,6 @@
     "fleaPriceRoubles": 9640,
     "handbookPriceRoubles": 10004,
     "addtoItemBlacklist": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoBots": false,
     "addtoSecureFilters": true
   },
@@ -288,8 +274,6 @@
     "fleaPriceRoubles": 12040,
     "handbookPriceRoubles": 11604,
     "addtoItemBlacklist": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoBots": false,
     "addtoSecureFilters": true
   },
@@ -328,8 +312,6 @@
     "fleaPriceRoubles": 155500,
     "handbookPriceRoubles": 105500,
     "addtoItemBlacklist": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoBots": false,
     "addtoSecureFilters": true
   },
@@ -368,8 +350,6 @@
     "fleaPriceRoubles": 175500,
     "handbookPriceRoubles": 135500,
     "addtoItemBlacklist": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoBots": false,
     "addtoSecureFilters": true
   },
@@ -408,8 +388,6 @@
     "fleaPriceRoubles": 195500,
     "handbookPriceRoubles": 175500,
     "addtoItemBlacklist": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoBots": false,
     "addtoSecureFilters": true
   },
@@ -449,8 +427,6 @@
     "fleaPriceRoubles": 235500,
     "handbookPriceRoubles": 215500,
     "addtoItemBlacklist": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoBots": false,
     "addtoSecureFilters": true
   },
@@ -489,8 +465,6 @@
     "fleaPriceRoubles": 265500,
     "handbookPriceRoubles": 235500,
     "addtoItemBlacklist": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoBots": false,
     "addtoSecureFilters": true
   },
@@ -529,8 +503,6 @@
     "fleaPriceRoubles": 295500,
     "handbookPriceRoubles": 265500,
     "addtoItemBlacklist": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoBots": false,
     "addtoSecureFilters": true
   },
@@ -569,8 +541,6 @@
     "fleaPriceRoubles": 315500,
     "handbookPriceRoubles": 295500,
     "addtoItemBlacklist": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoBots": false,
     "addtoSecureFilters": true
   },
@@ -609,8 +579,6 @@
     "fleaPriceRoubles": 355500,
     "handbookPriceRoubles": 315500,
     "addtoItemBlacklist": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoBots": false,
     "addtoSecureFilters": true
   },
@@ -649,8 +617,6 @@
     "fleaPriceRoubles": 1500000,
     "handbookPriceRoubles": 1500000,
     "addtoItemBlacklist": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoBots": false,
     "addtoSecureFilters": true
   },
@@ -687,8 +653,6 @@
     "fleaPriceRoubles": 500000,
     "handbookPriceRoubles": 500000,
     "addtoItemBlacklist": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoBots": false,
     "addtoSecureFilters": true
   },
@@ -727,8 +691,6 @@
     "fleaPriceRoubles": 250000,
     "handbookPriceRoubles": 250000,
     "addtoItemBlacklist": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoBots": false,
     "addtoSecureFilters": true
   },
@@ -766,8 +728,6 @@
     "fleaPriceRoubles": 1120000,
     "handbookPriceRoubles": 1250000,
     "addtoItemBlacklist": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoBots": false,
     "addtoSecureFilters": true
   },
@@ -805,8 +765,6 @@
     "fleaPriceRoubles": 920000,
     "handbookPriceRoubles": 950000,
     "addtoItemBlacklist": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoBots": false,
     "addtoSecureFilters": true
   },
@@ -843,8 +801,6 @@
     "fleaPriceRoubles": 920000,
     "handbookPriceRoubles": 950000,
     "addtoItemBlacklist": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoBots": false,
     "addtoSecureFilters": true,
     "isRandomLootContainer": true,

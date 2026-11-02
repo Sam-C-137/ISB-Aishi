@@ -7,7 +7,9 @@
       "Prefab": {
         "path": "equipment/item_equipment_armor_redut_m_black.bundle",
         "rcid": ""
-      }
+      },
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "addWeaponPreset": true,
     "weaponPresets": [
@@ -106,8 +108,6 @@
     },
     "fleaPriceRoubles": 82900,
     "handbookPriceRoubles": 6120,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addtoInventorySlots": [
       "BodyArmor"

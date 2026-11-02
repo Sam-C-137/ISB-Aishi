@@ -1,10 +1,16 @@
 using System.Reflection;
+using HarmonyLib;
+using SPTarkov.Server.Core.Models.Common;
+using SPTarkov.Server.Core.Models.Eft.Common.Tables;
+using SPTarkov.Server.Core.Utils;
+using Path = System.IO.Path;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using SPTarkov.DI.Annotations;
 using SPTarkov.Server.Core.DI;
 using SPTarkov.Server.Core.Helpers.Server;
 using SPTarkov.Server.Core.Models.Spt.Tables;
+using Microsoft.Extensions.Logging;
 
 namespace Aishi;
 internal static class AishiSvmPolicy
@@ -22,131 +28,227 @@ internal static class AishiSvmPolicy
         var loader = Path.Combine(root, "Loader", "loader.json");
         if (!File.Exists(loader))
             return null;
-        var name = JsonNode.Parse(File.ReadAllText(loader))["CurrentlySelectedPreset"]?.GetValue<string>();
+        string? name;
+        try { name = JsonNode.Parse(File.ReadAllText(loader))?["CurrentlySelectedPreset"]?.GetValue<string>(); }
+        catch (Exception error) when (error is IOException or JsonException or InvalidOperationException) { return null; }
         if (string.IsNullOrWhiteSpace(name) || Path.GetFileName(name) != name)
             return null;
         var file = Path.Combine(root, "Presets", name.EndsWith(".json", StringComparison.OrdinalIgnoreCase) ? name : name + ".json");
-        return File.Exists(file) ? JsonNode.Parse(File.ReadAllText(file)) as JsonObject : null;
+        try { return File.Exists(file) ? JsonNode.Parse(File.ReadAllText(file)) as JsonObject : null; }
+        catch (Exception error) when (error is IOException or JsonException or InvalidOperationException) { return null; }
     }
 
-    internal static string? AmmoGroup(string name)
-    {
-        var groups = new (string Name, string[] Calibers)[]
-        {
-            ("LargeCaliberRound", new[] { "127x55", "127x99", "86x70", "BMG" }),
-            ("ShotgunRound", new[] { "12x70", "20x70", "23x75" }),
-            ("PistolRound", new[] { "9x19", "9x18pm", "9x21", "762x25tt", "46x30", "57x28", "1143x23", "127x33", "9x33r", "10MM", "40SW", "357SIG", "9MM", "45ACP", "50AE", "380AUTO" }),
-            ("MarksmanRound", new[] { "762x51", "68x51", "762х54R", "762x54", "277" }),
-            ("RifleRound", new[] { "762x39", "545x39", "556x45", "9x39", "366", "762x35", "300blk", "ATL15", "GRENDEL", "50WLF", "KURZ" })
-        };
-        return groups.FirstOrDefault(g => g.Calibers.Any(c => name.Contains(c, StringComparison.OrdinalIgnoreCase))).Name;
-    }
-
-    internal static Dictionary<string, JsonNode> Changes(JsonObject options, JsonObject original, string parent, string caliber)
-    {
-        var result = new Dictionary<string, JsonNode>(StringComparer.OrdinalIgnoreCase);
-        if (options["EnableItems"]?.GetValue<bool>() != true)
-            return result;
-        foreach (var pair in new[]
-        {
-            ("Weight", "WeightChanger"),
-            ("FragmentationChance", "FragmentMult"),
-            ("HeatFactorByShot", "HeatFactor"),
-            ("BaseMalfunctionChance", "MalfunctChanceMult"),
-            ("MalfunctionChance", "MalfunctChanceMult"),
-            ("LootExperience", "LootExp"),
-            ("ExamineExperience", "ExamineExp")
-        }
-
-        )
-        {
-            if (original[pair.Item1] == null || options[pair.Item2] == null)
-                continue;
-            double value = original[pair.Item1]!.GetValue<double>() * options[pair.Item2]!.GetValue<double>();
-            if (pair.Item1.EndsWith("Experience"))
-                value = Math.Max(1, (int)value);
-            if (pair.Item1 == "BaseMalfunctionChance")
-                value = Math.Round(value, 4);
-            result[pair.Item1] = JsonValue.Create(value);
-        }
-
-        if (original["HeatFactor"]?.GetValue<double>()is double heat && heat > 1 && options["HeatFactor"] != null)
-            result["HeatFactor"] = JsonValue.Create(Math.Round(1 + (heat - 1) * options["HeatFactor"]!.GetValue<double>(), 4));
-        if (original["ExamineTime"] != null && options["ExamineTime"] != null)
-            result["ExamineTime"] = options["ExamineTime"]!;
-        if (parent == "5485a8684bdc2da71d8b4567" && options["AmmoSwitch"]?.GetValue<bool>() == true)
-        {
-            var group = AmmoGroup(caliber);
-            if (group != null && options["AmmoStacks"]?[group]?.GetValue<int>()is int size && size > 0)
-                result["StackMaxSize"] = JsonValue.Create(size);
-        }
-
-        if (options["NoGearPenalty"]?.GetValue<bool>() == true)
-            foreach (var property in new[]
-            {
-                "MousePenalty",
-                "WeaponErgonomicPenalty",
-                "SpeedPenaltyPercent"
-            }
-
-            )
-                result[property] = JsonValue.Create(0);
-        if (options["WeaponHeatOff"]?.GetValue<bool>() == true)
-            result["AllowOverheat"] = JsonValue.Create(false);
-        if (options["EquipRigsWithArmors"]?.GetValue<bool>() == true)
-            result["BlocksArmorVest"] = JsonValue.Create(false);
-        if (options["RaidDrop"]?.GetValue<bool>() == true)
-            result["DiscardLimit"] = JsonValue.Create(-1);
-        bool key = new[]
-        {
-            "5c99f98d86f7745c314214b3",
-            "5c164d2286f774194c5e69fa",
-            "543be5e94bdc2df1348b4568"
-        }.Contains(parent);
-        if (options["ExamineKeys"]?.GetValue<bool>() == true && (key || options["AllExaminedItems"]?.GetValue<bool>() == true))
-            result["ExaminedByDefault"] = JsonValue.Create(true);
-        return result;
-    }
 }
 
-[Injectable(TypePriority = OnLoadOrder.PostLoad + 1900)]
-public sealed class AishiSvmCompatibility(TemplateTable templates, ModHelper modHelper) : IOnLoad
+[Injectable(TypePriority = int.MaxValue - 200)]
+public sealed class AishiSvmCompatibility(TemplateTable templates, TradersTable traders, JsonUtil json, AishiAnomalyConfig config) : IOnLoad
 {
     public Task OnLoadAsync(CancellationToken cancellationToken)
     {
-        var options = AishiSvmPolicy.Preset?["Items"] as JsonObject;
-        if (options?["EnableItems"]?.GetValue<bool>() != true)
-            return Task.CompletedTask;
-        var db = Path.Combine(modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly()), "db");
-        foreach (var file in Directory.EnumerateFiles(db, "*.json", SearchOption.AllDirectories).Where(p => p.Contains("CustomItems", StringComparison.OrdinalIgnoreCase) || p.Contains("Itens", StringComparison.OrdinalIgnoreCase)))
-        {
-            var document = JsonNode.Parse(File.ReadAllText(file));
-            if (document is not JsonObject entries)
-                continue;
-            foreach (var entry in entries)
-            {
-                if (entry.Value is not JsonObject definition || definition["itemTplToClone"] == null || !templates.Items.TryGetValue(entry.Key, out var item) || item.Properties == null)
-                    continue;
-                var properties = item.Properties;
-                string clone = definition["itemTplToClone"]!.GetValue<string>()!;
-                string caliber = properties.Caliber ?? (templates.Items.TryGetValue(clone, out var source) ? source.Name : item.Name) ?? "";
-                var original = definition["overrideProperties"] as JsonObject ?? new JsonObject();
-                foreach (var change in AishiSvmPolicy.Changes(options, original, item.Parent.ToString(), caliber))
-                {
-                    var member = properties.GetType().GetProperty(change.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
-                    if (member?.CanWrite == true && member.GetValue(properties) != null)
-                        member.SetValue(properties, change.Value.Deserialize(member.PropertyType));
-                }
+        cancellationToken.ThrowIfCancellationRequested();
+        AishiSvmCapture.Replay(templates, json);
+        ApplyLateContent(templates, traders, AishiSvmPolicy.Preset?["Traders"] as JsonObject);
+        ApplyServices(templates, traders, AishiSvmPolicy.Preset?["Services"] as JsonObject);
+        PreserveSpecialSlots(templates, new HashSet<MongoId> { "6aa5ff857a930fba7793141b", config.Reveal.RequiredEquippedItem });
+        return Task.CompletedTask;
+    }
 
-                if (definition["handbookPriceRoubles"] != null && options["ItemPriceMult"] != null)
+    internal static void ApplyLateContent(TemplateTable templates, TradersTable traders, JsonObject? options)
+    {
+        if (options?["EnableTraders"]?.GetValue<bool>() != true || !traders.TryGetValue(DollarServicePolicy.AishiId, out var trader)) return;
+        bool Enabled(string key) => options[key]?.GetValue<bool>() == true;
+        double Number(string key, double fallback = 1) => options[key]?.GetValue<double>() ?? fallback;
+        if (!AishiSvmCapture.TraderProcessed)
+        {
+            foreach (var level in trader.Base.LoyaltyLevels ?? [])
+            {
+                if (Enabled("TradersLevel")) level.MinLevel = 1;
+                if (Enabled("TradersCurrency")) level.MinSalesSum = 0;
+                if (Enabled("TradersStanding")) level.MinStanding = 0;
+            }
+            if (Enabled("UnlockQuestAssort") && trader.QuestAssort?.ContainsKey("success") == true) trader.QuestAssort["success"] = [];
+            HashSet<MongoId> money = ["5449016a4bdc2d6f028b456f", "569668774bdc2da2298b4568", "5696686a4bdc2da3298b456a", "5d235b4d86f7742e017bc88a", "6656560053eaaa7a23349c86"];
+            foreach (var item in trader.Assort.Items.Where(item => item.ParentId == "hideout"))
+            {
+                var payment = trader.Assort.BarterScheme.GetValueOrDefault(item.Id)?.FirstOrDefault()?.FirstOrDefault();
+                if (payment == null || item.Upd == null) continue;
+                bool currency = money.Contains(payment.Template);
+                double stock = Number(currency ? "CurrencyOffers" : "BarterOffers");
+                double limit = Number(currency ? "CurrencyRestrictions" : "BarterRestrictions");
+                item.Upd.StackObjectsCount *= stock;
+                if (item.Upd.StackObjectsCount >= 999999 && item.Upd.UnlimitedCount != null && (!currency || !Enabled("RandomizeAssort")))
+                { item.Upd.StackObjectsCount = 999999; item.Upd.UnlimitedCount = true; }
+                else if (Enabled("RandomizeAssort") && item.Upd.UnlimitedCount != null)
+                { item.Upd.UnlimitedCount = false; item.Upd.StackObjectsCount = Random.Shared.Next(1440) * stock; }
+                else
                 {
-                    var handbook = templates.Handbook.Items.FirstOrDefault(h => h.Id == item.Id);
-                    if (handbook != null)
-                        handbook.Price = definition["handbookPriceRoubles"]!.GetValue<double>() * options["ItemPriceMult"]!.GetValue<double>();
+                    if (item.Upd.StackObjectsCount < 1 && stock > 0) item.Upd.StackObjectsCount = 1;
+                    item.Upd.UnlimitedCount = false;
                 }
+                item.Upd.BuyRestrictionMax = (int?)(item.Upd.BuyRestrictionMax * limit);
+                if (item.Upd.BuyRestrictionMax < 1 && limit > 0) item.Upd.BuyRestrictionMax = 1;
             }
         }
+        foreach (var quest in templates.Quests.Values.Where(quest => quest.TraderId == DollarServicePolicy.AishiId && !AishiSvmCapture.QuestsProcessed.Contains(quest.Id)))
+        {
+            if (quest.Conditions == null) continue;
+            foreach (var condition in quest.Conditions.AvailableForStart ?? [])
+                if (Enabled("RemoveTimeCondition") && condition.AvailableAfter != null) condition.AvailableAfter = 0;
+            foreach (var condition in quest.Conditions.AvailableForFinish ?? [])
+            {
+                condition.PlantTime *= Number("PlantingTime");
+                if (Enabled("FIRRestrictsQuests") && condition.OnlyFoundInRaid != null) condition.OnlyFoundInRaid = false;
+            }
+            if (Enabled("AllQuestsAvailable")) quest.Conditions.AvailableForStart = [];
+        }
+    }
 
+    internal static void ApplyServices(TemplateTable templates, TradersTable traders, JsonObject? services)
+    {
+        if (services == null || !traders.TryGetValue(DollarServicePolicy.AishiId, out var trader)) return;
+        if (services["EnableInsurance"]?.GetValue<bool>() == true && services["ReturnChancePrapor"]?.GetValue<double>() == 0 && services["ReturnChanceTherapist"]?.GetValue<double>() == 0 && trader.Base?.Insurance != null)
+            trader.Base.Insurance.Availability = false;
+        bool anySide = services["ClothesAnySide"]?.GetValue<bool>() == true;
+        bool unlock = services["ClothesLevelUnlock"]?.GetValue<bool>() == true;
+        bool free = services["ClothesFree"]?.GetValue<bool>() == true;
+        foreach (var suit in trader.Suits ?? [])
+        {
+            if (anySide && templates.Customization.TryGetValue(suit.SuiteId, out var customization) && customization.Properties != null)
+            {
+                customization.Properties.AvailableAsDefault = true;
+                customization.Properties.Game = ["eft"];
+                customization.Properties.Side = ["Bear", "Usec", "Savage"];
+                customization.Properties.ProfileVersions = [];
+            }
+            if (unlock)
+            {
+                suit.IsHiddenInPVE = false;
+                if (suit.Requirements != null)
+                {
+                    suit.Requirements.LoyaltyLevel = 1;
+                    suit.Requirements.ProfileLevel = 1;
+                    suit.Requirements.Standing = 0;
+                    suit.Requirements.PrestigeLevel = 0;
+                    suit.Requirements.QuestRequirements = [];
+                    suit.Requirements.AchievementRequirements = [];
+                }
+            }
+            if (free && suit.Requirements != null) suit.Requirements.ItemRequirements = [];
+        }
+    }
+
+    internal static void PreserveSpecialSlots(TemplateTable templates, HashSet<MongoId> allowed)
+    {
+        allowed.RemoveWhere(id => !templates.Items.ContainsKey(id));
+        if (allowed.Count == 0) return;
+        foreach (var item in templates.Items.Values)
+            foreach (var slot in item.Properties?.Slots ?? [])
+            {
+                if (slot.Name?.StartsWith("SpecialSlot", StringComparison.OrdinalIgnoreCase) != true || slot.Properties == null) continue;
+                var filters = slot.Properties.Filters?.ToList();
+                if (filters == null || filters.Count == 0) continue;
+                foreach (var filter in filters)
+                {
+                    filter.Filter ??= [];
+                    filter.Filter.UnionWith(allowed);
+                }
+            }
+    }
+}
+
+[Injectable(TypePriority = OnLoadOrder.Preload + 4)]
+public sealed class AishiSvmCapture(TemplateTable templates, TradersTable traders, ModHelper mods, JsonUtil json, ILogger<AishiSvmCapture> logger) : IOnLoad
+{
+    private static TemplateTable table = null!;
+    private static JsonUtil serializer = null!;
+    private static TradersTable traderTable = null!;
+    internal static bool TraderProcessed;
+    internal static readonly HashSet<MongoId> QuestsProcessed = [];
+    private static readonly HashSet<MongoId> owned = [];
+    private static readonly Dictionary<MongoId, JsonObject> changes = [];
+    private static readonly Dictionary<MongoId, double?> prices = [];
+    private static readonly HashSet<MongoId> priceOverrides = [];
+    internal static bool HasPriceOverride(MongoId id) => priceOverrides.Contains(id);
+    private sealed record Snapshot(Dictionary<MongoId, JsonObject> Items, Dictionary<MongoId, double?> Prices);
+
+    public Task OnLoadAsync(CancellationToken cancellationToken)
+    {
+        var assembly = AppDomain.CurrentDomain.GetAssemblies().FirstOrDefault(value => value.GetName().Name == "ServerValueModifier");
+        if (assembly == null) return Task.CompletedTask;
+        var targets = new[] { ("Items", "ItemsSection"), ("CSM", "CSMSection"), ("Services", "ServicesSection"), ("Advanced", "ItemChangerSection"), ("Traders", "TradersSection") }
+            .Select(target => assembly.GetType("ServerValueModifier.Sections." + target.Item1)?.GetMethod(target.Item2, BindingFlags.Public | BindingFlags.Instance)).ToArray();
+        if (targets.Any(method => method == null))
+        {
+            logger.LogWarning("[Aishi] SVM section API differs from the supported version; item preservation hooks were not installed. Native SVM changes remain active.");
+            return Task.CompletedTask;
+        }
+        table = templates;
+        serializer = json;
+        traderTable = traders;
+        var db = Path.Combine(mods.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly()), "db");
+        foreach (var folder in new[] { "CustomItems", "AishiAndManimalHackDevice/Itens", "AishiAndRuaf/Itens", "AishiAndUntar/Itens" }.Select(path => Path.Combine(db, path)).Where(Directory.Exists))
+        foreach (var file in Directory.EnumerateFiles(folder, "*.json", SearchOption.AllDirectories))
+        {
+            using var document = JsonDocument.Parse(File.ReadAllText(file));
+            if (document.RootElement.ValueKind != JsonValueKind.Object) continue;
+            foreach (var entry in document.RootElement.EnumerateObject())
+                if (entry.Value.ValueKind == JsonValueKind.Object && entry.Value.TryGetProperty("itemTplToClone", out _) && MongoId.IsValidMongoId(entry.Name)) owned.Add(new MongoId(entry.Name));
+        }
+        var harmony = new Harmony("com.samc137.aishi.svm-values");
+        foreach (var method in targets.Take(4))
+        {
+            harmony.Patch(method, prefix: new HarmonyMethod(typeof(AishiSvmCapture), nameof(Before)), postfix: new HarmonyMethod(typeof(AishiSvmCapture), nameof(After)));
+        }
+        harmony.Patch(targets[4], prefix: new HarmonyMethod(typeof(AishiSvmCapture), nameof(BeforeTraders)));
         return Task.CompletedTask;
+    }
+
+    private static void BeforeTraders()
+    {
+        TraderProcessed = traderTable.ContainsKey(DollarServicePolicy.AishiId);
+        QuestsProcessed.UnionWith(table.Quests.Keys);
+    }
+
+    private static void Before(out Snapshot __state)
+    {
+        __state = new(owned.Where(id => table.Items.TryGetValue(id, out var item) && item.Properties != null).ToDictionary(id => id, id => JsonNode.Parse(serializer.Serialize(table.Items[id].Properties))!.AsObject()),
+            table.Handbook.Items.Where(item => owned.Contains(item.Id)).ToDictionary(item => item.Id, item => item.Price));
+    }
+
+    private static void After(Snapshot __state)
+    {
+        foreach (var (id, previous) in __state.Items)
+        {
+            if (!table.Items.TryGetValue(id, out var item)) continue;
+            var current = JsonNode.Parse(serializer.Serialize(item.Properties))!.AsObject();
+            foreach (var field in previous.Select(pair => pair.Key).Union(current.Select(pair => pair.Key)))
+            {
+                var value = current[field];
+                if (JsonNode.DeepEquals(previous[field], value)) continue;
+                if (!changes.TryGetValue(id, out var delta)) changes[id] = delta = new JsonObject();
+                delta[field] = value?.DeepClone();
+            }
+        }
+        foreach (var item in table.Handbook.Items.Where(item => owned.Contains(item.Id)))
+            if (__state.Prices.TryGetValue(item.Id, out var previous) && previous != item.Price)
+            {
+                prices[item.Id] = item.Price;
+                priceOverrides.Add(item.Id);
+            }
+    }
+
+    internal static void Replay(TemplateTable templates, JsonUtil json)
+    {
+        foreach (var (id, delta) in changes)
+        {
+            if (!templates.Items.TryGetValue(id, out var item)) continue;
+            var properties = JsonNode.Parse(json.Serialize(item.Properties))!.AsObject();
+            foreach (var (field, value) in delta) properties[field] = value?.DeepClone();
+            item.Properties = json.Deserialize<TemplateItemProperties>(properties.ToJsonString())!;
+        }
+        foreach (var item in templates.Handbook.Items)
+            if (prices.TryGetValue(item.Id, out var price)) item.Price = price;
+        changes.Clear();
+        prices.Clear();
     }
 }

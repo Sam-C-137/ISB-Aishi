@@ -50,8 +50,6 @@
     "handbookPriceRoubles": 51690,
     "addCaliberToAllCloneLocations": true,
     "addtoStaticAmmo": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "staticAmmoProbability": 100,
     "addtoBots": true,

@@ -7,7 +7,9 @@
       "Prefab": {
         "path": "equipment/item_equipment_rig_6b45_general_black.bundle",
         "rcid": ""
-      }
+      },
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "addWeaponPreset": true,
     "weaponPresets": [
@@ -100,8 +102,6 @@
     "IsAlwaysAvailableForInsurance": false,
     "addtoBots": false,
     "addtoEmptyPropSlots": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addtoStaticLootContainers": false,
     "StaticLootContainers": [

@@ -8,7 +8,9 @@
       "Prefab": {
         "path": "equipment/item_equipment_armor_lv119_bd_nightops.bundle",
         "rcid": ""
-      }
+      },
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "addWeaponPreset": true,
     "weaponPresets": [
@@ -81,8 +83,6 @@
       "TacticalRig"
     ],
     "addtoStaticLootContainers": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "IsAlwaysAvailableForInsurance": false,
     "InsuranceDisabled": false,
     "addtoItemBlacklist": true,

@@ -1,0 +1,28 @@
+{
+  "eae1b78f028759df97ec2ba8": {
+    "itemTplToClone": "59e7715586f7742ee5789605",
+    "parentId": "5a341c4686f77469e155819e",
+    "handbookParentId": "5b47574386f77428ca22b32f",
+    "handbookPriceRoubles": 1786,
+    "fleaPriceRoubles": 1786,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "equipment/black_respirator/item_equipment_facecover_gasmask_3m.bundle",
+        "rcid": ""
+      }
+    },
+    "locales": {
+      "en": {
+        "name": "Respirator (Black)",
+        "shortName": "Respirator",
+        "description": "Respiratory mask or anti-aerosol respirator is a basic respiratory protective equipment."
+      },
+      "po": {
+        "name": "Respirador (Black)",
+        "shortName": "Resp",
+        "description": "Equipamento básico de proteção respiratória - máscara respiratória ou filtro de gases"
+      }
+    },
+    "addtoBots": false
+  }
+}

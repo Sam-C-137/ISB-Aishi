@@ -43,8 +43,6 @@
     "IsSpecialSlotOnly": false,
     "addtoSpecialSlots": false,
     "IsUnremovable": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "IsUnsaleable": true,
     "addtoSecureFilters": false,

@@ -45,8 +45,6 @@
       "modSlot": "mod_equipment_000"
     },
     "addtoBots": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addtoStaticLootContainers": false,
     "StaticLootContainers": [

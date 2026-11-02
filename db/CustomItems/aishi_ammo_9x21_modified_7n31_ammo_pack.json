@@ -52,8 +52,6 @@
     "addtoStaticAmmo": false,
     "staticAmmoProbability": 100,
     "addtoBots": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addtoStaticLootContainers": true,
     "staticLootContainers": [

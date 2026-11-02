@@ -7,8 +7,6 @@
       "InsuranceDisabled": true,
       "CanSellOnRagfair": false,
       "BackgroundColor": "yellow",
-      "Durability": 40,
-      "MaxDurability": 40,
       "BluntThroughput": 0.1,
       "RarityPvE": "Superrare"
     },

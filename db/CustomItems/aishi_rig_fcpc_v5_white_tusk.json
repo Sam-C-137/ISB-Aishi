@@ -10,8 +10,6 @@
       "ArmorMaterial": "UHMWPE",
       "ArmorType": "Heavy",
       "armorClass": "5",
-      "Durability": 80,
-      "MaxDurability": 80,
       "BluntThroughput": 0.1,
       "RarityPvE": "Superrare",
       "CanRequireOnRagfair": false,
@@ -54,8 +52,6 @@
       "ArmorMaterial": "UHMWPE",
       "ArmorType": "Heavy",
       "armorClass": "5",
-      "Durability": 80,
-      "MaxDurability": 80,
       "BluntThroughput": 0.1,
       "RarityPvE": "Superrare",
       "CanRequireOnRagfair": false,
@@ -98,8 +94,6 @@
       "ArmorMaterial": "UHMWPE",
       "ArmorType": "Heavy",
       "armorClass": "5",
-      "Durability": 38,
-      "MaxDurability": 38,
       "BluntThroughput": 0.1,
       "RarityPvE": "Superrare",
       "CanRequireOnRagfair": false,
@@ -142,8 +136,6 @@
       "ArmorMaterial": "UHMWPE",
       "ArmorType": "Heavy",
       "armorClass": "5",
-      "Durability": 38,
-      "MaxDurability": 38,
       "BluntThroughput": 0.1,
       "RarityPvE": "Superrare",
       "CanRequireOnRagfair": false,
@@ -184,7 +176,9 @@
       "Prefab": {
         "path": "equipment/white_tusk/fcpc_v5/item_equipment_rig_fcpc_v5_white_tusk.bundle",
         "rcid": ""
-      }
+      },
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "addWeaponPreset": true,
     "weaponPresets": [
@@ -257,10 +251,8 @@
       "TacticalRig"
     ],
     "addtoStaticLootContainers": false,
-    "CanSellOnRagfair": false,
     "IsAlwaysAvailableForInsurance": false,
     "InsuranceDisabled": true,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "StaticLootContainers": [
       {

@@ -114,8 +114,6 @@
     "IsAlwaysAvailableForInsurance": false,
     "InsuranceDisabled": true,
     "modSlot": [],
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addtoStaticLootContainers": false,
     "StaticLootContainers": [

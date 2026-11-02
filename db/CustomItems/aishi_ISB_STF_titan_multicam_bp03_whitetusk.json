@@ -273,8 +273,6 @@
       "ArmorMaterial": "Titan",
       "ArmorType": "Heavy",
       "armorClass": "5",
-      "Durability": 45,
-      "MaxDurability": 45,
       "BluntThroughput": 0.1,
       "RarityPvE": "Superrare"
     },
@@ -307,8 +305,6 @@
       "ArmorMaterial": "Titan",
       "ArmorType": "Heavy",
       "armorClass": "5",
-      "Durability": 45,
-      "MaxDurability": 45,
       "BluntThroughput": 0.1,
       "RarityPvE": "Superrare"
     },

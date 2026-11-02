@@ -7,7 +7,9 @@
       "Prefab": {
         "path": "equipment/item_equipment_armor_gjel_black.bundle",
         "rcid": ""
-      }
+      },
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "addWeaponPreset": true,
     "weaponPresets": [
@@ -94,8 +96,6 @@
     },
     "fleaPriceRoubles": 95800,
     "handbookPriceRoubles": 4000,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addtoInventorySlots": [
       "BodyArmor"

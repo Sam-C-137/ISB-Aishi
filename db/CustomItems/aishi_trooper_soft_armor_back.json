@@ -13,7 +13,8 @@
       "Durability": 45,
       "MaxDurability": 45,
       "BluntThroughput": 0.1,
-      "RarityPvE": "Superrare"
+      "RarityPvE": "Superrare",
+      "CanRequireOnRagfair": false
     },
     "path": "assets/content/items/equipment/armor_plates/soft_armor_back.bundle",
     "rcid": "",

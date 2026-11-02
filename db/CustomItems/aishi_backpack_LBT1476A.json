@@ -67,8 +67,6 @@
       "Backpack"
     ],
     "addtoBots": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "IsAlwaysAvailableForInsurance": false,
     "InsuranceDisabled": false,
     "addtoItemBlacklist": true,

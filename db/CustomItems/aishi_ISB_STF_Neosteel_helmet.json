@@ -189,8 +189,6 @@
       "ArmorMaterial": "Titan",
       "BackgroundColor": "yellow",
       "armorClass": "5",
-      "Durability": 45,
-      "MaxDurability": 45,
       "BluntThroughput": 0.1,
       "RarityPvE": "Superrare",
       "Prefab": {
@@ -236,8 +234,6 @@
       "ArmorMaterial": "Titan",
       "BackgroundColor": "yellow",
       "armorClass": "5",
-      "Durability": 45,
-      "MaxDurability": 45,
       "BluntThroughput": 0.1,
       "RarityPvE": "Superrare",
       "Prefab": {

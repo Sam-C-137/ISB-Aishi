@@ -8,7 +8,9 @@
       "Prefab": {
         "path": "equipment/item_equipment_rig_jpc_first_gen_mil_spec_v1_ISB.bundle",
         "rcid": ""
-      }
+      },
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "addWeaponPreset": false,
     "weaponPresets": [],
@@ -33,8 +35,6 @@
     "addtoStaticLootContainers": false,
     "IsAlwaysAvailableForInsurance": false,
     "InsuranceDisabled": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "StaticLootContainers": [
       {

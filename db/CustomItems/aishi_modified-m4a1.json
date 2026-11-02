@@ -276,7 +276,6 @@
     "fleaPriceRoubles": 149800,
     "handbookPriceRoubles": 906700,
     "addtoBots": false,
-    "CanSellOnRagfair": false,
     "IsAlwaysAvailableForInsurance": false,
     "InsuranceDisabled": true,
     "masteries": true,
@@ -290,7 +289,6 @@
         ]
       }
     ],
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addtoStaticLootContainers": false,
     "StaticLootContainers": [

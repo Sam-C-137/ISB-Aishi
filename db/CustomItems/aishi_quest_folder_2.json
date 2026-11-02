@@ -33,8 +33,6 @@
     "addPosterToMaps": false,
     "posterSpawnProbability": 0,
     "addtoStatuetteSlots": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addCaliberToAllCloneLocations": false,
     "addtoStaticAmmo": false,

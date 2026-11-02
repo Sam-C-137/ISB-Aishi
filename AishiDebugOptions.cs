@@ -1,3 +1,5 @@
+using HarmonyLib;
+using SPTarkov.Server.Core.Helpers.Traders;
 using SPTarkov.DI.Annotations;
 using SPTarkov.Server.Core.DI;
 using SPTarkov.Server.Core.Models.Common;
@@ -12,11 +14,46 @@ public sealed class AishiDebugOptions(TradersTable traders, AishiAnomalyConfig c
 {
     public Task OnLoadAsync(CancellationToken cancellationToken)
     {
-        if (!config.Debug.UnlockAllClothes || !traders.TryGetValue(DollarServicePolicy.AishiId, out var trader))
-            return Task.CompletedTask;
-        foreach (var suit in trader.Suits ?? [])
-            Unlock(suit);
+        cancellationToken.ThrowIfCancellationRequested();
+        if (!traders.TryGetValue(DollarServicePolicy.AishiId, out var trader)) return Task.CompletedTask;
+        if (config.Debug.InfiniteAssortStock)
+        {
+            _instance = this;
+            ApplyStock(trader.Assort?.Items);
+            var harmony = new Harmony("com.samc137.aishi.debug.stock");
+            harmony.Patch(AccessTools.Method(typeof(TraderAssortHelper), nameof(TraderAssortHelper.GetAssort)), postfix: new HarmonyMethod(typeof(AishiDebugOptions), nameof(AssortStock)) { priority = Priority.Last });
+            harmony.Patch(AccessTools.Method(typeof(TraderAssortHelper), "GetPristineTraderAssorts"), postfix: new HarmonyMethod(typeof(AishiDebugOptions), nameof(PristineStock)) { priority = Priority.Last });
+        }
+        if (config.Debug.UnlockAllClothes)
+            foreach (var suit in trader.Suits ?? []) Unlock(suit);
         return Task.CompletedTask;
+    }
+
+    private static AishiDebugOptions? _instance;
+
+    internal static void ApplyStock(IEnumerable<Item>? items)
+    {
+        foreach (var item in items ?? [])
+        {
+            if (item.ParentId != "hideout") continue;
+            item.Upd ??= new Upd();
+            item.Upd.StackObjectsCount = 999999;
+            item.Upd.UnlimitedCount = true;
+        }
+    }
+
+    private static void AssortStock(MongoId traderId, TraderAssort __result)
+    {
+        if (traderId.ToString() != DollarServicePolicy.AishiId || _instance == null) return;
+        ApplyStock(__result?.Items);
+        if (_instance.CurrentTrader() is { } trader) ApplyStock(trader.Assort?.Items);
+    }
+
+    private Trader? CurrentTrader() => traders.TryGetValue(DollarServicePolicy.AishiId, out var trader) ? trader : null;
+
+    private static void PristineStock(MongoId traderId, List<Item> __result)
+    {
+        if (traderId.ToString() == DollarServicePolicy.AishiId) ApplyStock(__result);
     }
 
     internal static void Unlock(Suit suit)

@@ -68,8 +68,6 @@
       "itemToAddTo": "5ea17ca01412a1425304d1c0",
       "modSlot": "mod_nvg"
     },
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addtoStaticLootContainers": false,
     "StaticLootContainers": [

@@ -14,7 +14,9 @@
         "rcid": "weapon_grenade_m67_container_isb"
       },
       "Weight": 0.89,
-      "Grids": []
+      "Grids": [],
+      "CanSellOnRagfair": true,
+      "CanRequireOnRagfair": true
     },
     "locales": {
       "en": {
@@ -31,8 +33,6 @@
     "fleaPriceRoubles": 34999,
     "handbookPriceRoubles": 11999,
     "addtoBots": true,
-    "CanSellOnRagfair": true,
-    "CanRequireOnRagfair": true,
     "addtoItemBlacklist": false,
     "addtoStaticLootContainers": false,
     "StaticLootContainers": [

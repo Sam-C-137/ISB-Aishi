@@ -15,7 +15,9 @@
         "rcid": ""
       },
       "Weight": 0.15,
-      "Grids": []
+      "Grids": [],
+      "CanSellOnRagfair": true,
+      "CanRequireOnRagfair": true
     },
     "locales": {
       "en": {
@@ -35,8 +37,6 @@
       "FaceCover"
     ],
     "addtoBots": true,
-    "CanSellOnRagfair": true,
-    "CanRequireOnRagfair": true,
     "addtoItemBlacklist": false,
     "addtoStaticLootContainers": false,
     "StaticLootContainers": [

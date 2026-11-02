@@ -37,8 +37,6 @@
       "mod_scope"
     ],
     "addtoStaticLootContainers": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": false,
     "StaticLootContainers": [
       {

@@ -8,7 +8,9 @@
       "Prefab": {
         "path": "equipment/item_equipment_armor_isbslickV2.bundle",
         "rcid": ""
-      }
+      },
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "addWeaponPreset": true,
     "weaponPresets": [
@@ -79,8 +81,6 @@
     "staticAmmoProbability": 0,
     "addtoBots": false,
     "addtoSpecialSlots": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addtoModSlots": false,
     "modSlot": [
@@ -145,10 +145,10 @@
         "Plate_Granit_SAPI_back"
       ],
       "armorClass": "6",
-      "Durability": 100,
-      "MaxDurability": 100,
       "BluntThroughput": 0.1,
-      "RarityPvE": "Superrare"
+      "RarityPvE": "Superrare",
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "Prefab": {
       "path": "assets/content/items/equipment/armor_plates/soft_armor_back.bundle",
@@ -201,10 +201,10 @@
         "Plate_Granit_SAPI_back"
       ],
       "armorClass": "6",
-      "Durability": 75,
-      "MaxDurability": 75,
       "BluntThroughput": 0.1,
-      "RarityPvE": "Superrare"
+      "RarityPvE": "Superrare",
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "Prefab": {
       "path": "assets/content/items/equipment/armor_plates/soft_armor_front.bundle",

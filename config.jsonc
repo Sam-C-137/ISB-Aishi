@@ -12,6 +12,9 @@
   },
   "debug": {
     "removeKTErestrictions": false,
-    "unlockAllClothes": false
+    "unlockAllClothes": false,
+    "infiniteAssortStock": false,
+    "removeAllFleaBlacklist": false,
+    "setInsuranceReturnRate": 80
   }
 }

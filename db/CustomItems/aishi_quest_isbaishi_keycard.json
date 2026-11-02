@@ -41,8 +41,6 @@
     "UnlootableFromSlot": "SpecialSlot",
     "IsSpecialSlotOnly": true,
     "addtoSpecialSlots": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "IsUnremovable": true,
     "IsUnsaleable": true,

@@ -32,8 +32,6 @@
     "posterSpawnProbability": 0,
     "addtoStatuetteSlots": false,
     "addCaliberToAllCloneLocations": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addtoStaticAmmo": false,
     "staticAmmoProbability": 0,

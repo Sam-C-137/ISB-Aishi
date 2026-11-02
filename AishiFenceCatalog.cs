@@ -47,25 +47,46 @@ public sealed class AishiFenceCatalog(ConfigServer configs) : IOnLoad
         foreach (var id in BlueForce)
             if (!fence.Blacklist.Contains(id))
                 fence.Blacklist.Add(id);
-        new Harmony("com.samc137.aishi.fence-catalog").Patch(AccessTools.Method(typeof(FenceService), "AddItemAssorts"), prefix: new HarmonyMethod(typeof(AishiFenceCatalog), nameof(FilterPool)));
+        foreach (var id in AishiItemBlacklistPatch.Policy.ItemIds.Where(AishiItemBlacklistPatch.Policy.Contains))
+            if (!fence.Blacklist.Contains(new MongoId(id)))
+                fence.Blacklist.Add(new MongoId(id));
+        var harmony = new Harmony("com.samc137.aishi.fence-catalog");
+        harmony.Patch(AccessTools.Method(typeof(FenceService), "AddItemAssorts"), prefix: new HarmonyMethod(typeof(AishiFenceCatalog), nameof(FilterPool)));
+        foreach (var name in new[] { "GetFenceAssorts", "GetRawFenceAssorts", "GetMainFenceAssort", "GetDiscountFenceAssort" })
+        {
+            var method = AccessTools.Method(typeof(FenceService), name) ?? throw new MissingMethodException("FenceService." + name);
+            harmony.Patch(method, postfix: new HarmonyMethod(typeof(AishiFenceCatalog), nameof(FilterReturned)) { priority = Priority.Last });
+        }
         return Task.CompletedTask;
     }
 
-    private static void FilterPool(TraderAssort __2)
+    private static void FilterReturned(TraderAssort __result) => Filter(__result);
+    private static void FilterPool(TraderAssort __2) => Filter(__2);
+    internal static void Filter(TraderAssort? assort)
     {
-        var removed = __2.Items.Where(item => item.ParentId == "hideout" && BlueForce.Contains(item.Template)).Select(item => item.Id.ToString()).ToHashSet();
+        if (assort?.Items == null || assort.Items.Count == 0) return;
+        var items = assort.Items.ToDictionary(item => item.Id.ToString());
+        var removed = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        foreach (var item in assort.Items.Where(item => BlueForce.Contains(item.Template) || AishiItemBlacklistPatch.Policy.Contains(item.Template.ToString())))
+        {
+            var root = item;
+            var visited = new HashSet<string>();
+            while (root.ParentId != null && items.TryGetValue(root.ParentId, out var parent) && visited.Add(root.Id.ToString()))
+                root = parent;
+            removed.Add(root.Id.ToString());
+        }
         int count;
         do
         {
             count = removed.Count;
-            foreach (var item in __2.Items.Where(item => item.ParentId != null && removed.Contains(item.ParentId)))
+            foreach (var item in assort.Items.Where(item => item.ParentId != null && removed.Contains(item.ParentId)))
                 removed.Add(item.Id.ToString());
         } while (count != removed.Count);
-        __2.Items.RemoveAll(item => removed.Contains(item.Id.ToString()));
+        assort.Items.RemoveAll(item => removed.Contains(item.Id.ToString()));
         foreach (var id in removed)
         {
-            __2.BarterScheme?.Remove(id);
-            __2.LoyalLevelItems?.Remove(id);
+            assort.BarterScheme?.Remove(id);
+            assort.LoyalLevelItems?.Remove(id);
         }
     }
 }

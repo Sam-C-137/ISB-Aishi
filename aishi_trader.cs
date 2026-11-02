@@ -21,18 +21,18 @@ public record ModMetadata : IModMetadata
     public string Name { get; init; } = "ISB Aishi";
     public string Author { get; init; } = "SamC137";
     public List<string>? Contributors { get; init; }
-    public SemanticVersioning.Version Version { get; init; } = new("2.0.5");
+    public SemanticVersioning.Version Version { get; init; } = new("2.0.6");
     public SemanticVersioning.Range SptVersion { get; init; } = new("~4.1.6");
     public List<string>? Incompatibilities { get; init; }
     public Dictionary<string, SemanticVersioning.Range>? ModDependencies { get; init; } = new()
     {
         {
             "com.wtt.commonlib",
-            new SemanticVersioning.Range(">=3.0.4")
+            new SemanticVersioning.Range(">=3.0.6")
         },
         {
             "com.wtt.contentbackport",
-            new SemanticVersioning.Range(">=2.0.1")
+            new SemanticVersioning.Range(">=2.0.5")
         },
     };
     public string? Url { get; init; } = "";
@@ -75,9 +75,8 @@ public sealed class AishiItemPreload(WTTServerCommonLib.WTTServerCommonLib wttCo
 }
 
 [Injectable(TypePriority = OnLoadOrder.TraderRegistration + -1)]
-public sealed class AishiTraderRegistration(ModHelper modHelper, ImageRouter imageRouter, TraderConfig traderConfig, RagfairConfig ragfairConfig, InsuranceConfig insuranceConfig, QuestConfig questConfig, IReadOnlyList<SptMod> modList, TimeUtil timeUtil, AishiLogger aishiLogger, WTTServerCommonLib.WTTServerCommonLib wttCommon, TradersTable tradersTable, TemplateTable templateTable, ILogger<AishiTraderRegistration> logger) : IOnLoad
+public sealed class AishiTraderRegistration(ModHelper modHelper, ImageRouter imageRouter, TraderConfig traderConfig, RagfairConfig ragfairConfig, InsuranceConfig insuranceConfig, QuestConfig questConfig, IReadOnlyList<SptMod> modList, TimeUtil timeUtil, AishiLogger aishiLogger, WTTServerCommonLib.WTTServerCommonLib wttCommon, TradersTable tradersTable, TemplateTable templateTable, ILogger<AishiTraderRegistration> logger, AishiAnomalyConfig settings) : IOnLoad
 {
-    private const double InsuranceReturnChancePercent = 80d;
     public async Task OnLoadAsync(CancellationToken cancellationToken)
     {
         cancellationToken.ThrowIfCancellationRequested();
@@ -85,7 +84,7 @@ public sealed class AishiTraderRegistration(ModHelper modHelper, ImageRouter ima
         var pathToMod = modHelper.GetAbsolutePathToModFolder(assembly);
         var traderBase = modHelper.GetJsonDataFromFile<TraderBase>(pathToMod, "db/base.json");
         var traderImagePath = Path.Combine(pathToMod, "db/Aishi.png");
-        insuranceConfig.ReturnChancePercent[traderBase.Id] = InsuranceReturnChancePercent;
+        insuranceConfig.ReturnChancePercent[traderBase.Id] = settings.Debug.SetInsuranceReturnRate;
         imageRouter.AddRoute(traderBase.Avatar.Replace(".png", ""), traderImagePath);
         aishiLogger.SetTraderUpdateTime(traderConfig, traderBase, timeUtil.GetHoursAsSeconds(1), timeUtil.GetHoursAsSeconds(2));
         ragfairConfig.Traders.TryAdd(traderBase.Id, true);

@@ -37,8 +37,6 @@
       "Sheath"
     ],
     "addtoBots": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "Unlootable": true,
     "UnlootableFromSide": [
       "Bear",

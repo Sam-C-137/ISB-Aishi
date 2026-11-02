@@ -7,7 +7,9 @@
       "Prefab": {
         "path": "equipment/item_equipment_armor_custom_thorintcar_black.bundle",
         "rcid": ""
-      }
+      },
+      "CanSellOnRagfair": false,
+      "CanRequireOnRagfair": false
     },
     "addWeaponPreset": true,
     "weaponPresets": [
@@ -116,8 +118,6 @@
       "BodyArmor"
     ],
     "addtoBots": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "IsAlwaysAvailableForInsurance": false,
     "InsuranceDisabled": false,
     "addtoItemBlacklist": true,

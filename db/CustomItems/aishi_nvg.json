@@ -43,8 +43,6 @@
     "handbookPriceRoubles": 208592,
     "addtoBots": true,
     "addtoModSlots": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "modSlot": [
       "mod_nvg"

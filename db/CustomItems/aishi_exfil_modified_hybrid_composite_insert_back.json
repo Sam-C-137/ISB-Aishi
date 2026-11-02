@@ -6,10 +6,8 @@
     "overrideProperties": {
       "Name": "EXFIL modified hybrid composite insert (Back)",
       "ShortName": "Modified hybrid insert",
-      "Description": "Modified class 5 hybrid composite insert for the White Tusk Arctic EXFIL helmet. Integrated protection with 40 durability.",
+      "Description": "Modified class 5 hybrid composite insert for the White Tusk Arctic EXFIL helmet. Integrated protection with 27 durability.",
       "armorClass": "5",
-      "Durability": 40,
-      "MaxDurability": 40,
       "ArmorMaterial": "Titan",
       "BluntThroughput": 0.1,
       "BackgroundColor": "yellow",
@@ -19,12 +17,12 @@
       "en": {
         "name": "EXFIL modified hybrid composite insert (Back)",
         "shortName": "Modified hybrid insert",
-        "description": "Modified class 5 hybrid composite insert for the White Tusk Arctic EXFIL helmet. Integrated protection with 40 durability."
+        "description": "Modified class 5 hybrid composite insert for the White Tusk Arctic EXFIL helmet. Integrated protection with 27 durability."
       },
       "po": {
         "name": "EXFIL modified hybrid composite insert (Back)",
         "shortName": "Insert modificado",
-        "description": "Insert híbrido modificado de classe 5 para o EXFIL White Tusk Arctic. Proteção integrada com 40 de durabilidade."
+        "description": "Insert híbrido modificado de classe 5 para o EXFIL White Tusk Arctic. Proteção integrada com 27 de durabilidade."
       }
     },
     "handbookPriceRoubles": 18000,

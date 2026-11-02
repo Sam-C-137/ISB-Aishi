@@ -105,8 +105,6 @@
       "ArmorMaterial": "UHMWPE",
       "ArmorType": "Heavy",
       "armorClass": "5",
-      "Durability": 75,
-      "MaxDurability": 75,
       "BluntThroughput": 0.1,
       "RarityPvE": "Superrare"
     },
@@ -147,8 +145,6 @@
       "ArmorMaterial": "UHMWPE",
       "ArmorType": "Heavy",
       "armorClass": "5",
-      "Durability": 75,
-      "MaxDurability": 75,
       "BluntThroughput": 0.1,
       "RarityPvE": "Superrare"
     },
@@ -189,8 +185,6 @@
       "ArmorMaterial": "UHMWPE",
       "ArmorType": "Heavy",
       "armorClass": "5",
-      "Durability": 75,
-      "MaxDurability": 75,
       "BluntThroughput": 0.1,
       "RarityPvE": "Superrare"
     },
@@ -231,8 +225,6 @@
       "ArmorMaterial": "UHMWPE",
       "ArmorType": "Heavy",
       "armorClass": "5",
-      "Durability": 75,
-      "MaxDurability": 75,
       "BluntThroughput": 0.1,
       "RarityPvE": "Superrare"
     },
@@ -274,8 +266,6 @@
       "ArmorMaterial": "UHMWPE",
       "ArmorType": "Heavy",
       "armorClass": "5",
-      "Durability": 75,
-      "MaxDurability": 75,
       "BluntThroughput": 0.1,
       "RarityPvE": "Superrare"
     },

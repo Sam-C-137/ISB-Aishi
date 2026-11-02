@@ -72,10 +72,8 @@
       "Backpack"
     ],
     "addtoBots": true,
-    "CanSellOnRagfair": false,
     "IsAlwaysAvailableForInsurance": false,
     "InsuranceDisabled": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": false,
     "addtoStaticLootContainers": false,
     "StaticLootContainers": [

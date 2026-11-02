@@ -40,8 +40,6 @@
     "addtoBots": false,
     "addtoSpecialSlots": false,
     "addtoModSlots": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "modSlot": [
       ""
@@ -147,8 +145,6 @@
     "addtoStatuetteSlots": false,
     "addCaliberToAllCloneLocations": false,
     "addtoStaticAmmo": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "staticAmmoProbability": 0,
     "addtoBots": false,
@@ -198,8 +194,6 @@
     "addPosterToMaps": false,
     "posterSpawnProbability": 0,
     "addtoStatuetteSlots": false,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addCaliberToAllCloneLocations": false,
     "addtoStaticAmmo": false,
@@ -279,8 +273,6 @@
     },
     "fleaPriceRoubles": 1,
     "handbookPriceRoubles": 1,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true
   },
   "6963e26f0dd99b3578894fa1": {
@@ -314,8 +306,6 @@
       }
     },
     "fleaPriceRoubles": 1,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "handbookPriceRoubles": 1
   }

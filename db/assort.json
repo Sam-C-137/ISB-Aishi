@@ -30499,8 +30499,8 @@
       "slotId": "Helmet_ears",
       "upd": {
         "Repairable": {
-          "Durability": 16,
-          "MaxDurability": 16
+          "Durability": 22,
+          "MaxDurability": 22
         },
         "StackObjectsCount": 1
       }
@@ -30512,8 +30512,8 @@
       "slotId": "Helmet_back",
       "upd": {
         "Repairable": {
-          "Durability": 40,
-          "MaxDurability": 40
+          "Durability": 22,
+          "MaxDurability": 22
         },
         "StackObjectsCount": 1
       }
@@ -30525,8 +30525,8 @@
       "slotId": "Helmet_top",
       "upd": {
         "Repairable": {
-          "Durability": 40,
-          "MaxDurability": 40
+          "Durability": 22,
+          "MaxDurability": 22
         },
         "StackObjectsCount": 1
       }
@@ -30718,8 +30718,8 @@
       "upd": {
         "StackObjectsCount": 1,
         "Repairable": {
-          "Durability": 75,
-          "MaxDurability": 75
+          "Durability": 80,
+          "MaxDurability": 80
         }
       }
     },
@@ -30731,8 +30731,8 @@
       "upd": {
         "StackObjectsCount": 1,
         "Repairable": {
-          "Durability": 75,
-          "MaxDurability": 75
+          "Durability": 80,
+          "MaxDurability": 80
         }
       }
     },
@@ -30744,8 +30744,8 @@
       "upd": {
         "StackObjectsCount": 1,
         "Repairable": {
-          "Durability": 75,
-          "MaxDurability": 75
+          "Durability": 21,
+          "MaxDurability": 21
         }
       }
     },
@@ -30757,8 +30757,8 @@
       "upd": {
         "StackObjectsCount": 1,
         "Repairable": {
-          "Durability": 75,
-          "MaxDurability": 75
+          "Durability": 21,
+          "MaxDurability": 21
         }
       }
     },
@@ -30770,8 +30770,8 @@
       "upd": {
         "StackObjectsCount": 1,
         "Repairable": {
-          "Durability": 75,
-          "MaxDurability": 75
+          "Durability": 33,
+          "MaxDurability": 33
         }
       }
     },
@@ -30821,8 +30821,8 @@
       "upd": {
         "StackObjectsCount": 1,
         "Repairable": {
-          "Durability": 45,
-          "MaxDurability": 45
+          "Durability": 24,
+          "MaxDurability": 24
         }
       }
     },
@@ -30834,8 +30834,8 @@
       "upd": {
         "StackObjectsCount": 1,
         "Repairable": {
-          "Durability": 45,
-          "MaxDurability": 45
+          "Durability": 24,
+          "MaxDurability": 24
         }
       }
     },
@@ -30905,8 +30905,8 @@
       "upd": {
         "StackObjectsCount": 1,
         "Repairable": {
-          "Durability": 80,
-          "MaxDurability": 80
+          "Durability": 40,
+          "MaxDurability": 40
         }
       }
     },
@@ -30918,8 +30918,8 @@
       "upd": {
         "StackObjectsCount": 1,
         "Repairable": {
-          "Durability": 80,
-          "MaxDurability": 80
+          "Durability": 40,
+          "MaxDurability": 40
         }
       }
     },
@@ -30931,8 +30931,8 @@
       "upd": {
         "StackObjectsCount": 1,
         "Repairable": {
-          "Durability": 38,
-          "MaxDurability": 38
+          "Durability": 14,
+          "MaxDurability": 14
         }
       }
     },
@@ -30944,8 +30944,8 @@
       "upd": {
         "StackObjectsCount": 1,
         "Repairable": {
-          "Durability": 38,
-          "MaxDurability": 38
+          "Durability": 14,
+          "MaxDurability": 14
         }
       }
     },
@@ -30995,8 +30995,8 @@
       "upd": {
         "StackObjectsCount": 1,
         "Repairable": {
-          "Durability": 45,
-          "MaxDurability": 45
+          "Durability": 24,
+          "MaxDurability": 24
         }
       }
     },
@@ -31008,8 +31008,8 @@
       "upd": {
         "StackObjectsCount": 1,
         "Repairable": {
-          "Durability": 45,
-          "MaxDurability": 45
+          "Durability": 24,
+          "MaxDurability": 24
         }
       }
     },
@@ -34679,7 +34679,9 @@
       "slotId": "hideout",
       "upd": {
         "StackObjectsCount": 999999,
-        "UnlimitedCount": true
+        "UnlimitedCount": true,
+        "BuyRestrictionMax": 1,
+        "BuyRestrictionCurrent": 0
       }
     },
     {
@@ -34689,7 +34691,9 @@
       "slotId": "hideout",
       "upd": {
         "StackObjectsCount": 999999,
-        "UnlimitedCount": true
+        "UnlimitedCount": true,
+        "BuyRestrictionMax": 1,
+        "BuyRestrictionCurrent": 0
       }
     },
     {
@@ -43906,7 +43910,7 @@
       [
         {
           "_tpl": "5696686a4bdc2da3298b456a",
-          "count": 115
+          "count": 650
         }
       ]
     ],
@@ -43914,7 +43918,7 @@
       [
         {
           "_tpl": "5696686a4bdc2da3298b456a",
-          "count": 115
+          "count": 650
         }
       ]
     ],
@@ -45046,10 +45050,10 @@
     "14b832984f407c5ec22c7f12": 3,
     "a7b28501a255d2745e4a6e50": 3,
     "8abc842318f0a3fde77a7ef1": 3,
-    "fc0d33a4a09b5567b9fb6cb5": 1,
-    "1c4a3fb91fdc5942918d162b": 1,
-    "3bacf3f520a45e649635e612": 1,
-    "6ce95f87b0dd51c38eeaece9": 1,
+    "fc0d33a4a09b5567b9fb6cb5": 2,
+    "1c4a3fb91fdc5942918d162b": 2,
+    "3bacf3f520a45e649635e612": 3,
+    "6ce95f87b0dd51c38eeaece9": 3,
     "2742ec7123c05c0cbbc4da0a": 1,
     "83780129b89e5b0fb93cfa13": 4,
     "fa2b4e76b92358828b07cf46": 4,

@@ -164,6 +164,7 @@ namespace Aishi.LabsExpansion
         private Vector3 activeKeypadPosition;
 
         private static Type ReaderPowerType => AccessTools.TypeByName("ISBSSOFExtra.LabsKeycardLockdown");
+        private static bool IsHeadless => BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("com.fika.headless");
         private static bool ReaderBlocked(WorldInteractiveObject reader) => reader!=null&&AccessTools.Method(ReaderPowerType,"IsBlocked")?.Invoke(null,new object[]{reader}) is bool blocked&&blocked;
         private static void RegisterPowerReader(KeycardDoor reader) => AccessTools.Method(ReaderPowerType,"RegisterExternalReader")?.Invoke(null,new object[]{reader,true});
         private static void UnregisterPowerReader(KeycardDoor reader) => AccessTools.Method(ReaderPowerType,"UnregisterExternalReader")?.Invoke(null,new object[]{reader});
@@ -231,8 +232,7 @@ namespace Aishi.LabsExpansion
             var containerTemplate=Resources.FindObjectsOfTypeAll<LootableContainer>().FirstOrDefault(t=>t.gameObject.scene.IsValid()&&t.Template!=""&&t.GetComponentInChildren<Collider>()!=null);
             foreach(var room in A(layout,"rooms"))
             {
-                var scene=SceneManager.GetSceneByName(S(room,"scene").Replace("_MX",""));
-                if(!scene.IsValid()||!scene.isLoaded)throw new InvalidDataException("Room scene is not loaded: "+S(room,"scene"));
+                var scene=RoomScene(room);
                 foreach(var prop in A(room,"props"))
                 {
                     var root=new GameObject("ISB_LABS_"+S(prop,"id"));root.SetActive(false);roots.Add(root);SceneManager.MoveGameObjectToScene(root,scene);
@@ -241,23 +241,29 @@ namespace Aishi.LabsExpansion
                     string mode=S(source,"mode");
                     if(mode=="composite")
                     {
-                        foreach(var part in A(source,"components"))
+                        var parts=A(source,"components").Select(part=>FindSource(byPath,part)).ToArray();
+                        if(parts.Length==0||parts.Any(part=>part==null))LoadModel(root,S(source,"model"));
+                        else
                         {
-                            var component=FindSource(byPath,part);
-                            if(component==null)throw new InvalidDataException("Composite part unavailable: "+S(part,"path"));
-                            CloneNative(component,root.transform,source);
+                            foreach(var component in parts)CloneNative(component,root.transform,source);
+                            var original=FindSource(byPath,source);
+                            if(original!=null)foreach(var collider in original.GetComponentsInChildren<Collider>(true).Where(c=>c.enabled&&!c.isTrigger&&c.name.IndexOf("BALLISTIC",StringComparison.OrdinalIgnoreCase)<0))CloneCollider(collider,root.transform,source);
                         }
-                        var original=FindSource(byPath,source);
-                        if(original!=null)foreach(var collider in original.GetComponentsInChildren<Collider>(true).Where(c=>c.enabled&&!c.isTrigger&&c.name.IndexOf("BALLISTIC",StringComparison.OrdinalIgnoreCase)<0))CloneCollider(collider,root.transform,source);
                     }
                     else if(native!=null&&mode!="mesh")CloneNative(native,root.transform,source);
                     else LoadModel(root,S(source,"model"));
+                    var modelRenderers=root.GetComponentsInChildren<Renderer>(true);
+                    if((native!=null&&mode!="mesh"||mode=="composite")&&(!modelRenderers.Any(renderer=>ActiveBranch(renderer.transform,root.transform))||modelRenderers.Any(renderer=>renderer.sharedMaterials.Any(material=>material==null||material.shader==null))))
+                    {
+                        foreach(var child in root.transform.Cast<Transform>().ToArray())UnityEngine.Object.DestroyImmediate(child.gameObject);
+                        LoadModel(root,S(source,"model"));
+                    }
                     root.transform.position=V(prop["position"]);
                     root.transform.rotation=prop["rotation"]!=null?Quaternion.Euler(V(prop["rotation"])):Quaternion.Euler(0,(float)(prop["rotationY"]??0),0);
                     foreach(var renderer in root.GetComponentsInChildren<Renderer>(true))
                     {
                         renderer.enabled=true;renderer.forceRenderingOff=false;renderer.allowOcclusionWhenDynamic=true;renderer.lightmapIndex=-1;
-                        if(renderer.sharedMaterials.Any(m=>m==null||m.shader==null))throw new InvalidDataException("Missing native material: "+S(prop,"assetId"));
+                        if(renderer.sharedMaterials.Any(m=>m==null||m.shader==null))throw new InvalidDataException("Missing room material: "+S(room,"id")+"/"+S(prop,"assetId"));
                     }
                     foreach(var behaviour in root.GetComponentsInChildren<MonoBehaviour>(true))
                     {
@@ -267,7 +273,7 @@ namespace Aishi.LabsExpansion
                     }
                     if(!root.GetComponentsInChildren<Collider>(true).Any(c=>c.enabled))
                         foreach(var filter in root.GetComponentsInChildren<MeshFilter>(true))
-                            if(filter.sharedMesh!=null){filter.gameObject.AddComponent<MeshCollider>().sharedMesh=filter.sharedMesh;filter.gameObject.layer=LayerMask.NameToLayer("LowPolyCollider");}
+                            if(filter.sharedMesh!=null){AddMeshCollision(filter.gameObject,filter.sharedMesh);filter.gameObject.layer=LayerMask.NameToLayer("LowPolyCollider");}
                     var containers=root.GetComponentsInChildren<LootableContainer>(true);
                     if(prop["loot"]!=null)
                     {
@@ -313,6 +319,22 @@ namespace Aishi.LabsExpansion
             if(!paths.TryGetValue(S(source,"path"),out var found))return null;
             string scene=S(source,"scene").Replace("_MX","");
             return found.Where(t=>t.gameObject.scene.name==scene||t.gameObject.scene.name==scene+"_MX").OrderBy(t=>(t.position-V(source["position"])).sqrMagnitude).FirstOrDefault();
+        }
+
+        private static Scene RoomScene(JToken room)
+        {
+            string name=S(room,"scene").Replace("_MX","");
+            var scene=SceneManager.GetSceneByName(name);
+            if(scene.IsValid()&&scene.isLoaded)return scene;
+            scene=SceneManager.GetSceneByName(name+"_MX");
+            if(scene.IsValid()&&scene.isLoaded)return scene;
+            throw new InvalidDataException("Room scene is not loaded: "+name);
+        }
+
+        private static bool ActiveBranch(Transform node,Transform root)
+        {
+            for(;node!=null&&node!=root;node=node.parent)if(!node.gameObject.activeSelf)return false;
+            return node==root;
         }
 
         private void PrepareDoorDecorations(Dictionary<string,Transform[]> paths)
@@ -368,11 +390,18 @@ namespace Aishi.LabsExpansion
             var child=new GameObject("ISB_LABS_Collision_"+source.name);child.transform.SetParent(parent,false);child.layer=LayerMask.NameToLayer("LowPolyCollider");
             var inverse=Quaternion.Euler(0,-V(metadata["rotation"]).y,0);child.transform.localPosition=inverse*(source.transform.position-V(metadata["position"]))-V(metadata["canonicalPivot"]);child.transform.localRotation=inverse*source.transform.rotation;child.transform.localScale=source.transform.lossyScale;
             Collider copy=null;
-            if(source is MeshCollider mesh){var target=child.AddComponent<MeshCollider>();target.sharedMesh=mesh.sharedMesh;target.convex=mesh.convex;copy=target;}
+            if(source is MeshCollider mesh)copy=AddMeshCollision(child,mesh.sharedMesh,mesh.convex);
             else if(source is BoxCollider box){var target=child.AddComponent<BoxCollider>();target.center=box.center;target.size=box.size;copy=target;}
             else if(source is CapsuleCollider capsule){var target=child.AddComponent<CapsuleCollider>();target.center=capsule.center;target.direction=capsule.direction;target.radius=capsule.radius;target.height=capsule.height;copy=target;}
             else if(source is SphereCollider sphere){var target=child.AddComponent<SphereCollider>();target.center=sphere.center;target.radius=sphere.radius;copy=target;}
             if(copy!=null){copy.sharedMaterial=source.sharedMaterial;copy.contactOffset=source.contactOffset;}
+        }
+
+        private static Collider AddMeshCollision(GameObject target,Mesh mesh,bool convex=false)
+        {
+            if(mesh==null)return null;
+            if(!mesh.isReadable){var box=target.AddComponent<BoxCollider>();box.center=mesh.bounds.center;box.size=Vector3.Max(mesh.bounds.size,Vector3.one*.001f);return box;}
+            var collider=target.AddComponent<MeshCollider>();collider.sharedMesh=mesh;collider.convex=convex;return collider;
         }
 
         private sealed class LabsRoomAmbientArea
@@ -615,7 +644,7 @@ namespace Aishi.LabsExpansion
             var register=interop==null?null:AccessTools.Method(interop,"Register");var remove=interop==null?null:AccessTools.Method(interop,"Unregister");
             foreach(var room in A(layout,"rooms"))
             {
-                var scene=SceneManager.GetSceneByName(S(room,"scene").Replace("_MX",""));
+                var scene=RoomScene(room);
                 var definitions=room["ceilingLights"] as JArray;
                 if(definitions==null)definitions=new JArray(CeilingPositions(room).Select((p,i)=>new JObject{["id"]="ceiling-"+i,["position"]=new JArray(p.x,p.y,p.z),["rotationY"]=0,["intensity"]=1.2f,["range"]=5.5f}));
                 foreach(var definition in definitions)
@@ -726,11 +755,15 @@ namespace Aishi.LabsExpansion
             if(cardReader==null)cardReader=CreateNativeReader("ISB_LABS_CardReader",readerPosition,true);
             if(codeReader==null)codeReader=CreateNativeReader("ISB_LABS_CodeKeypad",V(definition06["reader"]),false);
             controlsPrepared=true;
-            try{PrepareKeypadAudio();}catch(Exception ex){log?.LogError("[Aishi Labs Expansion] Keypad audio could not initialize: "+ex.Message);}
+            if(!IsHeadless)try{PrepareKeypadAudio();}catch(Exception ex){log?.LogError("[Aishi Labs Expansion] Keypad audio could not initialize: "+ex.Message);}
         }
 
         private KeycardDoor CreateNativeReader(string identity,Vector3 position,bool card)
         {
+            int rootCount=roots.Count;
+            int unregisterCount=unregister.Count;
+            try
+            {
             var native=Resources.FindObjectsOfTypeAll<InteractiveProxy>().Where(p=>p.gameObject.scene.IsValid()&&p.gameObject.scene.isLoaded&&p.Link is KeycardDoor&&!p.transform.root.name.StartsWith("ISB_LABS_")&&p.Grips?.Length>0&&p.Handle!=null&&p.transform.parent?.name.StartsWith("security_pass_card",StringComparison.OrdinalIgnoreCase)==true).OrderBy(p=>(p.transform.position-position).sqrMagnitude).FirstOrDefault();
             if(native==null)throw new InvalidOperationException("Native Labs keycard proxy unavailable.");
             var template=(KeycardDoor)native.Link;
@@ -780,6 +813,13 @@ namespace Aishi.LabsExpansion
             staging.SetActive(true);RegisterReader(control);RegisterPowerReader(control);
             unregister.Add(()=>UnregisterPowerReader(control));
             return control;
+            }
+            catch
+            {
+                for(int index=unregister.Count-1;index>=unregisterCount;index--){try{unregister[index]();}catch{}unregister.RemoveAt(index);}
+                for(int index=roots.Count-1;index>=rootCount;index--){if(roots[index]!=null)UnityEngine.Object.DestroyImmediate(roots[index]);roots.RemoveAt(index);}
+                throw;
+            }
         }
 
         private void RegisterReader(KeycardDoor reader)
@@ -802,6 +842,7 @@ namespace Aishi.LabsExpansion
 
         private void CloneInsideKeypad(Transform target,Vector3 outside)
         {
+            if(IsHeadless)return;
             var model=Resources.FindObjectsOfTypeAll<MeshRenderer>().Where(r=>r.gameObject.scene.IsValid()&&r.gameObject.scene.isLoaded&&!r.transform.root.name.StartsWith("ISB_LABS_")&&r.name.StartsWith("security_pass_LOD0",StringComparison.OrdinalIgnoreCase)).OrderBy(r=>(r.bounds.center-outside).sqrMagnitude).FirstOrDefault();
             if(model==null)throw new InvalidOperationException("Room 06 native keypad mesh unavailable.");
             var source=model.transform.parent;var clone=UnityEngine.Object.Instantiate(source.gameObject,target,false);

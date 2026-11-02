@@ -1,0 +1,40 @@
+{
+  "d42ca83bead35a4db91457a7": {
+    "itemTplToClone": "5b432c305acfc40019478128",
+    "parentId": "5a341c4686f77469e155819e",
+    "handbookParentId": "5b47574386f77428ca22b32f",
+    "handbookPriceRoubles": 6386,
+    "fleaPriceRoubles": 6386,
+    "overrideProperties": {
+      "Prefab": {
+        "path": "equipment/modified_gp5/item_equipment_facecover_gasmask_gp5.bundle",
+        "rcid": ""
+      },
+      "armorClass": "2",
+      "Durability": 40,
+      "MaxDurability": 40,
+      "ArmorType": "Light",
+      "armorColliders": [
+        "Eyes",
+        "Jaw",
+        "HeadCommon"
+      ],
+      "armorPlateColliders": [],
+      "RepairCost": 15,
+      "BackgroundColor": "yellow"
+    },
+    "locales": {
+      "en": {
+        "name": "Modified GP-5 gas mask",
+        "shortName": "Modified GP-5",
+        "description": "Modified The civil gas mask model 5 or GP-5 is a filtering agent for individual protection of the respiratory organs, eyes and skin of a person's face."
+      },
+      "po": {
+        "name": "Modified Máscara de gás GP-5",
+        "shortName": "Modified GP-5",
+        "description": "Modified O modelo civil da máscara de gás modelo 5 ou GP-5 é um agente filtrante para proteção individual dos órgãos respiratório, olhos e pele da face."
+      }
+    },
+    "addtoBots": false
+  }
+}

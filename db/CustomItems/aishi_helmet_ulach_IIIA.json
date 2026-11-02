@@ -82,8 +82,6 @@
     "addtoBots": false,
     "IsAlwaysAvailableForInsurance": false,
     "InsuranceDisabled": true,
-    "CanSellOnRagfair": false,
-    "CanRequireOnRagfair": false,
     "addtoItemBlacklist": true,
     "addtoStaticLootContainers": false,
     "StaticLootContainers": [
@@ -104,8 +102,6 @@
       "ArmorType": "Heavy",
       "BackgroundColor": "yellow",
       "armorClass": "5",
-      "Durability": 40,
-      "MaxDurability": 40,
       "BluntThroughput": 0.1,
       "RarityPvE": "Superrare",
       "Prefab": {
@@ -151,8 +147,6 @@
       "ArmorType": "Heavy",
       "BackgroundColor": "yellow",
       "armorClass": "5",
-      "Durability": 40,
-      "MaxDurability": 40,
       "BluntThroughput": 0.1,
       "RarityPvE": "Superrare",
       "Prefab": {
@@ -198,8 +192,6 @@
       "ArmorType": "Heavy",
       "BackgroundColor": "yellow",
       "armorClass": "5",
-      "Durability": 16,
-      "MaxDurability": 16,
       "BluntThroughput": 0.1,
       "RarityPvE": "Superrare",
       "Prefab": {
